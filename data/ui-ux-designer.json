@@ -1,0 +1,76 @@
+{
+  "id": "ui-ux-designer",
+  "type": "ui-ux-designer",
+  "theme": "uiuxdesigner",
+  "hero": {
+    "greeting": "HELLO WORLD I'M",
+    "name": "Richardson V.Fred",
+    "title": "UI / UX DESIGNER",
+    "photo": "/assets/uiuxdesigner/images/profile-image-designer.jpg",
+    "contact": {
+      "phone": "+11254 2555",
+      "email": "richardsonVFred02@gmail.com",
+      "address": "2193 East Avenue Scottsdale, USA"
+    },
+    "about": {
+      "title": "ABOUT ME",
+      "heading": "A Passion for Pixels and Progress",
+      "description": "Throughout my career, I have led diverse creative teams, developed cohesive brand identities, and delivered impactful digital campaigns.",
+      "signature": "Richardson"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic Achievements",
+    "entries": [
+      {
+        "date": "June 15, 2014 – 2017",
+        "institution": "Franklin University",
+        "degree": "Computer Science",
+        "grade": "First Class",
+        "description": "A wonderful programming has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "date": "Jan 12, 2011 – 2014",
+        "institution": "Massachusetts Institute of Technology",
+        "degree": "Science & Technology",
+        "grade": "First Class",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "date": "Feb 13, 2009 – 2011",
+        "institution": "Thomas Jefferson High School",
+        "degree": "Science & Technology",
+        "grade": "A+",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My Career Path",
+    "entries": [
+      {
+        "date": "CURRENT",
+        "company": "iBechArt Group",
+        "location": "Software Company 5, New York, NY, USA",
+        "role": "",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "date": "Jan 2019 – 2021",
+        "company": "NentorMate",
+        "location": "Software company in Sofia, Bulgaria",
+        "role": "",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "date": "Feb 12, 2022 – 2023",
+        "company": "ScienceSoft",
+        "location": "Software Development Company McKinney, TX, USA",
+        "role": "",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+}
+
+[data-theme="uiuxdesigner"] {
+  --color-primary: 281deg 100% 56%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 0deg 0% 96%;
+  --color-text-primary: 242deg 100% 15%;
+  --color-text-secondary: 0deg 0% 20%;
+  --color-text-dimmed: 0deg 0% 47%;
+  --color-border-primary: 0deg 0% 88%;
+  --color-border-secondary: 0deg 0% 85%;
+}
+
+@theme inline {
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-sacramento: var(--font-sacramento), cursive;
+
+  --color-primary: hsl(var(--color-primary));
+  --color-background-primary: hsl(var(--color-background-primary));
+  --color-background-secondary: hsl(var(--color-background-secondary));
+  --color-text-primary: hsl(var(--color-text-primary));
+  --color-text-secondary: hsl(var(--color-text-secondary));
+  --color-text-dimmed: hsl(var(--color-text-dimmed));
+  --color-border-primary: hsl(var(--color-border-primary));
+  --color-border-secondary: hsl(var(--color-border-secondary));
+}
