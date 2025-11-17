@@ -15,11 +15,14 @@ export default function About({ hero }) {
       <div className="flex flex-col sm:flex-row items-start gap-10 mt-10">
         <a
           href="#"
-          className="w-full h-[60px] bg-primary text-background-primary flex items-center justify-center cursor-pointer text-[20px] font-medium"
+          className="w-full h-[60px] bg-primary text-background-primary flex items-center justify-center cursor-pointer text-[20px] font-medium focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         >
           Check my Protfolio
         </a>
-        <p className="font-sacramento text-[40px] text-text-dimmed">
+        <p
+          aria-hidden="true"
+          className="font-sacramento text-[40px] text-text-dimmed"
+        >
           {hero.about.signature}
         </p>
       </div>

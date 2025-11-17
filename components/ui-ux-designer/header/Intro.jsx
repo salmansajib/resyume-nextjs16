@@ -17,7 +17,7 @@ export default function Intro({ hero }) {
       <div className="w-full flex flex-col sm:flex-row items-center gap-5 mt-15">
         <a
           href="#"
-          className="text-background-primary bg-primary flex items-center justify-center gap-2 w-full sm:max-w-[280px] h-[60px] cursor-pointer"
+          className="text-background-primary bg-primary flex items-center justify-center gap-2 w-full sm:max-w-[280px] h-[60px] cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         >
           <svg
             width="20"
@@ -41,9 +41,12 @@ export default function Intro({ hero }) {
           </svg>
           <span className="text-lg font-medium">LinkedIn Account</span>
         </a>
-        <button className="w-full sm:max-w-[280px] h-[60px] flex items-center justify-center bg-background-primary text-lg font-medium text-text-primary shadow-xl cursor-pointer">
+        <a
+          href="#"
+          className="w-full sm:max-w-[280px] h-[60px] flex items-center justify-center bg-background-primary text-lg font-medium text-text-primary shadow-xl cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );
