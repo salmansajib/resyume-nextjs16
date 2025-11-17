@@ -78,5 +78,36 @@
         "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tools and Technologies",
+    "entries": [
+      {
+        "id": 1,
+        "name": "Photoshop",
+        "proficiency": 98
+      },
+      {
+        "id": 2,
+        "name": "Illustrator",
+        "proficiency": 90
+      },
+      {
+        "id": 3,
+        "name": "Figma",
+        "proficiency": 98
+      },
+      {
+        "id": 4,
+        "name": "Adobe XD",
+        "proficiency": 70
+      },
+      {
+        "id": 5,
+        "name": "Adobe XD",
+        "proficiency": 60
+      }
+    ]
   }
 }

@@ -18,8 +18,12 @@ export default function Navbar() {
         <div className="w-[155px] h-px bg-primary hidden sm:block" />
         {/* burger menu */}
         <div>
-          <button className="border border-primary size-10 flex items-center justify-center rounded-full text-primary cursor-pointer">
+          <button
+            aria-label="open menu"
+            className="border border-primary size-10 flex items-center justify-center rounded-full text-primary cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+          >
             <svg
+              aria-hidden="true"
               width="19"
               height="14"
               viewBox="0 0 19 14"
