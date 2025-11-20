@@ -2,6 +2,7 @@ import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import HeaderSection from "@/components/ui-ux-designer/header/HeaderSection";
 import EducationSection from "@/components/ui-ux-designer/education-experience/EducationSection";
 import ExperienceSection from "@/components/ui-ux-designer/education-experience/ExperienceSection";
+import SkillsSection from "@/components/ui-ux-designer/skills/SkillsSection";
 
 export default function Home() {
   const { theme } = uiuxdesignerData;
@@ -11,6 +12,7 @@ export default function Home() {
       <HeaderSection />
       <EducationSection />
       <ExperienceSection />
+      <SkillsSection />
     </div>
   );
 }

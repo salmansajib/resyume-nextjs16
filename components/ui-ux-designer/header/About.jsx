@@ -6,7 +6,7 @@ export default function About({ hero }) {
       <h2 className="text-lg font-medium text-primary uppercase">
         {hero.about.title}
       </h2>
-      <h3 className="text-[32px] font-medium text-text-primary">
+      <h3 className="text-3xl sm:text-4xl font-medium text-text-primary">
         {hero.about.heading}
       </h3>
       <p className="text-base text-text-dimmed max-w-[60ch]">
@@ -15,7 +15,7 @@ export default function About({ hero }) {
       <div className="flex flex-col sm:flex-row items-start gap-10 mt-10">
         <a
           href="#"
-          className="w-full h-[60px] bg-primary text-background-primary flex items-center justify-center cursor-pointer text-[20px] font-medium focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+          className="w-full h-[60px] bg-primary text-background-primary flex items-center justify-center cursor-pointer text-[20px] font-medium focus:ring-2 focus:ring-offset-2 focus:ring-primarytransition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg"
         >
           Check my Protfolio
         </a>

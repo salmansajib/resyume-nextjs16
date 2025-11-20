@@ -9,7 +9,7 @@ export default function ExperienceTimeline({ experience }) {
         className="absolute -top-10 -left-30 -bottom-10 bg-primary w-0.5"
       />
 
-      <ul className="space-y-20">
+      <ul className="space-y-15">
         {experience.entries.map((item) => (
           <li key={item.id}>
             <article className="relative">
@@ -28,7 +28,7 @@ export default function ExperienceTimeline({ experience }) {
               </div>
 
               {/* content card */}
-              <div className="space-y-3">
+              <div className="space-y-3 bg-background-primary p-10">
                 <div className="flex items-start justify-between gap-3">
                   <div className="space-y-3">
                     <time className="block text-base font-medium uppercase">
@@ -42,7 +42,7 @@ export default function ExperienceTimeline({ experience }) {
                 <p className="text-base font-medium text-primary uppercase">
                   {item.location}
                 </p>
-                <p className="text-base font-normal max-w-[70ch]">
+                <p className="text-base font-normal max-w-[50ch]">
                   {item.description}
                 </p>
               </div>

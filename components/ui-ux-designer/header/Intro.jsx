@@ -17,7 +17,7 @@ export default function Intro({ hero }) {
       <div className="w-full flex flex-col sm:flex-row items-center gap-5 mt-15">
         <a
           href="#"
-          className="text-background-primary bg-primary flex items-center justify-center gap-2 w-full sm:max-w-[280px] h-[60px] cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+          className="text-background-primary bg-primary flex items-center justify-center gap-2 w-full sm:max-w-[280px] h-[60px] cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg"
         >
           <svg
             width="20"
@@ -43,7 +43,7 @@ export default function Intro({ hero }) {
         </a>
         <a
           href="#"
-          className="w-full sm:max-w-[280px] h-[60px] flex items-center justify-center bg-background-primary text-lg font-medium text-text-primary shadow-xl cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+          className="w-full sm:max-w-[280px] h-[60px] flex items-center justify-center bg-background-primary text-lg font-medium text-text-primary shadow-lg cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary hover:-translate-y-0.5 hover:brightness-110 hover:shadow-xl transition-all duration-300"
         >
           Download CV
         </a>

@@ -9,7 +9,7 @@ export default function EducationTimeline({ education }) {
         className="absolute -top-10 -left-30 -bottom-10 bg-primary w-0.5"
       />
 
-      <ul className="space-y-20">
+      <ul className="space-y-15">
         {education.entries.map((item) => (
           <li key={item.id}>
             <article className="relative">
@@ -28,17 +28,17 @@ export default function EducationTimeline({ education }) {
               </div>
 
               {/* content card */}
-              <div className="space-y-3">
-                <div className="flex items-start justify-between gap-3">
+              <div className="space-y-3 bg-background-primary p-10">
+                <div className="flex flex-col sm:flex-row items-start sm:justify-between gap-3">
                   <div className="space-y-3">
                     <time className="block text-base font-medium uppercase">
                       {item.date}
                     </time>
-                    <h3 className="text-xl font-medium text-text-primary">
+                    <h3 className="text-xl font-medium text-text-primary max-w-[16ch]">
                       {item.institution}
                     </h3>
                   </div>
-                  <span className="text-base font-normal bg-background-primary px-3 py-1.5 rounded-md">
+                  <span className="text-base font-normal bg-background-secondary px-3 py-1.5 ">
                     <span className="sr-only">Grade: </span>
                     {item.grade}
                   </span>
@@ -46,7 +46,7 @@ export default function EducationTimeline({ education }) {
                 <p className="text-base font-medium text-primary uppercase">
                   {item.degree}
                 </p>
-                <p className="text-base font-normal max-w-[70ch]">
+                <p className="text-base font-normal max-w-[50ch]">
                   {item.description}
                 </p>
               </div>
