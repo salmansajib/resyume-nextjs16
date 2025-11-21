@@ -6,7 +6,7 @@ export default function ExperienceTimeline({ experience }) {
       {/* vertical line */}
       <div
         aria-hidden="true"
-        className="absolute -top-10 -left-30 -bottom-10 bg-primary w-0.5"
+        className="absolute -top-10 -left-25 -bottom-10 bg-primary w-0.5"
       />
 
       <ul className="space-y-15">
@@ -16,13 +16,13 @@ export default function ExperienceTimeline({ experience }) {
               {/* horizontal connector line */}
               <div
                 aria-hidden="true"
-                className="absolute top-[9px] -left-30 w-10 h-0.5 bg-primary"
+                className="absolute top-[5px] -left-25 w-10 h-0.5 bg-primary"
               />
 
               {/* timeline dot */}
               <div
                 aria-hidden="true"
-                className="absolute top-1 -left-20 size-3 rounded-full bg-primary flex items-center justify-center"
+                className="absolute top-0 -left-15 size-3 rounded-full bg-primary flex items-center justify-center"
               >
                 <div className="size-1.5 rounded-full bg-background-primary"></div>
               </div>

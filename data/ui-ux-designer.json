@@ -86,27 +86,32 @@
       {
         "id": 1,
         "name": "Photoshop",
-        "proficiency": 98
+        "proficiency": 98,
+        "icon": "/assets/uiuxdesigner/icons/photoshop-icon.svg"
       },
       {
         "id": 2,
         "name": "Illustrator",
-        "proficiency": 90
+        "proficiency": 90,
+        "icon": "/assets/uiuxdesigner/icons/illustrator-icon.svg"
       },
       {
         "id": 3,
         "name": "Figma",
-        "proficiency": 98
+        "proficiency": 98,
+        "icon": "/assets/uiuxdesigner/icons/figma-icon.svg"
       },
       {
         "id": 4,
         "name": "Adobe XD",
-        "proficiency": 70
+        "proficiency": 70,
+        "icon": "/assets/uiuxdesigner/icons/xd-icon.svg"
       },
       {
         "id": 5,
         "name": "Adobe XD",
-        "proficiency": 60
+        "proficiency": 60,
+        "icon": "/assets/uiuxdesigner/icons/sketch-icon.svg"
       }
     ]
   }
