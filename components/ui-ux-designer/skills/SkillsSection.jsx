@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import Image from "next/image";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 export default function SkillsSection() {
   const { skills } = uiuxdesignerData;
@@ -48,7 +49,7 @@ export default function SkillsSection() {
               </dt>
               <dd className="relative flex-1">
                 <div className="w-full bg-text-dimmed h-2 flex-1 rounded-full ">
-                  {/* proficiency percetage */}
+                  {/* proficiency percetage line */}
                   <motion.div
                     className="bg-primary h-2 rounded-full relative"
                     initial={{ width: "0%" }}
@@ -62,9 +63,16 @@ export default function SkillsSection() {
                     </div>
                   </motion.div>
                 </div>
-                <span className="absolute -top-10 right-0 text-text-dimmed">
-                  {skill.proficiency}%
-                </span>
+
+                {/* percent value in number */}
+                <div className="absolute -top-10 right-0 text-text-dimmed flex">
+                  <AnimatedCounter
+                    value={skill.proficiency}
+                    isInView={isInView}
+                    duration={2}
+                  />
+                  %
+                </div>
               </dd>
             </div>
           ))}
