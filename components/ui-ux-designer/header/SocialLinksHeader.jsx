@@ -4,7 +4,10 @@ export default function SocialLinksHeader() {
   return (
     <div className="hidden sm:flex items-center gap-5">
       {/* dribble logo */}
-      <a href="#" className="text-primary">
+      <a
+        href="#"
+        className="text-text-dimmed hover:text-primary transition-all duration-150"
+      >
         <svg
           width="18"
           height="18"
@@ -22,6 +25,7 @@ export default function SocialLinksHeader() {
           />
         </svg>
       </a>
+
       {/* behance logo */}
       <a
         href="#"
@@ -45,6 +49,7 @@ export default function SocialLinksHeader() {
           <path d="M14.1429 0H20.4286V1.75H14.1429V0Z" fill="currentColor" />
         </svg>
       </a>
+
       {/* x logo */}
       <a
         href="#"
@@ -63,6 +68,7 @@ export default function SocialLinksHeader() {
           />
         </svg>
       </a>
+
       {/* instagram logo */}
       <a
         href="#"

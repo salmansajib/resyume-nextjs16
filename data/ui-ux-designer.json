@@ -114,5 +114,35 @@
         "icon": "/assets/uiuxdesigner/icons/sketch-icon.svg"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Expertise at Your Service",
+    "entries": [
+      {
+        "id": 1,
+        "name": "Ecommerce App",
+        "icon": "/assets/uiuxdesigner/icons/ecommerce-icon.svg",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+      },
+      {
+        "id": 2,
+        "name": "API Development",
+        "icon": "/assets/uiuxdesigner/icons/api-icon.svg",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+      },
+      {
+        "id": 3,
+        "name": "Desktop Application",
+        "icon": "/assets/uiuxdesigner/icons/desktop-icon.svg",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+      },
+      {
+        "id": 4,
+        "name": "Software Architect",
+        "icon": "/assets/uiuxdesigner/icons/software-architect-icon.svg",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+      }
+    ]
   }
 }

@@ -12,7 +12,7 @@ export default function ExperienceSection() {
     >
       <div
         id="experience-heading"
-        className="w-full max-w-[1290px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-20 lg:gap-36"
+        className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-20 lg:gap-36"
       >
         {/* title and subtitle */}
         <div className="space-y-3 text-center lg:text-left">
