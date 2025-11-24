@@ -13,7 +13,7 @@ export default function CategoryFilter({
 
         return (
           <button
-            className={`w-64 h-16 pl-5 border  flex items-center gap-5 cursor-pointer ${
+            className={`w-64 h-16 pl-5 border  flex items-center gap-5 cursor-pointer transition-all duration-150 ${
               isActive
                 ? "border-primary bg-primary text-background-primary"
                 : "border-border-primary"

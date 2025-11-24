@@ -43,7 +43,10 @@ export default function PortfolioSection({ data }) {
             activeCategory={activeCategory}
             onCategorySelect={setActiveCategory}
           />
-          <PortfolioGrid portfolioData={filteredEntries} />
+          <PortfolioGrid
+            portfolioData={filteredEntries}
+            activeCategory={activeCategory}
+          />
         </div>
       </div>
     </section>

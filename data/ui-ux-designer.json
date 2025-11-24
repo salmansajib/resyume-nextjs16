@@ -171,32 +171,63 @@
       {
         "id": 1,
         "category": ["Web Templates", "UI Elements"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-1.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-1.jpg"
       },
       {
         "id": 2,
         "category": ["Web Templates", "UI Elements", "Logos"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-2.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-2.jpg"
       },
       {
         "id": 3,
         "category": ["Web Templates", "Logos"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-3.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-3.jpg"
       },
       {
         "id": 4,
         "category": ["Web Templates", "UI Elements"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-4.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-4.jpg"
       },
       {
         "id": 5,
         "category": ["Web Templates", "UI Elements", "Logos"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-5.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-5.jpg"
       },
       {
         "id": 6,
         "category": ["Web Templates"],
-        "image": "/assets/uiuxdesigner/images/portfolio-image-6.jpg"
+        "image": "/assets/uiuxdesigner/images/portfolio/portfolio-image-6.jpg"
+      }
+    ]
+  },
+  "interests": {
+    "title": "My Interests",
+    "subtitle": "My Interests and Inspirations",
+    "entries": [
+      {
+        "id": 1,
+        "name": "Bike Riding",
+        "image": "/assets/uiuxdesigner/images/interest/bike-riding.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Tour",
+        "image": "/assets/uiuxdesigner/images/interest/tour.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Programming",
+        "image": "/assets/uiuxdesigner/images/interest/programming.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Macbook",
+        "image": "/assets/uiuxdesigner/images/interest/macbook.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Gaming",
+        "image": "/assets/uiuxdesigner/images/interest/gaming.jpg"
       }
     ]
   }
