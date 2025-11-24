@@ -1,8 +1,40 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useRef } from "react";
+import { motion, useInView } from "motion/react";
 
 export default function ServicesSection({ data }) {
   const { services } = data;
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  // Container animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  // Individual interest item variants
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
 
   return (
     <section
@@ -24,13 +56,18 @@ export default function ServicesSection({ data }) {
         </div>
 
         {/* services */}
-        <div
+        <motion.div
           role="list"
           aria-label="Available services"
           className="grid grid-cols-1 sm:grid-cols-2 gap-15 lg:gap-x-30"
+          ref={ref}
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
         >
           {services.entries.map((service) => (
-            <article
+            <motion.article
+              variants={itemVariants}
               key={service.id}
               role="listitem"
               className="space-y-3 lg:relative"
@@ -55,9 +92,9 @@ export default function ServicesSection({ data }) {
               <p className="text-base font-normal text-text-dimmed max-w-[40ch] sm:max-w-[30ch]">
                 {service.description}
               </p>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
