@@ -1,9 +1,8 @@
 import React from "react";
-import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import Image from "next/image";
 
-export default function ServicesSection() {
-  const { services } = uiuxdesignerData;
+export default function ServicesSection({ data }) {
+  const { services } = data;
 
   return (
     <section

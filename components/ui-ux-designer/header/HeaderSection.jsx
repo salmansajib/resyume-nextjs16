@@ -4,10 +4,9 @@ import ContactInfo from "./ContactInfo";
 import ProfilePhoto from "./ProfilePhoto";
 import Intro from "./Intro";
 import About from "./About";
-import uiuxdesignerData from "@/data/ui-ux-designer.json";
 
-export default function HeaderSection() {
-  const { hero } = uiuxdesignerData;
+export default function HeaderSection({ data }) {
+  const { hero } = data;
 
   return (
     <div className="px-4 relative">

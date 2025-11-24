@@ -1,9 +1,8 @@
 import React from "react";
-import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import ExperienceTimeline from "./ExperienceTimeline";
 
-export default function ExperienceSection() {
-  const { experience } = uiuxdesignerData;
+export default function ExperienceSection({ data }) {
+  const { experience } = data;
 
   return (
     <section

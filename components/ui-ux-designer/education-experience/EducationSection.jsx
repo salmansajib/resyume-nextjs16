@@ -1,9 +1,8 @@
 import React from "react";
-import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import EducationTimeline from "./EducationTimeline";
 
-export default function EducationSection() {
-  const { education } = uiuxdesignerData;
+export default function EducationSection({ data }) {
+  const { education } = data;
 
   return (
     <section

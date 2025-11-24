@@ -3,12 +3,11 @@
 import React from "react";
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import uiuxdesignerData from "@/data/ui-ux-designer.json";
 import Image from "next/image";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
-export default function SkillsSection() {
-  const { skills } = uiuxdesignerData;
+export default function SkillsSection({ data }) {
+  const { skills } = data;
 
   // Observe whole section
   const sectionRef = useRef(null);

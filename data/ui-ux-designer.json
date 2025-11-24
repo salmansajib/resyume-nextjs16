@@ -144,5 +144,60 @@
         "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
       }
     ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Showcasing My Vision",
+    "categories": [
+      {
+        "id": 1,
+        "name": "All Categories",
+        "active": true
+      },
+      {
+        "id": 2,
+        "name": "Web Templates"
+      },
+      {
+        "id": 3,
+        "name": "UI Elements"
+      },
+      {
+        "id": 4,
+        "name": "Logos"
+      }
+    ],
+    "entries": [
+      {
+        "id": 1,
+        "category": ["Web Templates", "UI Elements"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-1.jpg"
+      },
+      {
+        "id": 2,
+        "category": ["Web Templates", "UI Elements", "Logos"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-2.jpg"
+      },
+      {
+        "id": 3,
+        "category": ["Web Templates", "Logos"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-3.jpg"
+      },
+      {
+        "id": 4,
+        "category": ["Web Templates", "UI Elements"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-4.jpg"
+      },
+      {
+        "id": 5,
+        "category": ["Web Templates", "UI Elements", "Logos"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-5.jpg"
+      },
+      {
+        "id": 6,
+        "category": ["Web Templates"],
+        "image": "/assets/uiuxdesigner/images/portfolio-image-6.jpg"
+      }
+    ]
   }
 }

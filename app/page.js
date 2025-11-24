@@ -4,17 +4,19 @@ import EducationSection from "@/components/ui-ux-designer/education-experience/E
 import ExperienceSection from "@/components/ui-ux-designer/education-experience/ExperienceSection";
 import SkillsSection from "@/components/ui-ux-designer/skills/SkillsSection";
 import ServicesSection from "@/components/ui-ux-designer/services/ServicesSection";
+import PortfolioSection from "@/components/ui-ux-designer/portfolio/PortfolioSection";
 
 export default function Home() {
-  const { theme } = uiuxdesignerData;
+  const data = uiuxdesignerData;
 
   return (
-    <div data-theme={theme} className="min-h-screen bg-background-primary">
-      <HeaderSection />
-      <EducationSection />
-      <ExperienceSection />
-      <SkillsSection />
-      <ServicesSection />
+    <div data-theme={data.theme} className="min-h-screen bg-background-primary">
+      <HeaderSection data={data} />
+      <EducationSection data={data} />
+      <ExperienceSection data={data} />
+      <SkillsSection data={data} />
+      <ServicesSection data={data} />
+      <PortfolioSection data={data} />
     </div>
   );
 }
