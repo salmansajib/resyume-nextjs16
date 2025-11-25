@@ -41,19 +41,19 @@ export default function ServicesSection({ data }) {
       aria-labelledby="services-heading"
       className="px-4 py-32 bg-background-secondary"
     >
-      <div
-        id="services-heading"
-        className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-20 lg:gap-30"
-      >
+      <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-20 lg:gap-30">
         {/* title and subtitle */}
-        <div className="space-y-3 text-center lg:text-left">
-          <h2 className="text-lg font-medium text-primary uppercase">
+        <header className="space-y-3 text-center lg:text-left">
+          <h2
+            id="services-heading"
+            className="text-lg font-medium text-primary uppercase"
+          >
             {services.title}
           </h2>
           <h3 className="text-3xl md:text-4xl font-medium text-text-primary leading-11 lg:max-w-[15ch]">
             {services.subtitle}
           </h3>
-        </div>
+        </header>
 
         {/* services */}
         <motion.div

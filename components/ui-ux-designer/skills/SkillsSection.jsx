@@ -19,16 +19,19 @@ export default function SkillsSection({ data }) {
       className="bg-background-primary px-4 py-32"
       ref={sectionRef}
     >
-      <div id="skills-heading" className="w-full max-w-4xl mx-auto space-y-20">
+      <div className="w-full max-w-4xl mx-auto space-y-20">
         {/* title and subtitle */}
-        <div className="space-y-3 text-center">
-          <h2 className="text-lg font-medium text-primary uppercase">
+        <header className="space-y-3 text-center">
+          <h2
+            id="skills-heading"
+            className="text-lg font-medium text-primary uppercase"
+          >
             {skills.title}
           </h2>
           <h3 className="text-3xl md:text-4xl font-medium text-text-primary leading-11">
             {skills.subtitle}
           </h3>
-        </div>
+        </header>
 
         {/* skills with proficiency percentage */}
         <dl className="space-y-10">

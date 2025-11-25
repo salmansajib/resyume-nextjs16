@@ -9,7 +9,7 @@ export default function HeaderSection({ data }) {
   const { hero } = data;
 
   return (
-    <div className="px-4 relative">
+    <header className="px-4 relative">
       <div className="hidden sm:block absolute top-0 right-0 w-[63%] h-[50%] lg:h-[57%] bg-background-secondary z-10" />
       <Navbar />
       <div className="w-full pt-8 pb-16 z-20 relative">
@@ -28,6 +28,6 @@ export default function HeaderSection({ data }) {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

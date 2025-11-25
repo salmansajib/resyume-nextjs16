@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import React, { useRef, useState } from "react";
+import { motion } from "motion/react";
 
 export default function PortfolioGrid({ portfolioData, activeCategory }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.1 });
+  const [hoveredId, setHoveredId] = useState(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -52,8 +52,19 @@ export default function PortfolioGrid({ portfolioData, activeCategory }) {
         </motion.div>
       ) : (
         portfolioData.map((portfolio) => (
-          <motion.div key={portfolio.id} variants={itemVariants}>
-            <a href="#">
+          <motion.div
+            key={portfolio.id}
+            variants={itemVariants}
+            className="overflow-hidden"
+          >
+            <motion.a
+              href="#"
+              onMouseEnter={() => setHoveredId(portfolio.id)}
+              onMouseLeave={() => setHoveredId(null)}
+              className="block overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            >
               <Image
                 src={portfolio.image}
                 alt="portfolio image"
@@ -61,7 +72,7 @@ export default function PortfolioGrid({ portfolioData, activeCategory }) {
                 height={500}
                 className="w-[300] h-auto"
               />
-            </a>
+            </motion.a>
           </motion.div>
         ))
       )}

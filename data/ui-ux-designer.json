@@ -230,5 +230,67 @@
         "image": "/assets/uiuxdesigner/images/interest/gaming.jpg"
       }
     ]
+  },
+  "references": {
+    "title": "REFERENCE",
+    "subtitle": "Credible Professional Referrals",
+    "entries": [
+      {
+        "id": 1,
+        "name": "Michael Bierut",
+        "position": "CEO of Monster Tech",
+        "image": "/assets/uiuxdesigner/images/references/michael-bierut-1.jpg",
+        "phone": {
+          "number": "+003 123 456 789",
+          "icon": "/assets/uiuxdesigner/icons/phone-icon-reference.svg"
+        },
+        "email": {
+          "number": "contact@example.com",
+          "icon": "/assets/uiuxdesigner/icons/mail-icon-reference.svg"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Stefan Sagmeister",
+        "position": "UI Design Company",
+        "image": "/assets/uiuxdesigner/images/references/stefan.jpg",
+        "phone": {
+          "number": "+003 123 456 789",
+          "icon": "/assets/uiuxdesigner/icons/phone-icon-reference.svg"
+        },
+        "email": {
+          "number": "contact@example.com",
+          "icon": "/assets/uiuxdesigner/icons/mail-icon-reference.svg"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Rodrigo Corral",
+        "position": "Visual Studio Ltd.",
+        "image": "/assets/uiuxdesigner/images/references/rodrigo.jpg",
+        "phone": {
+          "number": "+003 123 456 789",
+          "icon": "/assets/uiuxdesigner/icons/phone-icon-reference.svg"
+        },
+        "email": {
+          "number": "contact@example.com",
+          "icon": "/assets/uiuxdesigner/icons/mail-icon-reference.svg"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Michael Bierut",
+        "position": "CEO of Monster AI Tech",
+        "image": "/assets/uiuxdesigner/images/references/michael-bierut-2.jpg",
+        "phone": {
+          "number": "+003 123 456 789",
+          "icon": "/assets/uiuxdesigner/icons/phone-icon-reference.svg"
+        },
+        "email": {
+          "number": "contact@example.com",
+          "icon": "/assets/uiuxdesigner/icons/mail-icon-reference.svg"
+        }
+      }
+    ]
   }
 }

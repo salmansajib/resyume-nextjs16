@@ -6,6 +6,7 @@ import SkillsSection from "@/components/ui-ux-designer/skills/SkillsSection";
 import ServicesSection from "@/components/ui-ux-designer/services/ServicesSection";
 import PortfolioSection from "@/components/ui-ux-designer/portfolio/PortfolioSection";
 import InterestsSection from "@/components/ui-ux-designer/interests/InterestsSection";
+import ReferenceSection from "@/components/ui-ux-designer/reference/ReferenceSection";
 
 export default function Home() {
   const data = uiuxdesignerData;
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesSection data={data} />
       <PortfolioSection data={data} />
       <InterestsSection data={data} />
+      <ReferenceSection data={data} />
     </div>
   );
 }

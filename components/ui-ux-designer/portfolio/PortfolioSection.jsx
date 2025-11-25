@@ -22,19 +22,19 @@ export default function PortfolioSection({ data }) {
       aria-labelledby="portfolio-heading"
       className="px-4 py-32 bg-background-primary"
     >
-      <div
-        id="services-heading"
-        className="w-full max-w-7xl mx-auto space-y-20"
-      >
+      <div className="w-full max-w-7xl mx-auto space-y-20">
         {/* title and subtitle */}
-        <div className="space-y-3 text-center lg:text-left">
-          <h2 className="text-lg font-medium text-primary uppercase">
+        <header className="space-y-3 text-center lg:text-left">
+          <h2
+            id="services-heading"
+            className="text-lg font-medium text-primary uppercase"
+          >
             {portfolio.title}
           </h2>
           <h3 className="text-3xl md:text-4xl font-medium text-text-primary leading-11">
             {portfolio.subtitle}
           </h3>
-        </div>
+        </header>
 
         {/* category filter and portfolio grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-10 lg:gap-25 justify-items-center lg:justify-items-start lg:items-start">
