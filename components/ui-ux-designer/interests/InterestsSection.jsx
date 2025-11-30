@@ -1,39 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import React from "react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function InterestsSection({ data }) {
   const { interests } = data;
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  // Container animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  // Individual interest item variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
 
   return (
     <section
@@ -55,19 +29,17 @@ export default function InterestsSection({ data }) {
         </header>
 
         {/* Interests */}
-        <motion.ul
-          ref={ref}
+        <InViewAnimator
+          as="ul"
           className="flex flex-wrap items-center justify-center gap-6 mt-10"
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          variants={staggerContainer}
         >
           {interests.entries.map((interest) => (
             <motion.li
               key={interest.id}
               role="listitem"
               className="flex flex-col items-center gap-3"
-              variants={itemVariants}
+              variants={fadeInUp}
             >
               <figure className="w-full max-w-32 sm:max-w-40 lg:max-w-48 overflow-hidden rounded-4xl">
                 <Image
@@ -83,7 +55,7 @@ export default function InterestsSection({ data }) {
               </figcaption>
             </motion.li>
           ))}
-        </motion.ul>
+        </InViewAnimator>
       </div>
     </section>
   );

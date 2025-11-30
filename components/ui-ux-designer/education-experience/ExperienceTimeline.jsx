@@ -1,39 +1,11 @@
 "use client";
 
 import React from "react";
-import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ExperienceTimeline({ experience }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  // Container animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  // Individual interest item variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <div className="relative sm:ml-[120px]">
       {/* vertical line */}
@@ -42,11 +14,9 @@ export default function ExperienceTimeline({ experience }) {
         className="absolute -top-10 -left-25 -bottom-10 bg-primary w-0.5"
       />
 
-      <motion.ul
-        ref={ref}
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
+      <InViewAnimator
+        as="ul"
+        variants={staggerContainer}
         className="space-y-15"
       >
         {experience.entries.map((item) => (
@@ -68,7 +38,7 @@ export default function ExperienceTimeline({ experience }) {
 
               {/* content card */}
               <motion.div
-                variants={itemVariants}
+                variants={fadeInUp}
                 className="space-y-3 bg-background-primary p-10"
               >
                 <div className="flex items-start justify-between gap-3">
@@ -91,7 +61,7 @@ export default function ExperienceTimeline({ experience }) {
             </article>
           </li>
         ))}
-      </motion.ul>
+      </InViewAnimator>
     </div>
   );
 }

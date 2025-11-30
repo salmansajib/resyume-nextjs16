@@ -1,39 +1,11 @@
 "use client";
 
 import React from "react";
-import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function EducationTimeline({ education }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  // Container animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  // Individual interest item variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <div className="relative sm:ml-[120px]">
       {/* vertical line */}
@@ -42,12 +14,10 @@ export default function EducationTimeline({ education }) {
         className="absolute -top-10 -left-25 -bottom-10 bg-primary w-0.5"
       />
 
-      <motion.ul
-        ref={ref}
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        className="space-y-15"
+      <InViewAnimator
+        as="ul"
+        variants={staggerContainer}
+        className="space-y-15 list-none"
       >
         {education.entries.map((item) => (
           <li key={item.id}>
@@ -68,7 +38,7 @@ export default function EducationTimeline({ education }) {
 
               {/* content card */}
               <motion.div
-                variants={itemVariants}
+                variants={fadeInUp}
                 className="space-y-3 bg-background-primary p-10"
               >
                 <div className="flex flex-col sm:flex-row items-start sm:justify-between gap-3">
@@ -95,7 +65,7 @@ export default function EducationTimeline({ education }) {
             </article>
           </li>
         ))}
-      </motion.ul>
+      </InViewAnimator>
     </div>
   );
 }

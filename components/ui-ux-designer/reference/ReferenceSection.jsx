@@ -2,39 +2,11 @@
 
 import React from "react";
 import ReferenceCard from "./ReferenceCard";
-import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ReferenceSection({ data }) {
   const { references } = data;
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  // Container animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  // Individual interest item variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
 
   return (
     <section
@@ -56,21 +28,18 @@ export default function ReferenceSection({ data }) {
         </header>
 
         {/* references card */}
-        <motion.div
-          ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+        <InViewAnimator
+          variants={staggerContainer}
           className="grid grid-cols-1 md:grid-cols-2 gap-5"
         >
           {references.entries.map((reference) => (
             <ReferenceCard
               key={reference.id}
               reference={reference}
-              itemVariants={itemVariants}
+              itemVariants={fadeInUp}
             />
           ))}
-        </motion.div>
+        </InViewAnimator>
       </div>
     </section>
   );

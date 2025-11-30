@@ -49,7 +49,7 @@ export default function FooterSection() {
             {/* Social Links */}
             <SocialLinksFooter />
             {/* Copyright */}
-            <p className="text-gray-600 text-sm">
+            <p className="text-text-dimmed text-base">
               Copyright © {currentYear} | Powered by Rezyume
             </p>
           </div>
