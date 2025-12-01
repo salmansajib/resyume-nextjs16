@@ -13,6 +13,7 @@
   --color-border-primary: 0deg 0% 88%;
   --color-border-secondary: 0deg 0% 85%;
 }
+
 [data-theme="photography"] {
   --color-primary: 253deg 87% 88%;
   --color-primary-gradient: linear-gradient(
@@ -20,6 +21,11 @@
     hsl(301 89% 82%) 6%,
     hsl(210 100% 86%) 100%
   );
+  --color-background-primary: 229deg 18% 18%;
+  --color-background-secondary: 231deg 18% 15%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 234deg 16% 61%;
+  --color-text-dimmed: 234deg 15% 30%;
 }
 
 @theme inline {

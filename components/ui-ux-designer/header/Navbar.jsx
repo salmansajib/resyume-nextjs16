@@ -4,7 +4,7 @@ import Link from "next/link";
 import LogoHeader from "./LogoHeader";
 import SocialLinksHeader from "./SocialLinksHeader";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="py-5 flex items-center justify-between w-full max-w-[1290px] mx-auto relative z-20">
       {/* Logo */}
@@ -20,6 +20,7 @@ export default function Navbar() {
         <div>
           <button
             aria-label="open menu"
+            onClick={() => handleMenuClick()}
             className="border border-primary size-10 flex items-center justify-center rounded-full text-primary cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
             <svg
