@@ -13,12 +13,21 @@
   --color-border-primary: 0deg 0% 88%;
   --color-border-secondary: 0deg 0% 85%;
 }
+[data-theme="photography"] {
+  --color-primary: 253deg 87% 88%;
+  --color-primary-gradient: linear-gradient(
+    90deg,
+    hsl(301 89% 82%) 6%,
+    hsl(210 100% 86%) 100%
+  );
+}
 
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
 
   --color-primary: hsl(var(--color-primary));
+  --gradient-primary: var(--color-primary-gradient);
   --color-background-primary: hsl(var(--color-background-primary));
   --color-background-secondary: hsl(var(--color-background-secondary));
   --color-text-primary: hsl(var(--color-text-primary));

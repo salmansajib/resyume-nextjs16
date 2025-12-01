@@ -13,7 +13,10 @@ export default function Home() {
   const data = uiuxdesignerData;
 
   return (
-    <div data-theme={data.theme} className="min-h-screen bg-background-primary">
+    <div
+      data-theme={data.theme}
+      className="min-h-screen bg-background-primary font-poppins"
+    >
       <HeaderSection data={data} />
       <EducationSection data={data} />
       <ExperienceSection data={data} />
