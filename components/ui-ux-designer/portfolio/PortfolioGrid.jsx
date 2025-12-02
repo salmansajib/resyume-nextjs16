@@ -58,7 +58,7 @@ export default function PortfolioGrid({ portfolioData, activeCategory }) {
             className="overflow-hidden"
           >
             <motion.a
-              href="#"
+              href="/"
               onMouseEnter={() => setHoveredId(portfolio.id)}
               onMouseLeave={() => setHoveredId(null)}
               className="block overflow-hidden"

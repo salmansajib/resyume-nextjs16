@@ -1,0 +1,21 @@
+{
+  "id": "photographer",
+  "type": "photographer",
+  "theme": "photographer",
+  "hero": {
+    "greeting": "HELLO WORLD I'M",
+    "name": "Richardson V.Fred",
+    "title": "Professional Photographer",
+    "photo": "/assets/photographer/images/profile-image-photographer.jpg",
+    "contact": {
+      "phone": "+11254 2555",
+      "email": "richardsonVFred02@gmail.com",
+      "address": "2193 East Avenue Scottsdale, USA"
+    },
+    "about": {
+      "title": "ABOUT ME",
+      "heading": "The Art Behind My Photography",
+      "description": "I am a passionate photographer specializing in portrait. I capture moments that tell compelling stories with creativity and precision. Through my lens, I transform ordinary scenes into unforgettable memories."
+    }
+  }
+}
