@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-primary: 281deg 100% 56%;
   --color-background-primary: 0deg 0% 100%;
@@ -28,6 +32,7 @@
   --color-gradient-primary-end: 301deg 89% 82%;
   --color-background-primary: 229deg 18% 18%;
   --color-background-secondary: 231deg 18% 15%;
+  --color-background-neutral: 234deg 16% 25%;
   --color-text-primary: 0deg 0% 100%;
   --color-text-secondary: 234deg 16% 61%;
   --color-text-dimmed: 234deg 15% 30%;
@@ -43,6 +48,7 @@
   --color-gradient-primary-end: hsl(var(--color-gradient-primary-end));
   --color-background-primary: hsl(var(--color-background-primary));
   --color-background-secondary: hsl(var(--color-background-secondary));
+  --color-background-neutral: hsl(var(--color-background-neutral));
   --color-text-primary: hsl(var(--color-text-primary));
   --color-text-secondary: hsl(var(--color-text-secondary));
   --color-text-dimmed: hsl(var(--color-text-dimmed));

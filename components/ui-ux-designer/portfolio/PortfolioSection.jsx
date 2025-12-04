@@ -19,6 +19,7 @@ export default function PortfolioSection({ data }) {
 
   return (
     <section
+      id="portfolio"
       aria-labelledby="portfolio-heading"
       className="px-4 py-32 bg-background-primary"
     >

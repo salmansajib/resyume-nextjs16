@@ -9,8 +9,9 @@ export default function LogoHeader() {
         <Image
           src="/assets/uiuxdesigner/logos/rezyume-logo-header.svg"
           alt="rezyume logo"
-          width={169}
-          height={42}
+          width={200}
+          height={200}
+          className="w-[169] h-auto"
         />
       </Link>
     </div>

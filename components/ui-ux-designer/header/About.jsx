@@ -14,7 +14,7 @@ export default function About({ hero }) {
       </p>
       <div className="flex flex-col sm:flex-row items-start gap-10 mt-10">
         <a
-          href="#"
+          href="#portfolio"
           className="w-full h-[60px] bg-primary text-background-primary flex items-center justify-center cursor-pointer text-[20px] font-medium focus:ring-2 focus:ring-offset-2 focus:ring-primarytransition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg"
         >
           Check my Protfolio
