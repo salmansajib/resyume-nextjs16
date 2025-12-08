@@ -8,15 +8,16 @@ export default function Intro({ heroData }) {
       {/* greeting */}
       <BracketedHeading>{heroData.greeting}</BracketedHeading>
 
-      {/* name */}
-      <h1 className="text-6xl font-medium text-text-primary max-w-[10ch] leading-17 mb-4">
-        {heroData.name}
-      </h1>
-
-      {/* title */}
-      <h3 className="text-3xl text-text-secondary font-medium mb-7 max-w-max">
-        {heroData.title}
-      </h3>
+      <div className="space-y-3">
+        {/* name */}
+        <h1 className="text-6xl font-medium text-text-primary max-w-[10ch] leading-17 mb-4">
+          {heroData.name}
+        </h1>
+        {/* title */}
+        <h2 className="text-3xl text-text-secondary font-medium mb-7 max-w-max">
+          {heroData.title}
+        </h2>
+      </div>
 
       {/* cv download link */}
       <a href="#" className="relative">

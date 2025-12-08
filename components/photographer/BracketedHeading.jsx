@@ -32,7 +32,10 @@ export default function BracketedHeading({
       </div>
 
       <h2
-        className={cn("text-lg font-normal text-primary relative", className)}
+        className={cn(
+          "text-lg font-normal text-primary relative whitespace-nowrap",
+          className,
+        )}
       >
         {children}
       </h2>

@@ -1,6 +1,9 @@
 import React from "react";
 import photographerData from "@/data/photographer.json";
 import HeaderSection from "@/components/photographer/header/HeaderSection";
+import CareerPathSection from "@/components/photographer/career-path/CareerPathSection";
+import ServicesSecton from "@/components/photographer/services/ServicesSecton";
+import SkillsSection from "@/components/photographer/skills/SkillsSection";
 
 export default function PhotographerHome() {
   const data = photographerData;
@@ -11,6 +14,9 @@ export default function PhotographerHome() {
       className="min-h-screen bg-background-primary font-roboto text-text-primary"
     >
       <HeaderSection data={data} />
+      <CareerPathSection data={data} />
+      <ServicesSecton data={data} />
+      <SkillsSection data={data} />
     </div>
   );
 }

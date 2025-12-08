@@ -47,7 +47,7 @@ export default function ServicesSection({ data }) {
                   alt={`${service.name} icon`}
                   width={30}
                   height={30}
-                  className="w-[30px] h-auto"
+                  className="w-[30px] h-auto object-cover"
                 />
               </div>
 

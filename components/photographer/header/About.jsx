@@ -6,14 +6,16 @@ export default function About() {
   return (
     <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center lg:items-stretch lg:justify-between gap-10 lg:gap-30 border-3 border-primary/20 px-5 lg:px-15 py-5 lg:py-20">
       {/* about me */}
-      <div className="space-y-5">
+      <div className="space-y-3">
         <div className="relative">
-          <h2 className="text-[80px] font-medium text-text-dimmed">ABOUT</h2>
-          <div className="absolute top-13 left-2">
+          <h2 className="text-[50px] md:text-[80px] font-medium text-text-dimmed">
+            ABOUT
+          </h2>
+          <div className="absolute top-7 md:top-13 left-2">
             <BracketedHeading>ABOUT ME</BracketedHeading>
           </div>
         </div>
-        <h3 className="text-[40px] font-medium text-text-primary">
+        <h3 className="text-[30px] md:text-[40px] font-medium text-text-primary">
           The Art Behind My Photography
         </h3>
         <p className="text-lg font-normal text-text-secondary max-w-[62ch]">
@@ -24,7 +26,7 @@ export default function About() {
         </p>
         <a
           href="#portfolio"
-          className="text-xl font-medium bg-linear-to-r from-gradient-primary-start to-gradient-primary-end text-black px-6 py-2.5 inline-block mt-5 hover:scale-105 transition-all duration-200 ease-in-out"
+          className="text-xl font-medium bg-linear-to-r from-gradient-primary-start to-gradient-primary-end text-black px-6 py-2.5 inline-block mt-5 hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200 ease-in-out"
         >
           Check my Portfolio
         </a>
