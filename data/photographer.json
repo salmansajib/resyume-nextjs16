@@ -190,5 +190,99 @@
         "proficiency": 97
       }
     ]
+  },
+  "portfolio": {
+    "title": "My Work",
+    "subtitle": "Photo Gallery",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "entries": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-1.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-2.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-3.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["vintage-voyage", "sunset-escape"]
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "src": "/assets/photographer/images/portfolio/portfolio-4.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["golden", "video"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-5.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-6.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-7.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-8.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 9,
+        "type": "image",
+        "src": "/assets/photographer/images/portfolio/portfolio-9.jpg",
+        "title": "Blossom Elegance",
+        "description": "A radiant flower showcasing delicate petals in vibrant hues.",
+        "alt": "Wedding couple smiling together",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      }
+    ]
   }
 }
