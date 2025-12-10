@@ -5,6 +5,7 @@ import CareerPathSection from "@/components/photographer/career-path/CareerPathS
 import ServicesSecton from "@/components/photographer/services/ServicesSecton";
 import SkillsSection from "@/components/photographer/skills/SkillsSection";
 import PortfolioSection from "@/components/photographer/portfolio/PortfolioSection";
+import FooterSection from "@/components/photographer/footer/FooterSection";
 
 export default function PhotographerHome() {
   const data = photographerData;
@@ -19,6 +20,7 @@ export default function PhotographerHome() {
       <ServicesSecton data={data} />
       <SkillsSection data={data} />
       <PortfolioSection data={data} />
+      <FooterSection data={data} />
     </div>
   );
 }
