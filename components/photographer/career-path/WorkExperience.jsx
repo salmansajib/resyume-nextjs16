@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function WorkExperience({
   workData,
@@ -11,9 +14,13 @@ export default function WorkExperience({
         WORK EXPERIENCE
       </h3>
 
-      <div className="space-y-10">
+      <InViewAnimator variants={staggerContainer} className="space-y-10">
         {workData.map((work) => (
-          <div key={work.id} className="flex flex-row gap-5 md:gap-15">
+          <motion.div
+            variants={fadeInUp}
+            key={work.id}
+            className="flex flex-row gap-5 md:gap-15"
+          >
             {/* date */}
             <div>
               <div className="bg-background-neutral w-[100px] h-[120px] flex items-center justify-center rounded-t-full">
@@ -57,9 +64,9 @@ export default function WorkExperience({
                 </svg>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </InViewAnimator>
     </article>
   );
 }

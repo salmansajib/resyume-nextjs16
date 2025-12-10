@@ -80,19 +80,45 @@ export default function PortfolioGallery({ portfolioData }) {
         })}
       </nav>
 
-      {/* portfolio image and video grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10">
+      {/* portfolio image and video grid with stagger animation */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
+        key={active} // Re-trigger animation when filter changes
+      >
         {filtered.map((item, index) => (
-          <PortfolioItem
+          <motion.div
             key={item.id}
-            item={item}
-            onClick={() => {
-              setLightboxOpen(true);
-              setStartIndex(index);
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.5,
+                  ease: "easeOut",
+                },
+              },
             }}
-          />
+          >
+            <PortfolioItem
+              item={item}
+              onClick={() => {
+                setLightboxOpen(true);
+                setStartIndex(index);
+              }}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* Lightbox  */}
       {lightboxOpen && (

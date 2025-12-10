@@ -1,11 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ServicesCard({ servicesData }) {
   return (
-    <div className="mt-15 flex flex-wrap items-center justify-center gap-7">
+    <InViewAnimator
+      variants={staggerContainer}
+      className="mt-15 flex flex-wrap items-center justify-center gap-7"
+    >
       {servicesData.map((service) => (
-        <article
+        <motion.article
+          variants={fadeInUp}
           key={service.id}
           className="bg-background-neutral p-4 md:p-10 space-y-7 w-full md:w-[400px]"
         >
@@ -31,8 +39,8 @@ export default function ServicesCard({ servicesData }) {
               </li>
             ))}
           </ul>
-        </article>
+        </motion.article>
       ))}
-    </div>
+    </InViewAnimator>
   );
 }

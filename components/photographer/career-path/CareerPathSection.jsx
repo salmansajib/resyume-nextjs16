@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import BracketedHeading from "../BracketedHeading";
 import WorkExperience from "./WorkExperience";
