@@ -19,7 +19,7 @@ export default function HeaderSection({ data }) {
       <Navigation
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
-        bgColor="bg-gray-900"
+        bgColor="bg-background-secondary"
         textColor="text-text-primary"
         logoSrc="/assets/photographer/logos/logo-footer.svg"
       />

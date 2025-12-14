@@ -8,7 +8,7 @@ export default function Title({ heroData }) {
       </h2>
       <a
         href="#"
-        className="border border-primary/30 px-10 py-3 uppercase rounded-full bg-[#2C5F03]/23 text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.15)] hover:border-primary transition-colors duration-150"
+        className="border border-primary/25 px-12 py-3 uppercase rounded-full bg-[#2C5F03]/23 text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150"
       >
         Download CV
       </a>

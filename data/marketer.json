@@ -25,7 +25,7 @@
         "id": "seo-optimization",
         "icon_class": "fa-solid fa-magnifying-glass",
         "title": "SEO OPTIMIZATION",
-        "bullets": [
+        "description": [
           "Keyword research and optimization.",
           "Technical SEO",
           "Personal branding photography.",
@@ -37,7 +37,7 @@
         "icon_class": "fa-solid fa-bullhorn",
         "title": "SOCIAL MEDIA MARKETING",
         "highlighted": true,
-        "bullets": [
+        "description": [
           "development and content creation.",
           "Analytics and performance reporting.",
           "Engaging audiences build brand loyalty.",
@@ -48,7 +48,7 @@
         "id": "content-marketing",
         "icon_class": "fa-solid fa-file-lines",
         "title": "CONTENT MARKETING",
-        "bullets": [
+        "description": [
           "Blog writing and editing.",
           "Video production and editing.",
           "Infographic, visual content creation.",
@@ -59,7 +59,7 @@
         "id": "email-marketing",
         "icon_class": "fa-solid fa-envelope",
         "title": "EMAIL MARKETING",
-        "bullets": [
+        "description": [
           "Designing managing email campaigns.",
           "A/B performance optimization.",
           "List segmentation and automation.",
@@ -70,7 +70,7 @@
         "id": "analytics-and-reporting",
         "icon_class": "fa-solid fa-chart-line",
         "title": "ANALYTICS AND REPORTING",
-        "bullets": [
+        "description": [
           "Google Analytics expertise.",
           "Data-driven insights for campaign.",
           "Monthly and quarterly reporting.",
@@ -81,7 +81,7 @@
         "id": "brand-strategy-and-management",
         "icon_class": "fa-solid fa-bullseye",
         "title": "BRAND STRATEGY AND MANAGEMENT",
-        "bullets": [
+        "description": [
           "Developing brand identity.",
           "Market research, competitor analysis.",
           "Building maintaining online reputation.",

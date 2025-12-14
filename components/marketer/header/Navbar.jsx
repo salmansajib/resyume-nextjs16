@@ -13,7 +13,7 @@ export default function Navbar({ handleMenuClick }) {
           className="w-[168px] h-auto"
         />
       </div>
-      <button onClick={() => handleMenuClick()}>
+      <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/marketer/icons/menu-icon.svg"
           alt="nav menu icon"
