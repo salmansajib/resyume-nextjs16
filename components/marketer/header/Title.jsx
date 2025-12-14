@@ -1,5 +1,4 @@
 import React from "react";
-import DiagonalPatternOverlay from "../DiagonalPatternOverlay";
 
 export default function Title({ heroData }) {
   return (
