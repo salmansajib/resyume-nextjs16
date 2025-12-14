@@ -14,6 +14,10 @@ export default function ServicesCard({ servicesData }) {
       {servicesData.map((service) => (
         <motion.article
           variants={fadeInUp}
+          whileHover={{
+            scale: 1.02,
+            transition: { duration: 0.1 },
+          }}
           key={service.id}
           className="bg-background-neutral p-4 md:p-10 space-y-7 w-full md:w-[400px]"
         >

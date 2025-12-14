@@ -1,8 +1,8 @@
 import React from "react";
 import DribbleIcon from "@/components/icons/DribbleIcon";
-import BehanceIcon from "@/components/icons/BehanceIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
+import LinkedinIcon from "@/components/icons/LinkedinIcon";
 
 export default function SocialLinksFooter() {
   return (
@@ -13,15 +13,15 @@ export default function SocialLinksFooter() {
         className="text-text-secondary hover:text-primary transition-all duration-150"
         aria-label="Visit our Dribbble profile"
       >
-        <DribbleIcon />
+        <DribbleIcon width={22} height={22} />
       </a>
 
-      {/* behance icon */}
+      {/* linkedin icon */}
       <a
         href="#"
         className="text-text-secondary hover:text-primary transition-all duration-150"
       >
-        <BehanceIcon />
+        <LinkedinIcon width={22} height={22} />
       </a>
 
       {/* x icon */}
@@ -29,7 +29,7 @@ export default function SocialLinksFooter() {
         href="#"
         className="text-text-secondary hover:text-primary transition-all duration-150"
       >
-        <XIcon />
+        <XIcon width={22} height={22} />
       </a>
 
       {/* instagram icon */}
@@ -37,7 +37,7 @@ export default function SocialLinksFooter() {
         href="#"
         className="text-text-secondary hover:text-primary transition-all duration-150"
       >
-        <InstagramIcon />
+        <InstagramIcon width={22} height={22} />
       </a>
     </div>
   );

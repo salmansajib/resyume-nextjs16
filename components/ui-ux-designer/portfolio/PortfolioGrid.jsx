@@ -38,6 +38,7 @@ export default function PortfolioGrid({ portfolioData, activeCategory }) {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      layout
     >
       {portfolioData.length === 0 ? (
         <motion.div

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-5">
       {/* logo */}
@@ -16,7 +16,7 @@ export default function Navbar() {
       </div>
 
       {/* menu icon */}
-      <div>
+      <button className="cursor-pointer" onClick={() => handleMenuClick()}>
         <Image
           width={30}
           height={30}
@@ -24,7 +24,7 @@ export default function Navbar() {
           alt="Rezyume Logo"
           className="w-6 h-auto object-cover"
         />
-      </div>
+      </button>
     </div>
   );
 }

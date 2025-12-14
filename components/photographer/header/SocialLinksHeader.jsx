@@ -1,8 +1,8 @@
 import React from "react";
 import DribbleIcon from "@/components/icons/DribbleIcon";
-import BehanceIcon from "@/components/icons/BehanceIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
+import LinkedinIcon from "@/components/icons/LinkedinIcon";
 
 export default function SocialLinksHeader() {
   return (
@@ -15,12 +15,12 @@ export default function SocialLinksHeader() {
         <DribbleIcon width={22} height={22} />
       </a>
 
-      {/* behance icon */}
+      {/* linkedin icon */}
       <a
         href="#"
         className="text-text-secondary hover:text-primary transition-all duration-150 block"
       >
-        <BehanceIcon width={22} height={22} />
+        <LinkedinIcon width={22} height={22} />
       </a>
 
       {/* x icon */}

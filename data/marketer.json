@@ -1,0 +1,20 @@
+{
+  "id": "marketer",
+  "type": "marketer",
+  "theme": "marketer",
+  "hero": {
+    "greeting": "Hello world I Am!",
+    "name": "Richardson V. Fred",
+    "title": "Digital Marketing Specialist",
+    "photo": "/assets/marketer/images/profile-image-marketer-1.jpg",
+    "about": {
+      "title": "ABOUT ME",
+      "description": "I am a passionate photographer specializing in portraits, creating moments that tell compelling stories with creativity and precision."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

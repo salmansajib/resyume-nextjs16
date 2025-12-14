@@ -32,7 +32,7 @@ export default function FooterSection({ data }) {
       </div>
 
       {/* bottom section */}
-      <div className="bg-background-primary py-10 px-4">
+      <div className="bg-background-primary py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-5 items-center justify-between">
           <p className="text-text-secondary text-base">
             Copyright &copy; {currentYear} | Powered by Rezyume

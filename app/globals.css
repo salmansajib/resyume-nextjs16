@@ -38,10 +38,21 @@ html {
   --color-text-dimmed: 234deg 15% 30%;
 }
 
+[data-theme="marketer"] {
+  --color-primary: 94deg 99% 65%;
+  --color-background-primary: 266deg 30% 05%;
+  --color-background-secondary: 30deg 8% 10%;
+  --color-background-neutral: 94deg 93% 19%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 0deg 0% 69%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
   --font-roboto: var(--font-roboto), sans-serif;
+  --font-teko: var(--font-teko), sans-serif;
+  --font-rubik: var(--font-rubik), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));

@@ -21,7 +21,7 @@ export default function PortfolioItem({ item, onClick }) {
 
           {/* subtle overlay content on hover */}
           {item.type === "image" && (
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-150 ease-in-out flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-150 ease-in-out flex items-end justify-center pb-30">
               <div className="opacity-0 group-hover:opacity-100 space-y-3 transition-all duration-150">
                 <div className="flex items-center justify-center">
                   <Image
