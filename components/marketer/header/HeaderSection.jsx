@@ -21,7 +21,7 @@ export default function HeaderSection({ data }) {
       gridSize="200px"
       className="bg-[url(/assets/marketer/images/marketer-hero-bg.jpg)] bg-no-repeat bg-left bg-cover"
     >
-      <header className="px-4 w-full overflow-hidden">
+      <header className="px-4 w-full overflow-hidden relative z-20">
         <div className="w-full max-w-[1580px] mx-auto">
           <Navbar handleMenuClick={handleMenuClick} />
           <Navigation
@@ -46,6 +46,9 @@ export default function HeaderSection({ data }) {
           </div>
         </div>
       </header>
+
+      {/* subtle black overlay */}
+      <div className=" absolute inset-0 bg-black z-10 opacity-21"></div>
     </GridBackground>
   );
 }

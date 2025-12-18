@@ -1,5 +1,7 @@
 import { Poppins, Sacramento, Roboto, Teko, Rubik } from "next/font/google";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const poppins = Poppins({
   variable: "--font-poppins",

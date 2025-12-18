@@ -11,13 +11,13 @@ export default function ServiceCard({ service }) {
     >
       <article
         aria-labelledby={`service-${service.id}`}
-        className="bg-[#2C5F03]/23 border border-primary/25 px-10 py-12 text-text-secondary ring-1 ring-[#b1b1b1]/50 ring-offset-13 ring-offset-background-primary shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.15)] hover:ring-primary hover:text-text-primary transition-all duration-150"
+        className="bg-background-neutral/23 border border-primary/25 px-10 py-12 text-text-secondary ring-1 ring-[#b1b1b1]/50 ring-offset-13 ring-offset-background-primary shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.15)] hover:ring-primary hover:text-text-primary transition-all duration-150 rounded-xs"
       >
         <figure aria-hidden="true">{serviceIcons[service.id]}</figure>
 
         <header className="mt-4">
           <h4
-            className="text-2xl font-medium text-primary truncate"
+            className="text-2xl font-medium text-primary sm:truncate"
             title={service.title}
           >
             {service.title}
@@ -28,7 +28,7 @@ export default function ServiceCard({ service }) {
           {service.description.map((item, index) => (
             <li
               key={index}
-              className="font-rubik text-base truncate"
+              className="font-rubik text-base sm:truncate"
               title={item}
             >
               {item}

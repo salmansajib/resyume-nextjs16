@@ -141,7 +141,7 @@ export default function Lightbox({
                   </div>
                 ) : (
                   <video
-                    src={current.src}
+                    src={current.vidsrc}
                     controls
                     className="w-full h-[70vh] md:h-[60vh] object-contain"
                   />

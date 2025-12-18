@@ -6,19 +6,19 @@ export default function ServicesSection({ data }) {
 
   return (
     <section
-      aria-labelledby="services-header"
+      aria-labelledby="services-heading"
       className="bg-background-primary px-8 py-20"
     >
       <div className="w-full max-w-7xl mx-auto space-y-10">
         {/* title and subtitle */}
         <header className="text-center space-y-4">
           <h2
-            id="services-header"
+            id="services-heading"
             className="text-2xl font-normal text-primary leading-none"
           >
             {services.title}
           </h2>
-          <h3 className="text-[60px] font-medium leading-none">
+          <h3 className="text-[clamp(3rem,6vw,4rem)] font-medium leading-none">
             {services.subtitle}
           </h3>
         </header>

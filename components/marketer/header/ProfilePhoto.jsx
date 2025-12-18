@@ -15,7 +15,7 @@ export default function ProfilePhoto({ heroData }) {
         loading="eager"
         width={800}
         height={800}
-        className="w-[519px] h-auto overflow-hidden rounded-xl aspect-3/4 object-cover"
+        className="w-[519px] h-auto overflow-hidden rounded-xl"
       />
 
       {/* social links */}
