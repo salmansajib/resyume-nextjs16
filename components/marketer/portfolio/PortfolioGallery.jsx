@@ -59,6 +59,7 @@ export default function PortfolioGallery({ protfolioData }) {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
+          loop
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -84,7 +85,7 @@ export default function PortfolioGallery({ protfolioData }) {
         {/* custom navigation buttons */}
         {/* prev button */}
         <button
-          className="swiper-button-prev-custom bg-background-neutral/23 border border-primary/25 p-2 rounded-md text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer absolute z-10 top-30 left-3 backdrop-blur-md hover:bg-primary hover:text-background-primary"
+          className="swiper-button-prev-custom bg-background-neutral/23 border border-primary/25 p-1 rounded-sm text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer absolute z-10 top-30 left-3 backdrop-blur-md hover:bg-primary hover:text-background-primary"
           aria-label="previous-slide"
         >
           <svg
@@ -104,7 +105,7 @@ export default function PortfolioGallery({ protfolioData }) {
         </button>
         {/* next button */}
         <button
-          className="swiper-button-next-custom bg-background-neutral/23 border border-primary/25 p-2 rounded-md text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer absolute z-10 top-30 right-3 backdrop-blur-md hover:bg-primary hover:text-background-primary"
+          className="swiper-button-next-custom bg-background-neutral/23 border border-primary/25 p-1 rounded-sm text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer absolute z-10 top-30 right-3 backdrop-blur-md hover:bg-primary hover:text-background-primary"
           aria-label="previous-slide"
         >
           <svg

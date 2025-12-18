@@ -5,6 +5,7 @@ import ServicesSection from "@/components/marketer/services/ServicesSection";
 import SkillsSection from "@/components/marketer/skills/SkillsSection";
 import CarrerPathSection from "@/components/marketer/carrer-path/CarrerPathSection";
 import PortfolioSection from "@/components/marketer/portfolio/PortfolioSection";
+import FooterSection from "@/components/marketer/footer/FooterSection";
 
 export default function MarketerHome() {
   const data = marketerData;
@@ -17,10 +18,9 @@ export default function MarketerHome() {
       <HeaderSection data={data} />
       <ServicesSection data={data} />
       <SkillsSection data={data} />
-      <div>
-        <CarrerPathSection data={data} />
-        <PortfolioSection data={data} />
-      </div>
+      <CarrerPathSection data={data} />
+      <PortfolioSection data={data} />
+      <FooterSection data={data} />
     </div>
   );
 }

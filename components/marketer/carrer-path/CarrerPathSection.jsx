@@ -35,7 +35,7 @@ export default function CarrerPathSection({ data }) {
   return (
     <section
       aria-labelledby="carrer-heading"
-      className="bg-background-primary py-20 px-4"
+      className="py-20 px-4 relative overflow-hidden"
     >
       <div className="w-full max-w-7xl mx-auto">
         {/* section title and subtitle */}
@@ -65,6 +65,11 @@ export default function CarrerPathSection({ data }) {
           />
         </div>
       </div>
+
+      {/* gradient background circles */}
+      <div className="absolute z-20 -top-40 -left-30 size-[900px] bg-radial-[circle_at_center] from-[#3A8300]/40 from-0% via-[#5D982F]/5 via-55% to-transparent to-70% rounded-full"></div>
+      <div className="absolute right-0 top-0 size-[900px] bg-radial-[circle_at_center] from-[#975219]/40 from-0% via-[#995E2E]/5 via-55% to-transparent to-70% rounded-full"></div>
+      <div className="absolute -bottom-150 left-1/2 -translate-x-1/2 size-[1051px] bg-radial-[circle_at_center] from-[#975219]/30 from-0% via-[#995E2E]/5 via-55% to-transparent to-70% rounded-full"></div>
     </section>
   );
 }
