@@ -16,10 +16,12 @@ export default function MarketerHome() {
       className="min-h-screen bg-background-primary font-teko text-text-primary"
     >
       <HeaderSection data={data} />
-      <ServicesSection data={data} />
-      <SkillsSection data={data} />
-      <CarrerPathSection data={data} />
-      <PortfolioSection data={data} />
+      <main>
+        <ServicesSection data={data} />
+        <SkillsSection data={data} />
+        <CarrerPathSection data={data} />
+        <PortfolioSection data={data} />
+      </main>
       <FooterSection data={data} />
     </div>
   );

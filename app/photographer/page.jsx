@@ -16,10 +16,12 @@ export default function PhotographerHome() {
       className="min-h-screen bg-background-primary font-roboto text-text-primary"
     >
       <HeaderSection data={data} />
-      <CareerPathSection data={data} />
-      <ServicesSecton data={data} />
-      <SkillsSection data={data} />
-      <PortfolioSection data={data} />
+      <main>
+        <CareerPathSection data={data} />
+        <ServicesSecton data={data} />
+        <SkillsSection data={data} />
+        <PortfolioSection data={data} />
+      </main>
       <FooterSection data={data} />
     </div>
   );
