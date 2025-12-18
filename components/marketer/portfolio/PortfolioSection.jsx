@@ -27,9 +27,18 @@ export default function PortfolioSection({ data }) {
       </div>
 
       {/* gradient background circles */}
-      <div className="absolute -top-150 left-1/2 -translate-x-1/2 size-[1051px] bg-radial-[circle_at_center] from-[#975219]/30 from-0% via-[#995E2E]/5 via-55% to-transparent to-70% rounded-full"></div>
-      <div className="absolute -right-100 -bottom-90 size-[1200px] bg-radial-[circle_at_center] from-[#12AFBF]/30 from-0% via-[#328F99]/5 via-55% to-transparent to-70% rounded-full"></div>
-      <div className="absolute -left-100 -bottom-90 size-[1200px] bg-radial-[circle_at_center] from-[#12AFBF]/30 from-0% via-[#328F99]/5 via-55% to-transparent to-70% rounded-full"></div>
+      <div
+        aria-hidden="true"
+        className="absolute -top-150 left-1/2 -translate-x-1/2 size-[1051px] bg-radial-[circle_at_center] from-[#975219]/30 from-0% via-[#995E2E]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
+      <div
+        aria-hidden="true"
+        className="absolute -right-100 -bottom-90 size-[1200px] bg-radial-[circle_at_center] from-[#12AFBF]/30 from-0% via-[#328F99]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
+      <div
+        aria-hidden="true"
+        className="absolute -left-100 -bottom-90 size-[1200px] bg-radial-[circle_at_center] from-[#12AFBF]/30 from-0% via-[#328F99]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
     </section>
   );
 }
