@@ -48,7 +48,7 @@ export default function HeaderSection({ data }) {
       </header>
 
       {/* subtle black overlay */}
-      <div className=" absolute inset-0 bg-black z-10 opacity-21"></div>
+      <div className=" absolute inset-0 bg-black/10 z-10"></div>
 
       {/* gradient background circles */}
       <div
