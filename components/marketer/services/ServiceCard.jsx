@@ -6,7 +6,7 @@ export default function ServiceCard({ service }) {
   return (
     <GridBackground
       gridSize="65px"
-      gridColor="rgba(201, 201, 201, 0.08)"
+      gridColor="rgba(201, 201, 201, 0.07)"
       className=""
     >
       <article

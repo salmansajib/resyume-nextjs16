@@ -47,6 +47,14 @@ html {
   --color-text-secondary: 0deg 0% 69%;
 }
 
+[data-theme="lawyer"] {
+  --color-primary: 39deg 50% 60%;
+  --color-background-primary: 0deg 0% 18%;
+  --color-background-secondary: 0deg 0% 13%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 0deg 1% 63%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;

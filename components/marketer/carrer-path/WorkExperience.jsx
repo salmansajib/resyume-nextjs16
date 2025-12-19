@@ -20,7 +20,7 @@ export default function WorkExperience({
           <div key={work.id} className="flex flex-row gap-15">
             {/* date */}
             <div>
-              <div className="bg-background-neutral/23 border border-primary/25 shadow-[inset_1px_1px_10px_0px_rgba(169,241,113,0.3)] w-[100px] h-[120px] flex items-center justify-center rounded-md">
+              <div className="bg-background-neutral/23 border border-primary/25 shadow-[inset_1px_1px_10px_0px_rgba(169,241,113,0.2)] w-[100px] h-[120px] flex items-center justify-center rounded-md">
                 <time
                   dateTime={getDateTime(work.period)}
                   className="text-xl font-medium font-rubik text-text-primary"

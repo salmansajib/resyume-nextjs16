@@ -31,7 +31,7 @@ export default function PortfolioGallery({ protfolioData }) {
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`border border-primary/25 px-12 py-3 rounded-full text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer ${
+              className={`border border-primary/25 px-12 py-3 rounded-full text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.2)] hover:border-primary transition-colors duration-150 cursor-pointer ${
                 isActive
                   ? "bg-primary text-background-primary"
                   : "bg-background-neutral/23"

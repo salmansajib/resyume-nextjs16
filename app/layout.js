@@ -1,4 +1,11 @@
-import { Poppins, Sacramento, Roboto, Teko, Rubik } from "next/font/google";
+import {
+  Poppins,
+  Sacramento,
+  Roboto,
+  Teko,
+  Rubik,
+  Inter,
+} from "next/font/google";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -33,6 +40,12 @@ const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
 });
+const inter = Inter({
+  variable: "--font-rubik",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -44,7 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

@@ -17,11 +17,11 @@ export default function HeaderSection({ data }) {
 
   return (
     <GridBackground
-      gridColor="rgba(201, 201, 201, 0.15)"
+      gridColor="rgba(201, 201, 201, 0.1)"
       gridSize="200px"
-      className="bg-[url(/assets/marketer/images/marketer-hero-bg.jpg)] bg-no-repeat bg-left bg-cover"
+      className="bg-background-secondary overflow-hidden"
     >
-      <header className="px-4 w-full overflow-hidden relative z-20">
+      <header className="px-4 w-full relative z-20">
         <div className="w-full max-w-[1580px] mx-auto">
           <Navbar handleMenuClick={handleMenuClick} />
           <Navigation
@@ -49,6 +49,20 @@ export default function HeaderSection({ data }) {
 
       {/* subtle black overlay */}
       <div className=" absolute inset-0 bg-black z-10 opacity-21"></div>
+
+      {/* gradient background circles */}
+      <div
+        aria-hidden="true"
+        className="absolute -top-50 -left-30 size-[1200px] bg-radial-[circle_at_center] from-[#3A8300]/50 from-0% via-[#5D982F]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
+      <div
+        aria-hidden="true"
+        className="absolute -top-100 right-0 size-[1200px] bg-radial-[circle_at_center] from-[#975219]/50 from-0% via-[#995E2E]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
+      <div
+        aria-hidden="true"
+        className="absolute -right-100 -bottom-100 size-[1200px] bg-radial-[circle_at_center] from-[#12AFBF]/30 from-0% via-[#328F99]/5 via-55% to-transparent to-70% rounded-full"
+      ></div>
     </GridBackground>
   );
 }

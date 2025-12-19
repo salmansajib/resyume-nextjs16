@@ -7,6 +7,7 @@ export default function PortfolioSection({ data }) {
   return (
     <section
       aria-labelledby="portfolio-headign"
+      id="portfolio"
       className="py-20 px-4 relative overflow-hidden"
     >
       <div className="w-full max-w-[1580px] mx-auto overflow-hidden relative z-10">
