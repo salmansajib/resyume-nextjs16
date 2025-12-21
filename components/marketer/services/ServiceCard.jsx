@@ -15,7 +15,7 @@ export default function ServiceCard({ service, fadeInUp }) {
           aria-labelledby={`service-${service.id}`}
           className="bg-background-neutral/23 border border-primary/25 px-10 py-12 text-text-secondary ring-1 ring-[#b1b1b1]/50 ring-offset-13 ring-offset-background-primary shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.15)] hover:ring-primary hover:text-text-primary transition-all duration-150 rounded-xs"
         >
-          <figure aria-hidden="true">{serviceIcons[service.id]}</figure>
+          <div aria-hidden="true">{serviceIcons[service.id]}</div>
           <header className="mt-4">
             <h4
               className="text-2xl font-medium text-primary sm:truncate"

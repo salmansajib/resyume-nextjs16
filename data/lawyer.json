@@ -13,5 +13,51 @@
       "email": "richardsonVFred02@gmail.com",
       "address": "2193 East Avenue Scottsdale, USA"
     }
+  },
+  "services": {
+    "title": "services",
+    "subtitle": "what i do",
+    "items": [
+      {
+        "id": "corporate-law",
+        "name": "Corporate Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "criminal-defense",
+        "name": "Criminal Defense",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "family-law",
+        "name": "Family Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "employment-law",
+        "name": "Employment Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "immigration-law",
+        "name": "Immigration Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "personal-injury-law",
+        "name": "Personal Injury Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "real-estate-law",
+        "name": "Real Estate Law",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      },
+      {
+        "id": "estate-planning",
+        "name": "Estate Planning",
+        "description": "Representation for individuals accused of crimes, including felonies"
+      }
+    ]
   }
 }
