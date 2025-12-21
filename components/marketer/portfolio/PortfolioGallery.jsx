@@ -4,6 +4,7 @@ import { useState } from "react";
 import PortfolioItem from "./PortfolioItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function PortfolioGallery({ protfolioData }) {
   const { categories, entries } = protfolioData;
@@ -14,6 +15,50 @@ export default function PortfolioGallery({ protfolioData }) {
     active === "all"
       ? entries
       : entries.filter((i) => i.categories.includes(active));
+
+  // Animation variants for stagger effect
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Delay between each item
+        delayChildren: 0.1, // Initial delay before first item
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1, // Reverse order on exit
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94], // Custom easing
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      scale: 0.95,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
 
   return (
     <div className="mt-15">
@@ -45,42 +90,54 @@ export default function PortfolioGallery({ protfolioData }) {
 
       {/* portfolio image and video grid */}
       <div className="mt-10 relative">
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={32}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".swiper-button-next-custom",
-            prevEl: ".swiper-button-prev-custom",
-          }}
-          speed={1000}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          loop
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 24,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 32,
-            },
-          }}
-        >
-          {filtered.map((item, index) => (
-            <SwiperSlide key={item.id}>
-              <PortfolioItem item={item} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active} // Key changes trigger re-animation
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={32}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+              }}
+              speed={1000}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              loop
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 24,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 32,
+                },
+              }}
+            >
+              {filtered.map((item, index) => (
+                <SwiperSlide key={item.id}>
+                  <motion.div variants={itemVariants}>
+                    <PortfolioItem item={item} />
+                  </motion.div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </motion.div>
+        </AnimatePresence>
 
         {/* custom navigation buttons */}
         {/* prev button */}
@@ -106,7 +163,7 @@ export default function PortfolioGallery({ protfolioData }) {
         {/* next button */}
         <button
           className="swiper-button-next-custom bg-background-neutral/23 border border-primary/25 p-1 rounded-sm text-2xl font-medium shadow-[inset_1px_1px_16px_0px_rgba(169,241,113,0.3)] hover:border-primary transition-colors duration-150 cursor-pointer absolute z-10 top-30 right-3 backdrop-blur-md hover:bg-primary hover:text-background-primary"
-          aria-label="previous-slide"
+          aria-label="next-slide"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

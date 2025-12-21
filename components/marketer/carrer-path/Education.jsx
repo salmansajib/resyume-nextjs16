@@ -10,14 +10,18 @@ export default function WorkExperience({
   getDateTime,
 }) {
   return (
-    <article className="">
+    <InViewAnimator as="article" variants={staggerContainer} className="">
       <h3 className="text-2xl font-medium text-primary mb-8 uppercase">
         education
       </h3>
 
-      <div className="space-y-10 relative">
+      <div variants={fadeInUp} className="space-y-10 relative">
         {educationData.map((edu) => (
-          <div key={edu.id} className="flex flex-row gap-15">
+          <motion.div
+            variants={fadeInUp}
+            key={edu.id}
+            className="flex flex-row gap-15"
+          >
             {/* date */}
             <div>
               <div className="bg-background-neutral/23 border border-primary/25 shadow-[inset_1px_1px_10px_0px_rgba(169,241,113,0.2)] w-[100px] h-[120px] flex items-center justify-center rounded-md">
@@ -56,7 +60,7 @@ export default function WorkExperience({
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
 
         <div
@@ -64,6 +68,6 @@ export default function WorkExperience({
           className="absolute top-0 left-30 w-px h-full bg-primary/18"
         ></div>
       </div>
-    </article>
+    </InViewAnimator>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
@@ -35,7 +36,7 @@ export default function CarrerPathSection({ data }) {
   return (
     <section
       aria-labelledby="carrer-heading"
-      className="py-20 px-4 relative overflow-hidden"
+      className="pt-20 pb-10 px-4 relative overflow-hidden"
     >
       <div className="w-full max-w-7xl mx-auto">
         {/* section title and subtitle */}

@@ -61,6 +61,8 @@ html {
   --font-roboto: var(--font-roboto), sans-serif;
   --font-teko: var(--font-teko), sans-serif;
   --font-rubik: var(--font-rubik), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+  --font-taviraj: var(--font-taviraj), serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));

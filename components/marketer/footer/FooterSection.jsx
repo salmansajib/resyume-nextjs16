@@ -31,7 +31,7 @@ export default function FooterSection({ data }) {
 
       {/* bottom part */}
       <div className="bg-background-primary px-4 py-10">
-        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div className="w-full max-w-[1580px] mx-auto flex flex-col md:flex-row gap-4 items-center justify-between">
           <div className="font-rubik text-text-secondary space-x-2">
             <span>Copyright &copy; {getCurrentYear}</span>
             <span>|</span>

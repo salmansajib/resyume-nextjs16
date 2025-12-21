@@ -1,0 +1,17 @@
+{
+  "id": "lawyer",
+  "type": "lawyer",
+  "theme": "lawyer",
+  "hero": {
+    "greeting": "Hello world I Am!",
+    "name": "Richardson V. Fred",
+    "photo": "/assets/lawyer/images/profile-image-1.png",
+    "title": "DIGITAL LAWYER",
+    "description": "I am a passionate lawyer specializing in portrait I capture moments that tell compelling stories with creativity and precision.",
+    "contact": {
+      "phone": "+11254 2555",
+      "email": "richardsonVFred02@gmail.com",
+      "address": "2193 East Avenue Scottsdale, USA"
+    }
+  }
+}

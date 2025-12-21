@@ -22,15 +22,15 @@ export default function HeaderSection({ data }) {
       className="bg-background-secondary overflow-hidden"
     >
       <header className="px-4 w-full relative z-20">
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          bgColor="bg-background-primary"
+          textColor="text-text-primary"
+          logoSrc="/assets/marketer/logos/logo-footer.svg"
+        />
         <div className="w-full max-w-[1580px] mx-auto">
           <Navbar handleMenuClick={handleMenuClick} />
-          <Navigation
-            isMenuOpen={isMenuOpen}
-            setIsMenuOpen={setIsMenuOpen}
-            bgColor="bg-background-primary"
-            textColor="text-text-primary"
-            logoSrc="/assets/marketer/logos/logo-footer.svg"
-          />
           <div className="pb-30 pt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-items-center gap-15">
             <div className="space-y-15">
               <Intro heroData={hero} />

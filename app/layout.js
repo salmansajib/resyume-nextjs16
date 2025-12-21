@@ -5,6 +5,7 @@ import {
   Teko,
   Rubik,
   Inter,
+  Taviraj,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -41,7 +42,13 @@ const rubik = Rubik({
   display: "swap",
 });
 const inter = Inter({
-  variable: "--font-rubik",
+  variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const taviraj = Taviraj({
+  variable: "--font-taviraj",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
@@ -57,7 +64,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} antialiased`}
       >
         {children}
       </body>
