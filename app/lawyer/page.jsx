@@ -2,6 +2,7 @@ import React from "react";
 import lawyerData from "@/data/lawyer.json";
 import HeaderSection from "@/components/lawyer/header/HeaderSection";
 import ServicesSection from "@/components/lawyer/services/ServicesSection";
+import SkillsAndReferralsSection from "@/components/lawyer/skills-referrals/SkillsAndReferralsSection";
 
 export default function LawyerHome() {
   const data = lawyerData;
@@ -13,6 +14,7 @@ export default function LawyerHome() {
     >
       <HeaderSection data={data} />
       <ServicesSection data={data} />
+      <SkillsAndReferralsSection data={data} />
     </div>
   );
 }

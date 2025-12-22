@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProfilePhoto({ heroData }) {
   return (
-    <div className="relative max-w-max after:absolute after:content-[''] after:-top-3 after:-left-3 after:w-full after:h-full after:border-2 after:border-primary after:rounded-xl">
+    <div className="relative max-w-max after:absolute after:content-[''] after:-top-2 after:-left-2 after:w-full after:h-full after:border-2 after:border-primary after:rounded-xl">
       <Image
         src={heroData.photo}
         alt="profile image"

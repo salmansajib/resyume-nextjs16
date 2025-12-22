@@ -9,7 +9,7 @@ export default function Intro({ heroData }) {
           <span>{heroData.greeting}</span>
           <span className="absolute size-2 rounded-full bg-primary -bottom-1 right-0"></span>
         </p>
-        <h1 className="text-[clamp(2rem,6vw,3.2rem)] font-taviraj font-medium max-w-[10ch] leading-none">
+        <h1 className="text-[clamp(3rem,6vw,3.2rem)] font-taviraj font-medium max-w-[10ch] leading-none">
           {heroData.name}
         </h1>
       </div>
