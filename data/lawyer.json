@@ -119,26 +119,36 @@
     ]
   },
   "career_path": {
-    "title": "MY CAREER PATH",
-    "subtitle": "EXPERIENCE",
+    "title": "EXPERIENCE",
+    "subtitle": "MY CAREER PATH",
     "work_experience": [
       {
         "id": "current-position",
-        "period": "Current",
+        "period": {
+          "start": null,
+          "end": null,
+          "current": true
+        },
         "company": "RICHARDSON LAW PLLC",
         "location": "Scottsdale, AZ, USA",
         "description": "Founder and lead attorney at a modern digital law practice specializing in corporate, criminal defense, and technology-related legal matters for innovative clients."
       },
       {
         "id": "previous-position-1",
-        "period": "2019 - 2021",
+        "period": {
+          "start": 2019,
+          "end": 2021
+        },
         "company": "APEX LEGAL PARTNERS",
         "location": "New York, NY, USA",
         "description": "Senior associate handling high-stakes criminal defense, corporate transactions, and regulatory compliance for tech and startup clients."
       },
       {
         "id": "previous-position-2",
-        "period": "2012 - 2019",
+        "period": {
+          "start": 2012,
+          "end": 2019
+        },
         "company": "HORIZON LAW GROUP",
         "location": "Phoenix, AZ, USA",
         "description": "Associate attorney focused on employment law, immigration, personal injury, and real estate litigation, building a strong foundation in diverse practice areas."
@@ -147,24 +157,132 @@
     "education": [
       {
         "id": "law-school",
-        "period": "2014 - 2017",
+        "period": {
+          "start": 2014,
+          "end": 2017
+        },
         "institution": "HARVARD LAW SCHOOL",
         "degree": "Juris Doctor (JD)",
         "honors": "Cum Laude"
       },
       {
         "id": "undergraduate",
-        "period": "2010 - 2014",
+        "period": {
+          "start": 2010,
+          "end": 2014
+        },
         "institution": "UNIVERSITY OF ARIZONA",
         "degree": "Bachelor of Arts in Political Science",
         "honors": "First Class Honors"
       },
       {
         "id": "high-school",
-        "period": "2006 - 2010",
+        "period": {
+          "start": 2006,
+          "end": 2010
+        },
         "institution": "SCOTTSDALE PREPARATORY ACADEMY",
         "degree": "High School Diploma",
         "honors": "A+ Average"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "showcasing my vision",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "entries": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/lawyer/images/portfolio/portfolio-1.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/lawyer/images/portfolio/portfolio-2.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/lawyer/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/lawyer/images/portfolio/portfolio-3.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["video", "sunset-escape"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/lawyer/images/portfolio/portfolio-4.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["vintage-voyage", "sunset-escape"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/lawyer/images/portfolio/portfolio-2.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/lawyer/images/portfolio/portfolio-1.jpg",
+        "alt": "Marketing experts discussing marketing policies",
+        "title": "Echoes of Imaginations",
+        "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/lawyer/icons/hobbies/riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/lawyer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/lawyer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/lawyer/icons/hobbies/technology.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/lawyer/icons/hobbies/sports.svg"
       }
     ]
   }

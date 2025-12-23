@@ -63,6 +63,7 @@ export default function WorkExperience({
           </motion.div>
         ))}
 
+        {/* decorative line */}
         <div
           aria-hidden="true"
           className="absolute top-0 left-30 w-px h-full bg-primary/18"

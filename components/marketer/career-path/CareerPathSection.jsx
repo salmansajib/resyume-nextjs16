@@ -3,7 +3,7 @@ import React from "react";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
 
-export default function CarrerPathSection({ data }) {
+export default function CareerPathSection({ data }) {
   const { careerPath } = data;
   const workData = careerPath.workExperience;
   const educationData = careerPath.education;

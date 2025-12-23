@@ -23,21 +23,15 @@ export default function Referral({ item }) {
           {item.name}
         </h3>
         <h4 className="text-base">{item.position}</h4>
-        <div className="flex items-center gap-3 text-text-secondary">
+        <div className="flex items-center gap-3 text-text-secondary hover:text-text-primary">
           <EmailIconFilled />
-          <a
-            href={`mailto:${item.email}`}
-            className="text-base hover:text-text-primary"
-          >
+          <a href={`mailto:${item.email}`} className="text-base">
             {item.email}
           </a>
         </div>
-        <div className="flex items-center gap-3 text-text-secondary">
+        <div className="flex items-center gap-3 text-text-secondary hover:text-text-primary">
           <PhoneIconFilled />
-          <a
-            href={`tel:${item.phone}`}
-            className="text-base hover:text-text-primary"
-          >
+          <a href={`tel:${item.phone}`} className="text-base">
             {item.phone}
           </a>
         </div>

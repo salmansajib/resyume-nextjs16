@@ -3,7 +3,7 @@ import marketerData from "@/data/marketer.json";
 import HeaderSection from "@/components/marketer/header/HeaderSection";
 import ServicesSection from "@/components/marketer/services/ServicesSection";
 import SkillsSection from "@/components/marketer/skills/SkillsSection";
-import CarrerPathSection from "@/components/marketer/carrer-path/CarrerPathSection";
+import CareerPathSection from "@/components/marketer/career-path/CareerPathSection";
 import PortfolioSection from "@/components/marketer/portfolio/PortfolioSection";
 import FooterSection from "@/components/marketer/footer/FooterSection";
 
@@ -19,7 +19,7 @@ export default function MarketerHome() {
       <main>
         <ServicesSection data={data} />
         <SkillsSection data={data} />
-        <CarrerPathSection data={data} />
+        <CareerPathSection data={data} />
         <PortfolioSection data={data} />
       </main>
       <FooterSection data={data} />

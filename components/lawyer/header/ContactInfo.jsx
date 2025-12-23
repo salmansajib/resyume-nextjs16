@@ -13,7 +13,7 @@ export default function ContactInfo({ heroData }) {
       <div className="space-y-8 bg-linear-to-br from-background-primary to-background-secondary px-10 py-10 rounded-xl">
         <h2 className="font-taviraj font-medium text-3xl">{heroData.title}</h2>
         {/* contact */}
-        <div className="font-rubik space-y-5">
+        <div className="space-y-5">
           {/* phone */}
           <a
             href={`tel:${heroData.contact.phone}`}
@@ -59,6 +59,7 @@ export default function ContactInfo({ heroData }) {
           </a>
         </div>
       </div>
+
       {/* social links */}
       <div className="flex gap-8 items-center justify-center max-w-max mx-auto text-primary mt-15">
         <a
