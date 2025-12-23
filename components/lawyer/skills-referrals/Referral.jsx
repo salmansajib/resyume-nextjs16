@@ -18,7 +18,7 @@ export default function Referral({ item }) {
       </div>
 
       {/* details info */}
-      <div className="space-y-2 bg-linear-to-br from-[#4F4F4F]/52 to-[#1C1C1C]/52 w-full max-w-[400px] pl-5 py-7 rounded-tr-xl rounded-br-xl">
+      <div className="space-y-2 bg-linear-to-br from-[#4F4F4F]/52 to-[#1C1C1C]/52 bg-background-primary w-full max-w-[400px] pl-5 py-7 rounded-tr-xl rounded-br-xl">
         <h3 className="font-taviraj font-medium text-xl capitalize text-primary">
           {item.name}
         </h3>

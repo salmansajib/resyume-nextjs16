@@ -76,7 +76,7 @@ export default function PortfolioGallery({ protfolioData }) {
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`bg-linear-to-b from-[#4F4F4F] to-[#1c1c1c] px-12 py-3 rounded-full text-xl font-medium font-taviraj uppercase transition-colors duration-150 cursor-pointer ${
+              className={`bg-linear-to-b from-[#4F4F4F] to-[#1c1c1c] px-12 py-3 rounded-full text-xl font-medium font-taviraj uppercase transition-colors duration-200 cursor-pointer hover:scale-105 ${
                 isActive
                   ? "bg-linear-to-b from-primary to-primary text-text-primary"
                   : "bg-background-neutral/23"
