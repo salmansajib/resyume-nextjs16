@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function Education({
   educationData,
@@ -6,14 +9,18 @@ export default function Education({
   getDateTime,
 }) {
   return (
-    <article>
+    <InViewAnimator variants={staggerContainer} as="article">
       <h3 className="text-2xl font-taviraj font-medium text-text-primary mb-8 uppercase">
         education
       </h3>
 
       <div className="flex flex-col gap-15">
         {educationData.map((item) => (
-          <div key={item.id} className="flex flex-row gap-10">
+          <motion.div
+            variants={fadeInUp}
+            key={item.id}
+            className="flex flex-row gap-10"
+          >
             {/* date */}
             <div className="relative size-20">
               <div className="relative z-10 bg-linear-to-b from-[#4F4F4F] to-[#1C1C1C] size-20 flex items-center justify-center rounded-full">
@@ -37,7 +44,7 @@ export default function Education({
                 {item.honors}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
 
         {/* decorative line */}
@@ -46,6 +53,6 @@ export default function Education({
           className="absolute top-3 left-10 w-px bottom-30 bg-primary"
         ></div> */}
       </div>
-    </article>
+    </InViewAnimator>
   );
 }

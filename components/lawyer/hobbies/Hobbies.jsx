@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
-export default function Hobbies({ item }) {
+export default function Hobbies({ item, fadeInUp }) {
   return (
-    <ul className="relative bg-linear-to-b from-[#4f4f4f]/69 to-[#1c1c1c]/86 size-[127px] flex items-center justify-center rounded-full">
+    <motion.ul
+      variants={fadeInUp}
+      className="relative bg-linear-to-b from-[#4f4f4f]/69 to-[#1c1c1c]/86 size-[127px] flex items-center justify-center rounded-full"
+    >
       <li>
         <article>
           <Image
@@ -15,6 +19,6 @@ export default function Hobbies({ item }) {
           />
         </article>
       </li>
-    </ul>
+    </motion.ul>
   );
 }

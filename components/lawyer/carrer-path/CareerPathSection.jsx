@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";

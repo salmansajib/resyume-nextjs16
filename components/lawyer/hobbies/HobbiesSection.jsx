@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Hobbies from "./Hobbies";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function HobbiesSection({ data }) {
   const { hobbies } = data;
@@ -27,11 +30,14 @@ export default function HobbiesSection({ data }) {
         </div>
 
         {/* hobbies */}
-        <div className="flex flex-wrap items-center justify-center mt-15 gap-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="flex flex-wrap items-center justify-center mt-15 gap-10"
+        >
           {hobbies.items.map((item) => (
-            <Hobbies key={item.id} item={item} />
+            <Hobbies fadeInUp={fadeInUp} key={item.id} item={item} />
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );
