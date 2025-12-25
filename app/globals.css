@@ -55,6 +55,14 @@ html {
   --color-text-secondary: 0deg 1% 63%;
 }
 
+[data-theme="chef"] {
+  --color-primary: 6deg 84% 56%;
+  --color-background-primary: 30deg 100% 95%;
+  --color-background-secondary: 0deg 0% 100%;
+  --color-text-primary: 0deg 0% 13%;
+  --color-text-secondary: 0deg 0% 51%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -63,6 +71,8 @@ html {
   --font-rubik: var(--font-rubik), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
   --font-taviraj: var(--font-taviraj), serif;
+  --font-playfairDisplay: var(--font-playfairDisplay), serif;
+  --font-jost: var(--font-jost), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));

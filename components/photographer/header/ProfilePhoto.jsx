@@ -1,19 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import SocialLinksHeader from "./SocialLinksHeader";
 
 export default function ProfilePhoto() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="relative">
       {/* profile image */}
       <div className="relative z-20">
+        {isLoading && (
+          <div className="absolute inset-0 animate-pulse bg-gray-900/70 backdrop-blur-lg"></div>
+        )}
         <Image
           src="/assets/photographer/images/profile-image-photographer.jpg"
           alt="Photographer Profile Photo"
           loading="eager"
+          priority
           width={500}
           height={500}
           className="w-[461px] h-auto object-cover"
+          onLoadingComplete={handleLoadingComplete}
         />
       </div>
 

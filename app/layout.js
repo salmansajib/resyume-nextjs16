@@ -6,6 +6,8 @@ import {
   Rubik,
   Inter,
   Taviraj,
+  Playfair_Display,
+  Jost,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -53,6 +55,18 @@ const taviraj = Taviraj({
   subsets: ["latin"],
   display: "swap",
 });
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfairDisplay",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const jost = Jost({
+  variable: "--font-jost",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -64,7 +78,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} antialiased`}
       >
         {children}
       </body>
