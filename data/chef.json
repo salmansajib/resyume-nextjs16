@@ -1,0 +1,20 @@
+{
+  "id": "chef",
+  "type": "chef",
+  "theme": "chef",
+  "hero": {
+    "greeting": "Hello world I Am!",
+    "name": "Charlotte Hayes D.",
+    "title": "Head chef",
+    "photo": "/assets/chef/images/profile-image.jpg",
+    "about": {
+      "title": "ABOUT ME",
+      "description": "I am a passionate and creative chef with expertise in crafting exceptional culinary experiences. With years of experience in diverse cuisines, I specialize in blending flavors and techniques to create dishes that delight the senses. Dedicated to quality and innovation,"
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
