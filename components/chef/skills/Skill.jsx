@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRef } from "react";
-import { useInView } from "motion/react";
+import { motion, useInView } from "motion/react";
 import CircularProgress from "@/components/CircularProgress";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
@@ -25,8 +25,8 @@ export default function Skill({ item }) {
           progress={item.proficiency}
           size={117}
           strokeWidth={10}
-          progressColor="#CCA967"
-          trackColor="#222222"
+          progressColor="#ED4330"
+          trackColor="#ffffff"
           aria-hidden="true"
         />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -41,7 +41,7 @@ export default function Skill({ item }) {
           </p>
         </div>
       </div>
-      <h3 className="font-bold text-lg capitalize text-text-secondary text-center">
+      <h3 className="font-semibold text-[34px] capitalize text-background-secondary text-center">
         {item.name}
       </h3>
       {/* Screen reader only text for context */}
