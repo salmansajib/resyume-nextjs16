@@ -16,5 +16,83 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Gourmet Services Tailored For You",
+    "items": [
+      {
+        "id": "menu-development",
+        "name": "Menu Development",
+        "image_url": "/assets/chef/images/services/service-1.jpg",
+        "description": "Menu development is the art and science of curating a selection of dishes that reflects a restaurant's identity, culinary expertise, and target audience preferences. It involves balancing creativity, seasonal availability, and cost-effectiveness to deliver an exceptional dining experience."
+      },
+      {
+        "id": "desserts",
+        "name": "Desserts",
+        "image_url": "/assets/chef/images/services/service-2.jpg",
+        "description": "Crafting exquisite and innovative desserts that combine premium ingredients, artistic presentation, and balanced flavors to provide the perfect sweet finale to any dining experience."
+      },
+      {
+        "id": "beverages",
+        "name": "Beverages",
+        "image_url": "/assets/chef/images/services/service-3.jpg",
+        "description": "Designing sophisticated beverage programs featuring craft cocktails, mocktails, fresh juices, and thoughtful pairings that complement and enhance the overall menu."
+      },
+      {
+        "id": "kids-menu",
+        "name": "Kids' Menu",
+        "image_url": "/assets/chef/images/services/service-4.jpg",
+        "description": "Creating fun, nutritious, and appealing menus tailored for children, with familiar favorites reimagined in healthy, exciting ways that satisfy both kids and parents."
+      },
+      {
+        "id": "event-group-menus",
+        "name": "Event Or Group Menus",
+        "image_url": "/assets/chef/images/services/service-5.jpg",
+        "description": "Developing customized menus for special events, private parties, corporate gatherings, and group dining, accommodating themes, dietary requirements, and guest preferences seamlessly."
+      },
+      {
+        "id": "hot-beverages",
+        "name": "Hot Beverages",
+        "image_url": "/assets/chef/images/services/service-6.jpg",
+        "description": "Curating premium hot beverage offerings, including artisanal coffees, specialty teas, and comforting drinks ideal for breakfast, brunch, or all-day café service."
+      }
+    ]
+  },
+  "skills": {
+    "title": "MY SKILL SET",
+    "subtitle": "PROFESSIONAL LEGAL COMPETENCIES",
+    "items": [
+      {
+        "id": "research-and-analysis",
+        "name": "Research and Analysis",
+        "proficiency": 95
+      },
+      {
+        "id": "drafting-and-negotiation",
+        "name": "Drafting and Negotiation",
+        "proficiency": 80
+      },
+      {
+        "id": "dispute-resolution",
+        "name": "Dispute Resolution",
+        "proficiency": 75
+      },
+      {
+        "id": "regulatory-compliance",
+        "name": "Regulatory Compliance",
+        "proficiency": 98
+      },
+      {
+        "id": "client-counseling",
+        "name": "Client Counseling",
+        "proficiency": 90
+      },
+      {
+        "id": "case-management",
+        "name": "Case Management",
+        "proficiency": 87
+      }
+    ]
   }
 }

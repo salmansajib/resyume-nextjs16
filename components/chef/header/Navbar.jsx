@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="py-10 flex items-center gap-5 justify-between">
       <div>
@@ -13,7 +13,7 @@ export default function Navbar() {
           className="w-[165px] h-auto"
         />
       </div>
-      <button>
+      <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/chef/icons/menu-icon.svg"
           alt="navigation menu icon"

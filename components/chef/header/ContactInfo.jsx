@@ -5,7 +5,7 @@ import LocationIcon from "@/components/icons/LocationIcon";
 
 export default function ContactInfo({ heroData }) {
   return (
-    <div className="font-jost flex flex-col items-end gap-8">
+    <div className="font-jost flex flex-col items-end gap-5 xl:gap-8">
       {/* phone */}
       <a
         href={`tel:${heroData.contact.phone}`}

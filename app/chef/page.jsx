@@ -12,7 +12,7 @@ export default function ChefHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-playfairDisplay"
     >
       <HeaderSection data={data} />
-      <ServicesSection />
+      <ServicesSection data={data} />
     </div>
   );
 }
