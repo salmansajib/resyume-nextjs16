@@ -13,11 +13,11 @@ export default function SkillsSection({ data }) {
         <div className="space-y-2">
           <h2
             id="skills-heading"
-            className="font-jost text-xl font-medium text-primary"
+            className="font-jost text-xl font-medium text-primary capitalize"
           >
             {skills.title}
           </h2>
-          <h3 className="text-[clamp(2rem,6vw,3rem)] text-background-secondary font-semibold leading-tight max-w-[20ch]">
+          <h3 className="text-[clamp(2rem,6vw,3rem)] text-background-secondary font-semibold leading-tight max-w-[20ch] capitalize">
             {skills.subtitle}
           </h3>
         </div>

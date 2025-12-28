@@ -41,7 +41,7 @@ export default function Skill({ item }) {
           </p>
         </div>
       </div>
-      <h3 className="font-semibold text-[34px] capitalize text-background-secondary text-center">
+      <h3 className="font-semibold text-2xl capitalize text-background-secondary text-center">
         {item.name}
       </h3>
       {/* Screen reader only text for context */}

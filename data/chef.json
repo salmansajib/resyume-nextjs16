@@ -60,8 +60,8 @@
     ]
   },
   "skills": {
-    "title": "MY SKILL SET",
-    "subtitle": "PROFESSIONAL LEGAL COMPETENCIES",
+    "title": "My Skill Set",
+    "subtitle": "Professional Legal Competences",
     "items": [
       {
         "id": "research-and-analysis",
@@ -92,6 +92,75 @@
         "id": "case-management",
         "name": "Case Management",
         "proficiency": 87
+      }
+    ]
+  },
+  "career_path": {
+    "title": "Experience",
+    "subtitle": "my carrer path",
+    "work_experience": [
+      {
+        "id": "current-position",
+        "period": {
+          "start": null,
+          "end": null,
+          "current": true
+        },
+        "position": "Head Chef",
+        "location": "The Gourmet Table – New York, NY",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      },
+      {
+        "id": "previous-position-1",
+        "period": {
+          "start": 2019,
+          "end": 2021
+        },
+        "position": "Sous Chef",
+        "location": "La Bella Cuisine – Los Angeles, CA",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      },
+      {
+        "id": "previous-position-2",
+        "period": {
+          "start": 2012,
+          "end": 2019
+        },
+        "position": "Line Cook",
+        "location": "The Artisan’s Plate – Chicago, IL",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "period": {
+          "start": 2014,
+          "end": 2017
+        },
+        "institution": "Franklin University",
+        "degree": "Computer Science",
+        "grade": "First Class"
+      },
+      {
+        "id": 2,
+        "period": {
+          "start": 2011,
+          "end": 2014
+        },
+        "institution": "Massachusetts Institute of Technology",
+        "degree": "Science & Technology",
+        "grade": "First Class"
+      },
+      {
+        "id": 3,
+        "period": {
+          "start": 2019,
+          "end": 2011
+        },
+        "institution": "Thomas Jefferson High School",
+        "degree": "Science & Technology",
+        "grade": "A+"
       }
     ]
   }
