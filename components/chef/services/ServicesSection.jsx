@@ -17,7 +17,7 @@ export default function ServicesSection({ data }) {
           >
             {services.title}
           </h2>
-          <h3 className="text-[clamp(2rem,6vw,3rem)] font-semibold leading-none">
+          <h3 className="text-[clamp(2rem,6vw,3rem)] font-semibold leading-tight max-w-[20ch]">
             {services.subtitle}
           </h3>
         </div>

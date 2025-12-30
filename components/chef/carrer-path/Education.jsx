@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education({ item }) {
   return (
-    <div className="relative p-10">
+    <div className="relative p-10 pl-15">
       <div className="space-y-3">
         <h4 className="text-[34px] font-medium text-primary capitalize leading-none">
           {item.institution}
@@ -10,8 +10,15 @@ export default function Education({ item }) {
         <p className="font-jost font-medium text-xl uppercase leading-none mt-5">
           {item.degree}
         </p>
-        <p className="font-jost text-xl text-text-secondary">{item.grade}</p>
       </div>
+
+      {/* grade on the left */}
+      <p
+        className="font-jost text-xl text-text-secondary absolute top-23 -left-1 rotate-180"
+        style={{ writingMode: "vertical-rl" }}
+      >
+        {item.grade}
+      </p>
 
       {/* decretive element */}
       {/* dot */}
@@ -21,7 +28,7 @@ export default function Education({ item }) {
       {/* top line */}
       <div className="w-[95%] h-px bg-primary absolute top-2.5 left-8"></div>
       {/* left line */}
-      <div className=" absolute left-2.5 top-8 w-px h-[50%] bg-primary"></div>
+      <div className=" absolute left-2.5 top-8 w-px h-[45px] bg-primary"></div>
     </div>
   );
 }

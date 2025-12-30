@@ -163,5 +163,116 @@
         "grade": "A+"
       }
     ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "my special dishes",
+    "categories": [
+      { "id": "explorer", "label": "Explorer" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-6.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-7.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["golden"]
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "src": "/assets/chef/images/portfolio/portfolio-8.jpg",
+        "icon": "/assets/chef/icons/portfolio-icon-on-hover.svg",
+        "title": "Tomato Chutney",
+        "description": "A tangy Indian side dish, often served with rice or dosas",
+        "categories": ["golden", "vintage-voyage"]
+      }
+    ]
+  },
+  "referrals": {
+    "title": "referrals",
+    "subtitle": "credible professional referrals",
+    "items": [
+      {
+        "id": "michael-bierut",
+        "photo": "/assets/chef/images/referrals/michael-bierut.jpg",
+        "name": "Michael Bierut",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "stefan-sagmeister",
+        "name": "Stefan Sagmeister",
+        "photo": "/assets/chef/images/referrals/stefan-sagmeister.jpg",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "rodrigo-corral",
+        "name": "Rodrigo Corral",
+        "photo": "/assets/chef/images/referrals/rodrigo-corral.jpg",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }

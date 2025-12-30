@@ -7,7 +7,7 @@ export default function PortfolioItem({ item, onClick }) {
     <div className="relative group">
       <button
         onClick={onClick}
-        className="block w-full h-full focus:outline-none cursor-pointer"
+        className="block w-full h-full cursor-pointer"
         aria-label={`Open ${item.title}`}
       >
         <div className="relative overflow-hidden aspect-4/5">
