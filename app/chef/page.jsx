@@ -6,6 +6,7 @@ import SkillsSection from "@/components/chef/skills/SkillsSection";
 import CarrerPathSection from "@/components/chef/carrer-path/CarrerPathSection";
 import PortfolioSection from "@/components/chef/portfolio/PortfolioSection";
 import ReferralSection from "@/components/chef/referrals/ReferralSection";
+import FooterScetion from "@/components/chef/footer/FooterScetion";
 
 export default function ChefHome() {
   const data = chefData;
@@ -16,11 +17,14 @@ export default function ChefHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-playfairDisplay"
     >
       <HeaderSection data={data} />
-      <ServicesSection data={data} />
-      <SkillsSection data={data} />
-      <CarrerPathSection data={data} />
-      <PortfolioSection data={data} />
-      <ReferralSection data={data} />
+      <main>
+        <ServicesSection data={data} />
+        <SkillsSection data={data} />
+        <CarrerPathSection data={data} />
+        <PortfolioSection data={data} />
+        <ReferralSection data={data} />
+      </main>
+      <FooterScetion />
     </div>
   );
 }
