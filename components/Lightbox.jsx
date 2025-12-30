@@ -9,17 +9,23 @@ export default function Lightbox({
   onClose = () => {},
 }) {
   const [index, setIndex] = useState(startIndex);
-  const [direction, setDirection] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(startIndex);
 
   const current = items[index];
 
+  // Calculate direction based on actual index change
+  const direction = index > prevIndex ? 1 : index < prevIndex ? -1 : 0;
+
+  // Update prevIndex when index changes
+  useEffect(() => {
+    setPrevIndex(index);
+  }, [index]);
+
   const goNext = useCallback(() => {
-    setDirection(1);
     setIndex((i) => Math.min(i + 1, items.length - 1));
   }, [items.length]);
 
   const goPrev = useCallback(() => {
-    setDirection(-1);
     setIndex((i) => Math.max(i - 1, 0));
   }, []);
 
