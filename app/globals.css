@@ -61,6 +61,16 @@ html {
   --color-background-secondary: 0deg 0% 100%;
   --color-text-primary: 0deg 0% 13%;
   --color-text-secondary: 0deg 0% 51%;
+  --color-border-primary: 223deg 4% 37%;
+}
+
+[data-theme="architect"] {
+  --color-primary: 25deg 29% 59%;
+  --color-background-primary: 243deg 7% 19%;
+  --color-background-secondary: 225deg 7% 22%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 340deg 3% 63%;
+  --color-border-primary: 223deg 4% 37%;
 }
 
 @theme inline {
@@ -73,6 +83,8 @@ html {
   --font-taviraj: var(--font-taviraj), serif;
   --font-playfairDisplay: var(--font-playfairDisplay), serif;
   --font-jost: var(--font-jost), sans-serif;
+  --font-lora: var(--font-lora), serif;
+  --font-dmSans: var(--font-dmSans), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));

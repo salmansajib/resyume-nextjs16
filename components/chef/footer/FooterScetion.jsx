@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SocialLinks from "./SocialLinks";
+import Link from "next/link";
 
 export default function FooterScetion() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ export default function FooterScetion() {
             <span>|</span>
             <span className=" capitalize">powered by rezyume</span>
           </p>
-          <div>
+          <Link href="/">
             <Image
               src="/assets/chef/logos/logo-footer.svg"
               alt="rezyume logo"
@@ -22,7 +23,7 @@ export default function FooterScetion() {
               height={300}
               className="w-[216px] h-auto object-cover"
             />
-          </div>
+          </Link>
           <SocialLinks />
         </div>
       </div>

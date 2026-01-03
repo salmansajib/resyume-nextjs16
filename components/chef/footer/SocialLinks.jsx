@@ -3,34 +3,35 @@ import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
 import DribbleIcon from "@/components/icons/DribbleIcon";
+import Link from "next/link";
 
 export default function SocialLinks() {
   return (
     <div className="flex items-center gap-5 text-text-secondary">
-      <a
-        href="#"
+      <Link
+        href="/"
         className="hover:text-primary transition-colors duration-150 ease-in-out"
       >
         <DribbleIcon />
-      </a>
-      <a
-        href="#"
+      </Link>
+      <Link
+        href="/"
         className="hover:text-primary transition-colors duration-150 ease-in-out"
       >
         <LinkedinIcon />
-      </a>
-      <a
-        href="#"
+      </Link>
+      <Link
+        href="/"
         className="hover:text-primary transition-colors duration-150 ease-in-out"
       >
         <XIcon />
-      </a>
-      <a
-        href="#"
+      </Link>
+      <Link
+        href="/"
         className="hover:text-primary transition-colors duration-150 ease-in-out"
       >
         <InstagramIcon />
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar({ handleMenuClick }) {
   return (
     <div className="py-10 flex items-center gap-5 justify-between">
-      <div>
+      <Link href="/">
         <Image
           src="/assets/chef/logos/logo-header.svg"
-          alt="profile photo"
+          alt="rezyume logo"
           width={300}
           height={300}
           className="w-[165px] h-auto"
         />
-      </div>
+      </Link>
       <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/chef/icons/menu-icon.svg"

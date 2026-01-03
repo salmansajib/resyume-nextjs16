@@ -10,7 +10,7 @@ export default function Intro({ heroData }) {
 
       <div className="space-y-3">
         {/* name */}
-        <h1 className="text-6xl font-medium text-text-primary max-w-[10ch] leading-17 mb-4">
+        <h1 className="text-[clamp(3rem,6vw,4rem)] font-medium text-text-primary max-w-[10ch] leading-17 mb-4">
           {heroData.name}
         </h1>
         {/* title */}

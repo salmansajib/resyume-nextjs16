@@ -39,9 +39,7 @@ export default function ProfilePhoto() {
       <div className="hidden xl:block absolute top-64 left-127.5 w-[155px] h-[333px] bg-background-neutral z-10"></div>
 
       {/* social links */}
-      <div className="hidden xl:block absolute top-84 left-144 z-20">
-        <SocialLinksHeader />
-      </div>
+      <SocialLinksHeader className="flex pt-5 xl:pt-0 justify-center gap-4 xl:block xl:absolute top-84 left-144 z-20" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ContactInfo from "./ContactInfo";
 import SocialLinks from "./SocialLinks";
+import Link from "next/link";
 
 export default function FooterSection({ data }) {
   const { hero } = data;
@@ -12,7 +13,7 @@ export default function FooterSection({ data }) {
       {/* top part */}
       <div className="bg-background-secondary px-4 py-20">
         <div className="w-full max-w-7xl mx-auto space-y-6">
-          <div className="flex items-center justify-center">
+          <Link href="/" className="flex items-center justify-center">
             <Image
               src="/assets/marketer/logos/logo-footer.svg"
               alt="rezyume logo"
@@ -20,7 +21,7 @@ export default function FooterSection({ data }) {
               height={300}
               className="w-[216px] h-auto"
             />
-          </div>
+          </Link>
           <p className="font-rubik font-normal text-base text-text-secondary text-center max-w-[60ch] mx-auto">
             I am a passionate photographer specializing in portrait I capture
             moments that tell compelling stories with creativity and precision.

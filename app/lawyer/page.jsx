@@ -13,7 +13,7 @@ export default function LawyerHome() {
 
   return (
     <div
-      data-theme="lawyer"
+      data-theme={data.theme}
       className="w-full min-h-screen bg-background-primary text-text-primary font-inter"
     >
       <HeaderSection data={data} />

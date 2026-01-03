@@ -5,6 +5,7 @@ import EmailIcon from "@/components/icons/EmailIcon";
 import LocationIcon from "@/components/icons/LocationIcon";
 import ContactInfo from "./ContactInfo";
 import SocialLinks from "./SocialLinks";
+import Link from "next/link";
 
 export default function FooterSection({ data }) {
   const { hero } = data;
@@ -19,7 +20,7 @@ export default function FooterSection({ data }) {
       <div className="bg-background-secondary py-10 px-4">
         <div className="w-full max-w-7xl mx-auto space-y-5">
           {/* logo */}
-          <div className="flex items-center justify-center">
+          <Link href="/" className="flex items-center justify-center">
             <Image
               src="/assets/lawyer/logos/logo-footer.svg"
               alt="rezyume logo"
@@ -27,7 +28,7 @@ export default function FooterSection({ data }) {
               height={300}
               className="w-[216px] h-auto"
             />
-          </div>
+          </Link>
           {/* description */}
           <p className="text-lg font-normal text-text-secondary max-w-[65ch] text-center mx-auto">
             I am a passionate photographer specializing in portrait I capture

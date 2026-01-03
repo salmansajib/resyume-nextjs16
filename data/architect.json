@@ -1,0 +1,17 @@
+{
+  "id": "architect",
+  "type": "architect",
+  "theme": "architect",
+  "hero": {
+    "greeting": "hello world i am!",
+    "name": "charlotte hayes",
+    "title": "principal architect",
+    "description": "I am a creative and dedicated architect, designing functional and inspiring spaces that blend aesthetics, sustainability, and practicality. My goal is to craft environments that leave a lasting impact and enhance everyday life.",
+    "photo": "/assets/architect/images/profile-image.jpg",
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

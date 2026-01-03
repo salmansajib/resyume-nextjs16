@@ -8,6 +8,8 @@ import {
   Taviraj,
   Playfair_Display,
   Jost,
+  Lora,
+  DM_Sans,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -67,6 +69,18 @@ const jost = Jost({
   subsets: ["latin"],
   display: "swap",
 });
+const lora = Lora({
+  variable: "--font-lora",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const dmSans = DM_Sans({
+  variable: "--font-dmSans",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -78,7 +92,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} antialiased`}
       >
         {children}
       </body>

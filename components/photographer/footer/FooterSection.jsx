@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ContactInfo from "./ContactInfo";
 import SocialLinksFooter from "./SocialLinksFooter";
+import Link from "next/link";
 
 export default function FooterSection({ data }) {
   const { hero } = data;
@@ -15,13 +16,15 @@ export default function FooterSection({ data }) {
       <div className="bg-background-secondary py-20 px-4">
         <div className="max-w-7xl mx-auto space-y-5">
           <div className="flex items-center justify-center">
-            <Image
-              src="/assets/photographer/logos/logo-footer.svg"
-              alt="footer logo"
-              width={300}
-              height={300}
-              className="w-[216px] h-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/photographer/logos/logo-footer.svg"
+                alt="footer logo"
+                width={300}
+                height={300}
+                className="w-[216px] h-auto"
+              />
+            </Link>
           </div>
           <p className="text-lg font-normal text-text-secondary max-w-[70ch] text-center mx-auto">
             I am a passionate photographer specializing in portrait I capture

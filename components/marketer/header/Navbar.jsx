@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar({ handleMenuClick }) {
   return (
     <div className="flex items-center justify-between gap-5 py-10">
-      <div>
+      <Link href="/">
         <Image
           src="/assets/marketer/logos/logo-header.svg"
           alt="rezyume logo"
@@ -12,7 +13,7 @@ export default function Navbar({ handleMenuClick }) {
           height={200}
           className="w-[168px] h-auto"
         />
-      </div>
+      </Link>
       <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/marketer/icons/menu-icon.svg"

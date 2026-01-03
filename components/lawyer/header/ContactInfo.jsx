@@ -6,6 +6,7 @@ import DribbleIcon from "@/components/icons/DribbleIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
+import Link from "next/link";
 
 export default function ContactInfo({ heroData }) {
   return (
@@ -66,30 +67,30 @@ export default function ContactInfo({ heroData }) {
 
       {/* social links */}
       <div className="flex gap-8 items-center justify-center max-w-max mx-auto text-primary mt-15">
-        <a
-          href="/lawyer"
+        <Link
+          href="/"
           className="hover:text-text-primary transition-colors duration-150"
         >
           <DribbleIcon width={22} height={22} />
-        </a>
-        <a
-          href="/lawyer"
+        </Link>
+        <Link
+          href="/"
           className="hover:text-text-primary transition-colors duration-150"
         >
           <LinkedinIcon width={22} height={22} />
-        </a>
-        <a
-          href="/lawyer"
+        </Link>
+        <Link
+          href="/"
           className="hover:text-text-primary transition-colors duration-150"
         >
           <XIcon width={22} height={22} />
-        </a>
-        <a
-          href="/lawyer"
+        </Link>
+        <Link
+          href="/"
           className="hover:text-text-primary transition-colors duration-150"
         >
           <InstagramIcon width={22} height={22} />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ export default function ProfilePhote({ hero }) {
         className={`w-full max-w-[550px] h-auto object-cover transition-opacity duration-300 ${
           isLoading ? "opacity-0" : "opacity-100"
         }`}
-        onLoadingComplete={handleLoadingComplete}
+        onLoad={handleLoadingComplete}
       />
     </div>
   );
