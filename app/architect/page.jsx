@@ -1,6 +1,8 @@
 import React from "react";
 import architectData from "@/data/architect.json";
 import HeaderSection from "@/components/architect/header/HeaderSection";
+import ServicesSection from "@/components/architect/services/ServicesSection";
+import ExperienceSection from "@/components/architect/Experience/ExperienceSection";
 
 export default function ArchitectHome() {
   const data = architectData;
@@ -11,6 +13,8 @@ export default function ArchitectHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-dmSans"
     >
       <HeaderSection data={data} />
+      <ServicesSection data={data} />
+      <ExperienceSection data={data} />
     </div>
   );
 }

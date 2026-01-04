@@ -40,7 +40,6 @@ export default function ProfilePhoto({ heroData, className }) {
           alt="architect profile image"
           width={800}
           height={800}
-          quality={100}
           loading="eager"
           className="w-[640px] h-auto object-cover"
         />

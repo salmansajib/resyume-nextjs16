@@ -28,7 +28,7 @@ export default function WorkExperience({ item, formatPeriod, getDateTime }) {
         </time>
       </div>
 
-      {/* decretive element */}
+      {/* decoretive element */}
       {/* dot */}
       <div className="border border-primary size-[22px] rounded-full absolute top-0 left-0 flex items-center justify-center">
         <div className="size-3 bg-primary rounded-full"></div>

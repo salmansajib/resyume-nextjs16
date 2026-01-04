@@ -13,5 +13,122 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "Comprehensive Design Services",
+    "items": [
+      {
+        "id": "architectural-design",
+        "name": "Architectural Design",
+        "image_url": "/assets/architect/icons/services/architectural-design.svg",
+        "description": "The creative process of conceptualizing, planning, and designing buildings that are both functional and visually compelling, tailored to client needs and site context."
+      },
+      {
+        "id": "urban-planning",
+        "name": "Urban Planning",
+        "image_url": "/assets/architect/icons/services/urban-planning.svg",
+        "description": "Strategic design and organization of urban spaces, infrastructure, and communities to create sustainable, livable, and efficient city environments."
+      },
+      {
+        "id": "sustainable-design",
+        "name": "Sustainable Design",
+        "image_url": "/assets/architect/icons/services/sustainable-design.svg",
+        "description": "Integrating eco-friendly principles, energy efficiency, and renewable materials to create buildings and spaces that minimize environmental impact while maximizing long-term performance."
+      },
+      {
+        "id": "project-management",
+        "name": "Project Management",
+        "image_url": "/assets/architect/icons/services/project-management.svg",
+        "description": "Overseeing all phases of design and construction projects, from budgeting and scheduling to coordination and delivery, ensuring timely and successful outcomes."
+      },
+      {
+        "id": "3d-visualization",
+        "name": "3d Visualization",
+        "image_url": "/assets/architect/icons/services/3d-vusualization.svg",
+        "description": "Creating photorealistic 3D renderings and virtual walkthroughs to help clients visualize and refine designs before construction begins."
+      },
+      {
+        "id": "documentation",
+        "name": "Documentation",
+        "image_url": "/assets/architect/icons/services/documentation.svg",
+        "description": "Preparing detailed technical drawings, specifications, and construction documents essential for permitting, bidding, and building execution."
+      },
+      {
+        "id": "feasibility-studies",
+        "name": "Feasibility Studies",
+        "image_url": "/assets/architect/icons/services/feasibility-studies.svg",
+        "description": "In-depth analysis of site potential, regulatory constraints, budget, and program requirements to determine project viability and guide informed decision-making."
+      }
+    ]
+  },
+  "experience": {
+    "title": "my experience",
+    "subtitle": "experience that shapes me",
+    "work_experience": [
+      {
+        "id": "lead-architect",
+        "period": {
+          "start": null,
+          "end": null,
+          "current": true
+        },
+        "position": "Lead Architect",
+        "location": "Visionary Designs Studio – New York, NY",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      },
+      {
+        "id": "architectural-designer",
+        "period": {
+          "start": 2016,
+          "end": 2019
+        },
+        "position": "Architectural Designer",
+        "location": "Urban Sphere Architects – Los Angeles, CA",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      },
+      {
+        "id": "junior-architect",
+        "period": {
+          "start": 2013,
+          "end": 2016
+        },
+        "position": "Junior Architect",
+        "location": "Modern Horizons Studio – Chicago, IL",
+        "description": "Designed seasonal menus featuring innovative and locally sourced ingredients. Led a team of 15 kitchen staff, ensuring seamless operations during peak hours."
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "period": {
+          "start": 2014,
+          "end": 2017
+        },
+        "institution": "Franklin University",
+        "degree": "Computer Science",
+        "grade": "First Class"
+      },
+      {
+        "id": 2,
+        "period": {
+          "start": 2011,
+          "end": 2014
+        },
+        "institution": "Massachusetts Institute of Technology",
+        "degree": "Science & Technology",
+        "grade": "First Class"
+      },
+      {
+        "id": 3,
+        "period": {
+          "start": 2019,
+          "end": 2011
+        },
+        "institution": "Thomas Jefferson High School",
+        "degree": "Science & Technology",
+        "grade": "A+"
+      }
+    ]
   }
 }
