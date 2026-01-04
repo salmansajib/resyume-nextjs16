@@ -130,5 +130,35 @@
         "grade": "A+"
       }
     ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "professional legal competencies",
+    "items": [
+      {
+        "id": "design-and-planning",
+        "name": "design and planning",
+        "icon_url": "/assets/architect/icons/skills/design-and-planning.svg",
+        "proficiency": 97
+      },
+      {
+        "id": "visualization-and-presentation",
+        "name": "visualization and presentation",
+        "icon_url": "/assets/architect/icons/skills/visualization-and-presentation.svg",
+        "proficiency": 70
+      },
+      {
+        "id": "project-management",
+        "name": "project management",
+        "icon_url": "/assets/architect/icons/skills/project-management.svg",
+        "proficiency": 80
+      },
+      {
+        "id": "technical-skills",
+        "name": "technical skills",
+        "icon_url": "/assets/architect/icons/skills/technical-skills.svg",
+        "proficiency": 90
+      }
+    ]
   }
 }
