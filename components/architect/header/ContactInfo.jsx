@@ -9,7 +9,10 @@ export default function ContactInfo({ heroData, className }) {
   return (
     <div className={cn("flex items-center gap-20 mt-10 md:mt-0", className)}>
       {/* cv download link */}
-      <a href="#" className="text-primary">
+      <a
+        href="#"
+        className="text-primary hover:scale-105 hover:rotate-360 transition-all duration-500 ease-in-out"
+      >
         <CircularText
           text="• Download CV • Download CV"
           className="size-48"
