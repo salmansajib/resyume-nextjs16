@@ -18,22 +18,39 @@ export default function SkillBar({ name, percentage, delay = 0 }) {
 
   return (
     <div ref={ref} className="mb-8">
+      {/* Skill name and percentage header */}
       <div className="flex justify-between items-center mb-5">
-        <span className="text-2xl font-medium font-lora text-white capitalize">
+        <span
+          className="text-2xl font-medium font-lora text-white capitalize"
+          id={`skill-${name.replace(/\s+/g, "-").toLowerCase()}`}
+        >
           {name}
         </span>
-        <span className="text-base font-medium text-primary border border-border-primary border-dashed size-[47px] flex items-center justify-center">
+        <span
+          className="text-base font-medium text-primary border border-border-primary border-dashed size-[47px] flex items-center justify-center"
+          aria-label={`${percentage} percent`}
+        >
           <AnimatedCounter
             value={percentage}
             isInView={isInView}
             duration={1.5}
+            delay={delay / 1000}
             from={0}
           />
           %
         </span>
       </div>
 
-      <div className="w-full h-6 border border-border-primary flex items-center px-2 overflow-hidden">
+      {/* Progress bar with proper ARIA attributes */}
+      <div
+        role="progressbar"
+        aria-labelledby={`skill-${name.replace(/\s+/g, "-").toLowerCase()}`}
+        aria-valuenow={isInView ? percentage : 0}
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuetext={`${percentage} percent proficiency in ${name}`}
+        className="w-full h-6 border border-border-primary flex items-center px-2 overflow-hidden"
+      >
         <motion.div
           className="h-2"
           style={{
@@ -62,8 +79,14 @@ export default function SkillBar({ name, percentage, delay = 0 }) {
             delay: delay / 1000,
             ease: [0.4, 0, 0.2, 1],
           }}
+          aria-hidden="true"
         />
       </div>
+
+      {/* Screen reader only text for context */}
+      <span className="sr-only">
+        {name} skill level: {percentage} out of 100
+      </span>
     </div>
   );
 }

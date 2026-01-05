@@ -23,7 +23,7 @@ export default function WorkExperience({ item, formatPeriod, getDateTime }) {
       </div>
 
       {/* top line */}
-      <div className="absolute top-0 left-6 w-[calc(100%-20px)] h-px bg-border-primary flex items-center justify-between">
+      <div className="absolute top-0 left-6 w-[calc(100%-10px)] h-px bg-border-primary flex items-center justify-between">
         <div className="w-px h-2 bg-border-primary"></div>
         <div className="w-px h-2 bg-border-primary"></div>
       </div>

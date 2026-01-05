@@ -8,6 +8,7 @@ export default function AnimatedCounter({
   value,
   from = 0,
   duration = 2,
+  delay = 0,
   isInView = true,
   className,
 }) {
@@ -18,11 +19,12 @@ export default function AnimatedCounter({
     if (isInView) {
       const controls = animate(count, value, {
         duration: duration,
+        delay: delay,
         ease: "easeOut",
       });
       return () => controls.stop();
     }
-  }, [isInView, value, from, duration, count]);
+  }, [isInView, value, from, duration, delay, count]);
 
   return (
     <motion.span
