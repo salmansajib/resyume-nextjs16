@@ -1,7 +1,5 @@
 import React from "react";
 
-// comment
-
 export default function Education({ item }) {
   return (
     <article className="w-full max-w-[500px] h-full min-h-[230px] relative p-10 pl-15">

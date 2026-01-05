@@ -2,7 +2,7 @@ import React from "react";
 import architectData from "@/data/architect.json";
 import HeaderSection from "@/components/architect/header/HeaderSection";
 import ServicesSection from "@/components/architect/services/ServicesSection";
-import ExperienceSection from "@/components/architect/experience/ExperienceSection";
+import ExperienceSection from "@/components/architect/Experience/ExperienceSection";
 import SkillsSection from "@/components/architect/skills/SkillsSection";
 
 export default function ArchitectHome() {
