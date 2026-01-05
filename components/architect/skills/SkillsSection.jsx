@@ -14,10 +14,10 @@ export default function SkillsSection({ data }) {
         {/* skills and skill bars */}
         <div>
           {/* title and subtitle */}
-          <div className="space-y-5">
+          <div className="space-y-5 text-center md:text-left">
             <h2
               id="skills-heading"
-              className="relative text-base font-medium text-primary capitalize max-w-max"
+              className="relative text-base font-medium text-primary capitalize max-w-max mx-auto md:mx-0"
             >
               {skills.title}
               {/* bottom line */}
