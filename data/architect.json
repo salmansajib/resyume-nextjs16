@@ -160,5 +160,73 @@
         "proficiency": 90
       }
     ]
+  },
+  "portfolio": {
+    "title": "my portfolio",
+    "subtitle": "showcasing my creations",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/architect/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/architect/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/architect/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/architect/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/architect/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/architect/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/architect/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "vintage-voyage"]
+      }
+    ]
   }
 }
