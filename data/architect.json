@@ -258,5 +258,31 @@
         "phone": "+003 123 4567 89"
       }
     ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "discovering life’s simple pleasures",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/lawyer/icons/hobbies/riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/lawyer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/lawyer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/lawyer/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }
