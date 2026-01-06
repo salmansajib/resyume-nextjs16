@@ -31,25 +31,43 @@ export default function PortfolioGallery({ portfolioData }) {
           const isActive = active === category.id;
 
           return (
-            <button
+            <motion.button
               key={category.id}
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`relative px-12 py-3 rounded-md text-base uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`relative px-12 py-3 rounded-md text-base uppercase ease-in-out cursor-pointer ${
                 isActive
                   ? "bg-transparent text-text-primary"
                   : "bg-transparent text-text-primary backdrop-blur-xs"
               }`}
+              whileTap={{
+                scale: 0.9,
+              }}
+              whileHover={{
+                scale: 1.05,
+              }}
             >
               {isActive && (
                 <>
-                  <span className="absolute inset-0 rounded-md border-[0.5px] border-primary"></span>
-                  <span className="absolute w-full h-full top-1 left-1 rounded-md border-[0.5px] border-primary"></span>
+                  <motion.span
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className="absolute inset-0 rounded-md border-[0.5px] border-primary"
+                  />
+                  <motion.span
+                    initial={{ opacity: 0, scale: 0.9, x: 0, y: 0 }}
+                    animate={{ opacity: 1, scale: 1, x: 4, y: 4 }}
+                    exit={{ opacity: 0, scale: 0.9, x: 0, y: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
+                    className="absolute inset-0 rounded-md border-[0.5px] border-primary"
+                  />
                 </>
               )}
               <span className="relative z-10">{category.label}</span>
-            </button>
+            </motion.button>
           );
         })}
       </nav>
@@ -84,10 +102,7 @@ export default function PortfolioGallery({ portfolioData }) {
             }}
             loop
             breakpoints={{
-              375: {
-                slidesPerView: 1,
-              },
-              640: {
+              450: {
                 slidesPerView: 2,
               },
               768: {

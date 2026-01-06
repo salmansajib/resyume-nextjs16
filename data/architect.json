@@ -228,5 +228,35 @@
         "categories": ["golden", "vintage-voyage"]
       }
     ]
+  },
+  "referrals": {
+    "title": "referrals",
+    "subtitle": "credible professional referrals",
+    "items": [
+      {
+        "id": "michael-bierut",
+        "photo": "/assets/architect/images/referrals/michael-bierut.jpg",
+        "name": "Michael Bierut",
+        "position": "lead architect",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "stefan-sagmeister",
+        "name": "Stefan Sagmeister",
+        "position": "senior architect",
+        "photo": "/assets/architect/images/referrals/stefan-sagmeister.jpg",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "rodrigo-corral",
+        "name": "Rodrigo Corral",
+        "position": "design architect",
+        "photo": "/assets/architect/images/referrals/rodrigo-corral.jpg",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
