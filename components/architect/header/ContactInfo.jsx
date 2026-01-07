@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import CircularText from "@/components/CircularText";
 import LocationIcon from "@/components/icons/LocationIcon";
 import EmailIcon from "@/components/icons/EmailIcon";
@@ -9,9 +10,20 @@ export default function ContactInfo({ heroData, className }) {
   return (
     <div className={cn("flex items-center gap-20 mt-10 md:mt-0", className)}>
       {/* cv download link */}
-      <a
+      <motion.a
         href="#"
-        className="text-primary hover:scale-105 hover:rotate-360 transition-all duration-500 ease-in-out"
+        className="text-primary"
+        whileHover={{
+          scale: 1.1,
+        }}
+        whileTap={{
+          scale: 0.9,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
       >
         <CircularText
           text="• Download CV • Download CV"
@@ -35,7 +47,7 @@ export default function ContactInfo({ heroData, className }) {
             />
           </svg>
         </CircularText>
-      </a>
+      </motion.a>
 
       {/* contact info */}
       <div className="w-full flex flex-col items-end gap-5 bg-background-secondary py-10 px-2 sm:px-10">

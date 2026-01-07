@@ -7,6 +7,7 @@ import SkillsSection from "@/components/architect/skills/SkillsSection";
 import PortfolioSection from "@/components/architect/portfolio/PortfolioSection";
 import ReferralsSection from "@/components/architect/referrals/ReferralsSection";
 import HobbiesSection from "@/components/architect/hobbies/HobbiesSection";
+import FooterSection from "@/components/architect/footer/FooterSection";
 
 export default function ArchitectHome() {
   const data = architectData;
@@ -23,6 +24,7 @@ export default function ArchitectHome() {
       <PortfolioSection data={data} />
       <ReferralsSection data={data} />
       <HobbiesSection data={data} />
+      <FooterSection data={data} />
     </div>
   );
 }
