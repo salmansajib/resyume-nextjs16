@@ -1,8 +1,12 @@
 import React from "react";
+import { motion } from "motion/react";
 
-export default function Education({ item }) {
+export default function Education({ item, fadeInUp }) {
   return (
-    <article className="w-full max-w-[500px] h-full min-h-[230px] relative p-10 pl-15">
+    <motion.article
+      variants={fadeInUp}
+      className="w-full max-w-[500px] h-full min-h-[230px] relative p-10 pl-15"
+    >
       <div className="space-y-3">
         <h4 className="text-2xl font-medium font-lora">{item.institution}</h4>
         <p className="text-lg text-text-secondary">{item.degree}</p>
@@ -26,6 +30,6 @@ export default function Education({ item }) {
         <div className="w-2 h-px bg-border-primary"></div>
         <div className="w-2 h-px bg-border-primary"></div>
       </div>
-    </article>
+    </motion.article>
   );
 }

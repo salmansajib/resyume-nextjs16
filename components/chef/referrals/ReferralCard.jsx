@@ -1,11 +1,12 @@
+import React from "react";
+import Image from "next/image";
+import { motion } from "motion/react";
 import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
-import Image from "next/image";
-import React from "react";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
-    <article>
+    <motion.article variants={fadeInUp}>
       {/* image */}
       <div>
         <Image
@@ -41,6 +42,6 @@ export default function ReferralCard({ item }) {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }

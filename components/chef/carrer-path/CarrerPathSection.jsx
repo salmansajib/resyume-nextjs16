@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function CarrerPathSection({ data }) {
   const { career_path } = data;
@@ -53,7 +56,7 @@ export default function CarrerPathSection({ data }) {
         {/* education and experience */}
         <div className="mt-15">
           {/* work experience */}
-          <div className="space-y-10">
+          <InViewAnimator variants={staggerContainer} className="space-y-10">
             <h3 className="font-semibold text-[34px] leading-none">
               Work Experience
             </h3>
@@ -64,21 +67,22 @@ export default function CarrerPathSection({ data }) {
                   item={item}
                   formatPeriod={formatPeriod}
                   getDateTime={getDateTime}
+                  fadeInUp={fadeInUp}
                 />
               ))}
             </div>
-          </div>
+          </InViewAnimator>
           {/* education */}
-          <div className="space-y-10">
+          <InViewAnimator variants={staggerContainer} className="space-y-10">
             <h3 className="font-semibold text-[34px] leading-none">
               Education
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
               {career_path.education.map((item) => (
-                <Education key={item.id} item={item} />
+                <Education key={item.id} item={item} fadeInUp={fadeInUp} />
               ))}
             </div>
-          </div>
+          </InViewAnimator>
         </div>
       </div>
     </section>

@@ -1,8 +1,17 @@
 import React from "react";
+import { motion } from "motion/react";
 
-export default function WorkExperience({ item, formatPeriod, getDateTime }) {
+export default function WorkExperience({
+  item,
+  formatPeriod,
+  getDateTime,
+  fadeInUp,
+}) {
   return (
-    <article className="w-full max-w-[500px] relative p-10 pl-15">
+    <motion.article
+      variants={fadeInUp}
+      className="w-full max-w-[500px] relative p-10 pl-15"
+    >
       <div className="space-y-3">
         <h4 className="text-2xl font-medium font-lora">{item.position}</h4>
         <p className="text-lg text-text-secondary">{item.location}</p>
@@ -32,6 +41,6 @@ export default function WorkExperience({ item, formatPeriod, getDateTime }) {
         <div className="w-2 h-px bg-border-primary"></div>
         <div className="w-2 h-px bg-border-primary"></div>
       </div>
-    </article>
+    </motion.article>
   );
 }

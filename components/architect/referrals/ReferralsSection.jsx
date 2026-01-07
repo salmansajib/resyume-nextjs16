@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import ReferralCard from "./ReferralCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ReferralsSection({ data }) {
   const { referrals } = data;
@@ -29,11 +32,14 @@ export default function ReferralsSection({ data }) {
         </div>
 
         {/* referrals */}
-        <div className="flex flex-wrap items-center justify-center gap-7 mt-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="flex flex-wrap items-center justify-center gap-7 mt-10"
+        >
           {referrals.items.map((item) => (
-            <ReferralCard key={item.id} item={item} />
+            <ReferralCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );

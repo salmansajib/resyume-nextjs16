@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ExperienceSection({ data }) {
   const { experience } = data;
@@ -55,7 +58,7 @@ export default function ExperienceSection({ data }) {
         {/* work-experience and education */}
         <div className="mt-10 space-y-5">
           {/* work-experience */}
-          <div>
+          <InViewAnimator variants={staggerContainer}>
             <h4 className="text-3xl font-medium font-lora capitalize text-center md:text-left text-primary">
               work experience
             </h4>
@@ -66,21 +69,22 @@ export default function ExperienceSection({ data }) {
                   item={item}
                   formatPeriod={formatPeriod}
                   getDateTime={getDateTime}
+                  fadeInUp={fadeInUp}
                 />
               ))}
             </div>
-          </div>
+          </InViewAnimator>
           {/* education */}
-          <div>
+          <InViewAnimator variants={staggerContainer}>
             <h4 className="text-3xl font-medium font-lora capitalize text-center md:text-left text-primary">
               education
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center md:justify-items-start gap-5 mt-7">
               {experience.education.map((item) => (
-                <Education key={item.id} item={item} />
+                <Education key={item.id} item={item} fadeInUp={fadeInUp} />
               ))}
             </div>
-          </div>
+          </InViewAnimator>
         </div>
       </div>
     </section>

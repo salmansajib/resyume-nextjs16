@@ -2,10 +2,14 @@ import React from "react";
 import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
 import Image from "next/image";
+import { motion } from "motion/react";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
-    <article className="space-y-2 border border-border-primary p-8 hover:border-primary">
+    <motion.article
+      variants={fadeInUp}
+      className="space-y-2 border border-border-primary p-8 hover:border-primary"
+    >
       <div>
         <h4 className="text-[26px] font-medium font-lora text-primary capitalize">
           {item.name}
@@ -37,6 +41,6 @@ export default function ReferralCard({ item }) {
           className="w-[400px] h-auto object-cover"
         />
       </div>
-    </article>
+    </motion.article>
   );
 }

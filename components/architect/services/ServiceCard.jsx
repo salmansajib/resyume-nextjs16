@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
-    <article className="w-full max-w-[357px] h-[390px] border border-text-secondary/40 p-10 bg-[url('/assets/architect/images/services/services-bg.png')] bg-no-repeat bg-bottom bg-contain group relative hover:border-primary transition-colors duration-150">
+    <motion.article
+      variants={fadeInUp}
+      className="w-full max-w-[357px] h-[390px] border border-text-secondary/40 p-10 bg-[url('/assets/architect/images/services/services-bg.png')] bg-no-repeat bg-bottom bg-contain group relative hover:border-primary transition-colors duration-150"
+    >
       <h4 className="relative text-2xl font-medium font-lora text-primary">
         {item.name}
         <div className="absolute -bottom-1.5 left-0 w-[20%] h-px bg-primary"></div>
@@ -19,6 +23,6 @@ export default function ServiceCard({ item }) {
           className="w-[70px] h-auto"
         />
       </div>
-    </article>
+    </motion.article>
   );
 }
