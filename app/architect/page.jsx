@@ -18,12 +18,14 @@ export default function ArchitectHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-dmSans overflow-hidden"
     >
       <HeaderSection data={data} />
-      <ServicesSection data={data} />
-      <ExperienceSection data={data} />
-      <SkillsSection data={data} />
-      <PortfolioSection data={data} />
-      <ReferralsSection data={data} />
-      <HobbiesSection data={data} />
+      <main>
+        <ServicesSection data={data} />
+        <ExperienceSection data={data} />
+        <SkillsSection data={data} />
+        <PortfolioSection data={data} />
+        <ReferralsSection data={data} />
+        <HobbiesSection data={data} />
+      </main>
       <FooterSection data={data} />
     </div>
   );

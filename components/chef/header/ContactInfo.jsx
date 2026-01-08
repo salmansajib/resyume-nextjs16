@@ -12,9 +12,9 @@ export default function ContactInfo({ heroData }) {
         className="flex items-center gap-5 hover:text-primary transition-colors group"
         aria-label={`Call ${heroData.contact.phone}`}
       >
-        <p className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
+        <span className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
           {heroData.contact.phone}
-        </p>
+        </span>
         <div className="border border-primary size-9 flex items-center justify-center rounded-full">
           <PhoneIcon />
         </div>
@@ -26,9 +26,9 @@ export default function ContactInfo({ heroData }) {
         className="flex items-center gap-5 hover:text-primary transition-colors group"
         aria-label={`Email ${heroData.contact.email}`}
       >
-        <p className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
+        <span className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
           {heroData.contact.email}
-        </p>
+        </span>
         <div className="border border-primary size-9 flex items-center justify-center rounded-full">
           <EmailIcon />
         </div>
@@ -44,9 +44,9 @@ export default function ContactInfo({ heroData }) {
         className="flex items-center gap-5 hover:text-primary transition-colors group"
         aria-label={`View location: ${heroData.contact.address}`}
       >
-        <p className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
+        <span className="text-xl font-normal text-text-secondary group-hover:text-primary transition-colors">
           {heroData.contact.address}
-        </p>
+        </span>
         <div className="border border-primary size-9 flex items-center justify-center rounded-full">
           <LocationIcon />
         </div>

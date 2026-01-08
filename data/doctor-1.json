@@ -1,0 +1,17 @@
+{
+  "id": "doctor-1",
+  "type": "doctor-1",
+  "theme": "doctor-1",
+  "hero": {
+    "greeting": "hello world i am!",
+    "name": "Dr. Charlotte Pierce",
+    "title": "Cardiologist",
+    "description": "I am a highly skilled interventional cardiologist specializing in advanced, minimally invasive procedures to treat complex heart conditions. With years of experience in performing angioplasties.",
+    "photo": "/assets/doctor-1/images/profile-image.jpg",
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

@@ -73,6 +73,16 @@ html {
   --color-border-primary: 223deg 4% 37%;
 }
 
+[data-theme="doctor-1"] {
+  --color-primary: 40deg 5% 11%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 0deg 0% 95%;
+  --color-text-primary: 40deg 5% 11%;
+  --color-text-secondary: 0deg 1% 31%;
+  --color-text-dimmed: 0deg 0% 30%;
+  --color-border-primary: 180deg 3% 93%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -85,6 +95,8 @@ html {
   --font-jost: var(--font-jost), sans-serif;
   --font-lora: var(--font-lora), serif;
   --font-dmSans: var(--font-dmSans), sans-serif;
+  --font-plusJakartaSans: var(--font-plusJakartaSans), sans-serif;
+  --font-ebGaramond: var(--font-ebGaramond), serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));
