@@ -1,6 +1,7 @@
 import React from "react";
 import doctorOneData from "@/data/doctor-1.json";
 import HeaderSection from "@/components/doctor-1/header/HeaderSection";
+import CarrerPathSection from "@/components/doctor-1/career-path/CarrerPathSection";
 
 export default function DoctorOneHome() {
   const data = doctorOneData;
@@ -11,6 +12,7 @@ export default function DoctorOneHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />
+      <CarrerPathSection data={data} />
     </div>
   );
 }

@@ -1,12 +1,16 @@
+"use client";
 import React from "react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import ContactInfo from "./ContactInfo";
 import SocialLinks from "./SocialLinks";
 import ProfilePhoto from "./ProfilePhoto";
+import Navigation from "@/components/Navigation";
+import useMenuToggle from "@/hooks/useMenuToggle";
 
 export default function HeaderSection({ data }) {
   const { hero } = data;
+  const { isMenuOpen, setIsMenuOpen, handleMenuClick } = useMenuToggle();
 
   return (
     <header
@@ -17,7 +21,14 @@ export default function HeaderSection({ data }) {
       }}
     >
       <div className="w-full max-w-7xl mx-auto">
-        <Navbar />
+        <Navbar handleMenuClick={handleMenuClick} />
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          bgColor="bg-background-secondary"
+          textColor="text-text-primary"
+          logoSrc="/assets/doctor-1/logos/logo-footer.svg"
+        />
         <div className="pt-5 pb-20 grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center lg:justify-items-start gap-10">
           <div className="space-y-15 lg:space-y-20 order-2 lg:order-1">
             <Intro heroData={hero} />
