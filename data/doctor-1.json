@@ -82,5 +82,47 @@
         "result": "A+"
       }
     ]
+  },
+  "skills": {
+    "title": "My Skills Set",
+    "subtitle": "Professional Medical Competences",
+    "items": [
+      {
+        "id": "diagnostic-expertise",
+        "name": "Diagnostic Expertise",
+        "icon": "/assets/doctor-1/icons/skills/diagnostic-expertise.svg",
+        "proficiency": 97
+      },
+      {
+        "id": "patient-care-and-management",
+        "name": "Patient Care And Management",
+        "icon": "/assets/doctor-1/icons/skills/patient-care.svg",
+        "proficiency": 85
+      },
+      {
+        "id": "team-collaboration",
+        "name": "Team Collaboration",
+        "icon": "/assets/doctor-1/icons/skills/team-collaboration.svg",
+        "proficiency": 80
+      },
+      {
+        "id": "communication-skills",
+        "name": "Communication Skills",
+        "icon": "/assets/doctor-1/icons/skills/communication-skills.svg",
+        "proficiency": 97
+      },
+      {
+        "id": "interventional-procedures",
+        "name": "Interventional Procedures",
+        "icon": "/assets/doctor-1/icons/skills/interventional-procedures.svg",
+        "proficiency": 90
+      },
+      {
+        "id": "emergency-response",
+        "name": "Emergency Response",
+        "icon": "/assets/doctor-1/icons/skills/emergency-response.svg",
+        "proficiency": 98
+      }
+    ]
   }
 }

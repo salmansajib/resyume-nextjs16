@@ -23,7 +23,7 @@ export default function Navigation({
           exit={{ x: "100%" }}
           transition={{ type: "spring", damping: 25, stiffness: 200 }}
           className={cn(
-            "fixed top-0 right-0 z-50 w-full max-w-[450px] font-poppins p-5 overflow-y-auto h-screen scroll-smooth",
+            "fixed top-0 right-0 z-50 w-full max-w-[450px] font-poppins p-5 overflow-y-auto h-screen",
             bgColor,
             textColor,
           )}
