@@ -46,11 +46,7 @@ export default function CarrerPathSection({ data }) {
             {careerPath.subtitle}
           </h2>
           {/* bottom line and icon */}
-          <div className="flex items-center gap-2 justify-between mt-2">
-            <div className="w-27.5 h-px bg-primary"></div>
-            <SectionTitleIcon />
-            <div className="w-27.5 h-px bg-primary"></div>
-          </div>
+          <SectionTitleIcon />
         </div>
 
         {/* experience and education */}

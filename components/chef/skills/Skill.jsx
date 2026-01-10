@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import CircularProgress from "@/components/CircularProgress";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
