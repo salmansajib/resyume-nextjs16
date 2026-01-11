@@ -46,12 +46,6 @@ export default function Education({
             </div>
           </motion.div>
         ))}
-
-        {/* decorative line */}
-        {/* <div
-          aria-hidden="true"
-          className="absolute top-3 left-10 w-px bottom-30 bg-primary"
-        ></div> */}
       </div>
     </InViewAnimator>
   );

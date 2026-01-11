@@ -12,7 +12,7 @@ export default function ContactInfo({ heroData }) {
   return (
     <div className="">
       <div className="relative p-px bg-linear-to-br from-[#6C6C6C]/69 to-[#4C4C4C/86 rounded-xl">
-        <div className="relative z-10 space-y-8 bg-linear-to-b from-[#4F4F4F]/52 to-[#1C1C1C]/52 bg-background-primary px-10 py-10 rounded-xl">
+        <div className="relative z-10 space-y-8 bg-linear-to-b from-[#4F4F4F]/52 to-[#1C1C1C]/52 bg-background-primary px-5 sm:px-10 py-10 rounded-xl">
           <h2 className="font-taviraj font-medium text-3xl">
             {heroData.title}
           </h2>

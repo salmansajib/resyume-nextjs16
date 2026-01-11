@@ -14,7 +14,7 @@ export default function ServicesSection({ data }) {
             id="services-heading"
             className="font-ebGaramond text-[clamp(2rem,4vw,2.5rem)] capitalize text-center px-4 leading-none"
           >
-            {services.subtitle}
+            {services.title}
           </h2>
           {/* bottom line and icon */}
           <SectionTitleIcon />

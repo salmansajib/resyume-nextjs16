@@ -46,12 +46,6 @@ export default function WorkExperience({
             </div>
           </motion.div>
         ))}
-
-        {/* decorative line */}
-        {/* <div
-          aria-hidden="true"
-          className="absolute top-3 left-10 w-px bottom-40 sm:bottom-40 bg-primary"
-        ></div> */}
       </div>
     </InViewAnimator>
   );

@@ -43,7 +43,7 @@ export default function CarrerPathSection({ data }) {
             id="carrer-path-heading"
             className="font-ebGaramond text-[clamp(2rem,4vw,2.5rem)] capitalize text-center px-4 leading-none"
           >
-            {careerPath.subtitle}
+            {careerPath.title}
           </h2>
           {/* bottom line and icon */}
           <SectionTitleIcon />

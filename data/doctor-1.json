@@ -15,8 +15,7 @@
     }
   },
   "careerPath": {
-    "title": "Experience",
-    "subtitle": "My Career Path",
+    "title": "My Career Path",
     "workExperience": [
       {
         "id": "work-001",
@@ -85,7 +84,6 @@
   },
   "skills": {
     "title": "My Skills Set",
-    "subtitle": "Professional Medical Competences",
     "items": [
       {
         "id": "diagnostic-expertise",
@@ -126,8 +124,7 @@
     ]
   },
   "services": {
-    "title": "services",
-    "subtitle": "What I Do",
+    "title": "What I Do",
     "items": [
       {
         "id": "heart-disease-diagnosis",
@@ -188,6 +185,73 @@
           "Providing accurate and timely evaluations."
         ],
         "icon": "/assets/doctor-1/icons/services/heart-rhythm.svg"
+      }
+    ]
+  },
+  "achievements": {
+    "title": "medical achievement",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/doctor-1/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/doctor-1/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
+        "title": "Cardiac Rehabilitation",
+        "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",
+        "categories": ["golden", "vintage-voyage"]
       }
     ]
   }

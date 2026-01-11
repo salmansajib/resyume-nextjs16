@@ -4,6 +4,7 @@ import HeaderSection from "@/components/doctor-1/header/HeaderSection";
 import CarrerPathSection from "@/components/doctor-1/career-path/CarrerPathSection";
 import SkillsSection from "@/components/doctor-1/skills/SkillsSection";
 import ServicesSection from "@/components/doctor-1/services/ServicesSection";
+import AchievementsSection from "@/components/doctor-1/achievements/AchievementsSection";
 
 export default function DoctorOneHome() {
   const data = doctorOneData;
@@ -14,9 +15,12 @@ export default function DoctorOneHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />
-      <CarrerPathSection data={data} />
-      <SkillsSection data={data} />
-      <ServicesSection data={data} />
+      <main>
+        <CarrerPathSection data={data} />
+        <SkillsSection data={data} />
+        <ServicesSection data={data} />
+        <AchievementsSection data={data} />
+      </main>
     </div>
   );
 }

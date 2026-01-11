@@ -1,25 +1,25 @@
 "use client";
-import React, { act } from "react";
+import React from "react";
 import { useState } from "react";
 import { motion } from "motion/react";
-import PortfolioItem from "./PortfolioItem";
+import AchievementItem from "./AchievementItem";
 import Lightbox from "@/components/Lightbox";
 
-export default function PortfolioGallery({ portfolioData }) {
-  const { categories, items } = portfolioData;
+export default function AchievementGallery({ achievementsData }) {
+  const { categories, items } = achievementsData;
 
-  const [active, setActive] = useState("explorer");
+  const [active, setActive] = useState("all");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
 
   // filter items
   const filtered =
-    active === "explorer"
+    active === "all"
       ? items
       : items.filter((item) => item.categories.includes(active));
 
   return (
-    <div className="mt-15">
+    <div className="mt-10">
       {/* category */}
       <nav
         className="flex items-center flex-wrap justify-center gap-5"
@@ -29,24 +29,30 @@ export default function PortfolioGallery({ portfolioData }) {
           const isActive = active === category.id;
 
           return (
-            <button
+            <motion.button
               key={category.id}
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-full text-xl font-jost uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`relative px-12 py-3 rounded-md text-base uppercase ease-in-out cursor-pointer font-semibold ${
                 isActive
-                  ? "bg-primary text-background-secondary border-transparent"
-                  : "bg-transparent text-text-secondary"
+                  ? "bg-primary text-background-primary"
+                  : "bg-linear-to-br from-[#E8E6E5]/82 to-[#E9E9E9]/43 inset-shadow-[0_0_2px_rgba(245,245,245)] backdrop-blur-xs shadow-[0_3px_4.8px_rgba(0,0,0,.03)]"
               }`}
+              whileHover={{
+                scale: 1.05,
+              }}
+              whileTap={{
+                scale: 0.95,
+              }}
             >
               {category.label}
-            </button>
+            </motion.button>
           );
         })}
       </nav>
 
-      {/* portfolio images */}
+      {/* achievement image and video */}
       <motion.div
         initial="hidden"
         animate="visible"
@@ -57,7 +63,7 @@ export default function PortfolioGallery({ portfolioData }) {
             },
           },
         }}
-        className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7"
+        className="w-full mt-10 grid min-[760px]:grid-cols-2 min-[1200px]:grid-cols-3 gap-5"
         key={active}
       >
         {filtered.map((item, index) => (
@@ -75,7 +81,7 @@ export default function PortfolioGallery({ portfolioData }) {
               },
             }}
           >
-            <PortfolioItem
+            <AchievementItem
               item={item}
               onClick={() => {
                 setLightboxOpen(true);
