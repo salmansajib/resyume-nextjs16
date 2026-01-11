@@ -254,5 +254,30 @@
         "categories": ["golden", "vintage-voyage"]
       }
     ]
+  },
+  "hobbies": {
+    "title": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/doctor-1/icons/hobbies/riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/doctor-1/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/doctor-1/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/doctor-1/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }
