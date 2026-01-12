@@ -25,7 +25,7 @@ export default function HeaderSection({ data }) {
           textColor="text-text-primary"
           logoSrc="/assets/doctor-2/logos/footer-logo.svg"
         />
-        <div className="pt-10 pb-20">
+        <div className="py-10">
           <div className="flex flex-col items-center lg:items-start lg:flex-row gap-10">
             <div>
               <Intro heroData={hero} />
@@ -52,6 +52,8 @@ export default function HeaderSection({ data }) {
           className="w-[500px] h-auto"
         />
       </div>
+      {/* background gradient circle */}
+      <div className="absolute -top-200 -left-200 size-[1500px] bg-radial-[circle_at_center] from-[#409B61]/20 from-0% via-[#D9D9D9]/5 via-55% to-transparent to-70%"></div>
     </header>
   );
 }
