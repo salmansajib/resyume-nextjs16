@@ -5,12 +5,13 @@ import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
 import { motion } from "motion/react";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
     <motion.div
       whileHover={{
         scale: 1.05,
       }}
+      variants={fadeInUp}
       className="w-full max-w-[297px] bg-linear-to-br from-[#E8E6E5]/82 to-[#E9E9E9]/43 flex items-center justify-center p-4 rounded-lg inset-shadow-[0_0_2px_rgba(245,245,245)] backdrop-blur-xs"
     >
       <article className="space-y-1">

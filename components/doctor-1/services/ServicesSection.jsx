@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import SectionTitleIcon from "../SectionTitleIcon";
 import ServiceCard from "./ServiceCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ServicesSection({ data }) {
   const { services } = data;
@@ -21,11 +24,14 @@ export default function ServicesSection({ data }) {
         </div>
 
         {/* services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10"
+        >
           {services.items.map((item) => (
-            <ServiceCard key={item.id} item={item} />
+            <ServiceCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );

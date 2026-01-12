@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import SectionTitleIcon from "../SectionTitleIcon";
 import ReferralCard from "./ReferralCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ReferralsSection({ data }) {
   const { referrals } = data;
+
   return (
     <section
       aria-labelledby="referrals-heading"
@@ -27,11 +31,14 @@ export default function ReferralsSection({ data }) {
         </div>
 
         {/* referrals */}
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="flex flex-wrap items-center justify-center gap-8 mt-10"
+        >
           {referrals.items.map((item) => (
-            <ReferralCard key={item.id} item={item} />
+            <ReferralCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );

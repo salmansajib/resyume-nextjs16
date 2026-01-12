@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import SectionTitleIcon from "../SectionTitleIcon";
 import SkillCard from "./SkillCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function SkillsSection({ data }) {
   const { skills } = data;
@@ -28,11 +31,14 @@ export default function SkillsSection({ data }) {
         </div>
 
         {/* skills */}
-        <div className="flex items-start justify-center flex-wrap gap-8 mt-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="flex items-start justify-center flex-wrap gap-8 mt-10"
+        >
           {skills.items.map((item) => (
-            <SkillCard key={item.id} item={item} />
+            <SkillCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );

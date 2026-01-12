@@ -5,7 +5,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
-export default function SkillCard({ item }) {
+export default function SkillCard({ item, fadeInUp }) {
   // Observe whole section
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
@@ -15,6 +15,7 @@ export default function SkillCard({ item }) {
       ref={sectionRef}
       aria-labelledby={`skill-${item.name.replace(/\s+/g, "-").toLowerCase()}`}
       className="flex flex-col items-center"
+      variants={fadeInUp}
       whileHover={{
         scale: 1.05,
       }}
