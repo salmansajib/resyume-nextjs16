@@ -6,6 +6,8 @@ import SkillsSection from "@/components/doctor-1/skills/SkillsSection";
 import ServicesSection from "@/components/doctor-1/services/ServicesSection";
 import AchievementsSection from "@/components/doctor-1/achievements/AchievementsSection";
 import HobbiesSection from "@/components/doctor-1/hobbies/HobbiesSection";
+import ReferralsSection from "@/components/doctor-1/referrals/ReferralsSection";
+import FooterScetion from "@/components/doctor-1/footer/FooterSection";
 
 export default function DoctorOneHome() {
   const data = doctorOneData;
@@ -22,7 +24,9 @@ export default function DoctorOneHome() {
         <ServicesSection data={data} />
         <AchievementsSection data={data} />
         <HobbiesSection data={data} />
+        <ReferralsSection data={data} />
       </main>
+      <FooterScetion />
     </div>
   );
 }

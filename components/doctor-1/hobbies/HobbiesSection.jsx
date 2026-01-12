@@ -13,7 +13,7 @@ export default function HobbiesSection({ data }) {
         {/* title */}
         <div className="max-w-max mx-auto">
           <h2
-            id="achievements-heading"
+            id="hobbies-heading"
             className="font-ebGaramond text-[clamp(2rem,4vw,2.5rem)] capitalize text-center px-4 leading-none"
           >
             {hobbies.title}
