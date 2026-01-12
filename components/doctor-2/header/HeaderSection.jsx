@@ -8,14 +8,15 @@ import ProfilePhoto from "./ProfilePhoto";
 import About from "./About";
 import Navigation from "@/components/Navigation";
 import useMenuToggle from "@/hooks/useMenuToggle";
+import Image from "next/image";
 
 export default function HeaderSection({ data }) {
   const { hero } = data;
   const { isMenuOpen, setIsMenuOpen, handleMenuClick } = useMenuToggle();
 
   return (
-    <header className="px-4">
-      <div className="w-full max-w-7xl mx-auto">
+    <header className="px-4 relative">
+      <div className="w-full max-w-7xl mx-auto relative z-10">
         <Navbar handleMenuClick={handleMenuClick} />
         <Navigation
           isMenuOpen={isMenuOpen}
@@ -40,6 +41,16 @@ export default function HeaderSection({ data }) {
             className="mt-10 lg:-mt-30 w-full sm:w-[80%] lg:w-full mx-auto"
           />
         </div>
+      </div>
+      {/* background image */}
+      <div aria-hidden="true" className="absolute right-0 top-20">
+        <Image
+          src="/assets/doctor-2/images/hero-bg-image.png"
+          alt=""
+          width={700}
+          height={700}
+          className="w-[500px] h-auto"
+        />
       </div>
     </header>
   );
