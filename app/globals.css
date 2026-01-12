@@ -110,3 +110,13 @@ html {
   --color-border-primary: hsl(var(--color-border-primary));
   --color-border-secondary: hsl(var(--color-border-secondary));
 }
+
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
