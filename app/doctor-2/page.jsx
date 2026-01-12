@@ -3,6 +3,7 @@ import doctorTwoData from "@/data/doctor-2.json";
 import HeaderSection from "@/components/doctor-2/header/HeaderSection";
 import CareerPathSection from "@/components/doctor-2/career-path/CareerPathSection";
 import SkillsSection from "@/components/doctor-2/skills/SkillsSection";
+import ServicesSection from "@/components/doctor-2/services/ServicesSection";
 
 export default function DoctorTwoHome() {
   const data = doctorTwoData;
@@ -15,6 +16,7 @@ export default function DoctorTwoHome() {
       <HeaderSection data={data} />
       <CareerPathSection data={data} />
       <SkillsSection data={data} />
+      <ServicesSection data={data} />
     </div>
   );
 }
