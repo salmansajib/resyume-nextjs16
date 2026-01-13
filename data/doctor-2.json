@@ -260,5 +260,31 @@
         "categories": ["golden", "vintage-voyage"]
       }
     ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "Discovering Life’s Simple Pleasures",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/doctor-2/icons/hobbies/riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/doctor-2/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/doctor-2/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/doctor-2/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }

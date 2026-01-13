@@ -5,6 +5,7 @@ import CareerPathSection from "@/components/doctor-2/career-path/CareerPathSecti
 import SkillsSection from "@/components/doctor-2/skills/SkillsSection";
 import ServicesSection from "@/components/doctor-2/services/ServicesSection";
 import PortfolioSection from "@/components/doctor-2/portfolio/PortfolioSection";
+import HobbiesSection from "@/components/doctor-2/hobbies/HobbiesSection";
 
 export default function DoctorTwoHome() {
   const data = doctorTwoData;
@@ -15,10 +16,13 @@ export default function DoctorTwoHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />
-      <CareerPathSection data={data} />
-      <SkillsSection data={data} />
-      <ServicesSection data={data} />
-      <PortfolioSection data={data} />
+      <mian>
+        <CareerPathSection data={data} />
+        <SkillsSection data={data} />
+        <ServicesSection data={data} />
+        <PortfolioSection data={data} />
+        <HobbiesSection data={data} />
+      </mian>
     </div>
   );
 }
