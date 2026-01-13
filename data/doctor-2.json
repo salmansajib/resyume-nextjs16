@@ -286,5 +286,35 @@
         "icon": "/assets/doctor-2/icons/hobbies/sports.svg"
       }
     ]
+  },
+  "referrals": {
+    "title": "My Referrals",
+    "subtitle": "Professional Referrals",
+    "items": [
+      {
+        "id": "alexander",
+        "photo": "/assets/doctor-2/images/referrals/alexander.jpg",
+        "name": "Dr. Alexander",
+        "position": "Cardiologist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "olivia-bennett",
+        "photo": "/assets/doctor-2/images/referrals/olivia-bennett.jpg",
+        "name": "Dr. Olivia Bennett",
+        "position": "Pediatrician",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "ethan-collins",
+        "photo": "/assets/doctor-2/images/referrals/ethan-collins.jpg",
+        "name": "Dr. Ethan Collins",
+        "position": "Orthopedic Surgeon",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }

@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
+import { motion } from "motion/react";
 
 export default function HobbiesSection({ data }) {
   const { hobbies } = data;
@@ -21,11 +25,18 @@ export default function HobbiesSection({ data }) {
         </div>
 
         {/* hobbies */}
-        <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
+        <InViewAnimator
+          variants={staggerContainer}
+          className="flex flex-wrap items-center justify-center gap-10 mt-10"
+        >
           {hobbies.items.map((item) => (
-            <article
+            <motion.article
+              variants={fadeInUp}
               key={item.id}
               className="size-50 rounded-full bg-[#E5F6F4] flex items-center justify-center"
+              whileHover={{
+                scale: 1.05,
+              }}
             >
               <Image
                 src={item.icon}
@@ -34,9 +45,9 @@ export default function HobbiesSection({ data }) {
                 height={150}
                 className="w-20 h-auto object-cover"
               />
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </InViewAnimator>
       </div>
     </section>
   );

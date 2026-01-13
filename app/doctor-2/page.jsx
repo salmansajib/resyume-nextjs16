@@ -6,6 +6,8 @@ import SkillsSection from "@/components/doctor-2/skills/SkillsSection";
 import ServicesSection from "@/components/doctor-2/services/ServicesSection";
 import PortfolioSection from "@/components/doctor-2/portfolio/PortfolioSection";
 import HobbiesSection from "@/components/doctor-2/hobbies/HobbiesSection";
+import ReferralsSection from "@/components/doctor-2/referrals/ReferralsSection";
+import FooterScetion from "@/components/doctor-2/footer/FooterSection";
 
 export default function DoctorTwoHome() {
   const data = doctorTwoData;
@@ -22,7 +24,9 @@ export default function DoctorTwoHome() {
         <ServicesSection data={data} />
         <PortfolioSection data={data} />
         <HobbiesSection data={data} />
+        <ReferralsSection data={data} />
       </mian>
+      <FooterScetion />
     </div>
   );
 }

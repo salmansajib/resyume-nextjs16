@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import WorkExperience from "./WorkExperience";
 import Education from "./Education";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function CareerPathSection({ data }) {
   const { careerPath } = data;
@@ -52,7 +55,10 @@ export default function CareerPathSection({ data }) {
         {/* experience and education */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-15">
           {/* work experience */}
-          <div className="relative max-h-max">
+          <InViewAnimator
+            variants={staggerContainer}
+            className="relative max-h-max"
+          >
             <div className="relative z-10 flex items-center gap-5">
               <div className="size-12.5 bg-primary flex items-center justify-center rounded-tr-2xl">
                 <Image
@@ -74,15 +80,19 @@ export default function CareerPathSection({ data }) {
                   item={item}
                   formatPeriod={formatPeriod}
                   getDateTime={getDateTime}
+                  fadeInUp={fadeInUp}
                 />
               ))}
             </div>
             {/* left line */}
             <div className="absolute top-0 left-6 w-px h-full bg-primary"></div>
-          </div>
+          </InViewAnimator>
 
           {/* education */}
-          <div className="relative max-h-max">
+          <InViewAnimator
+            variants={staggerContainer}
+            className="relative max-h-max"
+          >
             <div className="relative z-10 flex items-center gap-5">
               <div className="size-12.5 bg-primary flex items-center justify-center rounded-tr-2xl">
                 <Image
@@ -99,12 +109,12 @@ export default function CareerPathSection({ data }) {
             </div>
             <div className="space-y-10 mt-10 ml-6">
               {educationData.map((item) => (
-                <Education key={item.id} item={item} />
+                <Education key={item.id} item={item} fadeInUp={fadeInUp} />
               ))}
             </div>
             {/* left line */}
             <div className="absolute top-0 left-6 w-px h-full bg-primary"></div>
-          </div>
+          </InViewAnimator>
         </div>
       </div>
     </section>
