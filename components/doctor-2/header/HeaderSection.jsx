@@ -49,6 +49,7 @@ export default function HeaderSection({ data }) {
           alt=""
           width={700}
           height={700}
+          priority
           className="w-[500px] h-auto"
         />
       </div>

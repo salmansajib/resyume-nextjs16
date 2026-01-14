@@ -4,13 +4,14 @@ import Image from "next/image";
 
 export default function Navbar({ handleMenuClick }) {
   return (
-    <div className="py-5 flex gap-5 items-center justify-between">
+    <div className="py-7 flex gap-5 items-center justify-between">
       <Link href="/">
         <Image
           src="/assets/doctor-1/logos/logo-header.svg"
           alt="rezyume logo"
           width={200}
           height={200}
+          priority
           className="w-[168px] h-auto"
         />
       </Link>
@@ -20,6 +21,7 @@ export default function Navbar({ handleMenuClick }) {
           alt="menu icon"
           width={30}
           height={30}
+          priority
           className="w-[17.5px] h-auto object-cover"
         />
       </button>

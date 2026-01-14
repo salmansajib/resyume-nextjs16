@@ -15,6 +15,7 @@ export default function Navigation({
   textColor = "text-white",
   logoSrc = "/assets/uiuxdesigner/logos/rezyume-logo-footer.svg",
 }) {
+  // prevent scroll on the body when nav is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -71,6 +72,7 @@ export default function Navigation({
                 height={300}
                 src={logoSrc}
                 alt="logo"
+                priority
                 className="w-40 h-auto"
               />
 
@@ -78,7 +80,21 @@ export default function Navigation({
                 className={cn("cursor-pointer hover:text-red-300", textColor)}
                 onClick={() => setIsMenuOpen(false)}
               >
-                ✕
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-x-icon lucide-x"
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
               </button>
             </motion.div>
 

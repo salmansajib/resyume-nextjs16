@@ -18,14 +18,14 @@ export default function DoctorTwoHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />
-      <mian>
+      <main>
         <CareerPathSection data={data} />
         <SkillsSection data={data} />
         <ServicesSection data={data} />
         <PortfolioSection data={data} />
         <HobbiesSection data={data} />
         <ReferralsSection data={data} />
-      </mian>
+      </main>
       <FooterScetion />
     </div>
   );

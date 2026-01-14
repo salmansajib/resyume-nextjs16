@@ -23,7 +23,6 @@ export default function ProfilePhoto({ heroData }) {
       <Image
         src={heroData.photo}
         alt="profile image"
-        loading="eager"
         priority
         width={800}
         height={800}

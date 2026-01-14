@@ -20,12 +20,11 @@ export default function ProfilePhoto() {
         <Image
           src="/assets/photographer/images/profile-image-photographer.jpg"
           alt="Photographer Profile Photo"
-          loading="eager"
           priority
           width={500}
           height={500}
           className="w-[461px] h-auto object-cover"
-          onLoadingComplete={handleLoadingComplete}
+          onLoad={handleLoadingComplete}
         />
       </div>
 

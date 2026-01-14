@@ -9,7 +9,7 @@ export default function ProfilePhoto({ heroData }) {
         alt="Doctor profile photo"
         width={800}
         height={800}
-        loading="eager"
+        priority
         className="w-171 h-auto object-cover"
       />
 

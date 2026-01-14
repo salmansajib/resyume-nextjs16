@@ -8,14 +8,14 @@ export default function FooterScetion() {
 
   return (
     <footer
-      className="w-full bg-background-secondary px-4 py-10 border-t border-border-primary"
+      className="w-full bg-background-secondary px-4 py-7 border-t border-border-primary"
       style={{
         background:
           "linear-gradient(to bottom right, #DAD9D3 0%, #E8E6E5 23%, #D7D3CE 48%, #DBDAD4 73%, #DCD8D3 88%, #CDC9C3 100%)",
       }}
     >
       <div className="w-full max-w-[1580px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center items-center">
           <p className="text-base text-text-primary space-x-3 text-center md:justify-self-end order-3 md:order-3">
             <span>Copyright &copy; {currentYear}</span>
             <span>|</span>

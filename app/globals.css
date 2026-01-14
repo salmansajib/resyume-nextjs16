@@ -95,6 +95,14 @@ html {
   --color-border-primary: 173deg 49% 93%;
 }
 
+[data-theme="doctor-3"] {
+  --color-primary: 252deg 100% 55%;
+  --color-background-primary: 104deg 32% 91%;
+  --color-background-secondary: 0deg 0% 100%;
+  --color-text-primary: 213deg 10% 18%;
+  --color-text-secondary: 213deg 10% 38%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;

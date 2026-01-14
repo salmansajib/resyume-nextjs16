@@ -11,6 +11,7 @@ export default function LogoHeader() {
           alt="rezyume logo"
           width={200}
           height={200}
+          priority
           className="w-[169] h-auto"
         />
       </Link>

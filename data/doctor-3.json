@@ -1,0 +1,20 @@
+{
+  "id": "doctor-3",
+  "type": "doctor-3",
+  "theme": "doctor-3",
+  "hero": {
+    "greeting": "hello world i am!",
+    "name": "Dr. Sofia Martinez, M.D",
+    "title": "Interventional Cardiologist",
+    "photo": "/assets/doctor-3/images/profile-image.jpg",
+    "about": {
+      "title": "about me",
+      "description": "I am a highly skilled interventional cardiologist specializing in advanced, minimally invasive procedures to treat complex heart conditions. With years of experience in performing angioplasties, stent placements, and catheter-based therapies, I am committed to providing personalized care that improves patient outcomes and quality of life. "
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

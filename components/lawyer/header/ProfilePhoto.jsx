@@ -18,7 +18,6 @@ export default function ProfilePhoto({ heroData }) {
         src={heroData.photo}
         alt="profile image"
         priority
-        loading="eager"
         width={500}
         height={500}
         className="w-[393px] h-auto relative z-10 overflow-hidden rounded-xl aspect-3/4 object-cover"

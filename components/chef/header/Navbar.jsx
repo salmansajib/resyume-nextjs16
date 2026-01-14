@@ -11,6 +11,7 @@ export default function Navbar({ handleMenuClick }) {
           alt="rezyume logo"
           width={300}
           height={300}
+          priority
           className="w-[165px] h-auto"
         />
       </Link>
@@ -20,6 +21,7 @@ export default function Navbar({ handleMenuClick }) {
           alt="navigation menu icon"
           width={50}
           height={50}
+          priority
           className="w-[25px] h-auto"
         />
       </button>

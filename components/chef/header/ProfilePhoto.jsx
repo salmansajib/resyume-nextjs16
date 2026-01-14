@@ -9,7 +9,6 @@ export default function ProfilePhoto({ heroData }) {
         alt="profile photo"
         width={700}
         height={700}
-        loading="eager"
         priority
         className="w-[550px] h-auto"
       />
