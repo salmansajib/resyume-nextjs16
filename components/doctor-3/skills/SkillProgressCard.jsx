@@ -10,7 +10,12 @@ export default function SkillProgressCard({
   const { id, name, proficiency } = item;
 
   return (
-    <figure className="flex flex-col gap-7 items-center border border-background-secondary bg-background-secondary/25 px-8 py-15 rounded-4xl">
+    <motion.figure
+      whileHover={{
+        scale: 1.05,
+      }}
+      className="flex flex-col gap-7 items-center border border-background-secondary bg-background-secondary/25 px-8 py-15 rounded-4xl"
+    >
       {/* Screen-reader value */}
       <output aria-live="polite" className="text-4xl font-bold">
         <AnimatedCounter
@@ -55,6 +60,6 @@ export default function SkillProgressCard({
       >
         {name}
       </figcaption>
-    </figure>
+    </motion.figure>
   );
 }

@@ -59,8 +59,8 @@ export default function Navigation({
           >
             {/* logo and close icon */}
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ x: 100 }}
+              animate={{ x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className={cn(
                 "flex items-center justify-between gap-5 pb-5 border-b border-gray-700 overflow-hidden",

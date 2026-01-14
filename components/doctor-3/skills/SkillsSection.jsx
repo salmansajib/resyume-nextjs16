@@ -9,7 +9,7 @@ export default function SkillsSection({ data }) {
   const { skills } = data;
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-200px" });
   const prefersReducedMotion = useReducedMotion();
 
   return (
