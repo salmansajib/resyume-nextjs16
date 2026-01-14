@@ -63,17 +63,17 @@ export default function Navigation({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className={cn(
-                "flex items-center justify-between gap-5 pb-5 border-b border-gray-700",
+                "flex items-center justify-between gap-5 pb-5 border-b border-gray-700 overflow-hidden",
                 textColor,
               )}
             >
               <Image
                 width={300}
-                height={300}
+                height={100}
                 src={logoSrc}
                 alt="logo"
                 priority
-                className="w-40 h-auto"
+                className="w-40 h-[42px]"
               />
 
               <button

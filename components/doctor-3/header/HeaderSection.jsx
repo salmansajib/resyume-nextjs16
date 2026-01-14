@@ -21,7 +21,7 @@ export default function HeaderSection({ data }) {
           setIsMenuOpen={setIsMenuOpen}
           bgColor="bg-background-secondary"
           textColor="text-text-primary"
-          logoSrc="/assets/doctor-2/logos/footer-logo.svg"
+          logoSrc="/assets/doctor-3/logos/logo-footer.svg"
         />
         <div className="pt-10 pb-20 flex flex-col lg:flex-row items-center justify-center gap-20">
           {/* photo, intro and social link. Social links is inside the intro */}
