@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="flex items-center justify-between gap-10 py-7">
       <Link href="/">
@@ -15,7 +15,7 @@ export default function Navbar() {
           className="w-[168px] h-auto object-cover"
         />
       </Link>
-      <button className="cursor-pointer">
+      <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/doctor-3/icons/menu-icon.svg"
           alt="menu icon"

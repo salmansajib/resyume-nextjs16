@@ -1,17 +1,28 @@
+"use client";
 import React from "react";
 import Navbar from "./Navbar";
 import ProfilePhoto from "./ProfilePhoto";
 import Intro from "./Intro";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
+import Navigation from "@/components/Navigation";
+import useMenuToggle from "@/hooks/useMenuToggle";
 
 export default function HeaderSection({ data }) {
   const { hero } = data;
+  const { isMenuOpen, setIsMenuOpen, handleMenuClick } = useMenuToggle();
 
   return (
     <header className="px-4 bg-background-secondary/40">
       <div className="w-full max-w-7xl mx-auto">
-        <Navbar />
+        <Navbar handleMenuClick={handleMenuClick} />
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          bgColor="bg-background-secondary"
+          textColor="text-text-primary"
+          logoSrc="/assets/doctor-2/logos/footer-logo.svg"
+        />
         <div className="pt-10 pb-20 flex flex-col lg:flex-row items-center justify-center gap-20">
           {/* photo, intro and social link. Social links is inside the intro */}
           <div className="w-full max-w-[557px] h-[750px] sm:h-[900px] rounded-full p-px bg-linear-to-b from-[#FDF8FF] to-[#F2FFED]">

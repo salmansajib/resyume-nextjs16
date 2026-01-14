@@ -16,5 +16,51 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "skills": {
+    "title": "my skill set",
+    "subtitle": "professional legal competencies",
+    "items": [
+      {
+        "id": "diagnostic-expertise",
+        "name": "diagnostic expertise",
+        "proficiency": 95
+      },
+      {
+        "id": "patient-care-and-management",
+        "name": "patient care and management",
+        "proficiency": 90
+      },
+      {
+        "id": "interventional-procedures",
+        "name": "interventional procedures",
+        "proficiency": 88
+      },
+      {
+        "id": "preventive-cardiology",
+        "name": "preventive cardiology",
+        "proficiency": 92
+      },
+      {
+        "id": "team-collaboration",
+        "name": "team collaboration",
+        "proficiency": 87
+      },
+      {
+        "id": "communication-skills",
+        "name": "communication skills",
+        "proficiency": 97
+      },
+      {
+        "id": "emergency-response",
+        "name": "emergency response",
+        "proficiency": 88
+      },
+      {
+        "id": "technology-proficiency",
+        "name": "technology proficiency",
+        "proficiency": 90
+      }
+    ]
   }
 }
