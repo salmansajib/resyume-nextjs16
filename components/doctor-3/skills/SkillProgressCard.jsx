@@ -21,7 +21,7 @@ export default function SkillProgressCard({
         <AnimatedCounter
           value={proficiency}
           isInView={isInView}
-          duration={2}
+          duration={1.5}
           from={0}
         />
         %
@@ -49,7 +49,7 @@ export default function SkillProgressCard({
           transition={
             prefersReducedMotion
               ? { duration: 0 }
-              : { duration: 1.2, ease: "easeOut" }
+              : { duration: 1.5, ease: "easeOut" }
           }
         />
       </div>

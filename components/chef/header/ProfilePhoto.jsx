@@ -10,7 +10,7 @@ export default function ProfilePhoto({ heroData }) {
         width={700}
         height={700}
         priority
-        className="w-[550px] h-auto"
+        className="w-full max-w-[550px] h-auto object-cover"
       />
     </div>
   );

@@ -131,5 +131,81 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "hypertention",
+        "name": "hypertention",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/hypertention.svg"
+      },
+      {
+        "id": "cardiac-imaging",
+        "name": "cardiac imaging",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/cardiac-imaging.svg"
+      },
+      {
+        "id": "heart-disease-diagnosis",
+        "name": "heart disease diagnosis",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/heart-disease-diagnosis.svg"
+      },
+      {
+        "id": "preventive-cardiology",
+        "name": "preventive cardiology",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/preventive-cardiology.svg"
+      },
+      {
+        "id": "heart-rhythm",
+        "name": "heart rhythm",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/heart-rhythm.svg"
+      },
+      {
+        "id": "cardiac-rehabilitation",
+        "name": "cardiac rehabilitation",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/cardiac-rehabilitation.svg"
+      },
+      {
+        "id": "cholesterol-manage",
+        "name": "cholesterol manage",
+        "points": [
+          "Detecting coronary artery disease",
+          "Using tools like ECG and stress tests.",
+          "Providing accurate and timely evaluations."
+        ],
+        "icon": "/assets/doctor-3/icons/services/cholesterol-manage.svg"
+      }
+    ]
   }
 }

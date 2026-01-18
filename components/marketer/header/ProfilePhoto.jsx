@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import DribbleIcon from "@/components/icons/DribbleIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
@@ -8,17 +7,8 @@ import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import Link from "next/link";
 
 export default function ProfilePhoto({ heroData }) {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
   return (
     <div className="relative">
-      {isLoading && (
-        <div className="absolute inset-0 animate-pulse bg-gray-900/70 backdrop-blur-lg rounded-xl"></div>
-      )}
       {/* profile image */}
       <Image
         src={heroData.photo}
@@ -26,8 +16,7 @@ export default function ProfilePhoto({ heroData }) {
         priority
         width={800}
         height={800}
-        className="w-[519px] h-auto overflow-hidden rounded-xl"
-        onLoad={handleLoadingComplete}
+        className="w-full max-w-[519px] h-auto overflow-hidden rounded-xl"
       />
 
       {/* social links */}
