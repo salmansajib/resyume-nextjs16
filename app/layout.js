@@ -15,7 +15,9 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 const poppins = Poppins({
   variable: "--font-poppins",

@@ -4,6 +4,7 @@ import HeaderSection from "@/components/doctor-3/header/HeaderSection";
 import SkillsSection from "@/components/doctor-3/skills/SkillsSection";
 import CareerPathSection from "@/components/doctor-3/career-path/CareerPathSection";
 import ServicesSection from "@/components/doctor-3/services/ServicesSection";
+import PortfolioSection from "@/components/doctor-3/portfolio/PortfolioSection";
 
 export default function DoctorThreeHome() {
   const data = doctorthreeData;
@@ -17,6 +18,7 @@ export default function DoctorThreeHome() {
       <SkillsSection data={data} />
       <CareerPathSection data={data} />
       <ServicesSection data={data} />
+      <PortfolioSection data={data} />
     </div>
   );
 }
