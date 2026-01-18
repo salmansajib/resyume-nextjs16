@@ -32,7 +32,7 @@ export default function ServicesSection({ data }) {
 
         {/* services */}
         <div className="mt-10">
-          <ul className="flex gap-8 items-start justify-center">
+          <ul className="flex flex-wrap gap-8 items-start justify-center">
             {services.items.map((item) => (
               <ServiceCard
                 key={item.id}

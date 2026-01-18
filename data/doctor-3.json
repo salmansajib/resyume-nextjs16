@@ -207,5 +207,35 @@
         "icon": "/assets/doctor-3/icons/services/cholesterol-manage.svg"
       }
     ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "Showcasing My Vision",
+    "images": [
+      {
+        "id": "portfolio-1",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-1.jpg"
+      },
+      {
+        "id": "portfolio-2",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-2.jpg"
+      },
+      {
+        "id": "portfolio-3",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-3.jpg"
+      },
+      {
+        "id": "portfolio-4",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-4.jpg"
+      },
+      {
+        "id": "portfolio-5",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-5.jpg"
+      },
+      {
+        "id": "portfolio-6",
+        "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-6.jpg"
+      }
+    ]
   }
 }
