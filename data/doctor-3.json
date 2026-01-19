@@ -237,5 +237,66 @@
         "imageSrc": "/assets/doctor-3/images/portfolio/portfolio-6.jpg"
       }
     ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "Professional Referrals",
+    "items": [
+      {
+        "id": "alexander",
+        "photo": "/assets/doctor-3/images/referrals/alexander.jpg",
+        "name": "Dr. Alexander",
+        "position": "Cardiologist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "olivia-bennett",
+        "photo": "/assets/doctor-3/images/referrals/olivia-bennett.jpg",
+        "name": "Dr. Olivia Bennett",
+        "position": "Pediatrician",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "ethan-collins",
+        "photo": "/assets/doctor-3/images/referrals/ethan-collins.jpg",
+        "name": "Dr. Ethan Collins",
+        "position": "Orthopedic Surgeon",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/doctor-3/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/doctor-3/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/doctor-3/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/doctor-3/icons/hobbies/technology.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/doctor-3/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }
