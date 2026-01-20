@@ -103,6 +103,14 @@ html {
   --color-text-secondary: 213deg 10% 38%;
 }
 
+[data-theme="engineer"] {
+  --color-primary: 17deg 66% 50%;
+  --color-background-primary: 04deg 0% 11%;
+  --color-background-secondary: 0deg 0% 20%;
+  --color-text-primary: 0deg 0% 93%;
+  --color-text-secondary: 0deg 0% 59%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -117,6 +125,8 @@ html {
   --font-dmSans: var(--font-dmSans), sans-serif;
   --font-plusJakartaSans: var(--font-plusJakartaSans), sans-serif;
   --font-ebGaramond: var(--font-ebGaramond), serif;
+  --font-chakraPetch: var(--font-chakraPetch), sans-serif;
+  --font-mulish: var(--font-mulish), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-accent: hsl(var(--color-accent));

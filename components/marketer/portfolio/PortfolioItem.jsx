@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function PortfolioItem({ item }) {
   return (
     <article>
-      <a href="#" className="space-y-3">
+      <Link href="/" className="space-y-3">
         <Image
           src={item.src}
           alt={item.alt}
@@ -20,7 +21,7 @@ export default function PortfolioItem({ item }) {
             {item.description}
           </p>
         </div>
-      </a>
+      </Link>
     </article>
   );
 }

@@ -3,41 +3,42 @@ import DribbleIcon from "@/components/icons/DribbleIcon";
 import BehanceIcon from "@/components/icons/BehanceIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
+import Link from "next/link";
 
 export default function SocialLinksHeader() {
   return (
     <div className="hidden sm:flex items-center gap-5">
       {/* dribble icon */}
-      <a
-        href="#"
+      <Link
+        href="/"
         className="text-text-dimmed hover:text-primary transition-all duration-150"
       >
         <DribbleIcon />
-      </a>
+      </Link>
 
       {/* behance icon */}
-      <a
-        href="#"
+      <Link
+        href="/"
         className="text-text-dimmed hover:text-primary transition-all duration-150"
       >
         <BehanceIcon />
-      </a>
+      </Link>
 
       {/* x icon */}
-      <a
-        href="#"
+      <Link
+        href="/"
         className="text-text-dimmed hover:text-primary transition-all duration-150"
       >
         <XIcon />
-      </a>
+      </Link>
 
       {/* instagram icon */}
-      <a
-        href="#"
+      <Link
+        href="/"
         className="text-text-dimmed hover:text-primary transition-all duration-150"
       >
         <InstagramIcon />
-      </a>
+      </Link>
     </div>
   );
 }

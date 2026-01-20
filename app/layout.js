@@ -12,6 +12,8 @@ import {
   DM_Sans,
   Plus_Jakarta_Sans,
   EB_Garamond,
+  Chakra_Petch,
+  Mulish,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -97,6 +99,18 @@ const ebGaramond = EB_Garamond({
   subsets: ["latin"],
   display: "swap",
 });
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakraPetch",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const mulish = Mulish({
+  variable: "--font-mulish",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -108,7 +122,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} antialiased`}
       >
         {children}
       </body>

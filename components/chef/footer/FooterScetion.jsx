@@ -9,7 +9,7 @@ export default function FooterScetion() {
   return (
     <footer className="w-full bg-background-secondary px-4 py-10">
       <div className="w-full max-w-[1580px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-items-center">
           <p className="text-xl text-text-secondary font-jost space-x-3 text-center md:justify-self-start order-3 md:order-1">
             <span>Copyright &copy; {currentYear}</span>
             <span>|</span>

@@ -29,7 +29,8 @@ export default function ContactInfo({ heroData }) {
           text="• Download CV • Download CV"
           className="size-30"
           radius={47}
-          fontSize={10}
+          fontSize={16}
+          duration={25}
         >
           <svg
             width="27"

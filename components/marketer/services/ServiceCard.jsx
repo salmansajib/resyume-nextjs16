@@ -7,7 +7,7 @@ export default function ServiceCard({ service, fadeInUp }) {
   return (
     <motion.div
       variants={fadeInUp}
-      className="bg-transparent border border-[#b1b1b1]/50 relative p-3 hover:border-primary rounded-sm"
+      className="bg-transparent border border-[#b1b1b1]/50 relative p-3 hover:border-primary rounded-lg"
     >
       <GridBackground
         gridSize="65px"

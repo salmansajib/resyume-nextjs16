@@ -1,0 +1,20 @@
+{
+  "id": "engineer",
+  "type": "engineer",
+  "theme": "engineer",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "mechanical engineer",
+    "photo": "/assets/engineer/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "As an Automotive Engineer, I specialize in developing and refining vehicle components, from chassis design to advanced powertrain systems. With a focus on innovation, efficiency, and safety, I bring cutting-edge solutions to life, ensuring vehicles meet both industry standards and customer expectations. Driven by a deep passion for automobiles and technology, I strive to contribute to a greener and smarter automotive future."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
