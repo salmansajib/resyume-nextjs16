@@ -16,5 +16,46 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "skills": {
+    "title": "skill",
+    "subtitle": "my skill set",
+    "items": [
+      {
+        "id": "vehicle-design-and-development",
+        "name": "vehicle design & development",
+        "proficiency": 97
+      },
+      {
+        "id": "powertrain-engineering",
+        "name": "powertrain engineering",
+        "proficiency": 90
+      },
+      {
+        "id": "vehicle-dynamics-analysis",
+        "name": "vehicle dynamics analysis",
+        "proficiency": 80
+      },
+      {
+        "id": "electrical-and-electronic-systems",
+        "name": "electrical & electronic systems",
+        "proficiency": 80
+      },
+      {
+        "id": "cad-tools",
+        "name": "cad tools",
+        "proficiency": 78
+      },
+      {
+        "id": "vehicle-integration-and-development",
+        "name": "vehicle integration & development",
+        "proficiency": 75
+      },
+      {
+        "id": "finite-element-analysis",
+        "name": "finite element analysis",
+        "proficiency": 70
+      }
+    ]
   }
 }
