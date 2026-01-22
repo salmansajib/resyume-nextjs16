@@ -16,7 +16,7 @@ export default function SkillsSection({ data }) {
       aria-labelledby="skills-heading"
       className="px-4 py-20 bg-background-secondary"
     >
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full max-w-[1440px] mx-auto">
         {/* title and subtitle */}
         <div className="space-y-4">
           <h2
@@ -35,7 +35,7 @@ export default function SkillsSection({ data }) {
         </div>
 
         {/* skills */}
-        <ul className="flex gap-x-5 sm:gap-x-40 gap-y-5 items-start justify-center flex-wrap mt-15">
+        <ul className="flex gap-x-7 sm:gap-x-40 lg:gap-x-50 gap-y-5 items-start justify-center flex-wrap mt-15">
           {skills.items.map((skill) => (
             <motion.li
               whileHover={{
