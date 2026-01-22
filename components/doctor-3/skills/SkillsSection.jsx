@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRef } from "react";
-import { motion, useInView, useReducedMotion } from "motion/react";
+import { useInView, useReducedMotion } from "motion/react";
 import SkillProgressCard from "./SkillProgressCard";
 
 export default function SkillsSection({ data }) {
