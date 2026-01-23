@@ -18,13 +18,15 @@ export default function Home() {
       className="min-h-screen bg-background-primary font-poppins"
     >
       <HeaderSection data={data} />
-      <EducationSection data={data} />
-      <ExperienceSection data={data} />
-      <SkillsSection data={data} />
-      <ServicesSection data={data} />
-      <PortfolioSection data={data} />
-      <InterestsSection data={data} />
-      <ReferenceSection data={data} />
+      <main>
+        <EducationSection data={data} />
+        <ExperienceSection data={data} />
+        <SkillsSection data={data} />
+        <ServicesSection data={data} />
+        <PortfolioSection data={data} />
+        <InterestsSection data={data} />
+        <ReferenceSection data={data} />
+      </main>
       <FooterSection />
     </div>
   );
