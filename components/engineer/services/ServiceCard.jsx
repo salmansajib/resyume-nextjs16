@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
     <motion.article
+      variants={fadeInUp}
       whileHover={{
         scale: 1.03,
       }}

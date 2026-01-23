@@ -2,10 +2,17 @@ import React from "react";
 import Image from "next/image";
 import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
+import { motion } from "motion/react";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
-    <article className="flex flex-col sm:flex-row items-center gap-10 bg-background-primary p-5 rounded-lg">
+    <motion.article
+      whileHover={{
+        scale: 1.03,
+      }}
+      variants={fadeInUp}
+      className="flex flex-col sm:flex-row items-center gap-10 bg-background-primary p-5 rounded-lg"
+    >
       {/* image */}
       <div className="rounded-md overflow-hidden">
         <Image
@@ -26,7 +33,7 @@ export default function ReferralCard({ item }) {
         <a
           href={`mailto:${item.email}`}
           aria-label={`Email ${item.email}`}
-          className="text-text-secondary flex items-center gap-3 hover:text-text-primary break-all"
+          className="text-text-secondary flex items-center gap-3 hover:text-text-primary break-all lg:break-normal"
         >
           <span className="size-[32px] rounded-full border border-text-secondary/30 flex items-center justify-center">
             <EmailIconFilled />
@@ -44,6 +51,6 @@ export default function ReferralCard({ item }) {
           {item.phone}
         </a>
       </div>
-    </article>
+    </motion.article>
   );
 }
