@@ -10,7 +10,7 @@ export default function PortfolioSection({ data }) {
       className="w-full overflow-hidden bg-background-primary py-20 bg-[url('/assets/architect/images/portfolio/portfolio-bg.png')] bg-cover bg-top bg-no-repeat"
     >
       {/* title and subtitle */}
-      <div className="space-y-5 text-center">
+      <div className="space-y-5 text-center px-4">
         <h2
           id="portfolio-heading"
           className="relative text-base font-medium text-primary capitalize max-w-max mx-auto"

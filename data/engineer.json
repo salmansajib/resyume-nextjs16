@@ -192,5 +192,90 @@
         "icon": "/assets/engineer/icons/services/automotive-safty.svg"
       }
     ]
+  },
+  "portfolio": {
+    "title": "my portfolio",
+    "subtitle": "engineering beyond limits",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": "portfolio-1",
+        "type": "image",
+        "src": "/assets/engineer/images/portfolio/portfolio-1.png",
+        "icon": "/assets/engineer/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": "portfolio-2",
+        "type": "image",
+        "src": "/assets/engineer/images/portfolio/portfolio-2.png",
+        "icon": "/assets/engineer/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": "portfolio-3",
+        "type": "video",
+        "src": "/assets/engineer/images/portfolio/portfolio-3.png",
+        "vidsrc": "/assets/engineer/images/portfolio/portfolio-3.png",
+        "icon": "/assets/engineer/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": "portfolio-4",
+        "type": "image",
+        "src": "/assets/engineer/images/portfolio/portfolio-4.png",
+        "icon": "/assets/engineer/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": "portfolio-5",
+        "type": "image",
+        "src": "/assets/engineer/images/portfolio/portfolio-2.png",
+        "icon": "/assets/engineer/icons/portfolio-icon-on-hover.svg",
+        "title": "elysian villa",
+        "description": "A dreamlike residence offering opulence and sophistication in every corner.",
+        "categories": ["golden", "vintage-voyage"]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/engineer/icons/hobbies/riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/engineer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/engineer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/engineer/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }

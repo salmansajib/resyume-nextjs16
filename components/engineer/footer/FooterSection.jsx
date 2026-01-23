@@ -63,30 +63,29 @@ export default function FooterSection({ data }) {
       </div>
 
       {/* copyright, logo, social link icon */}
-      <div>
-        <div className="w-full max-w-[1620px] mx-auto px-4 grid gap-5 lg:gap-0 grid-cols-1 lg:grid-cols-3">
-          <p className="text-base text-text-secondary space-x-3 lg:pt-10 lg:pl-10 lg:border-l lg:border-r border-text-secondary/30 order-3 lg:order-1">
-            {/* copyright */}
-            <span>Copyright &copy; {currentYear}</span>
-            <span>|</span>
-            <span className="capitalize">powered by rezyume</span>
-          </p>
-          {/* logo */}
-          <Link
-            href="/"
-            className="lg:pt-10 lg:border-r border-text-secondary/30 w-full mx-auto lg:flex items-center justify-center order-1 lg:order-2"
-          >
-            <Image
-              src="/assets/engineer/logos/logo-footer.svg"
-              alt="rezyume logo"
-              width={300}
-              height={300}
-              className="w-[164px] h-auto object-cover"
-            />
-          </Link>
-          {/* social link icons */}
-          <SocialLinks className="lg:pt-10 lg:justify-self-end lg:pr-10 lg:border-r border-text-secondary/30 order-2 lg:order-3" />
-        </div>
+
+      <div className="w-full max-w-[1620px] mx-auto px-4 grid gap-5 lg:gap-0 grid-cols-1 lg:grid-cols-3">
+        <p className="text-base text-text-secondary space-x-3 lg:pt-10 lg:pl-10 lg:border-l lg:border-r border-text-secondary/30 order-3 lg:order-1">
+          {/* copyright */}
+          <span>Copyright &copy; {currentYear}</span>
+          <span>|</span>
+          <span className="capitalize">powered by rezyume</span>
+        </p>
+        {/* logo */}
+        <Link
+          href="/"
+          className="lg:pt-10 lg:border-r border-text-secondary/30 w-full mx-auto lg:flex items-center justify-center order-1 lg:order-2"
+        >
+          <Image
+            src="/assets/engineer/logos/logo-footer.svg"
+            alt="rezyume logo"
+            width={300}
+            height={300}
+            className="w-[164px] h-auto object-cover"
+          />
+        </Link>
+        {/* social link icons */}
+        <SocialLinks className="lg:pt-10 lg:justify-self-end lg:pr-10 lg:border-r border-text-secondary/30 order-2 lg:order-3" />
       </div>
     </footer>
   );
