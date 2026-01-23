@@ -277,5 +277,27 @@
         "icon": "/assets/engineer/icons/hobbies/sports.svg"
       }
     ]
+  },
+  "referrals": {
+    "title": "My Referrals",
+    "subtitle": "Professional Referrals",
+    "items": [
+      {
+        "id": "noah-patterson",
+        "photo": "/assets/engineer/images/referrals/noah-patterson.jpg",
+        "name": "Noah Patterson",
+        "position": "Automotive R&D Engineer",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "amelia-fisher",
+        "photo": "/assets/engineer/images/referrals/amelia-fisher.jpg",
+        "name": "Amelia Fisher",
+        "position": "Chassis Design Engineer",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }

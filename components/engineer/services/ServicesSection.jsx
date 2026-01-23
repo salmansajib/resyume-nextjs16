@@ -10,7 +10,7 @@ export default function ServicesSection({ data }) {
       aria-labelledby="services-heading"
       className="bg-background-secondary"
     >
-      <div className="px-4 py-20 w-full max-w-[1440px] mx-auto">
+      <div className="px-4 pt-20 pb-10 w-full max-w-[1440px] mx-auto">
         {/* title and subtitle */}
         <div className="space-y-4">
           <h2
