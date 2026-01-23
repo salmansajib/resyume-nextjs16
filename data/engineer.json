@@ -126,5 +126,71 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "vehicle-design",
+        "name": "Vehicle Design",
+        "points": [
+          "Designing innovative vehicle systems and components using advanced CAD tools.",
+          "components using advanced CAD tools.",
+          "Developing prototypes and optimizing designs for performance."
+        ],
+        "icon": "/assets/engineer/icons/services/vehicle-design.svg"
+      },
+      {
+        "id": "powertrain-engineering",
+        "name": "Powertrain Engineering",
+        "points": [
+          "Designing and enhancing internal combustion engines.",
+          "Conducting testing and analysis for powertrain optimization.",
+          "Designing electric and hybrid vehicle systems."
+        ],
+        "icon": "/assets/engineer/icons/services/powertrain-engineer.svg"
+      },
+      {
+        "id": "vehicle-optimization",
+        "name": "Vehicle Optimization",
+        "points": [
+          "Proficient in analyzing and improving suspension, steering, and braking systems for optimal performance.",
+          "Steering, and braking systems for optimal performance.",
+          "Conducting simulations and real-world testing."
+        ],
+        "icon": "/assets/engineer/icons/services/vehicle-optimization.svg"
+      },
+      {
+        "id": "consulting-and-training",
+        "name": "Consulting and Training",
+        "points": [
+          "Offering expert advice on automotive systems and industry trends.",
+          "Training teams on advanced automotive tools and processes.",
+          "Ensuring the scalability of vehicle designs for mass production."
+        ],
+        "icon": "/assets/engineer/icons/services/consulting-training.svg"
+      },
+      {
+        "id": "thermal-systems-design",
+        "name": "Thermal Systems Design",
+        "points": [
+          "Developing cooling and heating systems for engines.",
+          "Optimizing thermal management to ensure system reliability.",
+          "Reducing noise and vibration for improved vehicle comfort."
+        ],
+        "icon": "/assets/engineer/icons/services/thermal-system-design.svg"
+      },
+      {
+        "id": "automotive-safety",
+        "name": "Automotive Safety",
+        "points": [
+          "Developing and integrating advanced safety systems and features.",
+          "Ensuring compliance with industry safety standards.",
+          "Conducting rigorous performance, durability, and safety testing."
+        ],
+        "icon": "/assets/engineer/icons/services/automotive-safty.svg"
+      }
+    ]
   }
 }

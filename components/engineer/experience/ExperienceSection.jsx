@@ -39,7 +39,7 @@ export default function ExperienceSection({ data }) {
   return (
     <section
       aria-labelledby="experience-heading"
-      className="py-20 bg-[url('/assets/engineer/images/experience-bg-1.png')] bg-background-primary bg-no-repeat bg-bottom-right overflow-hidden"
+      className="py-20 bg-[url('/assets/engineer/images/experience-bg.png')] bg-background-primary bg-no-repeat bg-bottom-right overflow-hidden"
     >
       <div className="w-full max-w-[1440px] mx-auto px-4">
         {/* title and subtitle */}

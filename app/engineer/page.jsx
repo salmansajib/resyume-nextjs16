@@ -4,6 +4,7 @@ import HeaderSection from "@/components/engineer/header/HeaderSection";
 import FooterSection from "@/components/engineer/footer/FooterSection";
 import SkillsSection from "@/components/engineer/skills/SkillsSection";
 import ExperienceSection from "@/components/engineer/experience/ExperienceSection";
+import ServicesSection from "@/components/engineer/services/ServicesSection";
 
 export default function EngineerHome() {
   const data = engineerData;
@@ -16,6 +17,7 @@ export default function EngineerHome() {
       <HeaderSection data={data} />
       <SkillsSection data={data} />
       <ExperienceSection data={data} />
+      <ServicesSection data={data} />
       <FooterSection data={data} />
     </div>
   );

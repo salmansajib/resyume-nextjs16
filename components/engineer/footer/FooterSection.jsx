@@ -5,6 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function FooterSection({ data }) {
   const { hero } = data;
+
   // get current year
   const currentYear = new Date().getFullYear();
 
@@ -60,6 +61,7 @@ export default function FooterSection({ data }) {
           </a>
         </div>
       </div>
+
       {/* copyright, logo, social link icon */}
       <div>
         <div className="w-full max-w-[1620px] mx-auto px-4 grid gap-5 lg:gap-0 grid-cols-1 lg:grid-cols-3">
