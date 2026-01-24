@@ -111,6 +111,17 @@ html {
   --color-text-secondary: 0deg 0% 59%;
 }
 
+[data-theme="hair-expert"] {
+  --color-primary: 291deg 66% 41%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 274deg 100% 99%;
+  --color-background-neutral: 0deg 0% 95%;
+  --color-text-primary: 22deg 64% 11%;
+  --color-text-secondary: 0deg 0% 31%;
+  --color-text-dimmed: 0deg 0% 45%;
+  --color-border-primary: 340deg 100% 1%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -127,6 +138,8 @@ html {
   --font-ebGaramond: var(--font-ebGaramond), serif;
   --font-chakraPetch: var(--font-chakraPetch), sans-serif;
   --font-mulish: var(--font-mulish), sans-serif;
+  --font-syne: var(--font-syne), sans-serif;
+  --font-arimo: var(--font-arimo), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-accent: hsl(var(--color-accent));

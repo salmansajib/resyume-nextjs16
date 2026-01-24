@@ -62,7 +62,7 @@ export default function SkillsSection({ data }) {
                     %
                   </div>
                 </div>
-                <p className="text-lg font-medium capitalize text-text-secondary max-w-[12ch] mx-auto text-center">
+                <p className="text-lg font-medium capitalize text-text-secondary max-w-[15ch] mx-auto text-center">
                   {skill.name}
                 </p>
               </article>

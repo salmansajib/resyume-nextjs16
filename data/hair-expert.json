@@ -1,0 +1,20 @@
+{
+  "id": "hair-expert",
+  "type": "hair-expert",
+  "theme": "hair-expert",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "miss Emma Charlotte",
+    "title": "Hair specialist",
+    "photo": "/assets/hair-expert/images/profile-photo.png",
+    "about": {
+      "title": "A Journey of Style & Self-Expression",
+      "description": "My approach is all about personalization. I take the time to understand your hair goals, lifestyle, and unique features to craft a look that complements your individuality. Whether you're looking for a bold new style, a subtle refresh, or deep hair restoration, I’m here to bring your vision to life with expert techniques and high-quality products."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
