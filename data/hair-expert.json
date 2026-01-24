@@ -85,5 +85,77 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "hair-coloring",
+        "name": "Hair Coloring",
+        "points": [
+          "Full & Partial Highlights",
+          "Balayage & Ombre Hydration Therapy",
+          "Root Touch-Ups & Gray Coverage",
+          "Gloss & Toner Treatments"
+        ],
+        "icon": "/assets/hair-expert/icons/services/hair-coloring-icon.svg"
+      },
+      {
+        "id": "haircuts-styling",
+        "name": "Haircuts & Styling",
+        "points": [
+          "Precision Haircuts (Short, Long)",
+          "Scalp Treatments for Hair Growth",
+          "Deep Conditioning & Hydration Therapy",
+          "Special Occasion & Bridal Styling"
+        ],
+        "icon": "/assets/hair-expert/icons/services/haircuts-and-styling-icon.svg"
+      },
+      {
+        "id": "hair-treatments",
+        "name": "Hair Treatments",
+        "points": [
+          "Precision Haircuts (Short, Long)",
+          "Blowouts & Styling",
+          "Layering & Texturizing",
+          "Special Occasion & Bridal Styling"
+        ],
+        "icon": "/assets/hair-expert/icons/services/hair-treatments-icon.svg"
+      },
+      {
+        "id": "hair-extensions",
+        "name": "Hair Extensions",
+        "points": [
+          "Full & Partial Highlights",
+          "Balayage & Ombre Hydration Therapy",
+          "Root Touch-Ups & Gray Coverage",
+          "Gloss & Toner Treatments"
+        ],
+        "icon": "/assets/hair-expert/icons/services/hair-extentions-icon.svg"
+      },
+      {
+        "id": "bridal-special",
+        "name": "Bridal & Special",
+        "points": [
+          "Precision Haircuts (Short, Long)",
+          "Scalp Treatments for Hair Growth",
+          "Deep Conditioning & Hydration Therapy",
+          "Special Occasion & Bridal Styling"
+        ],
+        "icon": "/assets/hair-expert/icons/services/bridal-and-special-icon.svg"
+      },
+      {
+        "id": "luxury-hair-extensions",
+        "name": "Luxury Hair Extensions",
+        "points": [
+          "Precision Haircuts (Short, Long)",
+          "Blowouts & Styling",
+          "Layering & Texturizing",
+          "Special Occasion & Bridal Styling"
+        ],
+        "icon": "/assets/hair-expert/icons/services/luxury-hair-extentions-icon.svg"
+      }
+    ]
   }
 }

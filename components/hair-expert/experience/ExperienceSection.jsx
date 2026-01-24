@@ -4,6 +4,7 @@ import WorkExperience from "./WorkExperience";
 import Education from "./Education";
 import InViewAnimator from "@/components/InViewAnimator";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+import Image from "next/image";
 
 export default function ExperienceSection({ data }) {
   const { experience } = data;
@@ -36,7 +37,10 @@ export default function ExperienceSection({ data }) {
   };
 
   return (
-    <section aria-labelledby="experience-heading">
+    <section
+      aria-labelledby="experience-heading"
+      className="bg-[url(/assets/hair-expert/images/experience-decorative-img-1.png)] bg-no-repeat bg-bottom-right"
+    >
       <div className="w-full max-w-7xl mx-auto px-4 py-20">
         {/* title and subtitle */}
         <div className="space-y-4">

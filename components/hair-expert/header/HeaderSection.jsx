@@ -42,7 +42,7 @@ export default function HeaderSection({ data }) {
       </div>
 
       {/* contact and about */}
-      <div className="grid lg:grid-cols-[1fr_2fr]">
+      <div className="grid lg:grid-cols-[minmax(0,698px)_auto]">
         <ContactInfo data={data} />
         <About data={data} />
       </div>
