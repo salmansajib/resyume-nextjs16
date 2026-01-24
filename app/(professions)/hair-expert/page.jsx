@@ -1,6 +1,7 @@
 import React from "react";
 import hairExpertData from "@/data/hair-expert.json";
 import HeaderSection from "@/components/hair-expert/header/HeaderSection";
+import ExperienceSection from "@/components/hair-expert/experience/ExperienceSection";
 
 export default function HairExpertHome() {
   const data = hairExpertData;
@@ -11,6 +12,7 @@ export default function HairExpertHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-arimo overflow-hidden"
     >
       <HeaderSection data={data} />
+      <ExperienceSection data={data} />
     </div>
   );
 }

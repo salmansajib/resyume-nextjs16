@@ -5,7 +5,7 @@ export default function About({ data, className }) {
   return (
     <div
       className={cn(
-        "py-10 lg:py-20 space-y-5 px-4 lg:pl-20 lg:pr-4",
+        "py-10 lg:py-20 space-y-5 px-4 lg:pl-20 lg:pr-4 bg-background-secondary",
         className,
       )}
     >
