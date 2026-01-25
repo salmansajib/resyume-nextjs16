@@ -188,5 +188,73 @@
         "proficiency": 85
       }
     ]
+  },
+  "portfolio": {
+    "title": "my portfolio",
+    "subtitle": "Twists & Loc Styling",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/hair-expert/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/hair-expert/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/hair-expert/icons/portfolio-icon-on-hover.svg",
+        "title": "Urban Fades & Fresh Cuts",
+        "description": "Sharp fades, crisp line-ups, and bold styles that define street culture.",
+        "categories": ["golden", "vintage-voyage"]
+      }
+    ]
   }
 }
