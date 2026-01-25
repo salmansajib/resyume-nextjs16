@@ -12,7 +12,7 @@ export default function ProfilePhoto({ data, className }) {
           width={1000}
           height={1000}
           priority
-          className="w-[843px] h-auto object-cover relative z-10"
+          className="w-full h-auto object-cover relative z-10"
         />
         {/* background circle */}
         <div className="absolute -top-10 -left-10 size-[350px] sm:size-[700px] lg:size-[890px] bg-linear-to-br from-[#E3D3D2]/70 to-[#ECDAD8]/84 rounded-full"></div>

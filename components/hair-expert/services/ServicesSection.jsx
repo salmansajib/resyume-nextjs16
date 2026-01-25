@@ -19,7 +19,7 @@ export default function ServicesSection({ data }) {
             <span aria-hidden className="w-[50px] h-px bg-primary"></span>
             {services.title}
           </h2>
-          <h3 className="text-center text-[clamp(2.5rem,4vw,3.125rem)] font-bold font-syne leading-none">
+          <h3 className="text-center text-[clamp(2.5rem,4vw,3.125rem)] font-bold font-syne leading-none capitalize">
             {services.subtitle}
           </h3>
         </div>

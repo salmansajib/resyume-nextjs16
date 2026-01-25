@@ -1,10 +1,11 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar({ handleMenuClick }) {
   return (
     <div className="py-5 flex items-center justify-between gap-10">
-      <div>
+      <Link href="/" className="cursor-pointer">
         <Image
           src="/assets/hair-expert/logos/logo-header.svg"
           alt="rezyume logo"
@@ -13,7 +14,7 @@ export default function Navbar({ handleMenuClick }) {
           priority
           className="w-44 h-auto object-cover"
         />
-      </div>
+      </Link>
       <button onClick={() => handleMenuClick()} className="cursor-pointer">
         <Image
           src="/assets/hair-expert/icons/menu-icon.svg"

@@ -157,5 +157,36 @@
         "icon": "/assets/hair-expert/icons/services/luxury-hair-extentions-icon.svg"
       }
     ]
+  },
+  "skills": {
+    "title": "skill",
+    "subtitle": "my skill set",
+    "items": [
+      {
+        "id": "haircuttin",
+        "name": "haircuttin",
+        "proficiency": 97
+      },
+      {
+        "id": "hair-coloring",
+        "name": "hair coloring",
+        "proficiency": 95
+      },
+      {
+        "id": "hair-styling",
+        "name": "hair styling",
+        "proficiency": 85
+      },
+      {
+        "id": "hair-scalp",
+        "name": "hair & scalp",
+        "proficiency": 80
+      },
+      {
+        "id": "trend-awareness",
+        "name": "trend awareness",
+        "proficiency": 85
+      }
+    ]
   }
 }

@@ -9,19 +9,19 @@ export default function CircularProgress({
   progressColor = "#D4AF37",
   trackColor = "#374151",
   duration = 2,
+  lineCap = "round", // "round" | "butt" | "square"
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  // SVG circle calculations
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
-  const fullOffset = circumference; // 0% progress
-  const targetOffset = circumference - (progress / 100) * circumference; // target progress
+  const fullOffset = circumference;
+  const targetOffset = circumference - (progress / 100) * circumference;
 
   return (
     <svg ref={ref} width={size} height={size} className="transform -rotate-90">
-      {/* Background track */}
+      {/* Track */}
       <circle
         cx={size / 2}
         cy={size / 2}
@@ -31,7 +31,7 @@ export default function CircularProgress({
         fill="none"
       />
 
-      {/* Progress circle - animates from 0 to progress */}
+      {/* Progress */}
       <motion.circle
         cx={size / 2}
         cy={size / 2}
@@ -40,13 +40,14 @@ export default function CircularProgress({
         strokeWidth={strokeWidth}
         fill="none"
         strokeDasharray={circumference}
-        strokeLinecap="round"
+        strokeDashoffset={fullOffset}
+        strokeLinecap={lineCap}
         initial={{ strokeDashoffset: fullOffset }}
         animate={{
           strokeDashoffset: isInView ? targetOffset : fullOffset,
         }}
         transition={{
-          duration: duration,
+          duration,
           ease: "easeOut",
         }}
       />

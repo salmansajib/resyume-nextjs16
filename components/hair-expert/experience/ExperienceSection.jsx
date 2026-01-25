@@ -51,7 +51,7 @@ export default function ExperienceSection({ data }) {
             <span aria-hidden className="w-[50px] h-px bg-primary"></span>
             {experience.title}
           </h2>
-          <h3 className="text-center text-[clamp(2.5rem,4vw,3.125rem)] font-bold font-syne leading-none">
+          <h3 className="text-center text-[clamp(2.5rem,4vw,3.125rem)] font-bold font-syne leading-none capitalize">
             {experience.subtitle}
           </h3>
         </div>
