@@ -6,6 +6,7 @@ import ServicesSection from "@/components/hair-expert/services/ServicesSection";
 import SkillsSection from "@/components/hair-expert/skills/SkillsSection";
 import PortfolioSection from "@/components/hair-expert/portfolio/PortfolioSection";
 import ReferralsSection from "@/components/hair-expert/referrals/ReferralsSection";
+import FooterScetion from "@/components/hair-expert/footer/FooterSection";
 
 export default function HairExpertHome() {
   const data = hairExpertData;
@@ -21,6 +22,7 @@ export default function HairExpertHome() {
       <SkillsSection data={data} />
       <PortfolioSection data={data} />
       <ReferralsSection data={data} />
+      <FooterScetion />
     </div>
   );
 }
