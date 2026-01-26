@@ -122,6 +122,14 @@ html {
   --color-border-primary: 340deg 100% 1%;
 }
 
+[data-theme="fitness-coach"] {
+  --color-primary: 349deg 100% 57%;
+  --color-background-primary: 0deg 0% 12%;
+  --color-background-secondary: 0deg 0% 17%;
+  --color-text-primary: 0deg 0% 96%;
+  --color-text-secondary: 0deg 0% 73%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;

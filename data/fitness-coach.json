@@ -1,0 +1,20 @@
+{
+  "id": "fitness-coach",
+  "type": "fitness-coach",
+  "theme": "fitness-coach",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "mr. Alexander Morgan",
+    "title": "Personal health Trainer",
+    "photo": "/assets/fitness-coach/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "As a Fitness Coach, I specialize in designing and delivering personalized training programs that help individuals build strength, improve mobility, and achieve sustainable results. With a strong focus on proper technique, performance optimization, and overall well-being, I guide clients toward healthier lifestyles through structured, goal-driven fitness solutions."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

@@ -21,7 +21,7 @@ export default function ContactInfo({ data, className }) {
             aria-label={`Call ${data.hero.contact.phone}`}
             className="flex items-center gap-3 group"
           >
-            <span className="size-[38px] border border-b-text-dimmed rounded-md flex items-center justify-center">
+            <span className="size-[38px] border border-text-dimmed rounded-md flex items-center justify-center">
               <PhoneIcon />
             </span>
             <span className="text-text-dimmed group-hover:text-text-primary">
@@ -34,7 +34,7 @@ export default function ContactInfo({ data, className }) {
             aria-label={`Email ${data.hero.contact.email}`}
             className="flex items-center gap-3 group"
           >
-            <span className="size-[38px] border border-b-text-dimmed rounded-md flex items-center justify-center">
+            <span className="size-[38px] border border-text-dimmed rounded-md flex items-center justify-center">
               <EmailIcon />
             </span>
             <span className="text-text-dimmed break-all group-hover:text-text-primary">
@@ -51,7 +51,7 @@ export default function ContactInfo({ data, className }) {
             aria-label={`View location: ${data.hero.contact.address}`}
             className="flex items-center gap-3 group"
           >
-            <span className="size-[38px] border border-b-text-dimmed rounded-md flex items-center justify-center">
+            <span className="size-[38px] border border-text-dimmed rounded-md flex items-center justify-center">
               <LocationIcon />
             </span>
             <span className="text-text-dimmed break-all group-hover:text-text-primary">

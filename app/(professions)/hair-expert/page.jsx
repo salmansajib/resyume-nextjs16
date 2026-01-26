@@ -17,11 +17,13 @@ export default function HairExpertHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-arimo overflow-hidden"
     >
       <HeaderSection data={data} />
-      <ExperienceSection data={data} />
-      <ServicesSection data={data} />
-      <SkillsSection data={data} />
-      <PortfolioSection data={data} />
-      <ReferralsSection data={data} />
+      <main>
+        <ExperienceSection data={data} />
+        <ServicesSection data={data} />
+        <SkillsSection data={data} />
+        <PortfolioSection data={data} />
+        <ReferralsSection data={data} />
+      </main>
       <FooterScetion />
     </div>
   );
