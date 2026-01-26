@@ -41,7 +41,10 @@ export default function ExperienceSection({ data }) {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-20">
         {/* subtitle */}
         <div className="relative max-w-max mx-auto leading-none">
-          <h3 className="relative z-10 font-teko text-[clamp(3rem,4vw,4.375rem)]">
+          <h3
+            id="experience-heading"
+            className="relative z-10 font-teko text-[clamp(3rem,4vw,4.375rem)]"
+          >
             {experience.subtitle}
           </h3>
           <div aria-hidden className="absolute bottom-2 -right-8">
@@ -96,7 +99,7 @@ export default function ExperienceSection({ data }) {
       </div>
 
       {/* background image */}
-      <div aria-hidden className="absolute inset-0">
+      <div aria-hidden className="absolute inset-0 opacity-25">
         <Image
           src="/assets/fitness-coach/images/bg-image-experience-section.svg"
           alt=""

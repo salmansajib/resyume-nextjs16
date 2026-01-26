@@ -85,5 +85,47 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "strength-conditioning",
+        "name": "Strength & Conditioning",
+        "description": "Build muscle, improve endurance, and increase power with expert strength training programs.",
+        "icon": "/assets/fitness-coach/icons/services/strength-conditioning-icon.svg"
+      },
+      {
+        "id": "personal-training",
+        "name": "Personal Training",
+        "description": "Get one-on-one coaching tailored to your fitness goals, whether it's weight loss, muscle gain.",
+        "icon": "/assets/fitness-coach/icons/services/personal-training-icon.svg"
+      },
+      {
+        "id": "functional-training",
+        "name": "Functional Training",
+        "description": "Enhance mobility, stability, and performance with exercises designed life movements.",
+        "icon": "/assets/fitness-coach/icons/services/functional-training-icon.svg"
+      },
+      {
+        "id": "cardio-endurance",
+        "name": "Cardio & Endurance",
+        "description": "Improve heart health and stamina with high-intensity cardio workouts, including treadmill.",
+        "icon": "/assets/fitness-coach/icons/services/cardio-endurance-icon.svg"
+      },
+      {
+        "id": "boxing-combat-fitness",
+        "name": "Boxing & Combat Fitness",
+        "description": "Boost strength, agility, and endurance with boxing, kickboxing, and self-defense training.",
+        "icon": "/assets/fitness-coach/icons/services/boxing-combat-fitness-icon.svg"
+      },
+      {
+        "id": "yoga-flexibility-training",
+        "name": "Yoga & Flexibility Training",
+        "description": "Increase flexibility, balance, and mental wellness with guided yoga and stretching sessions.",
+        "icon": "/assets/fitness-coach/icons/services/yoga-flexibility-training-icon.svg"
+      }
+    ]
   }
 }
