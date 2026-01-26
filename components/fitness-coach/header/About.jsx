@@ -13,7 +13,7 @@ export default function About({ heroData, className }) {
         <h2 className="text-2xl font-teko font-medium capitalize text-text-secondary">
           {about.title}
         </h2>
-        <p className="text-text-secondary max-w-[55ch]  xl:max-w-[70ch]">
+        <p className="text-text-secondary max-w-[80ch] lg:max-w-[55ch] xl:max-w-[70ch]">
           {about.description}
         </p>
       </div>

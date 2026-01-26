@@ -1,6 +1,7 @@
 import React from "react";
 import fitnessCoachData from "@/data/fitness-coach.json";
 import HeaderSection from "@/components/fitness-coach/header/HeaderSection";
+import ExperienceSection from "@/components/fitness-coach/experience/ExperienceSection";
 
 export default function FitnessCoachHome() {
   const data = fitnessCoachData;
@@ -11,6 +12,7 @@ export default function FitnessCoachHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-arimo overflow-hidden"
     >
       <HeaderSection data={data} />
+      <ExperienceSection data={data} />
     </div>
   );
 }

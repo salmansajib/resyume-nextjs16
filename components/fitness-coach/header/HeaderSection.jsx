@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import SocialLinks from "./SocialLinks";
@@ -14,7 +15,7 @@ export default function HeaderSection({ data }) {
   const { isMenuOpen, setIsMenuOpen, handleMenuClick } = useMenuToggle();
 
   return (
-    <header>
+    <header className="relative">
       <Navbar handleMenuClick={handleMenuClick} />
       <Navigation
         isMenuOpen={isMenuOpen}
@@ -23,7 +24,7 @@ export default function HeaderSection({ data }) {
         textColor="text-text-primary"
         logoSrc="/assets/fitness-coach/logos/logo-footer.svg"
       />
-      <div className="w-full max-w-7xl mx-auto px-4 grid grid-cols-1 justify-items-center lg:justify-items-normal lg:grid-cols-2 gap-x-5 gap-y-10 lg:gap-y-0 items-center pt-30 lg:pt-0 pb-10 lg:pb-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 justify-items-center lg:justify-items-normal lg:grid-cols-2 gap-x-5 gap-y-10 lg:gap-y-0 items-center pt-30 lg:pt-0 pb-10 lg:pb-0">
         <div className="space-y-10 lg:space-y-40 order-2 lg:order-1">
           <Intro heroData={hero} />
           {/* download cv link is inside social links */}
@@ -38,6 +39,18 @@ export default function HeaderSection({ data }) {
         </div>
       </div>
       <About heroData={hero} className="lg:-mt-35" />
+
+      {/* background image */}
+      <div aria-hidden className="absolute top-120 left-0">
+        <Image
+          src="/assets/fitness-coach/images/bg-hero-image.png"
+          alt=""
+          width={1100}
+          height={230}
+          priority
+          className="w-full h-auto object-cover"
+        />
+      </div>
     </header>
   );
 }

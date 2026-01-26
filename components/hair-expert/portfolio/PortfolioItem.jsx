@@ -57,7 +57,7 @@ export default function PortfolioItem({ item, onClick }) {
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.25 }}
         >
-          <h3 className="font-ebGaramond text-2xl font-medium">{item.title}</h3>
+          <h3 className="font-syne text-2xl font-medium">{item.title}</h3>
           <p className="text-text-secondary">{item.description}</p>
         </motion.div>
       </AnimatePresence>
