@@ -35,7 +35,7 @@ export default function ReferralCard({ item, fadeInUp }) {
           aria-label={`Email ${item.email}`}
           className="text-text-secondary flex items-center gap-3 hover:text-text-primary break-all lg:break-normal"
         >
-          <span className="size-[32px] rounded-full border border-text-secondary/30 flex items-center justify-center">
+          <span className="size-8 rounded-full border border-text-secondary/30 flex items-center justify-center">
             <EmailIconFilled />
           </span>
           {item.email}
@@ -45,7 +45,7 @@ export default function ReferralCard({ item, fadeInUp }) {
           aria-label={`tel ${item.phone}`}
           className="text-text-secondary flex items-center gap-3 hover:text-text-primary"
         >
-          <span className="size-[32px] rounded-full border border-text-secondary/30 flex items-center justify-center">
+          <span className="size-8 rounded-full border border-text-secondary/30 flex items-center justify-center">
             <PhoneIconFilled />
           </span>
           {item.phone}

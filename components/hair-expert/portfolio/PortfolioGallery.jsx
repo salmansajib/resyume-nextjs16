@@ -37,7 +37,7 @@ export default function PortfolioGallery({ portfolioData }) {
               className={`relative px-12 py-3 rounded-md text-base uppercase ease-in-out cursor-pointer font-semibold ${
                 isActive
                   ? "bg-primary text-background-primary"
-                  : "bg-linear-to-br from-[#E8E6E5]/82 to-[#E9E9E9]/43 inset-shadow-[0_0_2px_rgba(245,245,245)] backdrop-blur-xs shadow-[0_3px_4.8px_rgba(0,0,0,.03)]"
+                  : "bg-background-primary/70 inset-shadow-[0_0_2px_rgba(245,245,245)] backdrop-blur-xs shadow-[0_3px_4.8px_rgba(0,0,0,.03)]"
               }`}
               whileHover={{
                 scale: 1.05,

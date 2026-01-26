@@ -25,7 +25,7 @@ export default function HeaderSection({ data }) {
           textColor="text-text-primary"
           logoSrc="/assets/engineer/logos/logo-footer.svg"
         />
-        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-[1fr_560px_1fr] justify-items-center pb-10 items-center gap-10 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-[1fr_560px_1fr] justify-items-center pb-10 lg:pb-0 items-center gap-10 px-4">
           <div className="space-y-10 lg:space-y-20 pt-27 lg:pt-20">
             <Intro heroData={hero} />
             <ContactInfo heroData={hero} />

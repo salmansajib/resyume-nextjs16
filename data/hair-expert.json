@@ -256,5 +256,35 @@
         "categories": ["golden", "vintage-voyage"]
       }
     ]
+  },
+  "referrals": {
+    "title": "My Referrals",
+    "subtitle": "Professional Referrals",
+    "items": [
+      {
+        "id": "amara-stone",
+        "photo": "/assets/hair-expert/images/referrals/amara-stone.jpg",
+        "name": "Amara Stone",
+        "position": "Hair Stylist & Colorist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "isabella-monroe",
+        "photo": "/assets/hair-expert/images/referrals/isabella-monroe.jpg",
+        "name": "Isabella Monroe",
+        "position": "Beauty Consultant",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "eleanor-hayes",
+        "photo": "/assets/hair-expert/images/referrals/eleanor-hayes.jpg",
+        "name": "Eleanor Hayes",
+        "position": "Hair Expert",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
