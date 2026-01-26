@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
-    <article className="border border-[#F9DAFF] flex flex-col items-center gap-4 px-3 py-15 rounded-xl group hover:bg-background-primary transition-all duration-150">
+    <motion.article
+      variants={fadeInUp}
+      className="border border-[#F9DAFF] flex flex-col items-center gap-4 px-3 py-15 rounded-xl group hover:bg-background-primary transition-all duration-150"
+    >
       <div className="size-20 border border-[#F9DAFF] group-hover:border-transparent group-hover:bg-[#F2E5FF] rounded-full flex items-center justify-center mb-5 transition-all duration-150">
         <Image
           src={item.icon}
@@ -28,6 +32,6 @@ export default function ServiceCard({ item }) {
           </li>
         ))}
       </ul>
-    </article>
+    </motion.article>
   );
 }

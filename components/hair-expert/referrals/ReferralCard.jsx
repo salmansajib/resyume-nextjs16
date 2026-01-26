@@ -1,11 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
-    <article className="relative">
+    <motion.article
+      variants={fadeInUp}
+      whileHover={{
+        scale: 1.02,
+      }}
+      className="relative"
+    >
       {/* image */}
       <div className="rounded-lg overflow-hidden">
         <Image
@@ -52,6 +59,6 @@ export default function ReferralCard({ item }) {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
