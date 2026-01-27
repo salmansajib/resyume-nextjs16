@@ -127,5 +127,53 @@
         "icon": "/assets/fitness-coach/icons/services/yoga-flexibility-training-icon.svg"
       }
     ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "My Skill Set",
+    "items": [
+      {
+        "id": "strength-conditioning",
+        "name": "Strength & Conditioning",
+        "icon": "/assets/fitness-coach/icons/skills/strength-conditioning-icon.svg",
+        "proficiency": 95
+      },
+      {
+        "id": "endurance-stamina",
+        "name": "Endurance & Stamina",
+        "icon": "/assets/fitness-coach/icons/skills/endurance-stamina-icon.svg",
+        "proficiency": 90
+      },
+      {
+        "id": "correct-form-technique",
+        "name": "Correct Form & Technique",
+        "icon": "/assets/fitness-coach/icons/skills/correct-form-technique-icon.svg",
+        "proficiency": 98
+      },
+      {
+        "id": "recovery-injury-prevention",
+        "name": "Recovery & Injury Prevention",
+        "icon": "/assets/fitness-coach/icons/skills/recovery-injury-prevention-icon.svg",
+        "proficiency": 85
+      },
+      {
+        "id": "coaching-motivation",
+        "name": "Coaching & Motivation",
+        "icon": "/assets/fitness-coach/icons/skills/coaching-motivation-icon.svg",
+        "proficiency": 98
+      },
+      {
+        "id": "personalized-training",
+        "name": "Personalized Training",
+        "icon": "/assets/fitness-coach/icons/skills/personalized-training-icon.svg",
+        "proficiency": 96
+      },
+      {
+        "id": "high-intensity-interval",
+        "name": "High-Intensity Interval",
+        "icon": "/assets/fitness-coach/icons/skills/high-intensity-interval-icon.svg",
+        "proficiency": 88
+      }
+    ]
   }
 }
