@@ -175,5 +175,51 @@
         "proficiency": 88
       }
     ]
+  },
+  "portfolio": {
+    "title": "my portfolio",
+    "subtitle": "a portfolio of power",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/fitness-coach/images/portfolio/portfolio-1.jpg",
+        "title": "lifting dumbbell in modern gym",
+        "description": "Lifting dumbbells in a modern gym is more than just a workout—it’s a science-backed approach to building strength, improving endurance, and sculpting a powerful physique. With state-of-the-art equipment, expert guidance,",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/fitness-coach/images/portfolio/portfolio-2.jpg",
+        "title": "lifting dumbbell in modern gym",
+        "description": "Lifting dumbbells in a modern gym is more than just a workout—it’s a science-backed approach to building strength, improving endurance, and sculpting a powerful physique. With state-of-the-art equipment, expert guidance,",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/fitness-coach/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/fitness-coach/images/portfolio/portfolio-3.jpg",
+        "title": "lifting dumbbell in modern gym",
+        "description": "Lifting dumbbells in a modern gym is more than just a workout—it’s a science-backed approach to building strength, improving endurance, and sculpting a powerful physique. With state-of-the-art equipment, expert guidance,",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/fitness-coach/images/portfolio/portfolio-4.jpg",
+        "title": "lifting dumbbell in modern gym",
+        "description": "Lifting dumbbells in a modern gym is more than just a workout—it’s a science-backed approach to building strength, improving endurance, and sculpting a powerful physique. With state-of-the-art equipment, expert guidance,",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      }
+    ]
   }
 }

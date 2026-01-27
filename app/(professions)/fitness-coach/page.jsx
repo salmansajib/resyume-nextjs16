@@ -4,6 +4,7 @@ import HeaderSection from "@/components/fitness-coach/header/HeaderSection";
 import ExperienceSection from "@/components/fitness-coach/experience/ExperienceSection";
 import ServicesSection from "@/components/fitness-coach/services/ServicesSection";
 import SkillsSection from "@/components/fitness-coach/skills/SkillsSection";
+import PortfolioSection from "@/components/fitness-coach/portfolio/PortfolioSection";
 
 export default function FitnessCoachHome() {
   const data = fitnessCoachData;
@@ -17,6 +18,7 @@ export default function FitnessCoachHome() {
       <ExperienceSection data={data} />
       <ServicesSection data={data} />
       <SkillsSection data={data} />
+      <PortfolioSection data={data} />
     </div>
   );
 }

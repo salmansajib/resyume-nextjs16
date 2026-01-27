@@ -1,24 +1,23 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-import ServiceCard from "./ServiceCard";
+import PortfolioGallery from "./PortfolioGallery";
 
-export default function ServicesSection({ data }) {
-  const { services } = data;
+export default function PortfolioSection({ data }) {
+  const { portfolio } = data;
 
   return (
     <section
-      aria-labelledby="services-heading"
+      aria-labelledby="portfolio-heading"
       className="bg-background-secondary"
     >
-      <div className="w-full max-w-7xl mx-auto px-4 py-20">
+      <div className="py-20">
         {/* subtitle */}
         <div className="relative max-w-max mx-auto leading-none">
           <h3
-            id="services-heading"
+            id="portfolio-heading"
             className="relative z-10 font-teko text-[clamp(3rem,4vw,4.375rem)] capitalize"
           >
-            {services.subtitle}
+            {portfolio.subtitle}
           </h3>
           <div aria-hidden className="absolute bottom-2 -right-8">
             <Image
@@ -31,12 +30,8 @@ export default function ServicesSection({ data }) {
           </div>
         </div>
 
-        {/* services */}
-        <div className="flex items-center justify-center flex-wrap gap-x-10 gap-y-5 mt-10">
-          {services.items.map((item) => (
-            <ServiceCard key={item.id} item={item} />
-          ))}
-        </div>
+        {/* portfolio gallery */}
+        <PortfolioGallery portfolioData={portfolio} />
       </div>
     </section>
   );
