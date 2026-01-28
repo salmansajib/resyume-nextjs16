@@ -252,5 +252,35 @@
         "icon": "/assets/fitness-coach/icons/hobbies/sports.svg"
       }
     ]
+  },
+  "referrals": {
+    "title": "My Referrals",
+    "subtitle": "Professional Referrals",
+    "items": [
+      {
+        "id": "james-steel",
+        "photo": "/assets/fitness-coach/images/referrals/james-steel.jpg",
+        "name": "james steel",
+        "position": "Hair Stylist & Colorist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "robert-knox",
+        "photo": "/assets/fitness-coach/images/referrals/robert-knox.jpg",
+        "name": "robert knox",
+        "position": "Beauty Consultant",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "victor-blaze",
+        "photo": "/assets/fitness-coach/images/referrals/victor-blaze.jpg",
+        "name": "victor blaze",
+        "position": "Hair Expert",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
