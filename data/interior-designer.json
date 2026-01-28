@@ -1,0 +1,20 @@
+{
+  "id": "interior-designer",
+  "type": "interior-designer",
+  "theme": "interior-designer",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "miss Emma Charlotte",
+    "title": "interior designer",
+    "photo": "/assets/interior-designer/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "Welcome to my world of design, where creativity meets functionality! I am passionate Interior Designer dedicated to transforming spaces into elegant, comfortable, and inspiring environments. "
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
