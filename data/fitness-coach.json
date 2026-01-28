@@ -221,5 +221,36 @@
         "categories": ["sunset-escape", "vintage-voyage"]
       }
     ]
+  },
+  "hobbies": {
+    "title": "my hobbies",
+    "subtitle": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike-riding",
+        "icon": "/assets/fitness-coach/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/fitness-coach/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/fitness-coach/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/fitness-coach/icons/hobbies/technology.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/fitness-coach/icons/hobbies/sports.svg"
+      }
+    ]
   }
 }
