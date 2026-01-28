@@ -2,13 +2,18 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function HobbiesSection({ data }) {
   const { hobbies } = data;
 
   return (
     <section aria-labelledby="hobbies-heading">
-      <div className="w-full max-w-7xl mx-auto px-4 py-20">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 py-20"
+      >
         {/* subtitle */}
         <div className="relative max-w-max mx-auto leading-none">
           <h3
@@ -35,6 +40,7 @@ export default function HobbiesSection({ data }) {
         >
           {hobbies.items.map((item) => (
             <motion.li
+              variants={fadeInUp}
               whileHover={{
                 scale: 1.05,
               }}
@@ -62,7 +68,7 @@ export default function HobbiesSection({ data }) {
             </motion.li>
           ))}
         </ul>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }

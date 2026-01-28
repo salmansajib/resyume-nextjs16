@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ServicesSection({ data }) {
   const { services } = data;
@@ -11,7 +13,10 @@ export default function ServicesSection({ data }) {
       aria-labelledby="services-heading"
       className="bg-background-secondary"
     >
-      <div className="w-full max-w-7xl mx-auto px-4 py-20">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 py-20"
+      >
         {/* subtitle */}
         <div className="relative max-w-max mx-auto leading-none">
           <h3
@@ -34,10 +39,10 @@ export default function ServicesSection({ data }) {
         {/* services */}
         <div className="flex items-center justify-center flex-wrap gap-x-10 gap-y-5 mt-10">
           {services.items.map((item) => (
-            <ServiceCard key={item.id} item={item} />
+            <ServiceCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
         </div>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }
