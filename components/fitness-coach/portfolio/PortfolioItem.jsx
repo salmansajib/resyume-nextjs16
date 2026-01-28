@@ -17,7 +17,6 @@ export default function PortfolioItem({ item, onClick }) {
             width={500}
             height={500}
             priority
-            quality={100}
             className="w-full h-full object-cover"
           />
         </div>
