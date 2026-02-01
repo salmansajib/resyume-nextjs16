@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
@@ -11,7 +12,7 @@ export default function ServiceCard({ item }) {
       className="relative"
     >
       <div className="bg-background-primary w-[86px] h-[92px] flex items-center justify-center rounded-xl shadow-[0_0_13px_rgba(0,0,0,0.11)] ml-15 -mb-10 relative z-10">
-        <Image
+        <img
           src={item.icon}
           alt={`${item.name} icon`}
           width={50}

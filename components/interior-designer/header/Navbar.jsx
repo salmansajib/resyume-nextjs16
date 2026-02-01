@@ -3,7 +3,7 @@ import Image from "next/image";
 import SocialLinks from "./SocialLinks";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="py-7 flex items-center justify-between">
       <Link href="/">
@@ -22,7 +22,8 @@ export default function Navbar() {
           <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-2 bg-primary"></div>
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-0.5 h-2 bg-primary"></div>
         </div>
-        <button>
+        {/* menu icon */}
+        <button onClick={() => handleMenuClick()} className="cursor-pointer">
           <Image
             src="/assets/interior-designer/icons/menu-icon.svg"
             alt="manu icon"

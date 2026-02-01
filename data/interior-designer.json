@@ -151,5 +151,31 @@
         "result": "A+"
       }
     ]
+  },
+  "skills": {
+    "title": "skills",
+    "subtitle": "my skill set",
+    "items": [
+      {
+        "id": "design-and-planning",
+        "name": "design and planning",
+        "proficiency": 97
+      },
+      {
+        "id": "space-planning-layout",
+        "name": "Space Planning & Layout",
+        "proficiency": 70
+      },
+      {
+        "id": "color-theory-meterial-selection",
+        "name": "Color Theory & Material Selection",
+        "proficiency": 80
+      },
+      {
+        "id": "furniture-decor",
+        "name": "Furniture & Decor Styling",
+        "proficiency": 90
+      }
+    ]
   }
 }
