@@ -1,18 +1,24 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import PhoneIcon from "@/components/icons/PhoneIcon";
 import EmailIcon from "@/components/icons/EmailIcon";
 import LocationIcon from "@/components/icons/LocationIcon";
 import CircularText from "@/components/CircularText";
 import { motion } from "motion/react";
-import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export default function ContactInfo({ data, className }) {
   const { hero } = data;
   const heroData = hero;
 
   return (
-    <div className="flex items-center gap-3 justify-between mt-15">
+    <div
+      className={cn(
+        "flex flex-col sm:flex-row items-center gap-5 justify-between mt-10 lg:mt-15",
+        className,
+      )}
+    >
       <div className="relative bg-primary max-w-max px-10 py-10 rounded-lg">
         <div className="space-y-5 relative z-10">
           {/* phone */}
@@ -59,7 +65,7 @@ export default function ContactInfo({ data, className }) {
             </span>
           </a>
         </div>
-        <div className="absolute w-full h-full -top-4 -right-4 border border-primary rounded-lg"></div>
+        <div className="absolute w-full h-full -top-2 -right-2 md:-top-4 md:-right-4 border border-primary rounded-lg"></div>
       </div>
 
       {/* download cv link */}
