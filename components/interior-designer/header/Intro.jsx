@@ -5,7 +5,16 @@ export default function Intro({ data }) {
 
   return (
     <div className="space-y-5">
-      <p className="capitalize font-medium">{hero.greeting}</p>
+      <p className="capitalize font-medium flex items-center gap-2">
+        <span
+          aria-hidden
+          className="bg-primary w-0.5 h-5 flex flex-col items-center justify-between"
+        >
+          <span className="bg-primary w-1.5 h-0.5"></span>
+          <span className="bg-primary w-1.5 h-0.5"></span>
+        </span>
+        {hero.greeting}
+      </p>
       <h1 className="font-playfairDisplay text-[60px] capitalize leading-none max-w-[12ch]">
         {hero.name}
       </h1>

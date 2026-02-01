@@ -1,6 +1,7 @@
 import React from "react";
 import interiorDesignerData from "@/data/interior-designer.json";
 import HeaderSection from "@/components/interior-designer/header/HeaderSection";
+import ServicesSection from "@/components/interior-designer/services/ServicesSection";
 
 export default function InteriorDesignerHome() {
   const data = interiorDesignerData;
@@ -11,6 +12,7 @@ export default function InteriorDesignerHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-barlow overflow-hidden"
     >
       <HeaderSection data={data} />
+      <ServicesSection data={data} />
     </div>
   );
 }
