@@ -245,5 +245,66 @@
         "categories": ["living-rooms", "commercial"]
       }
     ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "what inspires me",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/interior-designer/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/interior-designer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/interior-designer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/interior-designer/icons/hobbies/technology.svg"
+      },
+      {
+        "id": "sports",
+        "name": "sports",
+        "icon": "/assets/interior-designer/icons/hobbies/sports.svg"
+      }
+    ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "james-steel",
+        "photo": "/assets/interior-designer/images/referrals/james-steel.jpg",
+        "name": "james steel",
+        "position": "Hair Stylist & Colorist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "robert-knox",
+        "photo": "/assets/interior-designer/images/referrals/robert-knox.jpg",
+        "name": "robert knox",
+        "position": "Beauty Consultant",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "victor-blaze",
+        "photo": "/assets/interior-designer/images/referrals/victor-blaze.jpg",
+        "name": "victor blaze",
+        "position": "Hair Expert",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }

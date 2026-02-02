@@ -5,6 +5,7 @@ import ServicesSection from "@/components/interior-designer/services/ServicesSec
 import ExperienceSection from "@/components/interior-designer/Experience/ExperienceSection";
 import SkillsSection from "@/components/interior-designer/skills/SkillsSection";
 import PortfolioSection from "@/components/interior-designer/portfolio/PortfolioSection";
+import HobbiesSection from "@/components/interior-designer/hobbies/HobbiesSection";
 
 export default function InteriorDesignerHome() {
   const data = interiorDesignerData;
@@ -19,6 +20,7 @@ export default function InteriorDesignerHome() {
       <ExperienceSection data={data} />
       <SkillsSection data={data} />
       <PortfolioSection data={data} />
+      <HobbiesSection data={data} />
     </div>
   );
 }
