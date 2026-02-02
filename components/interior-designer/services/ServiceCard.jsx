@@ -3,12 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
     <motion.article
       whileHover={{
         scale: 1.03,
       }}
+      variants={fadeInUp}
       className="relative"
     >
       <div className="bg-background-primary w-[86px] h-[92px] flex items-center justify-center rounded-xl shadow-[0_0_13px_rgba(0,0,0,0.11)] ml-15 -mb-10 relative z-10">
