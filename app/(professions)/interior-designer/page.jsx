@@ -7,6 +7,7 @@ import SkillsSection from "@/components/interior-designer/skills/SkillsSection";
 import PortfolioSection from "@/components/interior-designer/portfolio/PortfolioSection";
 import HobbiesSection from "@/components/interior-designer/hobbies/HobbiesSection";
 import ReferralsSection from "@/components/interior-designer/referrals/ReferralsSection";
+import FooterSection from "@/components/interior-designer/footer/FooterSection";
 
 export default function InteriorDesignerHome() {
   const data = interiorDesignerData;
@@ -17,12 +18,15 @@ export default function InteriorDesignerHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-barlow overflow-hidden"
     >
       <HeaderSection data={data} />
-      <ServicesSection data={data} />
-      <ExperienceSection data={data} />
-      <SkillsSection data={data} />
-      <PortfolioSection data={data} />
-      <HobbiesSection data={data} />
-      <ReferralsSection data={data} />
+      <main>
+        <ServicesSection data={data} />
+        <ExperienceSection data={data} />
+        <SkillsSection data={data} />
+        <PortfolioSection data={data} />
+        <HobbiesSection data={data} />
+        <ReferralsSection data={data} />
+      </main>
+      <FooterSection />
     </div>
   );
 }
