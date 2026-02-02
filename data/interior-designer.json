@@ -177,5 +177,73 @@
         "proficiency": 90
       }
     ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "residential", "label": "Residential" },
+      { "id": "commercial", "label": "Commercial" },
+      { "id": "living-rooms", "label": "Living Rooms" },
+      { "id": "bed-rooms", "label": "Bed Rooms" },
+      { "id": "kitchen-dining", "label": "kitchen & Dining" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["residential", "commercial"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-2-new.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["living-rooms", "commercial", "kitchen-dining"]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["bed-rooms", "kitchen-dining", "residential"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["kitchen & Dining", "residential"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["bed-rooms", "kitchen & Dining", "residential"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/interior-designer/images/portfolio/portfolio-6.jpg",
+        "icon": "/assets/interior-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Beautiful interior of modern restaurant",
+        "description": "A sleek and stylish modern restaurant interior with warm lighting, elegant furnishings, and a sophisticated ambiance.",
+        "categories": ["living-rooms", "commercial"]
+      }
+    ]
   }
 }
