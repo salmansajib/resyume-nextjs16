@@ -2,6 +2,7 @@ import React from "react";
 import virtualAssistantData from "@/data/virtual-assistant.json";
 import HeaderSection from "@/components/virtual-assistant/header/HeaderSection";
 import ExperienceSection from "@/components/virtual-assistant/experience/ExperienceSection";
+import ServicesSection from "@/components/virtual-assistant/services/ServicesSection";
 
 export default function VirtualAssistantHome() {
   const data = virtualAssistantData;
@@ -13,6 +14,7 @@ export default function VirtualAssistantHome() {
     >
       <HeaderSection data={data} />
       <ExperienceSection data={data} />
+      <ServicesSection data={data} />
     </div>
   );
 }

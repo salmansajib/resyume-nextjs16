@@ -95,5 +95,77 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "administrative-support",
+        "name": "Administrative Support",
+        "points": [
+          "Email & calendar management",
+          "Data entry & file organization",
+          "Appointment scheduling",
+          "Travel planning & booking"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/administrative-support-icon.png"
+      },
+      {
+        "id": "customer-service",
+        "name": "Customer Service",
+        "points": [
+          "Responding to emails & inquiries",
+          "Live chat & phone support",
+          "Handling customer complaints",
+          "CRM management"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/customer-service-icon.png"
+      },
+      {
+        "id": "social-media-management",
+        "name": "Social Media Management",
+        "points": [
+          "Content creation & scheduling",
+          "Hashtag & trend research",
+          "Social media analytics",
+          "Engagement & community"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/social-media-management-icon.png"
+      },
+      {
+        "id": "content-writing-research",
+        "name": "Content Writing, Research",
+        "points": [
+          "Blog posts & article writing",
+          "SEO & keyword research",
+          "Proofreading & editing",
+          "Online market research"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/content-writing-research-icon.png"
+      },
+      {
+        "id": "e-commerce-support",
+        "name": "E-Commerce Support",
+        "points": [
+          "Product listing & inventory",
+          "Order processing & tracking",
+          "Customer query handling",
+          "Shopify, Etsy & Amazon"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/e-commerce-support-icon.png"
+      },
+      {
+        "id": "project-management",
+        "name": "Project Management",
+        "points": [
+          "Task delegation & follow-ups",
+          "Team coord communication",
+          "Reports & progress tracking",
+          "Using tools like Trello, ClickUp"
+        ],
+        "icon": "/assets/virtual-assistant/icons/services/project-management-icon.png"
+      }
+    ]
   }
 }
