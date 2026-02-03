@@ -227,5 +227,62 @@
         "categories": ["sunset-escape", "vintage-voyage"]
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skillset",
+    "entries": [
+      {
+        "id": 1,
+        "name": "Client Communication & Support",
+        "percentage": 99
+      },
+      {
+        "id": 2,
+        "name": "CRM Management",
+        "percentage": 94
+      },
+      {
+        "id": 3,
+        "name": "Live Chat & Phone Support",
+        "percentage": 95
+      },
+      {
+        "id": 4,
+        "name": "Handling Customer Inquiries",
+        "percentage": 90
+      },
+      {
+        "id": 5,
+        "name": "Content Creation & Scheduling",
+        "percentage": 97
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/virtual-assistant/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/virtual-assistant/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/virtual-assistant/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/virtual-assistant/icons/hobbies/technology.svg"
+      }
+    ]
   }
 }

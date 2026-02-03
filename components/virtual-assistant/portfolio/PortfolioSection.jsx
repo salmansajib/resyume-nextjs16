@@ -5,8 +5,11 @@ export default function PortfolioSection({ data }) {
   const { portfolio } = data;
 
   return (
-    <section aria-labelledby="portfolio-heading">
-      <div className="w-full max-w-7xl mx-auto px-4 py-20">
+    <section
+      aria-labelledby="portfolio-heading"
+      className="relative overflow-hidden"
+    >
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-20">
         {/* title and subtitle */}
         <div className="flex flex-col gap-4 items-center justify-center">
           <h2
@@ -25,6 +28,10 @@ export default function PortfolioSection({ data }) {
         {/* portfolio */}
         <PortfolioGallery portfolioData={portfolio} />
       </div>
+
+      {/* decorative circles */}
+      <div className="hidden md:block absolute -bottom-30 -right-70 size-[550px] rounded-full border-80 border-[#9BDEE4]"></div>
+      <div className="hidden md:block absolute -top-20 -left-50 size-[420px] rounded-full border-80 border-[#ECB386]"></div>
     </section>
   );
 }

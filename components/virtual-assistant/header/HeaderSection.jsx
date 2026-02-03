@@ -42,7 +42,7 @@ export default function HeaderSection({ data }) {
 
           {/* decorative circles */}
           <div className="hidden md:block absolute -bottom-30 -right-70 size-[550px] rounded-full border-80 border-[#ECB386] "></div>
-          <div className="hidden md:block absolute top-20 -left-60 size-[420px] rounded-full border-70 border-[#9BDEE4] "></div>
+          <div className="hidden md:block absolute top-20 -left-60 size-[420px] rounded-full border-80 border-[#9BDEE4] "></div>
         </div>
       </div>
     </header>
