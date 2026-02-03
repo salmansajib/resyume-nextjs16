@@ -7,7 +7,7 @@ import PortfolioSection from "@/components/interior-designer/portfolio/Portfolio
 import HobbiesSection from "@/components/interior-designer/hobbies/HobbiesSection";
 import ReferralsSection from "@/components/interior-designer/referrals/ReferralsSection";
 import FooterSection from "@/components/interior-designer/footer/FooterSection";
-import ExperienceSection from "@/components/interior-designer/experience/ExperienceSection";
+import ExperienceSection from "@/components/interior-designer/hgjhgjhgjhgjgjgjhgjhgjgjgjhghjghj/ExperienceSection";
 
 export default function InteriorDesignerHome() {
   const data = interiorDesignerData;
