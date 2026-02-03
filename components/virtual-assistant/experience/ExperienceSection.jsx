@@ -48,7 +48,7 @@ export default function ExperienceSection({ data }) {
             <span className="absolute -top-2 left-0 size-8 rounded-full bg-background-neutral/50"></span>
             <span className="absolute -top-5 left-0 size-2.5 rounded-full bg-primary/50"></span>
           </h2>
-          <h3 className="text-[clamp(2rem,4vw,3rem)] font-semibold capitalize leading-none">
+          <h3 className="text-[clamp(2rem,4vw,3rem)] font-semibold capitalize leading-none text-center">
             {experience.subtitle}
           </h3>
         </div>
