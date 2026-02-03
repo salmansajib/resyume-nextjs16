@@ -2,7 +2,7 @@ import React from "react";
 import interiorDesignerData from "@/data/interior-designer.json";
 import HeaderSection from "@/components/interior-designer/header/HeaderSection";
 import ServicesSection from "@/components/interior-designer/services/ServicesSection";
-import ExperienceSection from "@/components/interior-designer/Experience/ExperienceSection";
+import ExperienceSection from "@/components/interior-designer/experience/ExperienceSection";
 import SkillsSection from "@/components/interior-designer/skills/SkillsSection";
 import PortfolioSection from "@/components/interior-designer/portfolio/PortfolioSection";
 import HobbiesSection from "@/components/interior-designer/hobbies/HobbiesSection";
