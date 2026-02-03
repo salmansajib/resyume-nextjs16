@@ -34,7 +34,7 @@ export default function PortfolioGallery({ portfolioData }) {
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`px-12 py-3 text-lg font-medium rounded-lg uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`px-12 py-3 text-lg font-medium rounded-lg uppercase transition-all duration-200 ease-in-out cursor-pointer hover:scale-105 ${
                 isActive
                   ? "bg-primary text-background-primary"
                   : "bg-background-secondary text-text-primary"

@@ -139,6 +139,15 @@ html {
   --color-text-secondary: 213deg 6% 35%;
 }
 
+[data-theme="virtual-assistant"] {
+  --color-primary: 26deg 100% 60%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 184deg 57% 95%;
+  --color-background-neutral: 185deg 57% 50%;
+  --color-text-primary: 165deg 76% 13%;
+  --color-text-secondary: 165deg 8% 45%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;

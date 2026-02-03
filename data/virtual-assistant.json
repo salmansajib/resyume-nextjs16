@@ -1,0 +1,30 @@
+{
+  "id": "virtual-assistant",
+  "type": "virtual-assistant",
+  "theme": "virtual-assistant",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Miss Emma Charlotte",
+    "title": "virtual assistant",
+    "photo": "/assets/virtual-assistant/images/profile-photo.png",
+    "about": {
+      "title": "about me",
+      "subtitle": "Your Productivity Partner",
+      "description": "I'm a dedicated and detail-oriented Virtual Assistant, committed to helping businesses and entrepreneurs streamline tasks, stay organized, and boost productivity. With expertise in administrative support.",
+      "myOfferings": {
+        "title": "what i offer",
+        "points": [
+          "Administrative Support",
+          "Customer Service",
+          "Social Media Management",
+          "Content Writing & Research"
+        ]
+      }
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
