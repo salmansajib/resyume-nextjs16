@@ -5,6 +5,8 @@ import { useRef } from "react";
 import { useInView } from "motion/react";
 import { motion } from "motion/react";
 import Skill from "./Skill";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function SkillsHobbiesSection({ data }) {
   const { skills, hobbies } = data;
@@ -42,7 +44,12 @@ export default function SkillsHobbiesSection({ data }) {
         </section>
 
         {/* hobbies */}
-        <section aria-labelledby="hobbies-heading" className="mt-25">
+        <InViewAnimator
+          as="section"
+          variants={staggerContainer}
+          aria-labelledby="hobbies-heading"
+          className="mt-25"
+        >
           {/* title and subtitle */}
           <div className="flex flex-col gap-4 items-center justify-center">
             <h2
@@ -62,6 +69,7 @@ export default function SkillsHobbiesSection({ data }) {
           <ul className="mt-15 flex flex-wrap items-center justify-center gap-5 md:gap-10">
             {hobbies.items.map((item) => (
               <motion.li
+                variants={fadeInUp}
                 whileHover={{
                   scale: 1.05,
                 }}
@@ -83,7 +91,7 @@ export default function SkillsHobbiesSection({ data }) {
               </motion.li>
             ))}
           </ul>
-        </section>
+        </InViewAnimator>
       </div>
     </div>
   );

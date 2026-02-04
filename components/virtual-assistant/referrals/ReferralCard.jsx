@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import EmailIconFilled from "@/components/icons/EmailIconFilled";
 import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
+import { motion } from "motion/react";
 
-export default function ReferralCard({ item }) {
+export default function ReferralCard({ item, fadeInUp }) {
   return (
-    <article className="relative group">
+    <motion.article variants={fadeInUp} className="relative group">
       <div className="">
         <Image
           src={item.photo}
@@ -48,6 +49,6 @@ export default function ReferralCard({ item }) {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
