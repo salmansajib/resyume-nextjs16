@@ -231,7 +231,7 @@
   "skills": {
     "title": "Skills",
     "subtitle": "My Professional Skillset",
-    "entries": [
+    "items": [
       {
         "id": 1,
         "name": "Client Communication & Support",
@@ -266,22 +266,22 @@
       {
         "id": "bike-riding",
         "name": "bike riding",
-        "icon": "/assets/virtual-assistant/icons/hobbies/bike-riding.svg"
+        "icon": "/assets/virtual-assistant/icons/hobbies/bike-riding.png"
       },
       {
         "id": "travelling",
         "name": "travelling",
-        "icon": "/assets/virtual-assistant/icons/hobbies/travelling.svg"
+        "icon": "/assets/virtual-assistant/icons/hobbies/travelling.png"
       },
       {
         "id": "reading",
         "name": "reading",
-        "icon": "/assets/virtual-assistant/icons/hobbies/reading.svg"
+        "icon": "/assets/virtual-assistant/icons/hobbies/reading.png"
       },
       {
         "id": "technology",
         "name": "technology",
-        "icon": "/assets/virtual-assistant/icons/hobbies/technology.svg"
+        "icon": "/assets/virtual-assistant/icons/hobbies/technology.png"
       }
     ]
   }

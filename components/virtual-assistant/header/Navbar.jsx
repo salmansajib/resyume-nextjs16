@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function Navbar({ handleMenuClick }) {
   return (
-    <div className="w-full max-w-7xl mx-auto py-7 flex items-center justify-between gap-10">
+    <div className="w-full max-w-7xl mx-auto px-4 py-7 flex items-center justify-between gap-10">
       <Link href="/">
         <Image
           src="/assets/virtual-assistant/logos/logo-header.svg"
