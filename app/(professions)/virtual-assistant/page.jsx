@@ -6,6 +6,7 @@ import ServicesSection from "@/components/virtual-assistant/services/ServicesSec
 import PortfolioSection from "@/components/virtual-assistant/portfolio/PortfolioSection";
 import SkillsHobbiesSection from "@/components/virtual-assistant/skills-hobbies/SkillsHobbiesSection";
 import ReferralsSection from "@/components/virtual-assistant/referrals/ReferralsSection";
+import FooterSection from "@/components/virtual-assistant/footer/FooterSection";
 
 export default function VirtualAssistantHome() {
   const data = virtualAssistantData;
@@ -16,11 +17,14 @@ export default function VirtualAssistantHome() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-inter overflow-hidden"
     >
       <HeaderSection data={data} />
-      <ExperienceSection data={data} />
-      <ServicesSection data={data} />
-      <PortfolioSection data={data} />
-      <SkillsHobbiesSection data={data} />
-      <ReferralsSection data={data} />
+      <main>
+        <ExperienceSection data={data} />
+        <ServicesSection data={data} />
+        <PortfolioSection data={data} />
+        <SkillsHobbiesSection data={data} />
+        <ReferralsSection data={data} />
+      </main>
+      <FooterSection />
     </div>
   );
 }

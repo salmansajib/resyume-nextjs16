@@ -16,7 +16,7 @@ export default function ReferralCard({ item }) {
         />
       </div>
 
-      <div className="w-[280px] h-[330px] rounded-2xl border border-background-primary bg-linear-to-t from-text-primary/70 to-text-primary/0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-end pb-10 md:group-hover:border-transparent md:group-hover:bg-linear md:group-hover:from-background-neutral md:group-hover:to-background-neutral transition-all duration-200">
+      <div className="w-[280px] h-[330px] rounded-2xl border border-background-primary bg-linear-to-t from-text-primary/80 to-text-primary/0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-end pb-7 md:group-hover:border-transparent md:group-hover:bg-linear md:group-hover:from-background-neutral md:group-hover:to-background-neutral transition-all duration-200">
         <h3 className="text-lg font-medium text-background-primary">
           {item.name}
         </h3>
