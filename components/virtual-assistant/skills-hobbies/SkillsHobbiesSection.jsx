@@ -59,7 +59,7 @@ export default function SkillsHobbiesSection({ data }) {
           </div>
 
           {/* hobbies */}
-          <ul className="mt-15 flex flex-wrap items-center justify-center gap-10">
+          <ul className="mt-15 flex flex-wrap items-center justify-center gap-5 md:gap-10">
             {hobbies.items.map((item) => (
               <motion.li
                 whileHover={{

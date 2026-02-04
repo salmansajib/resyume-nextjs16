@@ -284,5 +284,35 @@
         "icon": "/assets/virtual-assistant/icons/hobbies/technology.png"
       }
     ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "liam-bennett",
+        "photo": "/assets/virtual-assistant/images/referrals/liam-bennett-new.jpg",
+        "name": "Liam Bennett",
+        "position": "Freelance Virtual Assistant",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/virtual-assistant/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "Remote Executive Assistant",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "nathan-brooks",
+        "photo": "/assets/virtual-assistant/images/referrals/nathan-brooks.jpg",
+        "name": "Nathan Brooks",
+        "position": "Admin Support Specialist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
