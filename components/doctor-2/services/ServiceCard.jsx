@@ -23,7 +23,7 @@ export default function ServiceCard({ item, fadeInUp }) {
           </li>
         ))}
         {/* left line */}
-        <div className="absolute top-[15px] bottom-[60px] -left-5 w-px bg-primary"></div>
+        <div className="hidden md:block absolute top-[15px] bottom-[60px] -left-5 w-px bg-primary"></div>
       </ul>
       {/* service icon */}
       <div className="size-[76px] rounded-tr-3xl bg-[#E5F6F4] flex items-center justify-center mx-auto">
