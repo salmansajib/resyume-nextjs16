@@ -1,0 +1,20 @@
+{
+  "id": "travel-agent",
+  "type": "travel-agent",
+  "theme": "travel-agent",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "Senior Travel Advisor",
+    "photo": "/assets/travel-agent/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "As a Senior Travel Advisor, I specialize in providing personalized, seamless, and budget-friendly travel solutions for individuals, families, and businesses. With extensive experience in flight bookings, hotel reservations, visa processing, and custom tour planning, I ensure that every journey is smooth and stress-free."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

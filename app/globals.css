@@ -148,6 +148,15 @@ html {
   --color-text-secondary: 165deg 8% 45%;
 }
 
+[data-theme="travel-agent"] {
+  --color-primary: 348deg 92% 46%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 240deg 6% 9%;
+  --color-background-neutral: 20deg 20% 97%;
+  --color-text-primary: 0deg 0% 10%;
+  --color-text-secondary: 167deg 8% 45%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -167,6 +176,7 @@ html {
   --font-syne: var(--font-syne), sans-serif;
   --font-arimo: var(--font-arimo), sans-serif;
   --font-barlow: var(--font-barlow), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-accent: hsl(var(--color-accent));
