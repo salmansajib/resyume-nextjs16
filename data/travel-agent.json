@@ -16,5 +16,143 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Do",
+    "items": [
+      {
+        "id": "flight-transportation",
+        "name": "Flight & Transportation Services",
+        "points": [
+          "Flight Booking & Ticket Reservation",
+          "Private Jet & Luxury Air Travel",
+          "Train & Bus Ticket Reservations",
+          "Airport Transfers & Chauffeur Services"
+        ],
+        "icon": "/assets/travel-agent/icons/services/flight-transportation-icon.svg"
+      },
+      {
+        "id": "accommodation-lodging",
+        "name": "Accommodation & Lodging",
+        "points": [
+          "Hotel & Resort Booking",
+          "Vacation Home & Airbnb Rentals",
+          "Business & Corporate Stays",
+          "All-Inclusive & Luxury Stays"
+        ],
+        "icon": "/assets/travel-agent/icons/services/accommodation-lodging-icon.svg"
+      },
+      {
+        "id": "visa-travel-assistance",
+        "name": "Visa & Travel Assistance Services",
+        "points": [
+          "Work & Study Visa Assistance",
+          "Visa Consultation & Processing",
+          "Passport Travel Documentation",
+          "Embassy & Consulate Support"
+        ],
+        "icon": "/assets/travel-agent/icons/services/visa-travel-assistance-icon.svg"
+      },
+      {
+        "id": "custom-travel-packages",
+        "name": "Custom Travel Packages & Tours",
+        "points": [
+          "Honeymoon & Romantic Getaways",
+          "Adventure & Outdoor Excursions",
+          "Family & Group Travel Packages",
+          "Solo Travel & Backpacking Support"
+        ],
+        "icon": "/assets/travel-agent/icons/services/custom-travel-packages-icon.svg"
+      },
+      {
+        "id": "business-corporate-travel",
+        "name": "Business & Corporate Travel Services",
+        "points": [
+          "Corporate Travel Management",
+          "Private Jet & Luxury Air Travel",
+          "Team Retreats & Incentive Tours",
+          "Airport Transfers & Chauffeur Services"
+        ],
+        "icon": "/assets/travel-agent/icons/services/business-corporate-travel-icon.svg"
+      },
+      {
+        "id": "cruise-luxury-travel",
+        "name": "Cruise & Luxury Travel Experiences",
+        "points": [
+          "Luxury Cruise Booking",
+          "Yacht & Private Island Getaways",
+          "Luxury Train Journeys",
+          "Airport Transfers & Chauffeur Services"
+        ],
+        "icon": "/assets/travel-agent/icons/services/cruise-luxury-travel-icon.svg"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "A Collection of My Work",
+    "categories": [
+      { "id": "explorer", "label": "Explorer" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/travel-agent/images/portfolio/portfolio-6.jpg",
+        "icon": "/assets/travel-agent/icons/portfolio-icon-on-hover.svg",
+        "title": "palm trees and sea",
+        "description": "Relax under swaying palm trees and soak in the beauty of the endless sea—your perfect tropical escape awaits!",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      }
+    ]
   }
 }

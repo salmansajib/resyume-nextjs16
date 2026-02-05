@@ -7,7 +7,7 @@ export default function Intro({ heroData, className }) {
     <div className={cn("space-y-4", className)}>
       <p className="text-primary font-medium capitalize flex items-center gap-3">
         <Image
-          src="/assets/travel-agent/images/image-title-decorative.png"
+          src="/assets/travel-agent/icons/title-decorative-icon.svg"
           alt=""
           aria-hidden
           width={25}

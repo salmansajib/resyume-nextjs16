@@ -34,9 +34,9 @@ export default function PortfolioGallery({ portfolioData }) {
               onClick={() => setActive(category.id)}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-full text-xl font-jost uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-lg text-xl font-jost uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
                 isActive
-                  ? "bg-primary text-background-secondary border-transparent"
+                  ? "bg-primary text-background-primary border-transparent"
                   : "bg-transparent text-text-secondary"
               }`}
             >
@@ -57,7 +57,7 @@ export default function PortfolioGallery({ portfolioData }) {
             },
           },
         }}
-        className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7"
+        className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"
         key={active}
       >
         {filtered.map((item, index) => (

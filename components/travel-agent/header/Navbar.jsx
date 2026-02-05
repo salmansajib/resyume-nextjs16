@@ -8,7 +8,7 @@ export default function Navbar({ handleMenuClick }) {
     <div className="py-7 px-4 w-full max-w-7xl mx-auto grid gap-10 grid-cols-2 md:grid-cols-3">
       <Link href="/">
         <Image
-          src="/assets/travel-agent/logos/logo-header.png"
+          src="/assets/travel-agent/logos/logo-header.svg"
           alt="rezyume logo"
           width={200}
           height={200}
@@ -22,7 +22,7 @@ export default function Navbar({ handleMenuClick }) {
         className="cursor-pointer justify-self-end"
       >
         <Image
-          src="/assets/travel-agent/icons/menu-icon.png"
+          src="/assets/travel-agent/icons/menu-icon.svg"
           alt="menu icon"
           priority
           width={30}
