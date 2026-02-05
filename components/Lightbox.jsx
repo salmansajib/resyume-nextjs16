@@ -12,6 +12,8 @@ export default function Lightbox({
   const [prevIndex, setPrevIndex] = useState(startIndex);
 
   const current = items[index];
+  const isFirst = index === 0;
+  const isLast = index === items.length - 1;
 
   // Calculate direction based on actual index change
   const direction = index > prevIndex ? 1 : index < prevIndex ? -1 : 0;
@@ -33,10 +35,10 @@ export default function Lightbox({
   const handleKey = useCallback(
     (e) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") goNext();
-      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight" && !isLast) goNext();
+      if (e.key === "ArrowLeft" && !isFirst) goPrev();
     },
-    [goNext, goPrev, onClose],
+    [goNext, goPrev, onClose, isFirst, isLast],
   );
 
   useEffect(() => {
@@ -49,7 +51,7 @@ export default function Lightbox({
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/50 backdrop-blur"
+        className="fixed inset-0 z-1000 flex items-center justify-center p-6 bg-black/50 backdrop-blur"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -88,7 +90,8 @@ export default function Lightbox({
             <>
               <button
                 onClick={goPrev}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white cursor-pointer"
+                disabled={isFirst}
+                className={`absolute left-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white ${isFirst ? "cursor-not-allowed" : "cursor-pointer"}`}
               >
                 <svg
                   width="24"
@@ -106,7 +109,8 @@ export default function Lightbox({
 
               <button
                 onClick={goNext}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white cursor-pointer"
+                disabled={isLast}
+                className={`absolute right-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white cursor-pointer ${isLast ? "cursor-not-allowed" : "cursor-pointer"}`}
               >
                 <svg
                   width="24"
