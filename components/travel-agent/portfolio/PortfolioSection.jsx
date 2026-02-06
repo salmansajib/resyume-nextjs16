@@ -6,7 +6,10 @@ export default function PortfolioSection({ data }) {
   const { portfolio } = data;
 
   return (
-    <section aria-labelledby="portfolio-heading">
+    <section
+      aria-labelledby="portfolio-heading"
+      className="bg-background-neutral"
+    >
       <div className="w-full max-w-7xl mx-auto px-4 py-20">
         {/* title and subtitle */}
         <div className="flex flex-col items-center justify-center gap-3">

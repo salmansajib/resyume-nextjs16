@@ -154,5 +154,31 @@
         "categories": ["sunset-escape", "vintage-voyage"]
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skillset",
+    "items": [
+      {
+        "id": 1,
+        "name": "Flight Booking & Reservation",
+        "proficiency": 98
+      },
+      {
+        "id": 2,
+        "name": "Hotel & Resort Booking",
+        "proficiency": 95
+      },
+      {
+        "id": 3,
+        "name": "Visa Assistance & Documentation",
+        "proficiency": 98
+      },
+      {
+        "id": 4,
+        "name": "Budget Travel & Cost Optimization",
+        "proficiency": 85
+      }
+    ]
   }
 }
