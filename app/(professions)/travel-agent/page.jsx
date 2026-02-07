@@ -4,6 +4,8 @@ import HeaderSection from "@/components/travel-agent/header/HeaderSection";
 import ServicesSection from "@/components/travel-agent/services/ServicesSection";
 import PortfolioSection from "@/components/travel-agent/portfolio/PortfolioSection";
 import SkillsSection from "@/components/travel-agent/skills/SkillsSection";
+import ExperienceSection from "@/components/travel-agent/experience/ExperienceSection";
+import ReferralsSection from "@/components/travel-agent/referrals/ReferralsSection";
 
 export default function page() {
   const data = travelAgentData;
@@ -17,6 +19,8 @@ export default function page() {
       <ServicesSection data={data} />
       <PortfolioSection data={data} />
       <SkillsSection data={data} />
+      <ExperienceSection data={data} />
+      <ReferralsSection data={data} />
     </div>
   );
 }

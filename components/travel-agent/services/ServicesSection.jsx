@@ -24,7 +24,7 @@ export default function ServicesSection({ data }) {
               width={25}
               height={25}
               priority
-              className="w-[20] h-auto object-cover aria-hidden:"
+              className="w-[20] h-auto object-cover aria-hidden"
             />
             {services.title}
           </h2>

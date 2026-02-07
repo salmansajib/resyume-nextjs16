@@ -15,7 +15,7 @@ export default function PortfolioItem({ item, onClick }) {
             alt={`${item.title} image`}
             width={500}
             height={500}
-            className="w-full h-auto aspect-3/4 object-cover rounded-lg overflow-hidden"
+            className="w-full h-auto aspect-4/5 object-cover rounded-lg overflow-hidden"
           />
 
           {/* subtle overlay content on hover */}
