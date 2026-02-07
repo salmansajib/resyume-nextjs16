@@ -1,9 +1,13 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
-    <article className="w-full sm:w-auto border border-[#333333] p-3 rounded-xl hover:border-primary transition-all duration-150">
+    <motion.article
+      variants={fadeInUp}
+      className="w-full sm:w-auto border border-[#333333] p-3 rounded-xl hover:border-primary transition-all duration-150"
+    >
       <div className="bg-black w-full sm:min-w-[370px] min-h-[395px] p-7 flex flex-col gap-7 items-start justify-center rounded-lg">
         <div
           aria-hidden
@@ -39,6 +43,6 @@ export default function ServiceCard({ item }) {
           ))}
         </ul>
       </div>
-    </article>
+    </motion.article>
   );
 }

@@ -18,13 +18,16 @@ export default function ReferralCard({ item, fadeInUp }) {
       </div>
 
       <div className="w-full h-full rounded-2xl bg-linear-to-t from-text-primary/80 to-text-primary/0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-end gap-4 pb-7 md:group-hover:border-transparent transition-all duration-500">
+        {/* name and position */}
         <div className="">
           <h3 className="text-lg font-medium text-background-primary text-center">
             {item.name}
           </h3>
           <p className="text-background-primary">{item.position}</p>
         </div>
+        {/* divider */}
         <div className="md:hidden md:group-hover:block w-[70%] h-px bg-[#CBCBCB]"></div>
+        {/* contact info */}
         <div className="flex flex-col items-start gap-2">
           <a
             href={`mailto:${item.email}`}

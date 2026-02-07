@@ -18,12 +18,14 @@ export default function page() {
       className="bg-background-primary w-full min-h-screen text-text-primary font-outfit overflow-hidden"
     >
       <HeaderSection data={data} />
-      <ServicesSection data={data} />
-      <PortfolioSection data={data} />
-      <SkillsSection data={data} />
-      <ExperienceSection data={data} />
-      <ReferralsSection data={data} />
-      <HobbiesSection data={data} />
+      <main>
+        <ServicesSection data={data} />
+        <PortfolioSection data={data} />
+        <SkillsSection data={data} />
+        <ExperienceSection data={data} />
+        <ReferralsSection data={data} />
+        <HobbiesSection data={data} />
+      </main>
       <FooterSection />
     </div>
   );

@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
+import { motion } from "motion/react";
 
 export default function HobbiesSection({ data }) {
   const { hobbies } = data;
@@ -9,7 +13,10 @@ export default function HobbiesSection({ data }) {
       aria-labelledby="hobbies-heading"
       className="bg-background-neutral"
     >
-      <div className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-10">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-10"
+      >
         {/* title and subtitle */}
         <div className="flex flex-col gap-3 items-center lg:items-start justify-center">
           <h2
@@ -23,7 +30,7 @@ export default function HobbiesSection({ data }) {
               width={25}
               height={25}
               priority
-              className="w-[20] h-auto object-cover aria-hidden"
+              className="w-[20] h-auto object-cover"
             />
             {hobbies.title}
           </h2>
@@ -35,8 +42,9 @@ export default function HobbiesSection({ data }) {
         {/* hobbies */}
         <ul className="flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap gap-7">
           {hobbies.items.map((item, index) => (
-            <li
+            <motion.li
               key={item.id}
+              variants={fadeInUp}
               className={`size-42 bg-background-primary rounded-2xl flex flex-col gap-4 items-center justify-center ${index % 2 === 1 ? "lg:mt-6" : ""}`}
             >
               <Image
@@ -47,10 +55,10 @@ export default function HobbiesSection({ data }) {
                 className="w-[72px] h-auto object-cover"
               />
               <h3 className="font-medium uppercase">{item.name}</h3>
-            </li>
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }

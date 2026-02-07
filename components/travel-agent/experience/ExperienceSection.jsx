@@ -55,7 +55,7 @@ export default function ExperienceSection({ data }) {
               width={25}
               height={25}
               priority
-              className="w-[20] h-auto object-cover aria-hidden"
+              className="w-[20] h-auto object-cover"
             />
             {experience.title}
           </h2>
