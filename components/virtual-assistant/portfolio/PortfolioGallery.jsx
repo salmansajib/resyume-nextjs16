@@ -29,19 +29,25 @@ export default function PortfolioGallery({ portfolioData }) {
           const isActive = active === category.id;
 
           return (
-            <button
+            <motion.button
               key={category.id}
               onClick={() => setActive(category.id)}
+              whileHover={{
+                scale: 1.05,
+              }}
+              whileTap={{
+                scale: 0.95,
+              }}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-full text-xl font-jost uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-full text-xl font-jost uppercase transition-colors duration-200 ease-in-out cursor-pointer ${
                 isActive
                   ? "bg-primary text-background-secondary border-transparent"
                   : "bg-transparent text-text-secondary"
               }`}
             >
               {category.label}
-            </button>
+            </motion.button>
           );
         })}
       </nav>

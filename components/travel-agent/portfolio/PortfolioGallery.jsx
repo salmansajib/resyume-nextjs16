@@ -29,19 +29,25 @@ export default function PortfolioGallery({ portfolioData }) {
           const isActive = active === category.id;
 
           return (
-            <button
+            <motion.button
               key={category.id}
               onClick={() => setActive(category.id)}
+              whileHover={{
+                scale: 1.05,
+              }}
+              whileTap={{
+                scale: 0.95,
+              }}
               aria-pressed={isActive}
               aria-label={`Filter by ${category.label}`}
-              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-lg text-xl uppercase transition-colors duration-200 ease-in-out cursor-pointer hover:scale-105 ${
+              className={`px-12 py-3 border-[0.5px] border-[#E6E6E6] rounded-lg text-xl uppercase transition-colors duration-200 ease-in-out cursor-pointer ${
                 isActive
                   ? "bg-primary text-background-primary border-transparent"
                   : "bg-transparent text-text-secondary"
               }`}
             >
               {category.label}
-            </button>
+            </motion.button>
           );
         })}
       </nav>
@@ -57,7 +63,7 @@ export default function PortfolioGallery({ portfolioData }) {
             },
           },
         }}
-        className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"
+        className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"
         key={active}
       >
         {filtered.map((item, index) => (

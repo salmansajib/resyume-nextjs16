@@ -17,7 +17,7 @@ export default function ReferralCard({ item, fadeInUp }) {
         />
       </div>
 
-      <div className="w-full h-full rounded-2xl bg-linear-to-t from-text-primary/80 to-text-primary/0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-end gap-4 pb-7 md:group-hover:border-transparent transition-all duration-500">
+      <div className="w-full h-full rounded-2xl bg-linear-to-t from-text-primary/80 to-text-primary/0 absolute inset-0 flex flex-col items-center justify-end gap-4 pb-7 transition-all duration-500">
         {/* name and position */}
         <div className="">
           <h3 className="text-lg font-medium text-background-primary text-center">
@@ -26,13 +26,13 @@ export default function ReferralCard({ item, fadeInUp }) {
           <p className="text-background-primary">{item.position}</p>
         </div>
         {/* divider */}
-        <div className="md:hidden md:group-hover:block w-[70%] h-px bg-[#CBCBCB]"></div>
+        <div className="md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-500 w-[70%] h-px bg-[#CBCBCB]"></div>
         {/* contact info */}
         <div className="flex flex-col items-start gap-2">
           <a
             href={`mailto:${item.email}`}
             aria-label={`Email ${item.email}`}
-            className="md:hidden md:group-hover:flex flex items-center gap-2 transition-all duration-500"
+            className="flex items-center gap-2 md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-500"
           >
             <span className="text-background-primary">
               <EmailIconFilled />
@@ -44,7 +44,7 @@ export default function ReferralCard({ item, fadeInUp }) {
           <a
             href={`tel:${item.phone}`}
             aria-label={`tel ${item.phone}`}
-            className="md:hidden md:group-hover:flex flex items-center gap-2 transition-all duration-200"
+            className="flex items-center gap-2 md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-500"
           >
             <span className="text-background-primary">
               <PhoneIconFilled />

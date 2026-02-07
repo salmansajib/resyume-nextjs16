@@ -15,12 +15,12 @@ export default function PortfolioItem({ item, onClick }) {
             alt={`${item.title} image`}
             width={500}
             height={500}
-            className="w-full h-auto aspect-4/5 object-cover rounded-lg overflow-hidden"
+            className="w-full h-auto aspect-4/4 md:aspect-4/5 object-cover rounded-lg overflow-hidden"
           />
 
           {/* subtle overlay content on hover */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-150 ease-in-out flex items-end justify-center pb-20 rounded-lg overflow-hidden">
-            <div className="opacity-0 group-hover:opacity-100 transition-all duration-150 space-y-2">
+          <div className="absolute inset-0 bg-black/30 md:group-hover:bg-black/60 transition-colors duration-150 ease-in-out flex items-center justify-center gap-10 rounded-lg overflow-hidden p-2">
+            <div className="md:opacity-0 md:group-hover:opacity-100 transition-all duration-150 space-y-2">
               <div className="flex items-center justify-center">
                 <Image
                   src={item.icon}
