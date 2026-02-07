@@ -7,6 +7,7 @@ import SkillsSection from "@/components/travel-agent/skills/SkillsSection";
 import ExperienceSection from "@/components/travel-agent/experience/ExperienceSection";
 import ReferralsSection from "@/components/travel-agent/referrals/ReferralsSection";
 import HobbiesSection from "@/components/travel-agent/hobbies/HobbiesSection";
+import FooterSection from "@/components/travel-agent/footer/FooterSection";
 
 export default function page() {
   const data = travelAgentData;
@@ -23,6 +24,7 @@ export default function page() {
       <ExperienceSection data={data} />
       <ReferralsSection data={data} />
       <HobbiesSection data={data} />
+      <FooterSection />
     </div>
   );
 }
