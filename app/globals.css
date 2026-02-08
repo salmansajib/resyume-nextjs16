@@ -157,6 +157,15 @@ html {
   --color-text-secondary: 167deg 8% 45%;
 }
 
+[data-theme="financial-advisor"] {
+  --color-primary: 158deg 50% 22%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 40deg 27% 91%;
+  --color-text-primary: 0deg 0% 14%;
+  --color-text-secondary: 0deg 0% 29%;
+  --color-border-primary: 0deg 0% 62%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;

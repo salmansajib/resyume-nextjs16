@@ -45,6 +45,9 @@ export default function HobbiesSection({ data }) {
             <motion.li
               key={item.id}
               variants={fadeInUp}
+              whileHover={{
+                scale: 1.05,
+              }}
               className={`size-42 bg-background-primary rounded-2xl flex flex-col gap-4 items-center justify-center ${index % 2 === 1 ? "lg:mt-6" : ""}`}
             >
               <Image
