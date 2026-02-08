@@ -85,5 +85,35 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Smart Financial Solutions for a Secure Future",
+    "items": [
+      {
+        "id": "investment-planning-management",
+        "name": "Investment Planning & Management",
+        "description": "I provide personalized investment strategies designed to maximize growth, minimize risk, and secure long-term wealth. By analyzing market trends, risk tolerance, and financial goals, I help clients build diversified portfolios that align with their needs. Whether investing in stocks, bonds, mutual funds, or real estate, my approach ensures smart, sustainable, and profitable financial decisions for a secure future.",
+        "icon": "/assets/financial-advisor/icons/services/investment-planning-management-icon.svg"
+      },
+      {
+        "id": "tax-optimization-planning",
+        "name": "Tax Optimization & Planning",
+        "description": "I provide personalized investment strategies designed to maximize growth, minimize risk, and secure long-term wealth. By analyzing market trends, risk tolerance, and financial goals, I help clients build diversified portfolios that align with their needs. Whether investing in stocks, bonds, mutual funds, or real estate, my approach ensures smart, sustainable, and profitable financial decisions for a secure future.",
+        "icon": "/assets/financial-advisor/icons/services/tax-optimization-planning-icon.svg"
+      },
+      {
+        "id": "risk-management-insurance-advisory",
+        "name": "Risk Management & Insurance Advisory",
+        "description": "I provide personalized investment strategies designed to maximize growth, minimize risk, and secure long-term wealth. By analyzing market trends, risk tolerance, and financial goals, I help clients build diversified portfolios that align with their needs. Whether investing in stocks, bonds, mutual funds, or real estate, my approach ensures smart, sustainable, and profitable financial decisions for a secure future.",
+        "icon": "/assets/financial-advisor/icons/services/risk-management-insurance-advisory-icon.svg"
+      },
+      {
+        "id": "debt-management-budgeting",
+        "name": "Debt Management & Budgeting",
+        "description": "I provide personalized investment strategies designed to maximize growth, minimize risk, and secure long-term wealth. By analyzing market trends, risk tolerance, and financial goals, I help clients build diversified portfolios that align with their needs. Whether investing in stocks, bonds, mutual funds, or real estate, my approach ensures smart, sustainable, and profitable financial decisions for a secure future.",
+        "icon": "/assets/financial-advisor/icons/services/debt-management-budgeting-icon.svg"
+      }
+    ]
   }
 }
