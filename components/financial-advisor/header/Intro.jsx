@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Intro({ heroData }) {
   return (
     <div className="space-y-4">
-      <p className="flex items-center gap-2 text-primary font-medium capitalize">
+      <p className="flex items-center gap-1 text-primary font-medium capitalize">
         <Image
           src="/assets/financial-advisor/images/section-title-decorative-line.png"
           aria-hidden

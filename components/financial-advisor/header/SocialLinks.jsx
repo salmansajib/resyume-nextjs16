@@ -5,15 +5,19 @@ import DribbleIcon from "@/components/icons/DribbleIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import XIcon from "@/components/icons/XIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export default function SocialLinks({ className }) {
   return (
     <div className={cn("space-y-10", className)}>
       {/* download cv */}
-      <a
+      <motion.a
+        whileHover={{
+          scale: 1.03,
+        }}
         href="#"
-        className="w-[255px] h-[63px] bg-primary text-background-primary flex items-center justify-between px-10"
+        className="w-[255px] h-[63px] bg-primary text-background-primary flex items-center justify-between px-5 uppercase"
       >
         Download CV
         <div
@@ -29,7 +33,7 @@ export default function SocialLinks({ className }) {
             className="w-[18px] h-auto object-cover"
           />
         </div>
-      </a>
+      </motion.a>
       {/* social links */}
       <div className="flex items-center gap-3">
         <Link
