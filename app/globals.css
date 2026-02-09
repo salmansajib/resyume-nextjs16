@@ -210,3 +210,11 @@ html {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+/* financial-advisor swiper pagination style */
+.financial-advisor-portfolio-slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #1c5540;
+  border-radius: 0;
+}

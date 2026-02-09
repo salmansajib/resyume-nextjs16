@@ -54,7 +54,7 @@ export default function SkillsSection({ skills, className }) {
             <motion.div
               initial={{ width: "40%" }}
               animate={{
-                width: isInView ? `${item.proficiency}%` : "0%",
+                width: isInView ? `${item.proficiency}%` : "40%",
               }}
               transition={{ duration: 2, ease: "easeOut" }}
               className="h-[50px] bg-primary flex items-center justify-between px-2"

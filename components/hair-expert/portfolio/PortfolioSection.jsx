@@ -6,6 +6,7 @@ export default function PortfolioSection({ data }) {
 
   return (
     <section
+      id="portfolio"
       aria-labelledby="portfolio-heading"
       className="bg-linear-to-b from-[#B9BDCB]/30 to-[#FCF8FF]/30 to-81%"
     >

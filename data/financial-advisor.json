@@ -167,5 +167,67 @@
         "proficiency": 90
       }
     ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "video", "label": "Video" },
+      { "id": "golden", "label": "Golden" },
+      { "id": "vintage-voyage", "label": "Vintage Voyage" },
+      { "id": "sunset-escape", "label": "Sunset Escape" }
+    ],
+    "items": [
+      {
+        "id": "portfolio-1",
+        "type": "image",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-1.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": "portfolio-2",
+        "type": "image",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-2.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["golden", "sunset-escape"]
+      },
+      {
+        "id": "portfolio-3",
+        "type": "video",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["sunset-escape", "video"]
+      },
+      {
+        "id": "portfolio-4",
+        "type": "image",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-4.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["sunset-escape", "vintage-voyage"]
+      },
+      {
+        "id": "portfolio-5",
+        "type": "image",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-2.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["golden", "vintage-voyage"]
+      },
+      {
+        "id": "portfolio-6",
+        "type": "image",
+        "src": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["golden", "vintage-voyage"]
+      }
+    ]
   }
 }
