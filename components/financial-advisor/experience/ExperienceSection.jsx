@@ -43,7 +43,7 @@ export default function ExperienceSection({ data }) {
     >
       <div className="w-full max-w-7xl mx-auto px-4 py-20 gap-4">
         {/* title and subtitle */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex gap-3 flex-col items-center justify-center">
           <h2
             id="experience-heading"
             className="flex items-center gap-1 text-primary font-medium capitalize"

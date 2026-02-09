@@ -11,13 +11,13 @@ export default function ReferenceCard({ reference, itemVariants }) {
       className="bg-background-secondary flex items-center gap-7 max-w-lg p-5"
     >
       {/* avatar image */}
-      <div className="lg:shrink-0">
+      <div className="shrink-0">
         <Image
           src={reference.image}
           alt={`Portrait of ${reference.name}`}
           width={200}
           height={200}
-          className="w-36 h-auto object-cover"
+          className="w-25 md:w-36 h-auto object-cover"
         />
       </div>
 
@@ -40,7 +40,7 @@ export default function ReferenceCard({ reference, itemVariants }) {
             />
             <a
               href={`tel:${reference.phone.number.replace(/\s/g, "")}`}
-              className="hover:text-primary transition-colors text-base font-normal text-text-dimmed"
+              className="hover:text-primary transition-colors text-base font-normal text-text-dimmed break-all"
               aria-label={`Call ${reference.name} at ${reference.phone.number}`}
             >
               {reference.phone.number}
@@ -56,7 +56,7 @@ export default function ReferenceCard({ reference, itemVariants }) {
             />
             <a
               href={`mailto:${reference.email.number}`}
-              className="hover:text-purple-600 transition-colors text-base font-normal text-text-dimmed"
+              className="hover:text-purple-600 transition-colors text-base font-normal text-text-dimmed break-all"
               aria-label={`Email ${reference.name} at ${reference.email.number}`}
             >
               {reference.email.number}

@@ -19,23 +19,23 @@ export default function ServiceCard({ item, isOpen, onToggle }) {
         <div className="flex items-center gap-4 md:gap-7">
           <div
             aria-hidden
-            className="size-[50px] md:size-[72px] bg-primary md:rounded-full flex items-center justify-center"
+            className="size-[50px] md:size-[72px] bg-primary md:rounded-full flex items-center justify-center shrink-0"
           >
             <Image
               src={item.icon}
               alt=""
               width={50}
               height={50}
-              className="w-5 md:w-[33px] h-auto object-cover"
+              className="w-6 md:w-[33px] h-auto object-cover"
             />
           </div>
-          <h3 className="text-[clamp(0.95rem,2vw,1.5rem)] font-medium capitalize break-all">
+          <h3 className="text-[clamp(1.1rem,2vw,1.5rem)] font-medium capitalize">
             {item.name}
           </h3>
         </div>
         <button
           onClick={() => onToggle(item.id)}
-          className="size-10 md:size-[60px] border border-border-primary/40 flex items-center justify-center cursor-pointer hover:border-border-primary group"
+          className={`size-10 md:size-[60px] border flex items-center justify-center cursor-pointer hover:border-border-primary group shrink-0 ${isOpen ? "border-border-primary" : "border-border-primary/40"}`}
         >
           <Image
             src="/assets/financial-advisor/icons/services/arrow-down-icon.svg"

@@ -115,5 +115,57 @@
         "icon": "/assets/financial-advisor/icons/services/debt-management-budgeting-icon.svg"
       }
     ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/financial-advisor/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/financial-advisor/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/financial-advisor/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/financial-advisor/icons/hobbies/technology.svg"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skillset",
+    "items": [
+      {
+        "id": "investment-planning",
+        "name": "Investment Planning",
+        "proficiency": 95
+      },
+      {
+        "id": "wealth-asset",
+        "name": "Wealth & Asset",
+        "proficiency": 92
+      },
+      {
+        "id": "retirement-planning",
+        "name": "Retirement Planning",
+        "proficiency": 98
+      },
+      {
+        "id": "estate-legacy-planning",
+        "name": "Estate & Legacy Planning",
+        "proficiency": 90
+      }
+    ]
   }
 }
