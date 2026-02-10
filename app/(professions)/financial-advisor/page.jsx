@@ -5,6 +5,8 @@ import ExperienceSection from "@/components/financial-advisor/experience/Experie
 import ServicesSection from "@/components/financial-advisor/services/ServicesSection";
 import HobbiesSkills from "@/components/financial-advisor/hoddies-skills/HobbiesSkills";
 import PortfolioSection from "@/components/financial-advisor/portfolio/PortfolioSection";
+import ReferralsSection from "@/components/financial-advisor/referrals/ReferralsSection";
+import FooterSection from "@/components/financial-advisor/footer/FooterSection";
 
 export default function FinancialAdvisorHome() {
   const data = financialAdvisorData;
@@ -20,6 +22,8 @@ export default function FinancialAdvisorHome() {
         <ServicesSection data={data} />
         <HobbiesSkills data={data} />
         <PortfolioSection data={data} />
+        <ReferralsSection data={data} />
+        <FooterSection />
       </div>
     </div>
   );

@@ -229,5 +229,35 @@
         "categories": ["golden", "vintage-voyage"]
       }
     ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "liam-bennett",
+        "photo": "/assets/financial-advisor/images/referrals/liam-bennett-new.jpg",
+        "name": "Liam Bennett",
+        "position": "Senior Financial Advisor",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/financial-advisor/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "Corporate Finance Specialist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "nathan-brooks",
+        "photo": "/assets/financial-advisor/images/referrals/nathan-brooks.jpg",
+        "name": "Nathan Brooks",
+        "position": "Financial Planning Officer",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
