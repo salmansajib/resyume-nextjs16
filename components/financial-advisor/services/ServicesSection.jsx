@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
-import { motion } from "motion/react";
+import { motion, stagger } from "motion/react";
 import AnimatedLineChart from "@/components/AnimatedLineChart";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ServicesSection({ data }) {
   const { services } = data;
@@ -19,7 +21,10 @@ export default function ServicesSection({ data }) {
 
   return (
     <section aria-labelledby="services-heading">
-      <div className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center lg:items-start gap-20">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center lg:items-start gap-20"
+      >
         {/* title and subtitle */}
         <div className="flex gap-3 flex-col items-center lg:items-start justify-center">
           <h2
@@ -76,12 +81,13 @@ export default function ServicesSection({ data }) {
             <ServiceCard
               key={item.id}
               item={item}
+              fadeInUp={fadeInUp}
               isOpen={openId === item.id}
               onToggle={handleToggle}
             />
           ))}
         </div>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }

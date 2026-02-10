@@ -2,9 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
-export default function ServiceCard({ item, isOpen, onToggle }) {
+export default function ServiceCard({ item, isOpen, onToggle, fadeInUp }) {
   return (
-    <article className="bg-background-secondary p-3 md:p-7 max-w-5xl">
+    <motion.article
+      variants={fadeInUp}
+      className="bg-background-secondary p-3 md:p-7 max-w-5xl"
+    >
       <motion.div
         animate={{ marginBottom: isOpen ? 20 : 0 }}
         transition={{
@@ -71,6 +74,6 @@ export default function ServiceCard({ item, isOpen, onToggle }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </article>
+    </motion.article>
   );
 }

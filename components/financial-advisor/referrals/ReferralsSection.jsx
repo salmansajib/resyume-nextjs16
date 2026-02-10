@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import ReferralCard from "./ReferralCard";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function ReferralsSection({ data }) {
   const { referrals } = data;
@@ -10,7 +13,10 @@ export default function ReferralsSection({ data }) {
       aria-labelledby="referrals-section"
       className="bg-background-secondary"
     >
-      <div className="w-full max-w-7xl mx-auto px-4 py-20">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 py-20"
+      >
         {/* title and subtitle */}
         <div className="flex gap-3 flex-col items-center justify-center">
           <h2
@@ -36,10 +42,10 @@ export default function ReferralsSection({ data }) {
         {/* referrals */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-7">
           {referrals.items.map((item) => (
-            <ReferralCard key={item.id} item={item} />
+            <ReferralCard key={item.id} item={item} fadeInUp={fadeInUp} />
           ))}
         </div>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }

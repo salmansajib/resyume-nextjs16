@@ -1,10 +1,19 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function HobbiesSection({ hobbies, className }) {
   return (
-    <section aria-labelledby="hobbies-heading" className={cn("", className)}>
+    <InViewAnimator
+      as="section"
+      variants={staggerContainer}
+      aria-labelledby="hobbies-heading"
+      className={cn("", className)}
+    >
       {/* title and subtitle */}
       <div className="flex flex-col gap-3 items-center lg:items-start justify-center">
         <h2
@@ -31,7 +40,8 @@ export default function HobbiesSection({ hobbies, className }) {
       {/* hobbies */}
       <ul className="pt-10 flex flex-wrap justify-center lg:justify-normal gap-5 max-w-[400px]">
         {hobbies.items.map((item, index) => (
-          <li
+          <motion.li
+            variants={fadeInUp}
             key={item.id}
             className="size-[170px] bg-background-primary flex flex-col items-center justify-center gap-3 uppercase font-medium"
           >
@@ -43,9 +53,9 @@ export default function HobbiesSection({ hobbies, className }) {
               className="w-[71px] h-auto object-cover"
             />
             {item.name}
-          </li>
+          </motion.li>
         ))}
       </ul>
-    </section>
+    </InViewAnimator>
   );
 }
