@@ -166,6 +166,18 @@ html {
   --color-border-primary: 0deg 0% 62%;
 }
 
+[data-theme="hr-manager"] {
+  --color-primary: 0deg 0% 100%;
+  --color-secondary: 0deg 0% 84%;
+  --color-gradient-primary-start: 328deg 98% 51%;
+  --color-gradient-primary-end: 185deg 100% 40%;
+  --color-background-primary: 0deg 0% 87%;
+  --color-text-primary: 0deg 0% 14%;
+  --color-text-secondary: 0deg 0% 10%;
+  --color-text-dimmed: 213deg 6% 35%;
+  --color-border-primary: 0deg 0% 84%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -188,6 +200,7 @@ html {
   --font-outfit: var(--font-outfit), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
+  --color-secondary: hsl(var(--color-secondary));
   --color-accent: hsl(var(--color-accent));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));
   --color-gradient-primary-end: hsl(var(--color-gradient-primary-end));

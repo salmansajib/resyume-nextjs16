@@ -18,11 +18,13 @@ export default function FinancialAdvisorHome() {
     >
       <div>
         <HeaderSection data={data} />
-        <ExperienceSection data={data} />
-        <ServicesSection data={data} />
-        <HobbiesSkills data={data} />
-        <PortfolioSection data={data} />
-        <ReferralsSection data={data} />
+        <main>
+          <ExperienceSection data={data} />
+          <ServicesSection data={data} />
+          <HobbiesSkills data={data} />
+          <PortfolioSection data={data} />
+          <ReferralsSection data={data} />
+        </main>
         <FooterSection />
       </div>
     </div>

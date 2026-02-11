@@ -1,7 +1,13 @@
 "use client";
 import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 
-export default function AnimatedIcon({ size = 33, bg = "#176F4E", children }) {
+export default function AnimatedIcon({
+  size = 33,
+  bg = "#176F4E",
+  children,
+  className,
+}) {
   const iconOutVariants = {
     initial: {
       y: 0,
@@ -39,7 +45,10 @@ export default function AnimatedIcon({ size = 33, bg = "#176F4E", children }) {
   return (
     <div
       aria-hidden
-      className="relative overflow-hidden flex items-center justify-center"
+      className={cn(
+        "relative overflow-hidden flex items-center justify-center",
+        className,
+      )}
       style={{
         width: size,
         height: size,

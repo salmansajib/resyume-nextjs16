@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import DribbleIcon from "@/components/icons/DribbleIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";

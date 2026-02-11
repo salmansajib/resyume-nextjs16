@@ -1,0 +1,20 @@
+{
+  "id": "hr-manager",
+  "type": "hr-manager",
+  "theme": "hr-manager",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "HR Manager",
+    "photo": "/assets/hr-manager/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "As an experienced HR Manager, I specialize in talent acquisition, employee relations, and organizational development. With a passion for building strong workplace cultures, I focus on recruiting top talent, implementing HR strategies, and fostering a productive work environment."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}
