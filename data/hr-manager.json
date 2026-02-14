@@ -151,5 +151,31 @@
         "icon": "/assets/hr-manager/icons/services/diversity-inclusion-icon.svg"
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skillset",
+    "items": [
+      {
+        "id": "talent-acquisition",
+        "name": "Talent Acquisition",
+        "proficiency": 85
+      },
+      {
+        "id": "training-development",
+        "name": "Training & Development",
+        "proficiency": 90
+      },
+      {
+        "id": "performance-management",
+        "name": "Performance Management",
+        "proficiency": 80
+      },
+      {
+        "id": "payroll-benefits",
+        "name": "Payroll & Benefits",
+        "proficiency": 88
+      }
+    ]
   }
 }

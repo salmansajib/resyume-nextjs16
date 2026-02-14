@@ -7,7 +7,7 @@ export default function Education({ item, fadeInUp }) {
       <div className="flex flex-col lg:flex-row gap-3 items-left lg:items-center justify-between relative">
         <h4 className="uppercase text-text-primary font-medium relative">
           {item.institution}
-          <span className="absolute top-1/2 -translate-y-1/2 -left-[47px] size-3.5 rounded-full bg-linear-to-b from-gradient-primary-start to-gradient-primary-end"></span>
+          <span className="absolute top-1/2 -translate-y-1/2 -left-[47px] size-3.5 rounded-full bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end"></span>
         </h4>
         <p className="font-medium text-text-dimmed font-poppins">
           {item.result}

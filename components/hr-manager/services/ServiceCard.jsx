@@ -24,7 +24,10 @@ export default function ServiceCard({ item }) {
       </h3>
       <ul className="space-y-2">
         {item.points.map((point, index) => (
-          <li key={index} className="flex items-baseline gap-4 text-pretty">
+          <li
+            key={index}
+            className="flex items-baseline gap-4 text-pretty text-secondary text-lg"
+          >
             <span className="size-2.5 rounded-full bg-linear-to-b from-gradient-primary-start to-gradient-primary-end shrink-0"></span>
             {point}
           </li>

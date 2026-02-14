@@ -8,7 +8,7 @@ export default function ContactInfo({ heroData, className }) {
   return (
     <div
       className={cn(
-        "bg-linear-to-b from-[#EBEBEB]/27 to-[#858585]/27 p-7 sm:p-10 rounded-4xl border border-border-primary/20 space-y-5 backdrop-blur-[9px] max-w-[660px]",
+        "bg-linear-to-b from-[#EBEBEB]/10 to-[#858585]/10 p-7 sm:p-10 rounded-4xl border border-border-primary/5 space-y-5 backdrop-blur-[9px] max-w-[660px]",
         className,
       )}
     >

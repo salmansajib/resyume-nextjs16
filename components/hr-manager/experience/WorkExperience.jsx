@@ -12,7 +12,7 @@ export default function WorkExperience({
       <div className="flex flex-col lg:flex-row gap-3 items-start lg:items-center justify-between relative">
         <h4 className="uppercase font-medium relative">
           {item.company}
-          <span className="absolute top-1/2 -translate-y-1/2 -left-[47px] size-3.5 rounded-full bg-linear-to-b from-gradient-primary-start to-gradient-primary-end"></span>
+          <span className="absolute top-1/2 -translate-y-1/2 -left-[47px] size-3.5 rounded-full bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end"></span>
         </h4>
         <time
           dateTime={getDateTime(item.period)}

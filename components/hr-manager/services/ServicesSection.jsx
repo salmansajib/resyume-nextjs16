@@ -15,7 +15,7 @@ export default function ServicesSection({ data }) {
         <div className="flex gap-3 flex-col items-center justify-center">
           <h2
             id="services-heading"
-            className="text-lg font-medium capitalize bg-linear-to-b from-gradient-primary-start to-gradient-primary-end bg-clip-text text-transparent"
+            className="text-lg font-medium capitalize bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end bg-clip-text text-transparent"
           >
             {services.title}
           </h2>

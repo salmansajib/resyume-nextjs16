@@ -170,6 +170,7 @@ html {
   --color-primary: 0deg 0% 100%;
   --color-secondary: 0deg 0% 84%;
   --color-gradient-primary-start: 328deg 98% 51%;
+  --color-gradient-primary-middle: 271deg 81% 56%;
   --color-gradient-primary-end: 185deg 100% 40%;
   --color-background-primary: 0deg 0% 87%;
   --color-text-primary: 0deg 0% 14%;
@@ -203,6 +204,7 @@ html {
   --color-secondary: hsl(var(--color-secondary));
   --color-accent: hsl(var(--color-accent));
   --color-gradient-primary-start: hsl(var(--color-gradient-primary-start));
+  --color-gradient-primary-middle: hsl(var(--color-gradient-primary-middle));
   --color-gradient-primary-end: hsl(var(--color-gradient-primary-end));
   --color-background-primary: hsl(var(--color-background-primary));
   --color-background-secondary: hsl(var(--color-background-secondary));

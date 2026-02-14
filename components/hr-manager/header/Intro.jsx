@@ -15,7 +15,7 @@ export default function Intro({ heroData }) {
 
   return (
     <div className="space-y-4">
-      <p className="uppercase max-w-max bg-linear-to-br from-gradient-primary-start to-gradient-primary-end bg-clip-text text-transparent font-medium">
+      <p className="uppercase max-w-max bg-linear-to-br from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end bg-clip-text text-transparent font-medium">
         {heroData.greeting}
       </p>
       <h1 className="font-poppins text-[clamp(3rem,5vw,4.1rem)] font-semibold max-w-[12ch] leading-none">
@@ -26,7 +26,7 @@ export default function Intro({ heroData }) {
         initial="initial"
         whileHover="hover"
         href="#"
-        className="bg-linear-to-r from-gradient-primary-end to-gradient-primary-start flex gap-8 items-center justify-between pl-6 py-2 pr-2 rounded-full max-w-max text-lg font-poppins font-medium uppercase mt-20"
+        className="bg-linear-to-r from-gradient-primary-end via-gradient-primary-middle to-gradient-primary-start flex gap-8 items-center justify-between pl-6 py-2 pr-2 rounded-full max-w-max text-lg font-poppins font-medium uppercase mt-20"
       >
         Download CV
         <AnimatedArrow

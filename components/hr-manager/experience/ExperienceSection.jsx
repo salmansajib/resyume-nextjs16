@@ -46,7 +46,7 @@ export default function ExperienceSection({ data }) {
         <div className="flex gap-3 flex-col items-center justify-center">
           <h2
             id="experience-heading"
-            className="text-lg font-medium capitalize bg-linear-to-b from-gradient-primary-start to-gradient-primary-end bg-clip-text text-transparent"
+            className="text-lg font-medium capitalize bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end bg-clip-text text-transparent"
           >
             {experience.title}
           </h2>
@@ -63,7 +63,7 @@ export default function ExperienceSection({ data }) {
               <div className="flex items-center gap-5">
                 <div
                   aria-hidden
-                  className="size-[50px] bg-linear-to-b from-gradient-primary-start to-gradient-primary-end rounded-xl flex items-center justify-center"
+                  className="size-[50px] bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end rounded-xl flex items-center justify-center"
                 >
                   <Image
                     src="/assets/financial-advisor/icons/experience/work-experience-icon.svg"
@@ -103,7 +103,7 @@ export default function ExperienceSection({ data }) {
               <div className="flex items-center gap-5">
                 <div
                   aria-hidden
-                  className="size-[50px] bg-linear-to-b from-gradient-primary-start to-gradient-primary-end rounded-xl flex items-center justify-center"
+                  className="size-[50px] bg-linear-to-b from-gradient-primary-start via-gradient-primary-middle to-gradient-primary-end rounded-xl flex items-center justify-center"
                 >
                   <Image
                     src="/assets/financial-advisor/icons/experience/education-icon.svg"

@@ -8,7 +8,8 @@ export default function ServiceCard({ item, isOpen, onToggle, fadeInUp }) {
       variants={fadeInUp}
       className="bg-background-secondary p-3 md:p-7 max-w-5xl"
     >
-      <motion.div
+      <motion.button
+        onClick={() => onToggle(item.id)}
         animate={{ marginBottom: isOpen ? 20 : 0 }}
         transition={{
           marginBottom: {
@@ -17,7 +18,7 @@ export default function ServiceCard({ item, isOpen, onToggle, fadeInUp }) {
             delay: isOpen ? 0 : 0.2,
           },
         }}
-        className="flex items-center justify-between gap-5 md:gap-15"
+        className="w-full flex items-center justify-between gap-5 md:gap-15"
       >
         <div className="flex items-center gap-4 md:gap-7">
           <div
@@ -36,8 +37,7 @@ export default function ServiceCard({ item, isOpen, onToggle, fadeInUp }) {
             {item.name}
           </h3>
         </div>
-        <button
-          onClick={() => onToggle(item.id)}
+        <div
           className={`size-10 md:size-[60px] border flex items-center justify-center cursor-pointer hover:border-border-primary group shrink-0 ${isOpen ? "border-border-primary" : "border-border-primary/40"}`}
         >
           <Image
@@ -47,8 +47,8 @@ export default function ServiceCard({ item, isOpen, onToggle, fadeInUp }) {
             height={30}
             className={`w-[18px] h-auto object-cover group-hover:rotate-90 transition-all duration-200 ${isOpen ? "rotate-90" : "rotate-0"}`}
           />
-        </button>
-      </motion.div>
+        </div>
+      </motion.button>
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div

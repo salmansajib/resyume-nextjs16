@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProfilePhoto({ heroData }) {
   return (
-    <div className="bg-linear-to-b from-[#EBEBEB]/27 to-[#858585]/27 px-6 py-10 rounded-4xl border border-border-primary/20 space-y-5 backdrop-blur-[9px] max-w-[660px]">
+    <div className="bg-linear-to-b from-[#EBEBEB]/10 to-[#858585]/10 px-6 py-10 rounded-4xl border border-border-primary/5 space-y-5 backdrop-blur-[9px] max-w-[660px]">
       <Image
         src={heroData.photo}
         alt="profile phot0"
