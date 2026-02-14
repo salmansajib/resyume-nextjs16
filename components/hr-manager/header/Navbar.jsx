@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 
-export default function Navbar() {
+export default function Navbar({ handleMenuClick }) {
   return (
     <div className="flex items-center justify-between py-7">
       <Link href="/">
@@ -20,7 +20,7 @@ export default function Navbar() {
         <SocialLinks className="hidden lg:flex" />
         {/* decorative line */}
         <div className="hidden lg:block w-[350px] h-px bg-border-primary/50"></div>
-        <button>
+        <button className="cursor-pointer" onClick={() => handleMenuClick()}>
           <Image
             src="/assets/hr-manager/icons/menu-icon.svg"
             alt="menu button"

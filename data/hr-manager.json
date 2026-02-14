@@ -85,5 +85,71 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Strategic HR Solutions",
+    "items": [
+      {
+        "id": "employee-relations",
+        "name": "Employee Relations",
+        "points": [
+          "Addressing employee concerns and conflicts",
+          "Organizing engagement & wellness programs",
+          "Implementing feedback and good recognition initiatives"
+        ],
+        "icon": "/assets/hr-manager/icons/services/employee-relations-icon.svg"
+      },
+      {
+        "id": "performance-management",
+        "name": "Performance Management",
+        "points": [
+          "Setting & tracking key performance indicators",
+          "Conducting performance reviews and feedback",
+          "Developing and improvement or coaching plans"
+        ],
+        "icon": "/assets/hr-manager/icons/services/performance-management-icon.svg"
+      },
+      {
+        "id": "workforce-planning",
+        "name": "Workforce Planning",
+        "points": [
+          "Aligning HR goals with business objectives",
+          "Managing employee turnover and retention strategies",
+          "Developing succession planning programs"
+        ],
+        "icon": "/assets/hr-manager/icons/services/workforce-planning-icon.svg"
+      },
+      {
+        "id": "workplace-culture",
+        "name": "Workplace Culture",
+        "points": [
+          "Creating a positive and supportive work environment",
+          "Implementing mental health and wellness programs",
+          "Encouraging work-life balance initiatives"
+        ],
+        "icon": "/assets/hr-manager/icons/services/workplace-culture-icon.svg"
+      },
+      {
+        "id": "payroll-benefits",
+        "name": "Payroll & Benefits",
+        "points": [
+          "Processing salaries and tax deductions",
+          "Managing health and retirement benefits",
+          "Ensuring compliance with payroll regulations"
+        ],
+        "icon": "/assets/hr-manager/icons/services/payroll-benefits-icon.svg"
+      },
+      {
+        "id": "diversity-inclusion",
+        "name": "Diversity & Inclusion",
+        "points": [
+          "Promoting a diverse and inclusive workplace",
+          "Implementing unbiased hiring practices",
+          "Conducting sensitivity and inclusion training"
+        ],
+        "icon": "/assets/hr-manager/icons/services/diversity-inclusion-icon.svg"
+      }
+    ]
   }
 }

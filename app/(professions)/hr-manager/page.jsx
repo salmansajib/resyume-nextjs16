@@ -2,6 +2,7 @@ import React from "react";
 import hrManagerData from "@/data/hr-manager.json";
 import HeaderSection from "@/components/hr-manager/header/HeaderSection";
 import ExperienceSection from "@/components/hr-manager/experience/ExperienceSection";
+import ServicesSection from "@/components/hr-manager/services/ServicesSection";
 
 export default function HrManagerHome() {
   const data = hrManagerData;
@@ -13,6 +14,7 @@ export default function HrManagerHome() {
     >
       <HeaderSection data={data} />
       <ExperienceSection data={data} />
+      <ServicesSection data={data} />
     </div>
   );
 }

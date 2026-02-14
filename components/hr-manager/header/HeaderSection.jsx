@@ -1,17 +1,28 @@
+"use client";
 import React from "react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import ProfilePhoto from "./ProfilePhoto";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
+import Navigation from "@/components/Navigation";
+import useMenuToggle from "@/hooks/useMenuToggle";
 
 export default function HeaderSection({ data }) {
   const { hero } = data;
+  const { isMenuOpen, setIsMenuOpen, handleMenuClick } = useMenuToggle();
 
   return (
     <header className="relative bg-[url(/assets/hr-manager/images/bg-img-header-hero.png)] bg-cover bg-no-repeat text-primary">
       <div className="relative z-10 w-full max-w-[1680px] mx-auto px-4">
-        <Navbar />
+        <Navbar handleMenuClick={handleMenuClick} />
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          bgColor="bg-text-primary"
+          textColor="text-primary"
+          logoSrc="/assets/hr-manager/logos/logo-footer.svg"
+        />
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-15 items-center justify-items-center lg:justify-items-normal pt-10 pb-20">
           <Intro heroData={hero} />
           <ProfilePhoto heroData={hero} />
