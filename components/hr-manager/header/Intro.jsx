@@ -15,7 +15,9 @@ export default function Intro({ heroData }) {
 
   return (
     <div className="space-y-4">
-      <p className="uppercase">{heroData.greeting}</p>
+      <p className="uppercase max-w-max bg-linear-to-br from-gradient-primary-start to-gradient-primary-end bg-clip-text text-transparent font-medium">
+        {heroData.greeting}
+      </p>
       <h1 className="font-poppins text-[clamp(3rem,5vw,4.1rem)] font-semibold max-w-[12ch] leading-none">
         {heroData.name}
       </h1>
