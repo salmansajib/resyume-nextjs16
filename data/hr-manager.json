@@ -283,22 +283,22 @@
       {
         "id": "bike-riding",
         "name": "bike riding",
-        "icon": "/assets/financial-advisor/icons/hobbies/bike-riding.svg"
+        "icon": "/assets/hr-manager/icons/hobbies/bike-riding.svg"
       },
       {
         "id": "travelling",
         "name": "travelling",
-        "icon": "/assets/financial-advisor/icons/hobbies/travelling.svg"
+        "icon": "/assets/hr-manager/icons/hobbies/travelling.svg"
       },
       {
         "id": "reading",
         "name": "reading",
-        "icon": "/assets/financial-advisor/icons/hobbies/reading.svg"
+        "icon": "/assets/hr-manager/icons/hobbies/reading.svg"
       },
       {
         "id": "technology",
         "name": "technology",
-        "icon": "/assets/financial-advisor/icons/hobbies/technology.svg"
+        "icon": "/assets/hr-manager/icons/hobbies/technology.svg"
       }
     ]
   }

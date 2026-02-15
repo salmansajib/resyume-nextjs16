@@ -6,6 +6,8 @@ import ServicesSection from "@/components/hr-manager/services/ServicesSection";
 import SkillsSection from "@/components/hr-manager/skills/SkillsSection";
 import PortfolioSection from "@/components/hr-manager/portfolio/PortfolioSection";
 import ReferralsSection from "@/components/hr-manager/referrals/ReferralsSection";
+import HobbiesSection from "@/components/hr-manager/hobbies/HobbiesSection";
+import FooterSection from "@/components/hr-manager/footer/FooterSection";
 
 export default function HrManagerHome() {
   const data = hrManagerData;
@@ -21,6 +23,8 @@ export default function HrManagerHome() {
       <SkillsSection data={data} />
       <PortfolioSection data={data} />
       <ReferralsSection data={data} />
+      <HobbiesSection data={data} />
+      <FooterSection />
     </div>
   );
 }
