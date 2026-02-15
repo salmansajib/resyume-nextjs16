@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-export default function ServiceCard({ item }) {
+export default function ServiceCard({ item, fadeInUp }) {
   return (
     <motion.article
       whileHover={{
         scale: 1.03,
       }}
+      variants={fadeInUp}
       className="flex flex-col items-center gap-7 bg-linear-to-b from-[#989494]/15 to-[#000000]/15 px-10 py-15 rounded-3xl backdrop-blur-[9px] border border-primary/5"
     >
       <div aria-hidden>
