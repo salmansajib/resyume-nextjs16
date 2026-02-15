@@ -179,6 +179,15 @@ export default function PortfolioGallery({ portfolioData }) {
         </div>
       </div>
 
+      {/* Empty state message */}
+      {filtered.length === 0 && (
+        <div className="mt-10 text-center">
+          <p className="text-lg text-text-primary">
+            There are no items in this category.
+          </p>
+        </div>
+      )}
+
       {/* Lightbox  */}
       {lightboxOpen && (
         <Lightbox

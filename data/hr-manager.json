@@ -177,5 +177,129 @@
         "proficiency": 88
       }
     ]
+  },
+  "portfolio": {
+    "title": "my portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "performance", "label": "Performance" },
+      { "id": "recruitment", "label": "Recruitment" },
+      { "id": "hr-policies", "label": "HR Policies" },
+      { "id": "employee-engagement", "label": "Employee Engagement" },
+      { "id": "training", "label": "Training" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["hr-policies", "employee-engagement"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["hr-policies", "training"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/hr-manager/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["training", "recruitment"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["training", "employee-engagement"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["hr-policies", "employee-engagement"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/hr-manager/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent. Culture. Success.",
+        "description": "Where talent meets opportunity—shaping careers every day.",
+        "categories": ["hr-policies", "employee-engagement"]
+      }
+    ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "liam-bennett",
+        "photo": "/assets/hr-manager/images/referrals/liam-bennett-new.jpg",
+        "name": "Liam Bennett",
+        "position": "Senior Financial Advisor",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/hr-manager/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "Corporate Finance Specialist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "nathan-brooks",
+        "photo": "/assets/hr-manager/images/referrals/nathan-brooks.jpg",
+        "name": "Nathan Brooks",
+        "position": "Financial Planning Officer",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/financial-advisor/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/financial-advisor/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/financial-advisor/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/financial-advisor/icons/hobbies/technology.svg"
+      }
+    ]
   }
 }

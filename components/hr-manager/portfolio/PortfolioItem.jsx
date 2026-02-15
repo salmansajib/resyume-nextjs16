@@ -6,10 +6,10 @@ export default function PortfolioItem({ item, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="bg-linear-to-br bg-background-primary w-full h-[550px] p-4 rounded-lg group cursor-pointer overflow-hidden group flex flex-col items-center sm:block"
+      className="bg-linear-to-br from-[#FFDDDD]/6 to-[#E0BEBE]/20 w-full h-[450px] p-6 rounded-lg group cursor-pointer overflow-hidden group flex flex-col items-center sm:block"
     >
       {/* image */}
-      <div className="relative w-full h-full group-hover:h-[82%] rounded-md overflow-hidden transition-all duration-300">
+      <div className="relative w-full h-full group-hover:h-[75%] rounded-md overflow-hidden transition-all duration-300">
         <Image
           src={item.src}
           alt=""
@@ -33,7 +33,7 @@ export default function PortfolioItem({ item, onClick }) {
         {item.type === "video" && (
           <div className="sm:opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <Image
-              src="/assets/hair-expert/icons/video-play-icon.svg"
+              src="/assets/hr-manager/icons/video-play-icon.svg"
               alt="video play icon"
               width={50}
               height={50}
@@ -47,18 +47,20 @@ export default function PortfolioItem({ item, onClick }) {
       <AnimatePresence>
         <motion.div
           key="content"
-          className="mt-3 space-y-1 text-left"
+          className="mt-5 space-y-1 text-left"
           variants={{
-            rest: { opacity: 0, y: 10 },
+            rest: { opacity: 0, y: 20 },
             hover: { opacity: 1, y: 0 },
           }}
           initial="rest"
           animate="hover"
-          exit={{ opacity: 0, y: 10 }}
+          exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.25 }}
         >
-          <h3 className="font-syne text-2xl font-medium">{item.title}</h3>
-          <p className="text-text-secondary">{item.description}</p>
+          <h3 className="font-poppins text-2xl font-medium text-primary">
+            {item.title}
+          </h3>
+          <p className="text-secondary">{item.description}</p>
         </motion.div>
       </AnimatePresence>
     </button>
