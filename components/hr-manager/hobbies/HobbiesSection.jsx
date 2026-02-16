@@ -36,7 +36,7 @@ export default function HobbiesSection({ data }) {
                 scale: 1.05,
               }}
               variants={fadeInUp}
-              className="size-[165px] bg-linear-to-b from-[#EBEBEB]/15 to-[#858585]/15 rounded-2xl border border-primary/30 flex flex-col gap-3 items-center justify-center"
+              className="size-[165px] bg-linear-to-b from-[#EBEBEB]/15 to-[#858585]/15 rounded-2xl ring-1 ring-primary/20 flex flex-col gap-3 items-center justify-center"
             >
               <Image
                 src={item.icon}

@@ -10,10 +10,10 @@ export default function ProfilePhoto({ heroData, className }) {
       <Image
         src={photo}
         alt="profile photo"
-        width={900}
+        width={600}
         height={900}
         priority
-        className="w-full max-w-[560px] h-auto lg:h-[766px] object-cover"
+        className="w-full max-w-[495px] h-auto object-cover"
       />
     </div>
   );

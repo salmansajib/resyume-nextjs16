@@ -18,6 +18,7 @@ import {
   Arimo,
   Barlow,
   Outfit,
+  League_Spartan,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -140,6 +141,12 @@ const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
 });
+const leagueSpartan = League_Spartan({
+  variable: "--font-leagueSpartan",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -151,7 +158,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} ${syne.variable} ${arimo.variable} ${barlow.variable} ${outfit.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} ${syne.variable} ${arimo.variable} ${barlow.variable} ${outfit.variable} ${leagueSpartan.variable} antialiased`}
       >
         {children}
       </body>

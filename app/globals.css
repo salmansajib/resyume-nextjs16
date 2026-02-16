@@ -179,6 +179,14 @@ html {
   --color-border-primary: 0deg 0% 84%;
 }
 
+[data-theme="educator"] {
+  --color-primary: 171deg 100% 34%;
+  --color-background-primary: 235deg 55% 4%;
+  --color-background-secondary: 249deg 12% 24%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 0deg 0% 73%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -199,6 +207,7 @@ html {
   --font-arimo: var(--font-arimo), sans-serif;
   --font-barlow: var(--font-barlow), sans-serif;
   --font-outfit: var(--font-outfit), sans-serif;
+  --font-leagueSpartan: var(--font-leagueSpartan), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-secondary: hsl(var(--color-secondary));

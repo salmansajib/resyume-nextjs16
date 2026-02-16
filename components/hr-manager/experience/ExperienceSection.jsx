@@ -41,7 +41,7 @@ export default function ExperienceSection({ data }) {
       aria-labelledby="experience-heading"
       className="bg-background-secondary relative"
     >
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-20 gap-4">
+      <div className="w-full max-w-7xl mx-auto px-4 py-20 gap-4">
         {/* title and subtitle */}
         <div className="flex gap-3 flex-col items-center justify-center">
           <h2

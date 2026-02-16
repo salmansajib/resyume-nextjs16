@@ -1,0 +1,92 @@
+{
+  "id": "educator",
+  "type": "educator",
+  "theme": "educator",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "Senior Lecturer",
+    "photo": "/assets/educator/images/profile-photo.png",
+    "about": {
+      "title": "about me",
+      "description": "My goal is to shape minds, encourage intellectual curiosity, and contribute to academic excellence. Whether in the classroom or through mentorship, I am committed to guiding students toward success and making a meaningful impact in the field of education."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Professional Teaching Services",
+    "items": [
+      {
+        "id": "curriculum",
+        "name": "Curriculum",
+        "points": [
+          "Lesson Planning & Course Mapping",
+          "Syllabus and Curriculum Design",
+          "Learning Resource Creation",
+          "Course Structuring & Delivery"
+        ],
+        "icon": "/assets/educator/icons/services/curriculum-icon.svg"
+      },
+      {
+        "id": "assessment",
+        "name": "Assessment",
+        "points": [
+          "Designing Assessments",
+          "Grading & Feedback",
+          "Tracking Student Progress",
+          "Performance Review Sessions"
+        ],
+        "icon": "/assets/educator/icons/services/assessment-icon.svg"
+      },
+      {
+        "id": "professional",
+        "name": "Professional",
+        "points": [
+          "Faculty Development Programs",
+          "Pedagogical Skills Enhancement",
+          "Research and Publication Support",
+          "Leadership Training"
+        ],
+        "icon": "/assets/educator/icons/services/professional-icon.svg"
+      },
+      {
+        "id": "student-mentorship",
+        "name": "Student & Mentorship",
+        "points": [
+          "Academic Guidance & Counseling",
+          "Career Counseling & Development",
+          "Personalized Mentorship",
+          "Study Group Facilitation"
+        ],
+        "icon": "/assets/educator/icons/services/student-mentorship-icon.svg"
+      },
+      {
+        "id": "additional-service",
+        "name": "Additional Service",
+        "points": [
+          "International Education Programs",
+          "Inclusive Education Practices",
+          "Service-Learning Projects",
+          "Global Learning Partnerships"
+        ],
+        "icon": "/assets/educator/icons/services/additional-service-icon.svg"
+      },
+      {
+        "id": "technology",
+        "name": "Technology",
+        "points": [
+          "E-Learning Platform Setup",
+          "Interactive Learning Tools",
+          "Virtual Classroom Management",
+          "Digital Content Creation"
+        ],
+        "icon": "/assets/educator/icons/services/technology-icon.svg"
+      }
+    ]
+  }
+}

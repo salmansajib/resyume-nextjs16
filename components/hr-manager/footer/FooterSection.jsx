@@ -12,7 +12,7 @@ export default function FooterSection() {
         <div className="flex flex-col gap-4 items-center justify-center">
           <Link href="/">
             <Image
-              src="/assets/travel-agent/logos/logo-footer-2.svg"
+              src="/assets/hr-manager/logos/logo-footer.svg"
               alt="rezyume footer logo"
               width={200}
               height={200}

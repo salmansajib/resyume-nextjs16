@@ -24,6 +24,7 @@ export default function HeaderSection({ data }) {
           logoSrc="/assets/hr-manager/logos/logo-footer.svg"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-15 items-center justify-items-center lg:justify-items-normal pt-10 pb-20">
+          {/* download cv is inside intro */}
           <Intro heroData={hero} />
           <ProfilePhoto heroData={hero} />
           <div className="space-y-10 flex flex-col lg:flex-row xl:flex-col gap-5 lg:gap-15 lg:col-span-2 xl:col-span-1">
