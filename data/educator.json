@@ -282,5 +282,35 @@
         "categories": ["interactive-learning", "curriculum-planning"]
       }
     ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "liam-bennett",
+        "photo": "/assets/educator/images/referrals/liam-bennett.jpg",
+        "name": "Liam Bennett",
+        "position": "Senior Financial Advisor",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/educator/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "Corporate Finance Specialist",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "nathan-brooks",
+        "photo": "/assets/educator/images/referrals/nathan-brooks.jpg",
+        "name": "Nathan Brooks",
+        "position": "Financial Planning Officer",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }

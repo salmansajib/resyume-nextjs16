@@ -5,6 +5,7 @@ import ServicesSection from "@/components/educator/services/ServicesSection";
 import ExperienceSection from "@/components/educator/experience/ExperienceSection";
 import SkillsSection from "@/components/educator/skills/SkillsSection";
 import PortfolioSection from "@/components/educator/portfolio/PortfolioSection";
+import ReferralsSection from "@/components/educator/referrals/ReferralsSection";
 
 export default function EducatorHome() {
   const data = educatorData;
@@ -19,6 +20,7 @@ export default function EducatorHome() {
       <ExperienceSection data={data} />
       <SkillsSection data={data} />
       <PortfolioSection data={data} />
+      <ReferralsSection data={data} />
     </div>
   );
 }
