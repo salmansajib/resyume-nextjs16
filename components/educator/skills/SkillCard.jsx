@@ -20,8 +20,11 @@ export default function SkillCard({ item, fadeInUp }) {
         scale: 1.05,
       }}
     >
-      <div className="relative bg-linear-to-b from-[#74708A]/41 to-[#373543]/22 h-[300px] max-w-max mx-auto p-3 rounded-full backdrop-blur-sm ring ring-text-primary/10">
-        <div className="bg-[#25354B]/74 shadow-lg size-40 rounded-full flex items-center justify-center">
+      <div className="relative bg-linear-to-b from-[#74708A]/41 to-[#373543]/22 h-[300px] max-w-max mx-auto p-3.5 rounded-full backdrop-blur-sm ring ring-text-primary/10">
+        <div
+          aria-hidden
+          className="bg-[#25354B]/74 shadow-lg size-40 rounded-full flex items-center justify-center"
+        >
           <Image
             src={item.icon}
             alt="" // Decorative image, name is already in the h3
@@ -34,7 +37,7 @@ export default function SkillCard({ item, fadeInUp }) {
         <p className="sr-only">Proficiency: </p>
         <p
           aria-label={`Proficiency level: ${item.proficiency}`}
-          className="text-center text-[34px] font-medium font-ebGaramond mt-5"
+          className="text-center text-2xl font-medium mt-10"
         >
           <AnimatedCounter
             value={item.proficiency}
@@ -46,7 +49,7 @@ export default function SkillCard({ item, fadeInUp }) {
         </p>
       </div>
       <h3
-        className="font-ebGaramond font-medium text-2xl max-w-[15ch] mx-auto text-center mt-5"
+        className="text-2xl max-w-[15ch] mx-auto text-center mt-5"
         id={`skill-${item.name.replace(/\s+/g, "-").toLowerCase()}`}
       >
         {item.name}
