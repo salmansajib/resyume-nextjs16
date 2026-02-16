@@ -88,5 +88,199 @@
         "icon": "/assets/educator/icons/services/technology-icon.svg"
       }
     ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My Career Path",
+    "workExperience": [
+      {
+        "id": "work-001",
+        "company": "iBechArt Group",
+        "period": {
+          "start": null,
+          "end": null,
+          "current": true
+        },
+        "location": "Software Company 5, New York, NY, USA",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "id": "work-002",
+        "company": "NentorMate",
+        "period": {
+          "start": 2019,
+          "end": 2021
+        },
+        "location": "IBechart Group, New York, NY, USA",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "id": "work-003",
+        "company": "ScienceSoft",
+        "period": {
+          "start": 2022,
+          "end": 2023
+        },
+        "location": "Software Company in Sofia, Bulgaria",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-001",
+        "institution": "Franklin University",
+        "period": {
+          "start": 2014,
+          "end": 2017
+        },
+        "degree": "Programming & Computer Science",
+        "result": "First Class"
+      },
+      {
+        "id": "edu-002",
+        "institution": "Massachusetts Institute of Technology",
+        "period": {
+          "start": 2011,
+          "end": 2014
+        },
+        "degree": "Science & Technology",
+        "result": "First Class"
+      },
+      {
+        "id": "edu-003",
+        "institution": "Thomas Jefferson High School",
+        "period": {
+          "start": 2009,
+          "end": 2011
+        },
+        "degree": "Science & Technology",
+        "result": "A+"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Skills Set",
+    "items": [
+      {
+        "id": "curriculum-development",
+        "name": "Curriculum Development",
+        "icon": "/assets/educator/icons/skills/curriculum-development.svg",
+        "proficiency": 90
+      },
+      {
+        "id": "student-mentorship",
+        "name": "Student Mentorship",
+        "icon": "/assets/educator/icons/skills/student-mentorship.svg",
+        "proficiency": 85
+      },
+      {
+        "id": "classroom-management",
+        "name": "Classroom Management",
+        "icon": "/assets/educator/icons/skills/classroom-management.svg",
+        "proficiency": 88
+      },
+      {
+        "id": "educational-technology",
+        "name": "Educational Technology",
+        "icon": "/assets/educator/icons/skills/educational-technology.svg",
+        "proficiency": 80
+      },
+      {
+        "id": "assessment-and-evaluation",
+        "name": "Assessment & Evaluation",
+        "icon": "/assets/educator/icons/skills/assessment-evaluation.svg",
+        "proficiency": 90
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "interactive-learning", "label": "Interactive Learning" },
+      { "id": "student-mentorship", "label": "Student Mentorship" },
+      { "id": "curriculum-planning", "label": "Curriculum Planning" },
+      { "id": "educational-workshop", "label": "Educational Workshop" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["interactive-learning", "student-mentorship"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": [
+          "student-mentorship",
+          "curriculum-planning",
+          "educational-workshop"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["interactive-learning", "curriculum-planning"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["curriculum-planning", "educational-workshop"]
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-5.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["curriculum-planning", "educational-workshop"]
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-6.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["interactive-learning", "educational-workshop"]
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-7.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["curriculum-planning", "student-mentorship"]
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "src": "/assets/educator/images/portfolio/portfolio-7.jpg",
+        "icon": "/assets/educator/icons/portfolio-icon-on-hover.svg",
+        "title": "Talent Culture Success.",
+        "description": "Where talent meets shaping careers every day.",
+        "categories": ["interactive-learning", "curriculum-planning"]
+      }
+    ]
   }
 }

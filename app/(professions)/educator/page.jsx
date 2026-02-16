@@ -2,6 +2,9 @@ import React from "react";
 import educatorData from "@/data/educator.json";
 import HeaderSection from "@/components/educator/header/HeaderSection";
 import ServicesSection from "@/components/educator/services/ServicesSection";
+import ExperienceSection from "@/components/educator/experience/ExperienceSection";
+import SkillsSection from "@/components/educator/skills/SkillsSection";
+import PortfolioSection from "@/components/educator/portfolio/PortfolioSection";
 
 export default function EducatorHome() {
   const data = educatorData;
@@ -13,6 +16,9 @@ export default function EducatorHome() {
     >
       <HeaderSection data={data} />
       <ServicesSection data={data} />
+      <ExperienceSection data={data} />
+      <SkillsSection data={data} />
+      <PortfolioSection data={data} />
     </div>
   );
 }
