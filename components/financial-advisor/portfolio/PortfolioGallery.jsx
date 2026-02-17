@@ -1,7 +1,6 @@
 "use client";
-import React, { act } from "react";
-import { useState } from "react";
-import { motion } from "motion/react";
+import React, { useState } from "react";
+import { motion } from "framer-motion"; // corrected import (was "motion/react")
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import PortfolioItem from "./PortfolioItem";
@@ -13,12 +12,15 @@ export default function PortfolioGallery({ portfolioData }) {
   const [active, setActive] = useState("all");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
+  const [currentSlidesPerView, setCurrentSlidesPerView] = useState(1);
 
   // filter items
   const filtered =
     active === "all"
       ? items
       : items.filter((item) => item.categories.includes(active));
+
+  const shouldEnableLoopAndControls = filtered.length > currentSlidesPerView;
 
   return (
     <div className="mt-15">
@@ -72,23 +74,43 @@ export default function PortfolioGallery({ portfolioData }) {
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
             slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next-custom",
-              prevEl: ".swiper-button-prev-custom",
+            // Update currentSlidesPerView on init and breakpoint changes
+            onInit={(swiper) => {
+              setCurrentSlidesPerView(swiper.params.slidesPerView);
             }}
-            pagination={{
-              el: ".swiper-pagination-custom",
-              clickable: true,
-              type: "bullets",
+            onBreakpoint={(swiper) => {
+              setCurrentSlidesPerView(swiper.params.slidesPerView);
             }}
+            // Conditional features to avoid "not enough slides" warning
+            loop={shouldEnableLoopAndControls}
+            navigation={
+              shouldEnableLoopAndControls
+                ? {
+                    nextEl: ".swiper-button-next-custom",
+                    prevEl: ".swiper-button-prev-custom",
+                  }
+                : false
+            }
+            pagination={
+              shouldEnableLoopAndControls
+                ? {
+                    el: ".swiper-pagination-custom",
+                    clickable: true,
+                    type: "bullets",
+                  }
+                : false
+            }
             speed={1000}
             spaceBetween={20}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            loop
+            autoplay={
+              shouldEnableLoopAndControls
+                ? {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }
+                : false
+            }
             breakpoints={{
               450: {
                 slidesPerView: 2,
@@ -132,51 +154,55 @@ export default function PortfolioGallery({ portfolioData }) {
           </Swiper>
         </motion.div>
 
-        {/* custom navigation buttons */}
-        {/* prev button */}
-        <div className="flex items-center justify-center gap-7 mt-10">
-          <button
-            className="swiper-button-prev-custom p-2 text-2xl font-medium transition-colors duration-150 cursor-pointer bg-background-secondary hover:bg-primary hover:text-background-primary"
-            aria-label="previous-slide"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-left-icon lucide-chevron-left"
+        {/* custom navigation + pagination — only shown when useful */}
+        {shouldEnableLoopAndControls && (
+          <div className="flex items-center justify-center gap-7 mt-10">
+            {/* prev button */}
+            <button
+              className="swiper-button-prev-custom p-2 text-2xl font-medium transition-colors duration-150 cursor-pointer bg-background-secondary hover:bg-primary hover:text-background-primary"
+              aria-label="previous-slide"
             >
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </button>
-          {/* Pagination dots */}
-          <div className="swiper-pagination-custom flex items-center gap-[7px] max-w-max" />
-          {/* next button */}
-          <button
-            className="swiper-button-next-custom p-2 text-2xl font-medium transition-colors duration-150 cursor-pointer bg-background-secondary hover:bg-primary hover:text-background-primary"
-            aria-label="next-slide"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-right-icon lucide-chevron-right"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-chevron-left-icon lucide-chevron-left"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+
+            {/* Pagination dots */}
+            <div className="swiper-pagination-custom flex items-center gap-[7px] max-w-max" />
+
+            {/* next button */}
+            <button
+              className="swiper-button-next-custom p-2 text-2xl font-medium transition-colors duration-150 cursor-pointer bg-background-secondary hover:bg-primary hover:text-background-primary"
+              aria-label="next-slide"
             >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </button>
-        </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-chevron-right-icon lucide-chevron-right"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Empty state message */}

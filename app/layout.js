@@ -26,6 +26,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
+import BackToTop from "@/components/BackToTop";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -161,6 +162,7 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} ${syne.variable} ${arimo.variable} ${barlow.variable} ${outfit.variable} ${leagueSpartan.variable} antialiased`}
       >
         {children}
+        <BackToTop />
       </body>
     </html>
   );

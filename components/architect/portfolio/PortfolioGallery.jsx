@@ -13,12 +13,15 @@ export default function PortfolioGallery({ portfolioData }) {
   const [active, setActive] = useState("all");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
+  const [currentSlidesPerView, setCurrentSlidesPerView] = useState(1);
 
   // filter items
   const filtered =
     active === "all"
       ? items
       : items.filter((item) => item.categories.includes(active));
+
+  const shouldLoop = filtered.length > currentSlidesPerView;
 
   return (
     <div className="mt-15">
@@ -90,31 +93,39 @@ export default function PortfolioGallery({ portfolioData }) {
           <Swiper
             modules={[Navigation, Autoplay]}
             slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next-custom",
-              prevEl: ".swiper-button-prev-custom",
-            }}
-            speed={1000}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            loop
             breakpoints={{
-              450: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 3,
-              },
-              1024: {
-                slidesPerView: 4,
-              },
-              1280: {
-                slidesPerView: 5,
-              },
+              450: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+              1280: { slidesPerView: 5 },
             }}
+            onBreakpoint={(swiper) => {
+              const spv = swiper.params.slidesPerView;
+              setCurrentSlidesPerView(spv);
+            }}
+            onInit={(swiper) => {
+              const spv = swiper.params.slidesPerView;
+              setCurrentSlidesPerView(spv);
+            }}
+            loop={shouldLoop}
+            navigation={
+              shouldLoop
+                ? {
+                    nextEl: ".swiper-button-next-custom",
+                    prevEl: ".swiper-button-prev-custom",
+                  }
+                : false
+            }
+            autoplay={
+              shouldLoop
+                ? {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }
+                : false
+            }
+            speed={1000}
           >
             {filtered.map((item, index) => (
               <SwiperSlide key={item.id}>
