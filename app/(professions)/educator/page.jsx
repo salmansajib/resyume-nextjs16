@@ -14,7 +14,7 @@ export default function EducatorHome() {
 
   return (
     <div
-      data-theme="educator"
+      data-theme={data.theme}
       className="relative bg-background-primary w-full min-h-screen text-text-primary font-poppins overflow-hidden"
     >
       <HeaderSection data={data} />

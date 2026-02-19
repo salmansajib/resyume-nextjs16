@@ -14,7 +14,7 @@ export default function page() {
 
   return (
     <div
-      data-theme="travel-agent"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-outfit overflow-hidden"
     >
       <HeaderSection data={data} />

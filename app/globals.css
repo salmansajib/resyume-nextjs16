@@ -187,6 +187,16 @@ html {
   --color-text-secondary: 0deg 0% 73%;
 }
 
+[data-theme="motion-designer"] {
+  --color-primary: 276deg 79% 71%;
+  --color-gradient-primary-start: 251deg 55% 64%;
+  --color-gradient-primary-end: 276deg 79% 71%;
+  --color-background-primary: 249deg 37% 4%;
+  --color-background-secondary: 251deg 31% 14%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 0deg 0% 74%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -208,6 +218,8 @@ html {
   --font-barlow: var(--font-barlow), sans-serif;
   --font-outfit: var(--font-outfit), sans-serif;
   --font-leagueSpartan: var(--font-leagueSpartan), sans-serif;
+  --font-exo: var(--font-exo), sans-serif;
+  --font-exo2: var(--font-exo2), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-secondary: hsl(var(--color-secondary));

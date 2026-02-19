@@ -14,7 +14,7 @@ export default function DoctorTwoHome() {
 
   return (
     <div
-      data-theme="doctor-2"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />

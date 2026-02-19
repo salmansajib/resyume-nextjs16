@@ -14,7 +14,7 @@ export default function InteriorDesignerHome() {
 
   return (
     <div
-      data-theme="interior-designer"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-barlow overflow-hidden"
     >
       <HeaderSection data={data} />

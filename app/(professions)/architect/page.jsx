@@ -14,7 +14,7 @@ export default function ArchitectHome() {
 
   return (
     <div
-      data-theme="architect"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-dmSans overflow-hidden"
     >
       <HeaderSection data={data} />

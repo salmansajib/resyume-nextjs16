@@ -14,7 +14,7 @@ export default function EngineerHome() {
 
   return (
     <div
-      data-theme="engineer"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-mulish overflow-hidden"
     >
       <HeaderSection data={data} />

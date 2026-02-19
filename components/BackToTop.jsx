@@ -69,10 +69,10 @@ export default function BackToTop() {
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="lucide lucide-arrow-up-icon lucide-arrow-up"
+            className="lucide lucide-chevrons-up-icon lucide-chevrons-up"
           >
-            <path d="m5 12 7-7 7 7" />
-            <path d="M12 19V5" />
+            <path d="m17 11-5-5-5 5" />
+            <path d="m17 18-5-5-5 5" />
           </svg>
         </motion.button>
       )}

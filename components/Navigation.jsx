@@ -52,7 +52,7 @@ export default function Navigation({
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className={cn(
-              "fixed top-0 right-0 z-1000 w-full max-w-[450px] font-poppins p-5 overflow-y-auto h-screen no-scrollbar",
+              "fixed top-0 right-0 z-1001 w-full max-w-[450px] font-poppins p-5 overflow-y-auto h-screen no-scrollbar",
               bgColor,
               textColor,
             )}

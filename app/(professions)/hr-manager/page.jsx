@@ -14,7 +14,7 @@ export default function HrManagerHome() {
 
   return (
     <div
-      data-theme="hr-manager"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-roboto overflow-hidden"
     >
       <HeaderSection data={data} />

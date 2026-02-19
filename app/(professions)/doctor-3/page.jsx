@@ -14,7 +14,7 @@ export default function DoctorThreeHome() {
 
   return (
     <div
-      data-theme="doctor-3"
+      data-theme={data.theme}
       className="relative bg-background-primary w-full min-h-screen text-text-primary font-poppins overflow-hidden"
     >
       <div className="relative z-10">

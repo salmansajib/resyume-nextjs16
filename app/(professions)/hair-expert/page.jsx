@@ -13,7 +13,7 @@ export default function HairExpertHome() {
 
   return (
     <div
-      data-theme="hair-expert"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-arimo overflow-hidden"
     >
       <HeaderSection data={data} />

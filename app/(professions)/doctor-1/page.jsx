@@ -14,7 +14,7 @@ export default function DoctorOneHome() {
 
   return (
     <div
-      data-theme="doctor-1"
+      data-theme={data.theme}
       className="bg-background-primary w-full min-h-screen text-text-primary font-plusJakartaSans overflow-hidden"
     >
       <HeaderSection data={data} />

@@ -19,6 +19,8 @@ import {
   Barlow,
   Outfit,
   League_Spartan,
+  Exo,
+  Exo_2,
 } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
@@ -148,6 +150,18 @@ const leagueSpartan = League_Spartan({
   subsets: ["latin"],
   display: "swap",
 });
+const exo = Exo({
+  variable: "--font-exo",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const exo2 = Exo_2({
+  variable: "--font-exo2",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Rezyume-NextJs16",
@@ -159,7 +173,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} ${syne.variable} ${arimo.variable} ${barlow.variable} ${outfit.variable} ${leagueSpartan.variable} antialiased`}
+        className={`${poppins.variable} ${sacramento.variable} ${roboto.variable} ${teko.variable} ${rubik.variable} ${inter.variable} ${taviraj.variable} ${playfairDisplay.variable} ${jost.variable} ${lora.variable} ${dmSans.variable} ${plusJakartaSans.variable} ${ebGaramond.variable} ${chakraPetch.variable} ${mulish.variable} ${syne.variable} ${arimo.variable} ${barlow.variable} ${outfit.variable} ${leagueSpartan.variable} ${exo.variable} ${exo2.variable} antialiased`}
       >
         {children}
         <BackToTop />

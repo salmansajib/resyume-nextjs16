@@ -1,0 +1,70 @@
+{
+  "id": "motion-designer",
+  "type": "motion-designer",
+  "theme": "motion-designer",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "Creative Motion Designer",
+    "photo": "/assets/motion-designer/images/profile-photo.png",
+    "about": {
+      "title": "about me",
+      "description": "Passionate about bringing ideas to life through dynamic visuals and animation, I craft engaging motion designs that captivate, inspire, and tell powerful stories."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  },
+  "portfolio": {
+    "title": "a collection of",
+    "subtitle": "my work",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "animated", "label": "Animated" },
+      { "id": "explainer-videos", "label": "Explainer Videos" },
+      { "id": "social-media-animations", "label": "Social Media Animations" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/motion-designer/images/portfolio/portfolio-1.jpg",
+        "icon": "/assets/motion-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Event & Promo Videos",
+        "description": "Capture the excitement and energy of your events with dynamic promo videos. I create powerful animations that highlight key moments, build anticipation, and leave a lasting impression on your audience.",
+        "categories": ["animated", "social-media-animations"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/motion-designer/images/portfolio/portfolio-2.jpg",
+        "icon": "/assets/motion-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Event & Promo Videos",
+        "description": "Capture the excitement and energy of your events with dynamic promo videos. I create powerful animations that highlight key moments, build anticipation, and leave a lasting impression on your audience.",
+        "categories": ["social-media-animations", "animated"]
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "src": "/assets/motion-designer/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/motion-designer/images/portfolio/portfolio-3.jpg",
+        "icon": "/assets/motion-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Event & Promo Videos",
+        "description": "Capture the excitement and energy of your events with dynamic promo videos. I create powerful animations that highlight key moments, build anticipation, and leave a lasting impression on your audience.",
+        "categories": ["animated", "explainer-videos"]
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "src": "/assets/motion-designer/images/portfolio/portfolio-4-new.jpg",
+        "vidsrc": "/assets/motion-designer/images/portfolio/portfolio-4.jpg",
+        "icon": "/assets/motion-designer/icons/portfolio-icon-on-hover.svg",
+        "title": "Event & Promo Videos",
+        "description": "Capture the excitement and energy of your events with dynamic promo videos. I create powerful animations that highlight key moments, build anticipation, and leave a lasting impression on your audience.",
+        "categories": ["explainer-videos", "animated"]
+      }
+    ]
+  }
+}
