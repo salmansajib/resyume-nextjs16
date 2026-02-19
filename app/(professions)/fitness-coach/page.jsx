@@ -9,6 +9,12 @@ import HobbiesSection from "@/components/fitness-coach/hobbies/HobbiesSection";
 import ReferralsSection from "@/components/fitness-coach/referrals/ReferralsSection";
 import FooterScetion from "@/components/fitness-coach/footer/FooterSection";
 
+export const metadata = {
+  title: "Fitness Coach Resume | Rezyume",
+  description:
+    "An energetic fitness coach resume template with experience, services, skills, portfolio, hobbies, and referrals.",
+};
+
 export default function FitnessCoachHome() {
   const data = fitnessCoachData;
 

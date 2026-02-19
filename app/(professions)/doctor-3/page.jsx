@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/doctor-3/referrals/ReferralsSection";
 import HobbiesSection from "@/components/doctor-3/hobbies/HobbiesSection";
 import FooterSection from "@/components/doctor-3/footer/FooterSection";
 
+export const metadata = {
+  title: "Doctor Resume 3 | Rezyume",
+  description:
+    "A stylish doctor resume template with skills, career path, services, portfolio, referrals, and hobbies.",
+};
+
 export default function DoctorThreeHome() {
   const data = doctorthreeData;
 

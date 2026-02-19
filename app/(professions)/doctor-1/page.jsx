@@ -9,6 +9,12 @@ import HobbiesSection from "@/components/doctor-1/hobbies/HobbiesSection";
 import ReferralsSection from "@/components/doctor-1/referrals/ReferralsSection";
 import FooterScetion from "@/components/doctor-1/footer/FooterSection";
 
+export const metadata = {
+  title: "Doctor Resume | Rezyume",
+  description:
+    "A clean and elegant doctor resume template with career path, skills, services, achievements, and referrals.",
+};
+
 export default function DoctorOneHome() {
   const data = doctorOneData;
 

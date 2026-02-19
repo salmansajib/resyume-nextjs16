@@ -8,6 +8,12 @@ import PortfolioSection from "@/components/hair-expert/portfolio/PortfolioSectio
 import ReferralsSection from "@/components/hair-expert/referrals/ReferralsSection";
 import FooterScetion from "@/components/hair-expert/footer/FooterSection";
 
+export const metadata = {
+  title: "Hair Expert Resume | Rezyume",
+  description:
+    "A stylish hair expert resume template displaying experience, services, skills, portfolio, and referrals.",
+};
+
 export default function HairExpertHome() {
   const data = hairExpertData;
 

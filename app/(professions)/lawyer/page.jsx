@@ -8,6 +8,12 @@ import PortfolioSection from "@/components/lawyer/portfolio/PortfolioSection";
 import HobbiesSection from "@/components/lawyer/hobbies/HobbiesSection";
 import FooterSection from "@/components/lawyer/footer/FooterSection";
 
+export const metadata = {
+  title: "Lawyer Resume | Rezyume",
+  description:
+    "A sophisticated lawyer resume template featuring services, skills, career path, portfolio, and hobbies.",
+};
+
 export default function LawyerHome() {
   const data = lawyerData;
 

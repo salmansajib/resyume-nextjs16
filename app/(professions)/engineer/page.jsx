@@ -9,6 +9,12 @@ import PortfolioSection from "@/components/engineer/portfolio/PortfolioSection";
 import HobbiesSection from "@/components/engineer/hobbies/HobbiesSection";
 import ReferralsSection from "@/components/engineer/referrals/ReferralsSection";
 
+export const metadata = {
+  title: "Engineer Resume | Rezyume",
+  description:
+    "A bold engineer resume template showcasing skills, experience, services, portfolio, hobbies, and referrals.",
+};
+
 export default function EngineerHome() {
   const data = engineerData;
 

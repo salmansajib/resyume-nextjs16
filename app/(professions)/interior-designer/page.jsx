@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/interior-designer/referrals/Referrals
 import FooterSection from "@/components/interior-designer/footer/FooterSection";
 import ExperienceSection from "@/components/interior-designer/experience/ExperienceSection";
 
+export const metadata = {
+  title: "Interior Designer Resume | Rezyume",
+  description:
+    "An elegant interior designer resume template with services, experience, skills, portfolio, hobbies, and referrals.",
+};
+
 export default function InteriorDesignerHome() {
   const data = interiorDesignerData;
 

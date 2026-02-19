@@ -9,6 +9,12 @@ import InterestsSection from "@/components/ui-ux-designer/interests/InterestsSec
 import ReferenceSection from "@/components/ui-ux-designer/reference/ReferenceSection";
 import FooterSection from "@/components/ui-ux-designer/footer/FooterSection";
 
+export const metadata = {
+  title: "Rezyume — Resume Templates for Every Profession",
+  description:
+    "Rezyume is a collection of beautifully crafted Next.js 16 resume templates for professionals across different industries.",
+};
+
 export default function Home() {
   const data = uiuxdesignerData;
 

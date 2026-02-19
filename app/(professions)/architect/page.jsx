@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/architect/referrals/ReferralsSection"
 import HobbiesSection from "@/components/architect/hobbies/HobbiesSection";
 import FooterSection from "@/components/architect/footer/FooterSection";
 
+export const metadata = {
+  title: "Architect Resume | Rezyume",
+  description:
+    "A professional architect resume template showcasing services, experience, skills, portfolio, and more.",
+};
+
 export default function ArchitectHome() {
   const data = architectData;
 

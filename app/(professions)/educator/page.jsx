@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/educator/referrals/ReferralsSection";
 import HobbiesSection from "@/components/educator/hobbies/HobbiesSection";
 import FooterSection from "@/components/educator/footer/FooterSection";
 
+export const metadata = {
+  title: "Educator Resume | Rezyume",
+  description:
+    "A professional educator resume template featuring services, experience, skills, portfolio, referrals, and hobbies.",
+};
+
 export default function EducatorHome() {
   const data = educatorData;
 

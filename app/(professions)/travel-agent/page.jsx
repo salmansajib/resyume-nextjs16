@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/travel-agent/referrals/ReferralsSecti
 import HobbiesSection from "@/components/travel-agent/hobbies/HobbiesSection";
 import FooterSection from "@/components/travel-agent/footer/FooterSection";
 
+export const metadata = {
+  title: "Travel Agent Resume | Rezyume",
+  description:
+    "A vibrant travel agent resume template with services, portfolio, skills, experience, referrals, and hobbies.",
+};
+
 export default function page() {
   const data = travelAgentData;
 

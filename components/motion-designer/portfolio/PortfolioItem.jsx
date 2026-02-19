@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 export default function PortfolioItem({ item, onClick }) {
+  const VIDEO_TYPES = ["video", "youtube", "vimeo"];
+
   return (
     <div className="group">
       <button
@@ -44,7 +46,7 @@ export default function PortfolioItem({ item, onClick }) {
             </div>
           )}
 
-          {item.type === "video" && (
+          {VIDEO_TYPES.includes(item.type) && (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Image
                 src="/assets/motion-designer/icons/video-play-icon.svg"

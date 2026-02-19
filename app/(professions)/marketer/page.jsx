@@ -7,6 +7,12 @@ import CareerPathSection from "@/components/marketer/career-path/CareerPathSecti
 import PortfolioSection from "@/components/marketer/portfolio/PortfolioSection";
 import FooterSection from "@/components/marketer/footer/FooterSection";
 
+export const metadata = {
+  title: "Marketer Resume | Rezyume",
+  description:
+    "A dynamic marketer resume template showcasing services, skills, career path, and portfolio.",
+};
+
 export default function MarketerHome() {
   const data = marketerData;
 

@@ -8,6 +8,12 @@ import PortfolioSection from "@/components/financial-advisor/portfolio/Portfolio
 import ReferralsSection from "@/components/financial-advisor/referrals/ReferralsSection";
 import FooterSection from "@/components/financial-advisor/footer/FooterSection";
 
+export const metadata = {
+  title: "Financial Advisor Resume | Rezyume",
+  description:
+    "A refined financial advisor resume template with experience, services, skills, portfolio, and referrals.",
+};
+
 export default function FinancialAdvisorHome() {
   const data = financialAdvisorData;
 

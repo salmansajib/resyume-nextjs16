@@ -8,6 +8,12 @@ import SkillsHobbiesSection from "@/components/virtual-assistant/skills-hobbies/
 import ReferralsSection from "@/components/virtual-assistant/referrals/ReferralsSection";
 import FooterSection from "@/components/virtual-assistant/footer/FooterSection";
 
+export const metadata = {
+  title: "Virtual Assistant Resume | Rezyume",
+  description:
+    "A clean virtual assistant resume template featuring experience, services, portfolio, skills, hobbies, and referrals.",
+};
+
 export default function VirtualAssistantHome() {
   const data = virtualAssistantData;
 

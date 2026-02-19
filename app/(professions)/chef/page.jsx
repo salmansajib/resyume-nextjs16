@@ -8,6 +8,12 @@ import PortfolioSection from "@/components/chef/portfolio/PortfolioSection";
 import ReferralSection from "@/components/chef/referrals/ReferralSection";
 import FooterScetion from "@/components/chef/footer/FooterScetion";
 
+export const metadata = {
+  title: "Chef Resume | Rezyume",
+  description:
+    "A premium chef resume template featuring services, skills, career path, portfolio, and referrals.",
+};
+
 export default function ChefHome() {
   const data = chefData;
 

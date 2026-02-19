@@ -10,6 +10,12 @@ import InterestsSection from "@/components/ui-ux-designer/interests/InterestsSec
 import ReferenceSection from "@/components/ui-ux-designer/reference/ReferenceSection";
 import FooterSection from "@/components/ui-ux-designer/footer/FooterSection";
 
+export const metadata = {
+  title: "UI/UX Designer Resume | Rezyume",
+  description:
+    "A sleek UI/UX designer resume template with education, experience, skills, services, portfolio, and references.",
+};
+
 export default function UiuxdesignerHome() {
   const data = uiuxdesignerData;
 

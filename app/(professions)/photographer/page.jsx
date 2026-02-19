@@ -7,6 +7,12 @@ import SkillsSection from "@/components/photographer/skills/SkillsSection";
 import PortfolioSection from "@/components/photographer/portfolio/PortfolioSection";
 import FooterSection from "@/components/photographer/footer/FooterSection";
 
+export const metadata = {
+  title: "Photographer Resume | Rezyume",
+  description:
+    "A creative photographer resume template with career path, services, skills, and portfolio.",
+};
+
 export default function PhotographerHome() {
   const data = photographerData;
 

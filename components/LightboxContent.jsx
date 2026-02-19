@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react";
+
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -9,35 +10,39 @@ export default function LightboxContent({
   onClose = () => {},
 }) {
   const [index, setIndex] = useState(startIndex);
-  const [prevIndex, setPrevIndex] = useState(startIndex);
+  const [direction, setDirection] = useState(0);
+
+  const videoRef = useRef(null);
 
   const current = items[index];
   const isFirst = index === 0;
   const isLast = index === items.length - 1;
 
-  // Calculate direction based on actual index change
-  const direction = index > prevIndex ? 1 : index < prevIndex ? -1 : 0;
-
-  // Update prevIndex when index changes
-  useEffect(() => {
-    setPrevIndex(index);
-  }, [index]);
-
+  // ✅ Compute direction INSIDE state updater
   const goNext = useCallback(() => {
-    setIndex((i) => {
-      if (i >= items.length - 1) return i;
-      return i + 1;
+    setIndex((prev) => {
+      if (prev >= items.length - 1) return prev;
+      setDirection(1);
+      return prev + 1;
     });
   }, [items.length]);
 
   const goPrev = useCallback(() => {
-    setIndex((i) => {
-      if (i <= 0) return i;
-      return i - 1;
+    setIndex((prev) => {
+      if (prev <= 0) return prev;
+      setDirection(-1);
+      return prev - 1;
     });
   }, []);
 
-  // Keyboard Controls
+  // Pause self-hosted video on slide change
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [index]);
+
   const handleKey = useCallback(
     (e) => {
       if (e.key === "Escape") onClose();
@@ -54,112 +59,127 @@ export default function LightboxContent({
 
   if (!current) return null;
 
+  const slideVariants = {
+    enter: (dir) => ({
+      x: dir > 0 ? 200 : -200,
+      opacity: 0,
+      scale: 0.95,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+    },
+    exit: (dir) => ({
+      x: dir > 0 ? -200 : 200,
+      opacity: 0,
+      scale: 0.95,
+    }),
+  };
+
   return (
-    <AnimatePresence>
+    <AnimatePresence custom={direction}>
       <motion.div
-        className="fixed inset-0 z-9999 flex items-center justify-center p-6 bg-black/50 backdrop-blur"
+        className="fixed inset-0 z-9999 flex items-center justify-center p-6 bg-black/60 backdrop-blur"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         onClick={onClose}
       >
         <motion.div
-          initial={{ scale: 0.95, opacity: 0 }}
+          initial={{ scale: 0.96, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.95, opacity: 0 }}
+          exit={{ scale: 0.96, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           className="max-w-5xl w-full h-full md:h-auto relative"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Close Button */}
+          {/* Close */}
           <button
             onClick={onClose}
-            className="absolute right-3 top-3 z-20 rounded-md bg-white/10 backdrop-blur size-10 flex items-center justify-center text-text-primary cursor-pointer hover:text-red-200 transition-colors duration-150"
+            className="absolute right-4 top-4 z-20 rounded-md bg-white/10 backdrop-blur size-10 flex items-center justify-center text-white hover:text-red-300 transition"
           >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
+            ✕
           </button>
 
-          {/* Prev / Next */}
+          {/* Navigation */}
           {items.length > 1 && (
             <>
               <button
                 onClick={goPrev}
                 disabled={isFirst}
-                className={`absolute left-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white ${isFirst ? "cursor-not-allowed pointer-events-none opacity-40" : "cursor-pointer"}`}
+                className={`absolute left-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-3 text-white ${
+                  isFirst
+                    ? "opacity-30 pointer-events-none"
+                    : "hover:bg-white/20"
+                }`}
               >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
+                ‹
               </button>
 
               <button
                 onClick={goNext}
                 disabled={isLast}
-                className={`absolute right-3 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-2 text-white cursor-pointer ${isLast ? "cursor-not-allowed pointer-events-none opacity-40" : "cursor-pointer"}`}
+                className={`absolute right-4 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/10 p-3 text-white ${
+                  isLast
+                    ? "opacity-30 pointer-events-none"
+                    : "hover:bg-white/20"
+                }`}
               >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
+                ›
               </button>
             </>
           )}
 
-          {/* Image / Video (Animated Slide) */}
+          {/* Media */}
           <div className="bg-background-secondary/60 backdrop-blur-sm rounded-md overflow-hidden w-full h-full flex items-center justify-center">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.35 }}
                 className="w-full h-full flex items-center justify-center"
               >
-                {current.type === "image" ? (
+                {current.type === "image" && (
                   <div className="relative w-full h-[70vh] md:h-[60vh]">
                     <Image
                       src={current.src}
-                      alt={current.alt || current.title}
+                      alt={current.alt || ""}
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                       className="object-contain"
                     />
                   </div>
-                ) : (
+                )}
+
+                {current.type === "video" && (
                   <video
-                    src={current.vidsrc}
+                    ref={videoRef}
+                    src={current.src}
                     controls
+                    autoPlay
                     className="w-full h-[70vh] md:h-[60vh] object-contain"
+                  />
+                )}
+
+                {current.type === "youtube" && (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${current.videoId}?autoplay=1&rel=0`}
+                    className="w-full h-[70vh] md:h-[60vh]"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
+
+                {current.type === "vimeo" && (
+                  <iframe
+                    src={`https://player.vimeo.com/video/${current.videoId}?autoplay=1`}
+                    className="w-full h-[70vh] md:h-[60vh]"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
                   />
                 )}
               </motion.div>

@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/hr-manager/referrals/ReferralsSection
 import HobbiesSection from "@/components/hr-manager/hobbies/HobbiesSection";
 import FooterSection from "@/components/hr-manager/footer/FooterSection";
 
+export const metadata = {
+  title: "HR Manager Resume | Rezyume",
+  description:
+    "A modern HR manager resume template with experience, services, skills, portfolio, referrals, and hobbies.",
+};
+
 export default function HrManagerHome() {
   const data = hrManagerData;
 
