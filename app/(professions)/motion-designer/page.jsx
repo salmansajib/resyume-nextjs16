@@ -4,6 +4,7 @@ import HeaderSection from "@/components/motion-designer/header/HeaderSection";
 import PortfolioSection from "@/components/motion-designer/portfolio/PortfolioSection";
 import CareerPathSection from "@/components/motion-designer/career-path/CareerPathSection";
 import ServicesSection from "@/components/motion-designer/services/ServicesSection";
+import ReferralsSkillsSection from "@/components/motion-designer/referrals-skills/ReferralsSkillsSection";
 
 export const metadata = {
   title: "Motion Designer Resume | Rezyume",
@@ -23,6 +24,7 @@ export default function MotionDesignerHome() {
       <PortfolioSection data={data} />
       <CareerPathSection data={data} />
       <ServicesSection data={data} />
+      <ReferralsSkillsSection data={data} />
     </div>
   );
 }

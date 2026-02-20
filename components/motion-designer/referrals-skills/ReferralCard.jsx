@@ -1,0 +1,53 @@
+import React from "react";
+import Image from "next/image";
+import EmailIconFilled from "@/components/icons/EmailIconFilled";
+import PhoneIconFilled from "@/components/icons/PhoneIconFilled";
+import { motion } from "motion/react";
+
+export default function ReferralCard({ item, fadeInUp }) {
+  return (
+    <motion.article
+      variants={fadeInUp}
+      className="flex flex-col sm:flex-row items-center gap-10 bg-background-secondary p-5 rounded-lg ring-1 ring-primary/20 group"
+    >
+      {/* image */}
+      <div className="rounded-md overflow-hidden">
+        <Image
+          src={item.photo}
+          alt={`${item.name} photo`}
+          width={300}
+          height={300}
+          className="w-[270px] h-[245px] object-cover group-hover:scale-110 transition-all duration-200"
+        />
+      </div>
+
+      {/* details info */}
+      <div className="space-y-3">
+        <h4 className="text-2xl font-medium font-chakraPetch capitalize">
+          {item.name}
+        </h4>
+        <p className="text-text-secondary uppercase">{item.position}</p>
+        <a
+          href={`mailto:${item.email}`}
+          aria-label={`Email ${item.email}`}
+          className="text-text-secondary flex items-center gap-3 hover:text-text-primary break-all lg:break-normal"
+        >
+          <span className="size-8 rounded-full border border-text-secondary/30 flex items-center justify-center">
+            <EmailIconFilled />
+          </span>
+          {item.email}
+        </a>
+        <a
+          href={`tel:${item.phone}`}
+          aria-label={`tel ${item.phone}`}
+          className="text-text-secondary flex items-center gap-3 hover:text-text-primary"
+        >
+          <span className="size-8 rounded-full border border-text-secondary/30 flex items-center justify-center">
+            <PhoneIconFilled />
+          </span>
+          {item.phone}
+        </a>
+      </div>
+    </motion.article>
+  );
+}

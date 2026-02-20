@@ -171,5 +171,63 @@
         "icon": "/assets/motion-designer/icons/services/storyboarding-design-icon.svg"
       }
     ]
+  },
+  "referrals": {
+    "title": "My Professional",
+    "subtitle": "Referrals",
+    "items": [
+      {
+        "id": "noah-patterson",
+        "photo": "/assets/motion-designer/images/referrals/noah-patterson.jpg",
+        "name": "Noah Patterson",
+        "position": "CEO of Monster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "rodrigo-corral",
+        "photo": "/assets/motion-designer/images/referrals/rodrigo-corral.jpg",
+        "name": "Rodrigo Corral",
+        "position": "Visual Studio Ltd.",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
+  },
+  "skills": {
+    "title": "My Professional",
+    "subtitle": "Skill Set",
+    "items": [
+      {
+        "id": "research-and-analysis",
+        "name": "research and analysis",
+        "proficiency": 90
+      },
+      {
+        "id": "drafting-and-negotiation",
+        "name": "drafting and negotiation",
+        "proficiency": 85
+      },
+      {
+        "id": "dispute-resolution",
+        "name": "dispute resolution",
+        "proficiency": 80
+      },
+      {
+        "id": "dispute-resolution-2",
+        "name": "dispute resolution",
+        "proficiency": 80
+      },
+      {
+        "id": "regulatory-compliance",
+        "name": "regulatory compliance",
+        "proficiency": 95
+      },
+      {
+        "id": "client-counseling",
+        "name": "client counseling",
+        "proficiency": 90
+      }
+    ]
   }
 }
