@@ -314,8 +314,8 @@
     ]
   },
   "hobbies": {
-    "title": "hobbies",
-    "subtitle": "my hobbies",
+    "title": "my",
+    "subtitle": "hobbies",
     "items": [
       {
         "id": "bike-riding",

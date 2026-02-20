@@ -229,5 +229,31 @@
         "proficiency": 90
       }
     ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/motion-designer/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/motion-designer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/motion-designer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/motion-designer/icons/hobbies/technology.svg"
+      }
+    ]
   }
 }
