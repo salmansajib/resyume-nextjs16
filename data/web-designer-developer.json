@@ -46,5 +46,74 @@
         "icon": "/assets/web-designer-developer/icons/services/ui-ux-design-icon.svg"
       }
     ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My Career Path",
+    "workExperience": [
+      {
+        "id": "work-001",
+        "company": "iBechArt Group",
+        "period": {
+          "start": null,
+          "end": null,
+          "current": true
+        },
+        "location": "Software Company 5, New York, NY, USA",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "id": "work-002",
+        "company": "NentorMate",
+        "period": {
+          "start": 2019,
+          "end": 2021
+        },
+        "location": "IBechart Group, New York, NY, USA",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      },
+      {
+        "id": "work-003",
+        "company": "ScienceSoft",
+        "period": {
+          "start": 2022,
+          "end": 2023
+        },
+        "location": "Software Company in Sofia, Bulgaria",
+        "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence."
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-001",
+        "institution": "Franklin University",
+        "period": {
+          "start": 2014,
+          "end": 2017
+        },
+        "degree": "Programming & Computer Science",
+        "result": "First Class"
+      },
+      {
+        "id": "edu-002",
+        "institution": "Massachusetts Institute of Technology",
+        "period": {
+          "start": 2011,
+          "end": 2014
+        },
+        "degree": "Science & Technology",
+        "result": "First Class"
+      },
+      {
+        "id": "edu-003",
+        "institution": "Thomas Jefferson High School",
+        "period": {
+          "start": 2009,
+          "end": 2011
+        },
+        "degree": "Science & Technology",
+        "result": "A+"
+      }
+    ]
   }
 }
