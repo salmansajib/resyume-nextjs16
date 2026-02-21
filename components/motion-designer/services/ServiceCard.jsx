@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ServiceCard({ item }) {
   return (
-    <div className="min-h-[450px] flex flex-col justify-center flex-1 gap-7 bg-background-secondary group p-10 rounded-3xl ring-1 ring-primary/20">
+    <div className="min-h-[450px] flex flex-col justify-center flex-1 gap-7 bg-background-secondary group p-10 rounded-3xl border border-primary/20">
       <div
         aria-hidden
         className="size-23 bg-[#2A2541] flex items-center justify-center rounded-2xl ring-1 ring-primary/20"

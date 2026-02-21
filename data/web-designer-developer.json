@@ -16,5 +16,35 @@
       "email": "richardsonVfred@gmail.com",
       "address": "2915 East Scottsdale, USA"
     }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Offer",
+    "items": [
+      {
+        "id": "custom-website-design",
+        "name": "Custom Website Design",
+        "description": "I design unique, tailor-made websites that not only look stunning perform flawlessly. Every project is built your brand's vision, ensuring a strong online presence that captures attention.",
+        "icon": "/assets/web-designer-developer/icons/services/custom-website-design-icon.svg"
+      },
+      {
+        "id": "ui-ux-design",
+        "name": "UI/UX Design",
+        "description": "I focus on creating user interfaces that are visually appealing and experiences that are intuitive and seamless. By combining clean design principles with user strategies, I ensure that every interaction",
+        "icon": "/assets/web-designer-developer/icons/services/ui-ux-design-icon.svg"
+      },
+      {
+        "id": "website-redesign",
+        "name": "Website Redesign",
+        "description": "I design unique, tailor-made websites that not only look stunning perform flawlessly. Every project is built your brand's vision, ensuring a strong online presence that captures attention.",
+        "icon": "/assets/web-designer-developer/icons/services/website-redesign-icon.svg"
+      },
+      {
+        "id": "ui-ux-design-2",
+        "name": "UI/UX Design",
+        "description": "I focus on creating user interfaces that are visually appealing and experiences that are intuitive and seamless. By combining clean design principles with user strategies, I ensure that every interaction",
+        "icon": "/assets/web-designer-developer/icons/services/ui-ux-design-icon.svg"
+      }
+    ]
   }
 }

@@ -19,7 +19,7 @@ export default function ProfilePhoto({ heroData, className }) {
             width={800}
             height={800}
             priority
-            className="w-full h-[621px] object-cover"
+            className="w-full h-auto md:h-[621px] object-cover"
           />
         </div>
         <SocialLinks />

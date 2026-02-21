@@ -8,7 +8,7 @@ export default function ContactInfo({ heroData, className }) {
   return (
     <div
       className={cn(
-        "relative w-full xl:max-w-max overflow-hidden bg-background-secondary/15 rounded-2xl ring-1 ring-border-primary backdrop-blur-[3px] px-8 py-10",
+        "relative w-full xl:max-w-max overflow-hidden bg-background-secondary/15 rounded-2xl ring-1 ring-border-primary backdrop-blur-[3px] px-10 py-12",
         className,
       )}
     >
@@ -16,14 +16,14 @@ export default function ContactInfo({ heroData, className }) {
         <h2 className="text-2xl font-rajdhani font-semibold leading-none uppercase">
           Contact Me
         </h2>
-        <dißv className="space-y-7">
+        <div className="space-y-7">
           {/* phone */}
           <a
             href={`tel:${heroData.contact.phone}`}
             aria-label={`Call ${heroData.contact.phone}`}
             className="flex items-center gap-5 group"
           >
-            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center">
+            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center shrink-0">
               <PhoneIcon />
             </span>
             <span className="text-text-secondary group-hover:text-text-primary">
@@ -36,7 +36,7 @@ export default function ContactInfo({ heroData, className }) {
             aria-label={`Email ${heroData.contact.email}`}
             className="flex items-center gap-5 group"
           >
-            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center">
+            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center shrink-0">
               <EmailIcon />
             </span>
             <span className="text-text-secondary break-all group-hover:text-text-primary">
@@ -53,14 +53,14 @@ export default function ContactInfo({ heroData, className }) {
             aria-label={`View location: ${heroData.contact.address}`}
             className="flex items-center gap-5 group"
           >
-            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center">
+            <span className="size-10 text-text-secondary border border-text-secondary rounded-full flex items-center justify-center shrink-0">
               <LocationIcon />
             </span>
             <span className="text-text-secondary break-all group-hover:text-text-primary">
               {heroData.contact.address}
             </span>
           </a>
-        </dißv>
+        </div>
       </div>
 
       {/* gradient circle */}
