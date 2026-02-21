@@ -71,7 +71,7 @@ export default function ServicesSection({ data }) {
         </div>
 
         {/* custom navigation buttons — only render when useful */}
-        <div className="flex items-center justify-center gap-5 mt-10">
+        <div className="flex items-center justify-center gap-5 mt-10 relative z-20">
           {/* prev button */}
           <button className="swiper-button-prev-custom size-[50px] rounded-full bg-background-secondary flex items-center justify-center ring-1 ring-primary/20 cursor-pointer hover:ring-primary">
             <svg

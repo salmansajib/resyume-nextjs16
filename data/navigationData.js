@@ -31,13 +31,13 @@ export const navItems = [
   { id: "educator", label: "Educator", link: "/educator" },
   { id: "motion-designer", label: "Motion Designer", link: "/motion-designer" },
   {
-    id: "web-design-developers",
+    id: "web-designer-developer",
     label: "Web Design & Developer",
-    link: "/web-design-developer",
+    link: "/web-designer-developer",
   },
   {
-    id: "sales-executive-offcer",
+    id: "sales-executive-officer",
     label: "Sales Executive Officer",
-    link: "/sales-executive-offcer",
+    link: "/sales-executive-officer",
   },
 ];

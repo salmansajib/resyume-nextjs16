@@ -1,0 +1,20 @@
+{
+  "id": "web-designer-developer",
+  "type": "web-designer-developer",
+  "theme": "web-designer-developer",
+  "hero": {
+    "greeting": "hello world i am",
+    "name": "Mr. Alexander Morgan",
+    "title": "Web designer and developer",
+    "photo": "/assets/web-designer-developer/images/profile-photo.jpg",
+    "about": {
+      "title": "about me",
+      "description": "As a passionate Web Designer and Developer, I specialize in creating visually stunning, user-friendly websites that deliver seamless digital experiences. With a strong foundation in both design aesthetics and technical development, I bridge creativity and functionality to build custom solutions tailored to each client’s needs."
+    },
+    "contact": {
+      "phone": "+1 254 555",
+      "email": "richardsonVfred@gmail.com",
+      "address": "2915 East Scottsdale, USA"
+    }
+  }
+}

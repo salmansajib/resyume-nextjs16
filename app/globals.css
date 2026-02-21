@@ -197,6 +197,17 @@ html {
   --color-text-secondary: 0deg 0% 74%;
 }
 
+[data-theme="web-designer-developer"] {
+  --color-primary: 334deg 36% 46%;
+  --color-gradient-primary-start: 316deg 100% 35%;
+  --color-gradient-primary-end: 334deg 96% 46%;
+  --color-background-primary: 215deg 44% 10%;
+  --color-background-secondary: 215deg 37% 21%;
+  --color-text-primary: 0deg 0% 100%;
+  --color-text-secondary: 197deg 6% 74%;
+  --color-border-primary: 217deg 18% 20%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
@@ -220,6 +231,7 @@ html {
   --font-leagueSpartan: var(--font-leagueSpartan), sans-serif;
   --font-exo: var(--font-exo), sans-serif;
   --font-exo2: var(--font-exo2), sans-serif;
+  --font-rajdhani: var(--font-rajdhani), sans-serif;
 
   --color-primary: hsl(var(--color-primary));
   --color-secondary: hsl(var(--color-secondary));
