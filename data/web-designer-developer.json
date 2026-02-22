@@ -151,5 +151,79 @@
         "icon": "/assets/web-designer-developer/icons/skills/responsive-devices.svg"
       }
     ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "html-css", "label": "html & css" },
+      { "id": "javascript", "label": "javascript" },
+      { "id": "ui-ux", "label": "ui/ux" },
+      { "id": "shopify", "label": "shopify" }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "/assets/web-designer-developer/images/portfolio/portfolio-1.jpg",
+        "title": "Clean & Professional HTML Invoice Design",
+        "description": "A sleek and responsive HTML invoice template built for businesses that value clarity and professionalism. Designed with clean code and easy customization for seamless client transactions.",
+        "categories": ["html-css", "ui-ux", "shopify"]
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "/assets/web-designer-developer/images/portfolio/portfolio-2.jpg",
+        "title": "Clean & Professional HTML Invoice Design",
+        "description": "A sleek and responsive HTML invoice template built for businesses that value clarity and professionalism. Designed with clean code and easy customization for seamless client transactions.",
+        "categories": ["html-css", "javascript", "ui-ux"]
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "src": "/assets/web-designer-developer/images/portfolio/portfolio-3.jpg",
+        "title": "Clean & Professional HTML Invoice Design",
+        "description": "A sleek and responsive HTML invoice template built for businesses that value clarity and professionalism. Designed with clean code and easy customization for seamless client transactions.",
+        "categories": ["html-css", "javascript", "ui-ux"]
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "src": "/assets/web-designer-developer/images/portfolio/portfolio-4.jpg",
+        "title": "Clean & Professional HTML Invoice Design",
+        "description": "A sleek and responsive HTML invoice template built for businesses that value clarity and professionalism. Designed with clean code and easy customization for seamless client transactions.",
+        "categories": ["html-css", "animated", "ui-ux", "shopify"]
+      }
+    ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "michael-bierut",
+        "photo": "/assets/web-designer-developer/images/referrals/michael-bierut.jpg",
+        "name": "Michael Bierut",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "rodrigo-corral",
+        "photo": "/assets/web-designer-developer/images/referrals/rodrigo-corral.jpg",
+        "name": "Rodrigo Corral",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/web-designer-developer/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
   }
 }
