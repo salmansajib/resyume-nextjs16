@@ -225,5 +225,31 @@
         "phone": "+003 123 4567 89"
       }
     ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/web-designer-developer/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/web-designer-developer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/web-designer-developer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/web-designer-developer/icons/hobbies/technology.svg"
+      }
+    ]
   }
 }

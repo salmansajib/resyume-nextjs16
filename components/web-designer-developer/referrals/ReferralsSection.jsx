@@ -8,7 +8,10 @@ export default function ReferralsSection({ data }) {
   const { referrals } = data;
 
   return (
-    <section aria-labelledby="referrals-heading" className="px-4 py-20">
+    <section
+      aria-labelledby="referrals-heading"
+      className="px-4 py-20 relative z-10"
+    >
       <div className="w-full max-w-7xl mx-auto">
         {/* title and subtitle */}
         <div className="flex flex-col gap-2 items-center justify-center">
