@@ -23,7 +23,7 @@ export default function ServiceCard({ item }) {
       </div>
 
       {/* gradient circle */}
-      <div className="absolute top-60 left-1/2 -translate-x-1/2 size-120 rounded-full bg-radial-[circle_at_center] from-[#E80567]/60 from-0% via-[#0E1724]/0 via-50% to-transparent to-70%"></div>
+      <div className="absolute top-60 left-1/2 -translate-x-1/2 size-120 rounded-full bg-radial-[circle_at_center] from-[#E80567]/40 from-0% via-[#0E1724]/0 via-50% to-transparent to-70%"></div>
     </div>
   );
 }

@@ -115,5 +115,41 @@
         "result": "A+"
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skill Set",
+    "items": [
+      {
+        "id": "html-css",
+        "name": "HTML & CSS",
+        "proficiency": 97,
+        "icon": "/assets/web-designer-developer/icons/skills/html-file.svg"
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript",
+        "proficiency": 85,
+        "icon": "/assets/web-designer-developer/icons/skills/js-file.svg"
+      },
+      {
+        "id": "ui-ux-design",
+        "name": "UI/UX Design",
+        "proficiency": 80,
+        "icon": "/assets/web-designer-developer/icons/skills/ui-ux-monitor.svg"
+      },
+      {
+        "id": "figma-adobe-xd",
+        "name": "Figma / Adobe XD",
+        "proficiency": 97,
+        "icon": "/assets/web-designer-developer/icons/skills/figma.svg"
+      },
+      {
+        "id": "responsive-design",
+        "name": "Responsive Design",
+        "proficiency": 90,
+        "icon": "/assets/web-designer-developer/icons/skills/responsive-devices.svg"
+      }
+    ]
   }
 }

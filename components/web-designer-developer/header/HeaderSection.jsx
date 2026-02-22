@@ -26,12 +26,12 @@ export default function HeaderSection({ data }) {
       <div className="w-full max-w-[1640px] mx-auto px-4">
         <Navbar handleMenuClick={handleMenuClick} />
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-10 items-center justify-self-center md:justify-items-normal pt-10 pb-20">
-          <div className="xl:space-y-20 flex flex-col gap-10 items-center xl:items-start justify-between order-2 md:order-1">
-            <ContactInfo heroData={hero} />
-            <Downloadcv className="xl:self-end" />
+          <div className="xl:space-y-20 flex flex-col gap-10 items-center xl:items-start justify-between order-3 md:order-2 xl:order-1">
+            <ContactInfo heroData={hero} className="order-2 md:order-2" />
+            <Downloadcv className="xl:self-end order-1 md:order-2" />
           </div>
-          <ProfilePhoto heroData={hero} className="order-1 md:order-2" />
-          <div className="xl:space-y-20 flex flex-col md:flex-row xl:flex-col gap-10 items-center md:col-start-1 md:col-end-3 xl:col-start-3 xl:col-end-4 order-3">
+          <ProfilePhoto heroData={hero} className="order-2" />
+          <div className="xl:space-y-20 flex flex-col md:flex-row xl:flex-col gap-10 items-center md:col-start-1 md:col-end-3 xl:col-start-3 xl:col-end-4 order-1 md:order-1 xl:order-3">
             <Intro heroData={hero} />
             <About heroData={hero} />
           </div>

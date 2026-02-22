@@ -53,7 +53,6 @@ export default function ReferralsSkillsSection({ data }) {
           </div>
 
           {/* skills */}
-          {/* skills */}
           <div className="mt-15 grid grid-cols-2 md:grid-cols-3 gap-10">
             {skills.items.map((item) => (
               <Skill key={item.id} item={item} />

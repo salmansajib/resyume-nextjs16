@@ -8,7 +8,7 @@ export default function ContactInfo({ heroData, className }) {
   return (
     <div
       className={cn(
-        "relative w-full xl:max-w-max overflow-hidden bg-background-secondary/15 rounded-2xl ring-1 ring-border-primary backdrop-blur-[3px] px-10 py-12",
+        "relative w-full overflow-hidden bg-background-secondary/15 rounded-2xl ring-1 ring-border-primary backdrop-blur-[3px] px-10 py-12",
         className,
       )}
     >
