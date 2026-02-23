@@ -208,6 +208,15 @@ html {
   --color-border-primary: 217deg 18% 20%;
 }
 
+[data-theme="sales-executive-officer"] {
+  --color-primary: 212deg 100% 40%;
+  --color-background-primary: 0deg 0% 100%;
+  --color-background-secondary: 180deg 6% 93%;
+  --color-text-primary: 0deg 0% 12%;
+  --color-text-secondary: 0deg 0% 40%;
+  --color-text-dimmed: 220deg 2% 50%;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins), sans-serif;
   --font-sacramento: var(--font-sacramento), cursive;
