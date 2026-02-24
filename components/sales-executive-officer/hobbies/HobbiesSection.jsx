@@ -1,12 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
+import InViewAnimator from "@/components/InViewAnimator";
+import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export default function HobbiesSection({ data }) {
   const { hobbies } = data;
 
   return (
     <section aria-labelledby="hobbies-heading">
-      <div className="w-full max-w-7xl mx-auto px-4 pt-10 pb-20">
+      <InViewAnimator
+        variants={staggerContainer}
+        className="w-full max-w-7xl mx-auto px-4 pt-10 pb-20"
+      >
         {/* title and subtitle */}
         <div className="flex flex-col gap-5 items-center justify-center">
           <h2
@@ -23,7 +30,11 @@ export default function HobbiesSection({ data }) {
         {/* hobbies */}
         <ul className="flex flex-wrap items-center justify-center gap-7 mt-10">
           {hobbies.items.map((item) => (
-            <li
+            <motion.li
+              variants={fadeInUp}
+              whileHover={{
+                scale: 1.03,
+              }}
               key={item.id}
               className="flex flex-col items-center justify-center gap-5"
             >
@@ -44,10 +55,10 @@ export default function HobbiesSection({ data }) {
                 </div>
               </div>
               <h3 className="text-xl font-medium capitalize">{item.name}</h3>
-            </li>
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </InViewAnimator>
     </section>
   );
 }

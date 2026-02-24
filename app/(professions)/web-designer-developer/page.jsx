@@ -9,6 +9,12 @@ import ReferralsSection from "@/components/web-designer-developer/referrals/Refe
 import HobbiesSection from "@/components/web-designer-developer/hobbies/HobbiesSection";
 import FooterSection from "@/components/web-designer-developer/footer/FooterSection";
 
+export const metadata = {
+  title: "Web Designer Developer Resume | Rezyume",
+  description:
+    "A creative photographer resume template with career path, services, skills, and portfolio.",
+};
+
 export default function WebDesignerDeveloperHome() {
   const data = webDesignerDeveloperData;
 
