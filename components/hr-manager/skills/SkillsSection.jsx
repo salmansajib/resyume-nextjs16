@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import Skills from "./Skills";
 import { useInView } from "motion/react";
-import Image from "next/image";
 
 export default function SkillsSection({ data }) {
   const { skills } = data;

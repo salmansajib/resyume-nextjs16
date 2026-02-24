@@ -3,6 +3,8 @@ import salesExecutiveOfficerData from "@/data/sales-executive-officer.json";
 import HeaderSection from "@/components/sales-executive-officer/header/HeaderSection";
 import ExperienceSection from "@/components/sales-executive-officer/experience/ExperienceSection";
 import ServicesSection from "@/components/sales-executive-officer/services/ServicesSection";
+import SkillsSection from "@/components/sales-executive-officer/skills/SkillsSection";
+import PortfolioSection from "@/components/sales-executive-officer/portfolio/PortfolioSection";
 
 export const metadata = {
   title: "Sales Executive Officer Resume | Rezyume",
@@ -21,6 +23,8 @@ export default function SalesExecutiveOfficerHome() {
       <HeaderSection data={data} />
       <ExperienceSection data={data} />
       <ServicesSection data={data} />
+      <SkillsSection data={data} />
+      <PortfolioSection data={data} />
     </div>
   );
 }

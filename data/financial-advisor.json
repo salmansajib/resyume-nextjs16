@@ -173,10 +173,11 @@
     "subtitle": "a collection of my work",
     "categories": [
       { "id": "all", "label": "All" },
-      { "id": "video", "label": "Video" },
-      { "id": "golden", "label": "Golden" },
-      { "id": "vintage-voyage", "label": "Vintage Voyage" },
-      { "id": "sunset-escape", "label": "Sunset Escape" }
+      { "id": "professional-headshot", "label": "Professional Headshot" },
+      { "id": "client-consultation", "label": "Client Consultation" },
+      { "id": "financial-plans", "label": "Financial Plans" },
+      { "id": "team-collaboration", "label": "Team Collaboration" },
+      { "id": "finance-visuals", "label": "Finance Visuals" }
     ],
     "items": [
       {
@@ -185,7 +186,7 @@
         "src": "/assets/financial-advisor/images/portfolio/portfolio-1.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["golden", "vintage-voyage"]
+        "categories": ["professional-headshot", "client-consultation"]
       },
       {
         "id": "portfolio-2",
@@ -193,7 +194,11 @@
         "src": "/assets/financial-advisor/images/portfolio/portfolio-2.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["golden", "sunset-escape"]
+        "categories": [
+          "professional-headshot",
+          "financial-plans",
+          "finance-visuals"
+        ]
       },
       {
         "id": "portfolio-3",
@@ -202,7 +207,7 @@
         "vidsrc": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["sunset-escape", "video"]
+        "categories": ["financial-plans", "team-collaboration"]
       },
       {
         "id": "portfolio-4",
@@ -210,7 +215,11 @@
         "src": "/assets/financial-advisor/images/portfolio/portfolio-4.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["sunset-escape", "vintage-voyage"]
+        "categories": [
+          "financial-plans",
+          "client-consultation",
+          "finance-visuals"
+        ]
       },
       {
         "id": "portfolio-5",
@@ -218,7 +227,11 @@
         "src": "/assets/financial-advisor/images/portfolio/portfolio-2.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["golden", "vintage-voyage"]
+        "categories": [
+          "professional-headshot",
+          "client-consultation",
+          "team-collaboration"
+        ]
       },
       {
         "id": "portfolio-6",
@@ -226,7 +239,11 @@
         "src": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
-        "categories": ["golden", "vintage-voyage"]
+        "categories": [
+          "professional-headshot",
+          "client-consultation",
+          "finance-visuals"
+        ]
       }
     ]
   },

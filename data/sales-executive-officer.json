@@ -133,24 +133,103 @@
     "subtitle": "My Professional Skillset",
     "items": [
       {
-        "id": "talent-acquisition",
-        "name": "Talent Acquisition",
+        "id": "sales-strategy-development",
+        "name": "Sales Strategy Development",
         "proficiency": 85
       },
       {
-        "id": "training-development",
-        "name": "Training & Development",
+        "id": "lead-generation",
+        "name": "Lead Generation",
         "proficiency": 90
       },
       {
-        "id": "performance-management",
-        "name": "Performance Management",
+        "id": "customer-relationship-management",
+        "name": "Customer Relationship Management",
         "proficiency": 80
       },
       {
-        "id": "payroll-benefits",
-        "name": "Payroll & Benefits",
+        "id": "negotiation-closing",
+        "name": "Negotiation & Closing",
         "proficiency": 88
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "subtitle": "a collection of my work",
+    "categories": [
+      { "id": "all", "label": "All" },
+      { "id": "professional-headshot", "label": "Professional Headshot" },
+      { "id": "client-consultation", "label": "Client Consultation" },
+      { "id": "financial-plans", "label": "Financial Plans" },
+      { "id": "team-collaboration", "label": "Team Collaboration" },
+      { "id": "finance-visuals", "label": "Finance Visuals" }
+    ],
+    "items": [
+      {
+        "id": "portfolio-1",
+        "type": "image",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-1.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["professional-headshot", "client-consultation"]
+      },
+      {
+        "id": "portfolio-2",
+        "type": "image",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-2.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": [
+          "professional-headshot",
+          "financial-plans",
+          "finance-visuals"
+        ]
+      },
+      {
+        "id": "portfolio-3",
+        "type": "video",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "/assets/sales-executive-officer/images/portfolio/portfolio-3.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": ["financial-plans", "team-collaboration"]
+      },
+      {
+        "id": "portfolio-4",
+        "type": "image",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-4.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": [
+          "financial-plans",
+          "client-consultation",
+          "finance-visuals"
+        ]
+      },
+      {
+        "id": "portfolio-5",
+        "type": "image",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-2.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": [
+          "professional-headshot",
+          "client-consultation",
+          "team-collaboration"
+        ]
+      },
+      {
+        "id": "portfolio-6",
+        "type": "image",
+        "src": "/assets/sales-executive-officer/images/portfolio/portfolio-3.jpg",
+        "title": "Share document with my colleague",
+        "description": "Sharing important insights with my colleague for seamless collaboration!",
+        "categories": [
+          "professional-headshot",
+          "client-consultation",
+          "finance-visuals"
+        ]
       }
     ]
   }
