@@ -232,5 +232,61 @@
         ]
       }
     ]
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "My Professional Referrals",
+    "items": [
+      {
+        "id": "michael-bierut",
+        "photo": "/assets/sales-executive-officer/images/referrals/michael-bierut.jpg",
+        "name": "Michael Bierut",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "rodrigo-corral",
+        "photo": "/assets/sales-executive-officer/images/referrals/rodrigo-corral.jpg",
+        "name": "Rodrigo Corral",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      },
+      {
+        "id": "james-steel",
+        "photo": "/assets/sales-executive-officer/images/referrals/james-steel.jpg",
+        "name": "James Steel",
+        "position": "CEO of Moonster AI Tech",
+        "email": "contact@example.com",
+        "phone": "+003 123 4567 89"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "hobbies",
+    "subtitle": "my hobbies",
+    "items": [
+      {
+        "id": "bike-riding",
+        "name": "bike riding",
+        "icon": "/assets/sales-executive-officer/icons/hobbies/bike-riding.svg"
+      },
+      {
+        "id": "travelling",
+        "name": "travelling",
+        "icon": "/assets/sales-executive-officer/icons/hobbies/travelling.svg"
+      },
+      {
+        "id": "reading",
+        "name": "reading",
+        "icon": "/assets/sales-executive-officer/icons/hobbies/reading.svg"
+      },
+      {
+        "id": "technology",
+        "name": "technology",
+        "icon": "/assets/sales-executive-officer/icons/hobbies/technology.svg"
+      }
+    ]
   }
 }
