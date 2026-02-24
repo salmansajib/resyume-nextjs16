@@ -2,6 +2,7 @@ import React from "react";
 import salesExecutiveOfficerData from "@/data/sales-executive-officer.json";
 import HeaderSection from "@/components/sales-executive-officer/header/HeaderSection";
 import ExperienceSection from "@/components/sales-executive-officer/experience/ExperienceSection";
+import ServicesSection from "@/components/sales-executive-officer/services/ServicesSection";
 
 export const metadata = {
   title: "Sales Executive Officer Resume | Rezyume",
@@ -19,6 +20,7 @@ export default function SalesExecutiveOfficerHome() {
     >
       <HeaderSection data={data} />
       <ExperienceSection data={data} />
+      <ServicesSection data={data} />
     </div>
   );
 }

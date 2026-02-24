@@ -85,5 +85,73 @@
         "result": "A+"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Offer",
+    "items": [
+      {
+        "id": "sales-strategy-development",
+        "name": "Sales Strategy Development",
+        "description": "Crafting tailored sales plan strategies to meet and exceed business targets.",
+        "image": "/assets/sales-executive-officer/images/services/sales-strategy-development.png"
+      },
+      {
+        "id": "client-relationship-management",
+        "name": "Client Relationship Management",
+        "description": "Studying industry trends customer needs to position products services effectively.",
+        "image": "/assets/sales-executive-officer/images/services/client-relationship-management.png"
+      },
+      {
+        "id": "sales-performance-reporting",
+        "name": "Sales Performance Reporting",
+        "description": "Monitoring reporting on sales activities to optimize performance and achieve goals.",
+        "image": "/assets/sales-executive-officer/images/services/sales-performance-reporting.png"
+      },
+      {
+        "id": "market-research-and-analysis",
+        "name": "Market Research & Analysis",
+        "description": "Studying industry trends customer needs to position products and services effectively.",
+        "image": "/assets/sales-executive-officer/images/services/market-research-and-analysis.png"
+      },
+      {
+        "id": "lead-generation-and-prospecting",
+        "name": "Lead Generation & Prospecting",
+        "description": "Identifying and connecting with potential clients to build a strong sales pipeline.",
+        "image": "/assets/sales-executive-officer/images/services/lead-generation-and-prospecting.png"
+      },
+      {
+        "id": "sales-strategy-development-1",
+        "name": "Sales Strategy Development",
+        "description": "Crafting tailored sales plan strategies to meet and exceed business targets.",
+        "image": "/assets/sales-executive-officer/images/services/sales-strategy-development.png"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My Professional Skillset",
+    "items": [
+      {
+        "id": "talent-acquisition",
+        "name": "Talent Acquisition",
+        "proficiency": 85
+      },
+      {
+        "id": "training-development",
+        "name": "Training & Development",
+        "proficiency": 90
+      },
+      {
+        "id": "performance-management",
+        "name": "Performance Management",
+        "proficiency": 80
+      },
+      {
+        "id": "payroll-benefits",
+        "name": "Payroll & Benefits",
+        "proficiency": 88
+      }
+    ]
   }
 }
