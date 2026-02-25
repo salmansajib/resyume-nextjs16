@@ -192,9 +192,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/architect/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/architect/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "icon": "/assets/architect/icons/portfolio-icon-on-hover.svg",
         "title": "elysian villa",
         "description": "A dreamlike residence offering opulence and sophistication in every corner.",

@@ -224,9 +224,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/doctor-2/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/doctor-2/images/portfolio/portfolio-3.jpg",
+        "vidsrc": "oe70Uhjc_F4",
         "icon": "/assets/doctor-2/icons/portfolio-icon-on-hover.svg",
         "title": "Midnight Jewelss",
         "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",

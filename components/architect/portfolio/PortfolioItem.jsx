@@ -45,7 +45,9 @@ export default function PortfolioItem({ item, onClick }) {
           )}
 
           {/* video play icon badge if video */}
-          {item.type === "video" && (
+          {(item.type === "video" ||
+            item.type === "youtube" ||
+            item.type === "vimeo") && (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Image
                 src="/assets/photographer/icons/video-play-icon.svg"

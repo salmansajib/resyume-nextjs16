@@ -209,9 +209,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/hr-manager/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/hr-manager/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "icon": "/assets/hr-manager/icons/portfolio-icon-on-hover.svg",
         "title": "Talent. Culture. Success.",
         "description": "Where talent meets opportunity—shaping careers every day.",

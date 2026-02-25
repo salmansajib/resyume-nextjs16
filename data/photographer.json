@@ -231,9 +231,9 @@
       },
       {
         "id": 4,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/photographer/images/portfolio/portfolio-4.jpg",
-        "vidsrc": "/assets/photographer/images/portfolio/portfolio-4.jpg",
+        "videoId": "oe70Uhjc_F4",
         "title": "Blossom Elegance",
         "description": "A radiant flower showcasing delicate petals in vibrant hues.",
         "alt": "Wedding couple smiling together",

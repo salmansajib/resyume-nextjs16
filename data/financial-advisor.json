@@ -202,9 +202,9 @@
       },
       {
         "id": "portfolio-3",
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/financial-advisor/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "title": "Share document with my colleague",
         "description": "Sharing important insights with my colleague for seamless collaboration!",
         "categories": ["financial-plans", "team-collaboration"]

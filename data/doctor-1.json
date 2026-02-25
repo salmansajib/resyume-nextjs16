@@ -218,9 +218,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/doctor-1/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/doctor-1/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "icon": "/assets/doctor-1/icons/portfolio-icon-on-hover.svg",
         "title": "Cardiac Rehabilitation",
         "description": "Luscious black grapes with a glossy finish, bursting with sweet and tangy flavors.",

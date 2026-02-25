@@ -205,9 +205,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/fitness-coach/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/fitness-coach/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "title": "lifting dumbbell in modern gym",
         "description": "Lifting dumbbells in a modern gym is more than just a workout—it’s a science-backed approach to building strength, improving endurance, and sculpting a powerful physique. With state-of-the-art equipment, expert guidance,",
         "categories": ["sunset-escape", "video"]

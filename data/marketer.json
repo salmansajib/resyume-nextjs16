@@ -216,9 +216,9 @@
       },
       {
         "id": 3,
-        "type": "video",
+        "type": "youtube",
         "src": "/assets/marketer/images/portfolio/portfolio-3.jpg",
-        "vidsrc": "/assets/marketer/images/portfolio/portfolio-3.jpg",
+        "videoId": "oe70Uhjc_F4",
         "alt": "Marketing experts discussing marketing policies",
         "title": "Echoes of Imaginations",
         "description": "A vivid interplay of colors and abstract  to explore boundless creativity.",

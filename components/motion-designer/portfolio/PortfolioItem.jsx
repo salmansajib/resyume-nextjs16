@@ -46,7 +46,9 @@ export default function PortfolioItem({ item, onClick }) {
             </div>
           )}
 
-          {VIDEO_TYPES.includes(item.type) && (
+          {(item.type === "video" ||
+            item.type === "youtube" ||
+            item.type === "vimeo") && (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Image
                 src="/assets/motion-designer/icons/video-play-icon.svg"
