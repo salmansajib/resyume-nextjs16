@@ -49,7 +49,8 @@ export default function SocialLinks({ className }) {
         whileHover={{
           scale: 1.05,
         }}
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="flex items-center gap-5 border border-primary max-w-max px-10 py-4 font-teko text-xl"
       >
         Download CV

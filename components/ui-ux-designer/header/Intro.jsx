@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Intro({ hero }) {
   return (
@@ -15,8 +16,8 @@ export default function Intro({ hero }) {
       </h2>
       {/* linkedin link and download cv button */}
       <div className="w-full flex flex-col sm:flex-row items-center gap-5 mt-15">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="text-background-primary bg-primary flex items-center justify-center gap-2 w-full sm:max-w-[280px] h-[60px] cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg"
         >
           <svg
@@ -40,9 +41,10 @@ export default function Intro({ hero }) {
             />
           </svg>
           <span className="text-lg font-medium">LinkedIn Account</span>
-        </a>
+        </Link>
         <a
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           className="w-full sm:max-w-[280px] h-[60px] flex items-center justify-center bg-background-primary text-lg font-medium text-text-primary shadow-lg cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-primary hover:-translate-y-0.5 hover:brightness-110 hover:shadow-xl transition-all duration-300"
         >
           Download CV

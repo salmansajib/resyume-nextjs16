@@ -25,7 +25,8 @@ export default function SocialLinks({ className }) {
         variants={buttonVariants}
         initial="initial"
         whileHover="hover"
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="w-[255px] h-[63px] bg-primary text-background-primary flex items-center justify-between px-5 uppercase"
       >
         Download CV

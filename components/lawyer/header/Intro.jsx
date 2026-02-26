@@ -19,7 +19,8 @@ export default function Intro({ heroData }) {
           {heroData.description}
         </p>
         <a
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           className="flex items-center gap-2 border-b border-primary max-w-max py-3 relative hover:scale-105 transition-all duration-150 ease-in-out"
         >
           <span className="uppercase text-lg text-primary">download cv</span>

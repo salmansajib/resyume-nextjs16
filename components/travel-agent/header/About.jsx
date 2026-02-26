@@ -17,7 +17,11 @@ export default function About({ heroData, className }) {
           {about.description}
         </p>
       </div>
-      <a href="#" className="relative block mt-13 group max-w-max">
+      <a
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
+        className="relative block mt-13 group max-w-max"
+      >
         <span className="relative z-10 font-poppins font-medium uppercase ml-10">
           Download CV
         </span>

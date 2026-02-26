@@ -6,7 +6,8 @@ import { motion } from "motion/react";
 export default function DownloadCvLink({ className }) {
   return (
     <motion.a
-      href="#"
+      href="/assets/cv/resume.pdf"
+      download="resume.pdf"
       whileHover={{
         scale: 1.05,
       }}

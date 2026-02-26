@@ -21,7 +21,8 @@ export default function Intro({ data, className }) {
       </h2>
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
         <motion.a
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           whileHover={{
             scale: 1.05,
           }}

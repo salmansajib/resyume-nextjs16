@@ -70,7 +70,8 @@ export default function ContactInfo({ data, className }) {
 
       {/* download cv link */}
       <motion.a
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="text-primary max-h-max rounded-full"
         whileHover={{
           scale: 1.1,

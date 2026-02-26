@@ -10,7 +10,7 @@ export default function Downloadcv({ className }) {
         className,
       )}
     >
-      <a href="#">
+      <a href="/assets/cv/resume.pdf" download="resume.pdf">
         <CircularText
           text="• Download CV • Download CV"
           className="size-48"

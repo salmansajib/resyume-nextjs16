@@ -30,7 +30,8 @@ export default function SocialLinks() {
       {/* download cv and portfolio link */}
       <div className="flex flex-col md:flex-row items-start gap-7">
         <motion.a
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           className="bg-primary flex gap-3 items-center justify-center w-[237px] h-[54px] rounded-xl"
           whileHover={{
             scale: 1.05,

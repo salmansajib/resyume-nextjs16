@@ -47,7 +47,8 @@ export default function SocialLinks() {
         whileTap={{
           scale: 0.95,
         }}
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="flex items-center gap-3"
       >
         <span className="font-semibold">Download CV</span>

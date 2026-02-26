@@ -21,7 +21,8 @@ export default function Intro({ heroData }) {
       {/* cv and portfolio link */}
       <div className="flex flex-wrap items-center gap-5">
         <a
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           className="text-background-secondary flex items-center justify-center gap-4 bg-primary w-[256px] h-[50px] rounded-full shadow-[0px_0px_12px_rgba(237,67,48,0.25)] hover:-translate-y-0.5 hover:brightness-110 transition-all duration-300"
         >
           <span className="font-medium text-lg uppercase">Download CV</span>

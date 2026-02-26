@@ -6,7 +6,8 @@ export default function DownloadCV({ className }) {
   return (
     <div className={cn("", className)}>
       <motion.a
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         whileHover={{
           scale: 1.05,
         }}

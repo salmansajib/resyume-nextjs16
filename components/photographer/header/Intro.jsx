@@ -20,7 +20,11 @@ export default function Intro({ heroData }) {
       </div>
 
       {/* cv download link */}
-      <a href="#" className="relative">
+      <a
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
+        className="relative"
+      >
         <div className="border border-primary rounded-full size-25 flex items-center justify-center">
           <Image
             src="/assets/photographer/icons/folder-icon.svg"

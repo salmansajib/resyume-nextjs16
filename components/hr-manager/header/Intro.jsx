@@ -25,7 +25,8 @@ export default function Intro({ heroData }) {
         variants={buttonVariants}
         initial="initial"
         whileHover="hover"
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="bg-linear-to-r from-gradient-primary-end via-gradient-primary-middle to-gradient-primary-start flex gap-8 items-center justify-between pl-6 py-2 pr-2 rounded-full max-w-max text-lg font-poppins font-medium uppercase mt-20"
       >
         Download CV

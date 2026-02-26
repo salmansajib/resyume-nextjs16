@@ -11,7 +11,8 @@ export default function ContactInfo({ heroData }) {
     <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center gap-10">
       {/* download cv link */}
       <motion.a
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="text-primary max-h-max rounded-full"
         whileHover={{
           scale: 1.1,

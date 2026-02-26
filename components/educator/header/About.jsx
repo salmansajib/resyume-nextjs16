@@ -26,7 +26,8 @@ export default function About({ heroData, className }) {
         variants={buttonVariants}
         initial="initial"
         whileHover="hover"
-        href="#"
+        href="/assets/cv/resume.pdf"
+        download="resume.pdf"
         className="bg-primary flex gap-8 items-center justify-between pl-6 py-2 pr-2 rounded-full max-w-max text-lg font-poppins font-medium uppercase mt-10 lg:mt-15"
       >
         Download CV

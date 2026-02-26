@@ -32,7 +32,8 @@ export default function Intro({ heroData }) {
           whileHover={{
             scale: 1.03,
           }}
-          href="#"
+          href="/assets/cv/resume.pdf"
+          download="resume.pdf"
           className="w-[190px] h-[50px] bg-primary text-background-primary flex items-center justify-center rounded-md uppercase font-medium"
         >
           download CV
